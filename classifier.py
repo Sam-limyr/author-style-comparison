@@ -29,17 +29,23 @@ cosine_scores = util.pytorch_cos_sim(corpus_embeddings, query_embeddings)
 
 #Find the pairs with the highest cosine similarity scores
 pairs = []
-for i in range(len(cosine_scores)):
-    for j in range(len(cosine_scores[0])):
-        pairs.append({'index': [i, j], 'score': cosine_scores[i][j]})
+for i in range(len(cosine_scores[0])):
+    pairs.append([])
+    for j in range(len(cosine_scores)):
+        pairs[i].append({'index': [j, i], 'score': cosine_scores[j][i]})
 
 #Sort scores in decreasing order
-pairs = sorted(pairs, key=lambda x: x['score'], reverse=True)
+sorted_pairs = []
+for query_pairs in pairs:
+    sorted_pairs.append(sorted(query_pairs, key=lambda x: x['score'], reverse=True))
 
-TOP_K_SCORES_TO_PRINT = 5
-for pair in pairs[0:TOP_K_SCORES_TO_PRINT]:
-    i, j = pair['index']
-    print("{} \t\t {} \t\t Score: {:.4f}".format(corpus[i], queries[j], pair['score']))
+print("Format:\nQuery Sentence \t\t | \t Most Similar Corpus Sentence \t | \t\t Score\n")
+
+TOP_K_SCORES_TO_PRINT = 1
+for query_pairs in sorted_pairs:
+    for value in query_pairs[0:TOP_K_SCORES_TO_PRINT]:
+        i, j = value['index']
+        print("{} \t\t {} \t\t Score: {:.4f}".format(queries[j], corpus[i], value['score']))
 
 # TODO: Explore util.paraphrase_mining().
 #       Problem: It only calculates a corpus's scores with itself.
