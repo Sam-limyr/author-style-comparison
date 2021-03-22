@@ -1,64 +1,54 @@
-# Code credit: https://www.sbert.net/docs/usage/semantic_textual_similarity.html
-
 from sentence_transformers import SentenceTransformer, util
 import numpy as np
+from copy import deepcopy
+from tqdm import tqdm
 
-model = SentenceTransformer('paraphrase-distilroberta-base-v1')
+
+# Initialize globals
 
 CHARLES_DICKENS_NAME = "charles_dickens"
 FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
 LEO_TOLSTOY_NAME = "leo_tolstoy"
 MARK_TWAIN_NAME = "mark_twain"
 
-corpus = {
-    CHARLES_DICKENS_NAME: [
-        'I had a chicken',
-        'potato'
-    ],
-    FYODOR_DOSTOEVSKY_NAME: [
-        'magician'
-    ],
-    LEO_TOLSTOY_NAME: [
-        'hey there',
-        'this is a test',
-        'I like animals'
-    ],
-    MARK_TWAIN_NAME: [
-        'horsing around',
-        'music is the best'
-    ]
-}
+author_names = [CHARLES_DICKENS_NAME, FYODOR_DOSTOEVSKY_NAME, LEO_TOLSTOY_NAME, MARK_TWAIN_NAME]
 
-corpus_embeddings = {
-    CHARLES_DICKENS_NAME: None,
-    FYODOR_DOSTOEVSKY_NAME: None,
-    LEO_TOLSTOY_NAME: None,
-    MARK_TWAIN_NAME: None
-}
+corpus = {}
+corpus_embeddings = {}
+average_cosine_scores = {}
 
-queries = ['Here is an equine creature',
-           'The person is doing the thing',
-           'A person is using an instrument.',
-           'A female is using an instrument.'
-           ]
+
+NUMBER_OF_BYTES = -1  # Leave as -1 to read all lines; otherwise read this number of bytes per file
+
+# Read data from csv files
+
+for author in tqdm(author_names, desc="Reading data from csv files..."):
+    with open("tokens/" + author + '.csv', encoding='utf-8') as file:
+        corpus[author] = file.readlines(NUMBER_OF_BYTES)
+
+
+# Initialize model
+
+model = SentenceTransformer('paraphrase-distilroberta-base-v1')
+
+queries = [
+    "He had become so completely absorbed in himself, and isolated from his fellows that he dreaded meeting.",
+    "He was crushed by poverty, but the anxieties of his position had of late ceased to weigh upon him.",
+    "He had given up attending to matters of practical importance; he had lost all desire to do so.",
+    "Nothing that any landlady could do had a real terror for him."
+]
+
 
 # Encode all sentences
-for author, sentences in corpus.items():
-    corpus_embeddings[author] = model.encode(sentences, convert_to_numpy=True)
-query_embeddings = model.encode(queries, convert_to_numpy=True)
+for author, sentences in tqdm(corpus.items(), desc="Encoding sentence embeddings..."):
+    corpus_embeddings[author] = model.encode(sentences, show_progress_bar=True)
+query_embeddings = model.encode(queries, convert_to_tensor=True)
 
 
 # Compute cosine-similarities for each corpus sentence with each query sentence
 # Calculate the average cosine similarity score across all query sentences for each author
 
-average_cosine_scores = {
-    CHARLES_DICKENS_NAME: None,
-    FYODOR_DOSTOEVSKY_NAME: None,
-    LEO_TOLSTOY_NAME: None,
-    MARK_TWAIN_NAME: None
-}
-
-for author, sentences in corpus_embeddings.items():
+for author, sentences in tqdm(corpus_embeddings.items(), desc="Calculating average similarity scores..."):
     average_cosine_scores[author] = np.average(util.pytorch_cos_sim(sentences, query_embeddings))
 
 for author in sorted(average_cosine_scores.keys(), key=average_cosine_scores.get, reverse=True):
