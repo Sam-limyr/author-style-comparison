@@ -22,22 +22,22 @@ queries = ['Here is an equine creature',
            'A female is using an instrument.'
            ]
 
-#Encode all sentences
+# Encode all sentences
 corpus_embeddings = model.encode(corpus, convert_to_tensor=True)
 query_embeddings = model.encode(queries, convert_to_tensor=True)
 
-#Compute cosine-similarities for each corpus sentence with each query sentence
+# Compute cosine-similarities for each corpus sentence with each query sentence
 cosine_scores = util.pytorch_cos_sim(corpus_embeddings, query_embeddings)
 
-#Find the pairs with the highest cosine similarity scores
+# Find the pairs with the highest cosine similarity scores
 pairs = []
 for i in range(len(cosine_scores[0])):
     pairs.append([])
     for j in range(len(cosine_scores)):
         pairs[i].append({'index': [j, i], 'score': cosine_scores[j][i]})
 
+# Use the quickselect algorithm for faster retrieval of top k scores per query
 print("Format:\nQuery Sentence \t\t | \t Most Similar Corpus Sentence \t | \t\t Score\n")
-
 TOP_K_SCORES_TO_PRINT = 1
 for query in pairs:
     for k in range(TOP_K_SCORES_TO_PRINT):
