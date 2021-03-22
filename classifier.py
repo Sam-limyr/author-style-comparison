@@ -1,20 +1,40 @@
 # Code credit: https://www.sbert.net/docs/usage/semantic_textual_similarity.html
 
 from sentence_transformers import SentenceTransformer, util
-from quickselect import floyd_rivest
+import numpy as np
 
 model = SentenceTransformer('paraphrase-distilroberta-base-v1')
 
-corpus = ['A man is eating food.',
-          'A man is eating a piece of bread.',
-          'The girl is carrying a baby.',
-          'A man is riding a horse.',
-          'A woman is playing violin.',
-          'Two men pushed carts through the woods.',
-          'A man is riding a white horse on an enclosed ground.',
-          'A monkey is playing drums.',
-          'Someone in a gorilla costume is playing a set of drums.'
-          ]
+CHARLES_DICKENS_NAME = "charles_dickens"
+FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
+LEO_TOLSTOY_NAME = "leo_tolstoy"
+MARK_TWAIN_NAME = "mark_twain"
+
+corpus = {
+    CHARLES_DICKENS_NAME: [
+        'I had a chicken',
+        'potato'
+    ],
+    FYODOR_DOSTOEVSKY_NAME: [
+        'magician'
+    ],
+    LEO_TOLSTOY_NAME: [
+        'hey there',
+        'this is a test',
+        'I like animals'
+    ],
+    MARK_TWAIN_NAME: [
+        'horsing around',
+        'music is the best'
+    ]
+}
+
+corpus_embeddings = {
+    CHARLES_DICKENS_NAME: None,
+    FYODOR_DOSTOEVSKY_NAME: None,
+    LEO_TOLSTOY_NAME: None,
+    MARK_TWAIN_NAME: None
+}
 
 queries = ['Here is an equine creature',
            'The person is doing the thing',
@@ -23,27 +43,28 @@ queries = ['Here is an equine creature',
            ]
 
 # Encode all sentences
-corpus_embeddings = model.encode(corpus, convert_to_tensor=True)
-query_embeddings = model.encode(queries, convert_to_tensor=True)
+for author, sentences in corpus.items():
+    corpus_embeddings[author] = model.encode(sentences, convert_to_numpy=True)
+query_embeddings = model.encode(queries, convert_to_numpy=True)
+
 
 # Compute cosine-similarities for each corpus sentence with each query sentence
-cosine_scores = util.pytorch_cos_sim(corpus_embeddings, query_embeddings)
+# Calculate the average cosine similarity score across all query sentences for each author
 
-# Find the pairs with the highest cosine similarity scores
-pairs = []
-for i in range(len(cosine_scores[0])):
-    pairs.append([])
-    for j in range(len(cosine_scores)):
-        pairs[i].append({'index': [j, i], 'score': cosine_scores[j][i]})
+average_cosine_scores = {
+    CHARLES_DICKENS_NAME: None,
+    FYODOR_DOSTOEVSKY_NAME: None,
+    LEO_TOLSTOY_NAME: None,
+    MARK_TWAIN_NAME: None
+}
 
-# Use the quickselect algorithm for faster retrieval of top k scores per query
-print("Format:\nQuery Sentence \t\t | \t Most Similar Corpus Sentence \t | \t\t Score\n")
-TOP_K_SCORES_TO_PRINT = 1
-for query in pairs:
-    for k in range(TOP_K_SCORES_TO_PRINT):
-        value = floyd_rivest.nth_largest(query, k, key=lambda x: x['score'])
-        i, j = value['index']
-        print("{} \t\t {} \t\t Score: {:.4f}".format(queries[j], corpus[i], value['score']))
+for author, sentences in corpus_embeddings.items():
+    average_cosine_scores[author] = np.average(util.pytorch_cos_sim(sentences, query_embeddings))
+
+for author in sorted(average_cosine_scores.keys(), key=average_cosine_scores.get, reverse=True):
+    print("Author: {} \t\t | \t\t Average Similarity Score: {}".format(author, average_cosine_scores[author]))
+
+
 
 # TODO: Explore util.paraphrase_mining().
 #       Problem: It only calculates a corpus's scores with itself.
