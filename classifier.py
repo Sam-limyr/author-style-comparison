@@ -1,6 +1,8 @@
 # Code credit: https://www.sbert.net/docs/usage/semantic_textual_similarity.html
 
 from sentence_transformers import SentenceTransformer, util
+from quickselect import floyd_rivest
+
 model = SentenceTransformer('paraphrase-distilroberta-base-v1')
 
 corpus = ['A man is eating food.',
@@ -34,16 +36,12 @@ for i in range(len(cosine_scores[0])):
     for j in range(len(cosine_scores)):
         pairs[i].append({'index': [j, i], 'score': cosine_scores[j][i]})
 
-#Sort scores in decreasing order
-sorted_pairs = []
-for query_pairs in pairs:
-    sorted_pairs.append(sorted(query_pairs, key=lambda x: x['score'], reverse=True))
-
 print("Format:\nQuery Sentence \t\t | \t Most Similar Corpus Sentence \t | \t\t Score\n")
 
 TOP_K_SCORES_TO_PRINT = 1
-for query_pairs in sorted_pairs:
-    for value in query_pairs[0:TOP_K_SCORES_TO_PRINT]:
+for query in pairs:
+    for k in range(TOP_K_SCORES_TO_PRINT):
+        value = floyd_rivest.nth_largest(query, k, key=lambda x: x['score'])
         i, j = value['index']
         print("{} \t\t {} \t\t Score: {:.4f}".format(queries[j], corpus[i], value['score']))
 
