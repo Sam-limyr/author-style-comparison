@@ -1,51 +1,60 @@
-# Code credit: https://www.sbert.net/docs/usage/semantic_textual_similarity.html
-
 from sentence_transformers import SentenceTransformer, util
+import numpy as np
+from copy import deepcopy
+from tqdm import tqdm
+
+
+# Initialize globals
+
+CHARLES_DICKENS_NAME = "charles_dickens"
+FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
+LEO_TOLSTOY_NAME = "leo_tolstoy"
+MARK_TWAIN_NAME = "mark_twain"
+
+author_names = [CHARLES_DICKENS_NAME, FYODOR_DOSTOEVSKY_NAME, LEO_TOLSTOY_NAME, MARK_TWAIN_NAME]
+
+corpus = {}
+corpus_embeddings = {}
+average_cosine_scores = {}
+
+
+NUMBER_OF_BYTES = -1  # Leave as -1 to read all lines; otherwise read this number of bytes per file
+
+# Read data from csv files
+
+for author in tqdm(author_names, desc="Reading data from csv files..."):
+    with open("tokens/" + author + '.csv', encoding='utf-8') as file:
+        corpus[author] = file.readlines(NUMBER_OF_BYTES)
+
+
+# Initialize model
+
 model = SentenceTransformer('paraphrase-distilroberta-base-v1')
 
-corpus = ['A man is eating food.',
-          'A man is eating a piece of bread.',
-          'The girl is carrying a baby.',
-          'A man is riding a horse.',
-          'A woman is playing violin.',
-          'Two men pushed carts through the woods.',
-          'A man is riding a white horse on an enclosed ground.',
-          'A monkey is playing drums.',
-          'Someone in a gorilla costume is playing a set of drums.'
-          ]
+queries = [
+    "He had become so completely absorbed in himself, and isolated from his fellows that he dreaded meeting.",
+    "He was crushed by poverty, but the anxieties of his position had of late ceased to weigh upon him.",
+    "He had given up attending to matters of practical importance; he had lost all desire to do so.",
+    "Nothing that any landlady could do had a real terror for him."
+]
 
-queries = ['Here is an equine creature',
-           'The person is doing the thing',
-           'A person is using an instrument.',
-           'A female is using an instrument.'
-           ]
 
-#Encode all sentences
-corpus_embeddings = model.encode(corpus, convert_to_tensor=True)
+# Encode all sentences
+for author, sentences in tqdm(corpus.items(), desc="Encoding sentence embeddings..."):
+    corpus_embeddings[author] = model.encode(sentences, show_progress_bar=True)
 query_embeddings = model.encode(queries, convert_to_tensor=True)
 
-#Compute cosine-similarities for each corpus sentence with each query sentence
-cosine_scores = util.pytorch_cos_sim(corpus_embeddings, query_embeddings)
 
-#Find the pairs with the highest cosine similarity scores
-pairs = []
-for i in range(len(cosine_scores[0])):
-    pairs.append([])
-    for j in range(len(cosine_scores)):
-        pairs[i].append({'index': [j, i], 'score': cosine_scores[j][i]})
+# Compute cosine-similarities for each corpus sentence with each query sentence
+# Calculate the average cosine similarity score across all query sentences for each author
 
-#Sort scores in decreasing order
-sorted_pairs = []
-for query_pairs in pairs:
-    sorted_pairs.append(sorted(query_pairs, key=lambda x: x['score'], reverse=True))
+for author, sentences in tqdm(corpus_embeddings.items(), desc="Calculating average similarity scores..."):
+    average_cosine_scores[author] = np.average(util.pytorch_cos_sim(sentences, query_embeddings))
 
-print("Format:\nQuery Sentence \t\t | \t Most Similar Corpus Sentence \t | \t\t Score\n")
+for author in sorted(average_cosine_scores.keys(), key=average_cosine_scores.get, reverse=True):
+    print("Author: {} \t\t | \t\t Average Similarity Score: {}".format(author, average_cosine_scores[author]))
 
-TOP_K_SCORES_TO_PRINT = 1
-for query_pairs in sorted_pairs:
-    for value in query_pairs[0:TOP_K_SCORES_TO_PRINT]:
-        i, j = value['index']
-        print("{} \t\t {} \t\t Score: {:.4f}".format(queries[j], corpus[i], value['score']))
+
 
 # TODO: Explore util.paraphrase_mining().
 #       Problem: It only calculates a corpus's scores with itself.
