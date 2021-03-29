@@ -1,4 +1,3 @@
-import io
 import os
 import csv
 import pandas as pd
@@ -9,11 +8,13 @@ from nltk.tokenize import sent_tokenize
 
 authors = os.listdir("novels")
 author_to_sent = {}
+author_to_para = {}
 
 for author in authors:
 	novel_filenames = os.listdir("novels/"+author)
 
 	sentence_list = []
+	para_list = []
 
 	for novel_filename in novel_filenames:
 		filepath = "novels/"+author+"/"+novel_filename
@@ -21,18 +22,31 @@ for author in authors:
 		text = fp.read()
 		print(novel_filename)
 
+		noEmptyParas = [para for para in text.split("\n\n") if para != '']
+
 		sentence_list.extend(sent_tokenize(text))
+		para_list.extend(noEmptyParas)
 
 	author_to_sent[author] = sentence_list
+	author_to_para[author] = para_list
 
-for author in author_to_sent.keys():
-	path = 'tokens/' + author + '.csv'
+# for author in author_to_sent.keys():
+# 	path = 'tokens/' + author + '.csv'
+#
+# 	with open(path, 'w', newline='', encoding="utf-8") as csvfile:
+# 		csvwriter = csv.writer(csvfile)
+#
+# 		for sent in author_to_sent[author]:
+# 			csvwriter.writerow([sent])
+
+for author in author_to_para.keys():
+	path = 'paragraphs/' + author + '.csv'
 
 	with open(path, 'w', newline='', encoding="utf-8") as csvfile:
 		csvwriter = csv.writer(csvfile)
 
-		for sent in author_to_sent[author]:
-			csvwriter.writerow([sent])
+		for para in author_to_para[author]:
+			csvwriter.writerow([para])
 
 # for reading
 # with open('tokens/charles_dickens.csv', 'r', newline='', encoding="utf-8") as readfile:
