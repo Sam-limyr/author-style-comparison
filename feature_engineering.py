@@ -10,8 +10,10 @@ from nltk.corpus import stopwords   # Requires NLTK in the include path.
 ## List of stopwords
 STOPWORDS = stopwords.words('english') # type: list(str)
 
-authors = {"charles_dickens": ["davidc.txt"], "fyodor_dostoevsky": ["crimep.txt"], 
-           "leo_tolstoy": ["warap.txt"], "mark_twain": ["toms.txt"]}
+authors = {"charles_dickens": ["davidc.txt", "greatex.txt", "olivert.txt", "twocities.txt"],
+           "fyodor_dostoevsky": ["crimep.txt", "idiot.txt", "possessed.txt"], 
+           "leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
+           "mark_twain": ["toms.txt", "huckfinn.txt", "connecticutyankee.txt", "princepauper.txt"]}
 
 stats = {}
 
@@ -26,7 +28,8 @@ for author in authors:
     vocab = {}
     
     for bookFilepath in authors[author]:
-        filepath = os.path.join(sys.path[0], bookFilepath)
+        filepath = "novels/" + author + "/" + bookFilepath
+        filepath = os.path.join(sys.path[0], filepath)
         
         # read text in book
         with open(filepath, encoding='utf-8', errors='ignore') as f:
@@ -49,6 +52,9 @@ for author in authors:
                 # contractions treated as one word
                 total_words += len(words)
                 for word in words:
+                    # TODO: Handle known words that are in ALL CAPS
+                    # TODO: Handle named entities (people, cities?), count them as the same since not style
+                    # TODO: Project Gutenberg seems to have italicised? words that are _<word>_, handle.
                     if word not in vocab:
                         vocab[word] = 1
                     else:
@@ -76,23 +82,21 @@ for author in authors:
                         stopword_count += 1
                 sentences += [ele.strip()]
 
-        avg_word_per_sent = total_words / sentence_count
-        unique_word_count = len(vocab.keys())
-        # store stats in outer dictionary, in order of "authors" dictionary
-        if "stopword_count_per_sent" not in stats:
-            stats["stopword_count_per_sent"] = [stopword_count/sentence_count]
-        else:
-            stats["stopword_count_per_sent"] += [stopword_count/sentence_count]
-        if "avg_word_per_sentence" not in stats:
-            stats["avg_word_per_sentence"] = [avg_word_per_sent]
-        else:
-            stats["avg_word_per_sentence"] += [avg_word_per_sent]
-        if "vocab_word_count" not in stats:
-            stats["vocab_word_count"] = [unique_word_count]
-        else:
-            stats["vocab_word_count"] += [unique_word_count]
-        
-        print("Number of sentences: {} \nNumber of total words: {} \nNumber of stopwords: {} \nAvg. words per sentence: {} \nWords in vocab: {}".format(sentence_count, total_words, stopword_count, avg_word_per_sent, unique_word_count))
+    avg_word_per_sent = total_words / sentence_count
+    unique_word_count = len(vocab.keys())
+    # store stats in outer dictionary, in order of "authors" dictionary
+    if "stopword_count_per_sent" not in stats:
+        stats["stopword_count_per_sent"] = [stopword_count/sentence_count]
+    else:
+        stats["stopword_count_per_sent"] += [stopword_count/sentence_count]
+    if "avg_word_per_sentence" not in stats:
+        stats["avg_word_per_sentence"] = [avg_word_per_sent]
+    else:
+        stats["avg_word_per_sentence"] += [avg_word_per_sent]
+    if "vocab_word_count" not in stats:
+        stats["vocab_word_count"] = [unique_word_count]
+    else:
+        stats["vocab_word_count"] += [unique_word_count]
         
 print(stats)
 
