@@ -98,6 +98,7 @@ print(stats)
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import f1_score
 
 def train_model(model, x_train, y_train):
     ''' TODO: train your model based on the training data '''
@@ -206,3 +207,9 @@ y_pred = predict(model, x_test)
 print("Predictions: \n")
 print(y_pred)
 
+# Use f1-macro as the metric
+score = f1_score(y_test, y_pred, average='macro')
+print('LR score on validation = {}'.format(score))
+from sklearn.metrics import confusion_matrix, classification_report
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))
