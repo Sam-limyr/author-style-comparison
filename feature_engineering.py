@@ -23,16 +23,22 @@ for author in authors:
     sentence_count = 0
     stopword_count = 0
     total_words = 0
-    # punctuation_count?
+    # punctuation_count
+    dash_count = 0 # counting "--"
+    comma_count = 0
+    italics_count = 0 # _<word>_
+    dialogue_count = 0 # counting ""
     
     vocab = {}
     
-    for bookFilepath in authors[author]:
-        filepath = "novels/" + author + "/" + bookFilepath
-        filepath = os.path.join(sys.path[0], filepath)
+    for bookName in authors[author]:
+        bookFilepath = "novels/" + author + "/" + bookName
+        print(bookFilepath)
+        # filepath = os.path.join(sys.path[1], bookFilepath)
+        # print(filepath)
         
         # read text in book
-        with open(filepath, encoding='utf-8', errors='ignore') as f:
+        with open(bookFilepath, encoding='utf-8', errors='ignore') as f:
             text = f.read()[1:]
 
         # sentence segment, split based on punctuation
@@ -48,9 +54,17 @@ for author in authors:
             elif (len(sentences) == 0):
                 # count statistics
                 sentence_count += 1
-                words = re.findall(r'\w\'?\w+', ele)
+                words = re.findall(r'\w*’?\w*', ele)
+                dashes = re.findall(r'--+', ele)
+                commas = re.findall(r',', ele)
+                italics = re.findall(r'_\w+_', ele)
+                dialogues = re.findall(r'“.*|.*”', ele) # Look for either "
                 # contractions treated as one word
                 total_words += len(words)
+                dash_count += len(dashes)
+                comma_count += len(commas)
+                italics_count += len(italics)
+                dialogue_count += len(dialogues)
                 for word in words:
                     # TODO: Handle known words that are in ALL CAPS
                     # TODO: Handle named entities (people, cities?), count them as the same since not style
@@ -70,8 +84,16 @@ for author in authors:
                 # count statistics
                 sentence_count += 1
                 words = re.findall(r'\w\'?\w+', ele)
+                dashes = re.findall(r'-+', ele)
+                commas = re.findall(r',', ele)
+                italics = re.findall(r'_\w+_', ele)
+                dialogues = re.findall(r'“.*|.*”', ele) # Look for either "
                 # contractions treated as one word
                 total_words += len(words)
+                dash_count += len(dashes)
+                comma_count += len(commas)
+                italics_count += len(italics)
+                dialogue_count += len(dialogues)
                 for word in words:
                     if word not in vocab:
                         vocab[word] = 1
@@ -93,10 +115,29 @@ for author in authors:
         stats["avg_word_per_sentence"] = [avg_word_per_sent]
     else:
         stats["avg_word_per_sentence"] += [avg_word_per_sent]
-    if "vocab_word_count" not in stats:
-        stats["vocab_word_count"] = [unique_word_count]
+    
+    if "dashes_per_sent" not in stats:
+        stats["dashes_per_sent"] = [dash_count/sentence_count]
     else:
-        stats["vocab_word_count"] += [unique_word_count]
+        stats["dashes_per_sent"] += [dash_count/sentence_count]
+    if "comma_count_per_sent" not in stats:
+        stats["comma_count_per_sent"] = [comma_count/sentence_count]
+    else:
+        stats["comma_count_per_sent"] += [comma_count/sentence_count]
+    if "italics_per_sent" not in stats:
+        stats["italics_per_sent"] = [italics_count/sentence_count]
+    else:
+        stats["italics_per_sent"] += [italics_count/sentence_count]
+    if "dialogue_per_sent" not in stats:
+        stats["dialogue_per_sent"] = [dialogue_count/sentence_count]
+    else:
+        stats["dialogue_per_sent"] += [dialogue_count/sentence_count]
+        
+    # vocab needs to be able to count rare words and identify them
+#     if "vocab_word_count" not in stats:
+#         stats["vocab_word_count"] = [unique_word_count]
+#     else:
+#         stats["vocab_word_count"] += [unique_word_count]
         
 print(stats)
 
@@ -121,7 +162,6 @@ def extractFeatures(stats, scaler, isTestSet):
         scaled = scaler.transform(features)
     else:
         scaler.fit(features)
-        mean = scaler.mean_
         scaled = scaler.fit_transform(features)
     
     return pd.DataFrame(scaled)
@@ -134,8 +174,17 @@ def extractStats(queries, scaler):
         stopword_count = 0
         
         words = re.findall(r'\w\'?\w+', query)
+        dashes = re.findall(r'-+', query)
+        commas = re.findall(r',', query)
+        italics = re.findall(r'_\w+_', query)
+        dialogues = re.findall(r'“.*|.*”', query) # Look for either "
         # contractions treated as one word
         words_in_sent = len(words)
+        dash_count = len(dashes)
+        comma_count = len(commas)
+        italics_count = len(italics)
+        has_dialogue = 1 if len(dialogues) > 0 else 0
+        
         for word in words:
             if word not in vocab:
                 vocab[word] = 1
@@ -144,6 +193,7 @@ def extractStats(queries, scaler):
                 vocab[word] += 1
             if word in STOPWORDS:
                 stopword_count += 1
+        
         if "stopword_count_per_sent" not in features:
             features["stopword_count_per_sent"] = [stopword_count]
         else:
@@ -152,10 +202,28 @@ def extractStats(queries, scaler):
             features["avg_word_per_sentence"] = [words_in_sent]
         else:
             features["avg_word_per_sentence"] += [words_in_sent]
-        if "vocab_word_count" not in features:
-            features["vocab_word_count"] = [len(vocab.keys())]
+            
+#         if "vocab_word_count" not in features:
+#             features["vocab_word_count"] = [len(vocab.keys())]
+#         else:
+#             features["vocab_word_count"] += [len(vocab.keys())]
+            
+        if "dashes_per_sent" not in features:
+            features["dashes_per_sent"] = [dash_count]
         else:
-            features["vocab_word_count"] += [len(vocab.keys())]
+            features["dashes_per_sent"] += [dash_count]
+        if "comma_count_per_sent" not in features:
+            features["comma_count_per_sent"] = [comma_count]
+        else:
+            features["comma_count_per_sent"] += [comma_count]
+        if "italics_per_sent" not in features:
+            features["italics_per_sent"] = [italics_count]
+        else:
+            features["italics_per_sent"] += [italics_count]
+        if "dialogue_per_sent" not in features:
+            features["dialogue_per_sent"] = [has_dialogue]
+        else:
+            features["dialogue_per_sent"] += [has_dialogue]
     
     features = pd.DataFrame(data=features)
     scaled = scaler.transform(features)
@@ -173,6 +241,9 @@ model = LogisticRegression(penalty='l2', C=0.8, solver='saga', multi_class='mult
 
 scaler = StandardScaler()
 x_train = extractFeatures(stats, scaler, False)
+print("Class stats distribution")
+print(x_train)
+
 y_train = [
     "charles_dickens",
     "fyodor_dostoevsky",
@@ -184,18 +255,30 @@ train_model(model, x_train, y_train)
 # Queries
 queries = [
     "As he was passing by the house where Jeff Thatcher lived, he saw a new girl in the garden--a lovely little blue-eyed creature with yellowhair plaited into two long-tails, white summer frock and embroidered pan-talettes.",
+    "Presently a fair slip of a girl, about ten years old, with a cataract of golden hair streaming down over her shoulders, came along.",
+    "Why, I wrote you twice to ask you what you could mean by Sid being here.”",
     "He was crushed by poverty, but the anxieties of his position had of late ceased to weigh upon him.",
     "He had given up attending to matters of practical importance; he had lost all desire to do so.",
     "Nothing that any landlady could do had a real terror for him.",
     "Is the movement of the peoples at the time of the Crusades explained by the life and activity of the Godfreys and the Louis-es and their ladies?",
-    "Thoughtfully, for I could not be here once more, and so near Agnes, without the revival of those regrets with which I had so long been occupied"
+    "“She rushes about from place to place with him,” said the prince, smiling.",
+    "For an instant she had a clear vision of what she was doing, and was horrified at how she had fallen away from her resolution.",
+    "Thoughtfully, for I could not be here once more, and so near Agnes, without the revival of those regrets with which I had so long been occupied",
+    "And then, “When she first came, I meant to save her from misery like mine.”",
+    "Mr. Giles had risen from his seat, and taken two steps with his eyes shut, to accompany his description with appropriate action, when he started violently, in common with the rest of the company, and hurried back to his chair."
 ]
 labels = [
+    "mark_twain",
+    "mark_twain",
     "mark_twain",
     "fyodor_dostoevsky",
     "fyodor_dostoevsky",
     "fyodor_dostoevsky",
     "leo_tolstoy",
+    "leo_tolstoy",
+    "leo_tolstoy",
+    "charles_dickens",
+    "charles_dickens",
     "charles_dickens"
 ]
 
