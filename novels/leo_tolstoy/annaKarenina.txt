@@ -1,6 +1,6 @@
-﻿PART ONE
+﻿
 
-Chapter 1
+
 
 
 Happy families are all alike; every unhappy family is unhappy in its
@@ -104,7 +104,7 @@ Arkadyevitch.
 despair, and found no answer.
 
 
-Chapter 2
+
 
 Stepan Arkadyevitch was a truthful man in his relations with himself.
 He was incapable of deceiving himself and persuading himself that he
@@ -259,7 +259,7 @@ blowing off some invisible speck, he slipped it with obvious pleasure
 over the well-groomed body of his master.
 
 
-Chapter 3
+
 
 When he was dressed, Stepan Arkadyevitch sprinkled some scent on
 himself, pulled down his shirt-cuffs, distributed into his pockets his
@@ -442,7 +442,7 @@ ashtray, and with rapid steps walked through the drawing-room, and
 opened the other door into his wife’s bedroom.
 
 
-Chapter 4
+
 
 Darya Alexandrovna, in a dressing jacket, and with her now scanty, once
 luxuriant and beautiful hair fastened up with hairpins on the nape of
@@ -656,7 +656,7 @@ And Darya Alexandrovna plunged into the duties of the day, and drowned
 her grief in them for a time.
 
 
-Chapter 5
+
 
 Stepan Arkadyevitch had learned easily at school, thanks to his
 excellent abilities, but he had been idle and mischievous, and
@@ -1030,7 +1030,7 @@ Arkadyevitch?”
 a heavy sigh.
 
 
-Chapter 6
+
 
 When Oblonsky asked Levin what had brought him to town, Levin blushed,
 and was furious with himself for blushing, because he could not answer,
@@ -1138,7 +1138,7 @@ make an offer, and get married if he were accepted. Or ... he could not
 conceive what would become of him if he were rejected.
 
 
-Chapter 7
+
 
 On arriving in Moscow by a morning train, Levin had put up at the house
 of his elder half-brother, Koznishev. After changing his clothes he
@@ -1227,7 +1227,7 @@ conceptions.”
 Levin listened no more, and simply waited for the professor to go.
 
 
-Chapter 8
+
 
 When the professor had gone, Sergey Ivanovitch turned to his brother.
 
@@ -1347,7 +1347,7 @@ on getting news of the Shtcherbatskys from him, he drove to the place
 where he had been told he might find Kitty.
 
 
-Chapter 9
+
 
 At four o’clock, conscious of his throbbing heart, Levin stepped out of
 a hired sledge at the Zoological Gardens, and turned along the path to
@@ -1641,7 +1641,7 @@ of the dinner.
 “Eh?” responded Levin. “Turbot? Yes, I’m _awfully_ fond of turbot.”
 
 
-Chapter 10
+
 
 When Levin went into the restaurant with Oblonsky, he could not help
 noticing a certain peculiarity of expression, as it were, a restrained
@@ -1970,7 +1970,7 @@ not according to my unworthiness, but according to Thy
 loving-kindness.’ That’s the only way she can forgive me.”
 
 
-Chapter 11
+
 
 Levin emptied his glass, and they were silent for a while.
 
@@ -2165,7 +2165,7 @@ roubles, did not notice it, paid, and set off homewards to dress and go
 to the Shtcherbatskys’ there to decide his fate.
 
 
-Chapter 12
+
 
 The young Princess Kitty Shtcherbatskaya was eighteen. It was the first
 winter that she had been out in the world. Her success in society had
@@ -2334,7 +2334,7 @@ that what was taking place just now in her soul seemed to the poor
 child so immense and so important.
 
 
-Chapter 13
+
 
 After dinner, and till the beginning of the evening, Kitty was feeling
 a sensation akin to the sensation of a young man before a battle. Her
@@ -2435,7 +2435,7 @@ his life! And how aloof and remote from him she had become now!
 He bowed, and was meaning to retreat.
 
 
-Chapter 14
+
 
 But at that very moment the princess came in. There was a look of
 horror on her face when she saw them alone, and their disturbed faces.
@@ -2735,7 +2735,7 @@ he carried away with him of that evening was the smiling, happy face of
 Kitty answering Vronsky’s inquiry about the ball.
 
 
-Chapter 15
+
 
 At the end of the evening Kitty told her mother of her conversation
 with Levin, and in spite of all the pity she felt for Levin, she was
@@ -2837,7 +2837,7 @@ Kitty, repeated several times in her heart, “Lord, have pity; Lord,
 have pity; Lord, have pity.”
 
 
-Chapter 16
+
 
 Vronsky had never had a real home life. His mother had been in her
 youth a brilliant society woman, who had had during her married life,
@@ -2912,7 +2912,7 @@ supper, and then undressed, and as soon as his head touched the pillow,
 fell into a sound sleep.
 
 
-Chapter 17
+
 
 Next day at eleven o’clock in the morning Vronsky drove to the station
 of the Petersburg railway to meet his mother, and the first person he
@@ -3064,7 +3064,7 @@ more externally obedient and respectful his behavior, the less in his
 heart he respected and loved her.
 
 
-Chapter 18
+
 
 Vronsky followed the guard to the carriage, and at the door of the
 compartment he stopped short to make room for a lady who was getting
@@ -3326,7 +3326,7 @@ On reaching home Oblonsky helped his sister out, sighed, pressed her
 hand, and set off to his office.
 
 
-Chapter 19
+
 
 When Anna went into the room, Dolly was sitting in the little
 drawing-room with a white-headed fat little boy, already like his
@@ -3587,7 +3587,7 @@ Anna. “My dear, how glad I am you came. It has made things better, ever
 so much better.”
 
 
-Chapter 20
+
 
 The whole of that day Anna spent at home, that’s to say at the
 Oblonskys’, and received no one, though some of her acquaintances had
@@ -3748,7 +3748,7 @@ embraced and swung round all the throng of swarming children, shrieking
 with delight.
 
 
-Chapter 21
+
 
 Dolly came out of her room to the tea of the grown-up people. Stepan
 Arkadyevitch did not come out. He must have left his wife’s room by the
@@ -3857,7 +3857,7 @@ party and not coming in, but it seemed strange to all of them. Above
 all, it seemed strange and not right to Anna.
 
 
-Chapter 22
+
 
 The ball was only just beginning as Kitty and her mother walked up the
 great staircase, flooded with light, and lined with flowers and footmen
@@ -4041,7 +4041,7 @@ of the room, and seizing the first young lady he came across he began
 dancing himself.
 
 
-Chapter 23
+
 
 Vronsky and Kitty waltzed several times round the room. After the first
 waltz Kitty went to her mother, and she had hardly time to say a few
@@ -4212,7 +4212,7 @@ of her eyes and her smile set him on fire as she said it.
 Anna Arkadyevna did not stay to supper, but went home.
 
 
-Chapter 24
+
 
 “Yes, there is something in me hateful, repulsive,” thought Levin, as
 he came away from the Shtcherbatskys’, and walked in the direction of
@@ -4384,7 +4384,7 @@ And again his eyes traveled inquiringly over all of them.
 wine.... No, wait a minute.... No, it doesn’t matter.... Go along.”
 
 
-Chapter 25
+
 
 “So you see,” pursued Nikolay Levin, painfully wrinkling his forehead
 and twitching.
@@ -4628,7 +4628,7 @@ Masha promised to write to Konstantin in case of need, and to persuade
 Nikolay Levin to go and stay with his brother.
 
 
-Chapter 26
+
 
 In the morning Konstantin Levin left Moscow, and towards evening he
 reached home. On the journey in the train he talked to his neighbors
@@ -4757,7 +4757,7 @@ little conversation with the bailiff and Semyon the contractor, he went
 back to the house and straight upstairs to the drawing-room.
 
 
-Chapter 27
+
 
 The house was big and old-fashioned, and Levin, though he lived alone,
 had the whole house heated and used. He knew that this was stupid, he
@@ -4852,7 +4852,7 @@ her movements attentively.
 Nothing’s amiss.... All’s well.”
 
 
-Chapter 28
+
 
 After the ball, early next morning, Anna Arkadyevna sent her husband a
 telegram that she was leaving Moscow the same day.
@@ -4990,7 +4990,7 @@ and shall always love you as my dearest friend!”
 “You understood me, and you understand. Good-bye, my darling!”
 
 
-Chapter 29
+
 
 “Come, it’s all over, and thank God!” was the first thought that came
 to Anna Arkadyevna, when she had said good-bye for the last time to her
@@ -5102,7 +5102,7 @@ of the frozen, snowy air, and standing near the carriage looked about
 the platform and the lighted station.
 
 
-Chapter 30
+
 
 The raging tempest rushed whistling between the wheels of the
 carriages, about the scaffolding, and round the corner of the station.
@@ -5211,7 +5211,7 @@ what he said.
 well....”
 
 
-Chapter 31
+
 
 Vronsky had not even tried to sleep all that night. He sat in his
 armchair, looking straight before him or scanning the people who got in
@@ -5354,7 +5354,7 @@ believe how I’ve missed....” And with a long pressure of her hand and a
 meaning smile, he put her in her carriage.
 
 
-Chapter 32
+
 
 The first person to meet Anna at home was her son. He dashed down the
 stairs to her, in spite of the governess’s call, and with desperate joy
@@ -5451,7 +5451,7 @@ himself by jealousy. “So then there’s no reason to speak of it? And
 indeed, thank God, there’s nothing to speak of,” she told herself.
 
 
-Chapter 33
+
 
 Alexey Alexandrovitch came back from the meeting of the ministers at
 four o’clock, but as often happened, he had not time to come in to her.
@@ -5601,7 +5601,7 @@ eyes and her smile; on the contrary, now the fire seemed quenched in
 her, hidden somewhere far away.
 
 
-Chapter 34
+
 
 When Vronsky went to Moscow from Petersburg, he had left his large set
 of rooms in Morskaia to his friend and favorite comrade Petritsky.
@@ -5774,10 +5774,10 @@ home not meaning to return till late at night.
 
 
 
-PART TWO
 
 
-Chapter 1
+
+
 
 At the end of the winter, in the Shtcherbatskys’ house, a consultation
 was being held, which was to pronounce on the state of Kitty’s health
@@ -5939,7 +5939,7 @@ go!” she said, and trying to appear interested in the proposed tour,
 she began talking of the preparations for the journey.
 
 
-Chapter 2
+
 
 Soon after the doctor, Dolly had arrived. She knew that there was to be
 a consultation that day, and though she was only just up after her
@@ -6107,7 +6107,7 @@ way, and mothers haven’t a word to say in anything, and then....”
 “Well, do. Did I tell you not to?” said her mother.
 
 
-Chapter 3
+
 
 When she went into Kitty’s little room, a pretty, pink little room,
 full of knick-knacks in _vieux saxe,_ as fresh, and pink, and white,
@@ -6260,7 +6260,7 @@ successfully through it, but Kitty was no better in health, and in Lent
 the Shtcherbatskys went abroad.
 
 
-Chapter 4
+
 
 The highest Petersburg society is essentially one: in it everyone knows
 everyone else, everyone even visits everyone else. But this great set
@@ -6402,7 +6402,7 @@ someone. “Very well, then, sit down, and tell me what it’s all about.”
 And she sat down again.
 
 
-Chapter 5
+
 
 “This is rather indiscreet, but it’s so good it’s an awful temptation
 to tell the story,” said Vronsky, looking at her with his laughing
@@ -6551,7 +6551,7 @@ new French actress. “However often you see her, every day she’s
 different. It’s only the French who can do that.”
 
 
-Chapter 6
+
 
 Princess Betsy drove home from the theater, without waiting for the end
 of the last act. She had only just time to go into her dressing-room,
@@ -6785,7 +6785,7 @@ her; but the ambassador’s wife, with playful horror, cut him short.
 thing, like the opera,” chimed in Princess Myakaya.
 
 
-Chapter 7
+
 
 Steps were heard at the door, and Princess Betsy, knowing it was Madame
 Karenina, glanced at Vronsky. He was looking towards the door, and his
@@ -7048,7 +7048,7 @@ that he had got nearer to the attainment of his aims that evening than
 during the last two months.
 
 
-Chapter 8
+
 
 Alexey Alexandrovitch had seen nothing striking or improper in the fact
 that his wife was sitting with Vronsky at a table apart, in eager
@@ -7196,7 +7196,7 @@ she was close, and though he was satisfied with his speech, he felt
 frightened of the explanation confronting him....
 
 
-Chapter 9
+
 
 Anna came in with hanging head, playing with the tassels of her hood.
 Her face was brilliant and glowing; but this glow was not one of
@@ -7361,7 +7361,7 @@ lay, not moving, with open eyes, whose brilliance she almost fancied
 she could herself see in the darkness.
 
 
-Chapter 10
+
 
 From that time a new life began for Alexey Alexandrovitch and for his
 wife. Nothing special happened. Anna went out into society, as she had
@@ -7385,7 +7385,7 @@ anyone who should say what he was saying. And in that tone it was
 impossible to say what needed to be said to her.
 
 
-Chapter 11
+
 
 That which for Vronsky had been almost a whole year the one absorbing
 desire of his life, replacing all his old desires; that which for Anna
@@ -7468,7 +7468,7 @@ of them were happy and contented. But this dream weighed on her like a
 nightmare, and she awoke from it in terror.
 
 
-Chapter 12
+
 
 In the early days after his return from Moscow, whenever Levin
 shuddered and grew red, remembering the disgrace of his rejection, he
@@ -7574,7 +7574,7 @@ yard, where the peasants were repairing ploughs and harrows. The real
 spring had come.
 
 
-Chapter 13
+
 
 Levin put on his big boots, and, for the first time, a cloth jacket,
 instead of his fur cloak, and went out to look after his farm, stepping
@@ -7875,7 +7875,7 @@ Levin went home at a trot, so as to have time to eat his dinner and get
 his gun ready for the evening.
 
 
-Chapter 14
+
 
 As he rode up to the house in the happiest frame of mind, Levin heard
 the bell ring at the side of the principal entrance of the house.
@@ -8072,7 +8072,7 @@ could not in the least enter into the feelings of his friend and
 understand his sentiments and the charm of studying such women.
 
 
-Chapter 15
+
 
 The place fixed on for the stand-shooting was not far above a stream in
 a little aspen copse. On reaching the copse, Levin got out of the trap
@@ -8229,7 +8229,7 @@ bird from Laska’s mouth and packing it into the almost full game bag.
 “I’ve got it, Stiva!” he shouted.
 
 
-Chapter 16
+
 
 On the way home Levin asked all details of Kitty’s illness and the
 Shtcherbatskys’ plans, and though he would have been ashamed to admit
@@ -8429,7 +8429,7 @@ Ignatitch?”
 “Well, well....”
 
 
-Chapter 17
+
 
 Stepan Arkadyevitch went upstairs with his pocket bulging with notes,
 which the merchant had paid him for three months in advance. The
@@ -8621,7 +8621,7 @@ straight from shooting to the station.”
 “Capital.”
 
 
-Chapter 18
+
 
 Although all Vronsky’s inner life was absorbed in his passion, his
 external life unalterably and inevitably followed along the old
@@ -8697,7 +8697,7 @@ to recruit and rest himself from the violent emotions that agitated
 him.
 
 
-Chapter 19
+
 
 On the day of the races at Krasnoe Selo, Vronsky had come earlier than
 usual to eat beefsteak in the common messroom of the regiment. He had
@@ -8850,7 +8850,7 @@ home, so I’ll go with you.”
 And he walked out with Vronsky.
 
 
-Chapter 20
+
 
 Vronsky was staying in a roomy, clean, Finnish hut, divided into two by
 a partition. Petritsky lived with him in camp too. Petritsky was asleep
@@ -8993,7 +8993,7 @@ them through, but he thought better of it, and put off reading them so
 as not to distract his attention before looking at the mare. “Later!”
 
 
-Chapter 21
+
 
 The temporary stable, a wooden shed, had been put up close to the race
 course, and there his mare was to have been taken the previous day. He
@@ -9205,7 +9205,7 @@ better. “Throw up everything, she and I, and hide ourselves somewhere
 alone with our love,” he said to himself.
 
 
-Chapter 22
+
 
 The rain did not last long, and by the time Vronsky arrived, his
 shaft-horse trotting at full speed and dragging the trace-horses
@@ -9420,7 +9420,7 @@ over her face; her cheeks, her brow, her neck crimsoned, and tears of
 shame came into her eyes. “But we won’t talk of him.”
 
 
-Chapter 23
+
 
 Vronsky had several times already, though not so resolutely as now,
 tried to bring her to consider their position, and every time he had
@@ -9547,7 +9547,7 @@ for the races. Betsy promised to fetch me.”
 Vronsky, looking at his watch, went away hurriedly.
 
 
-Chapter 24
+
 
 When Vronsky looked at his watch on the Karenins’ balcony, he was so
 greatly agitated and lost in his thoughts that he saw the figures on
@@ -9790,7 +9790,7 @@ passed into a jolting trot, bumping her rider up and down. Cord, too,
 scowled, and followed Vronsky almost at a trot.
 
 
-Chapter 25
+
 
 There were seventeen officers in all riding in this race. The race
 course was a large three-mile ring of the form of an ellipse in front
@@ -9985,7 +9985,7 @@ race remained for long in his heart, the cruelest and bitterest memory
 of his life.
 
 
-Chapter 26
+
 
 The external relations of Alexey Alexandrovitch and his wife had
 remained unchanged. The sole difference lay in the fact that he was
@@ -10166,7 +10166,7 @@ always tried nowadays to secure the presence of a third person in his
 interviews with his wife.
 
 
-Chapter 27
+
 
 Anna was upstairs, standing before the looking-glass, and, with
 Annushka’s assistance, pinning the last ribbon on her gown when she
@@ -10289,7 +10289,7 @@ she no longer saw him, she was aware of the spot on her hand that his
 lips had touched, and she shuddered with repulsion.
 
 
-Chapter 28
+
 
 When Alexey Alexandrovitch reached the race-course, Anna was already
 sitting in the pavilion beside Betsy, in that pavilion where all the
@@ -10466,7 +10466,7 @@ everyone was in a state of agitation, which was intensified by the fact
 that the Tsar was displeased.
 
 
-Chapter 29
+
 
 Everyone was loudly expressing disapprobation, everyone was repeating a
 phrase someone had uttered—“The lions and gladiators will be the next
@@ -10652,7 +10652,7 @@ and I do love this fantastic light.... My husband! Oh! yes.... Well,
 thank God! everything’s over with him.”
 
 
-Chapter 30
+
 
 In the little German watering-place to which the Shtcherbatskys had
 betaken themselves, as in all places indeed where people are gathered
@@ -10776,7 +10776,7 @@ pursued her, expressed a feeling of hatred and contempt, and she tried
 to avoid meeting him.
 
 
-Chapter 31
+
 
 It was a wet day; it had been raining all the morning, and the
 invalids, with their parasols, had flocked into the arcades.
@@ -10918,7 +10918,7 @@ of an invalid, ran up to her.
 And Varenka went after them.
 
 
-Chapter 32
+
 
 The particulars which the princess had learned in regard to Varenka’s
 past and her relations with Madame Stahl were as follows:
@@ -11134,7 +11134,7 @@ her her secret of what was important and what gave her the calm and
 dignity so much to be envied.
 
 
-Chapter 33
+
 
 Kitty made the acquaintance of Madame Stahl too, and this acquaintance,
 together with her friendship with Varenka, did not merely exercise a
@@ -11303,7 +11303,7 @@ directly after.
 This doubt poisoned the charm of her new life.
 
 
-Chapter 34
+
 
 Before the end of the course of drinking the waters, Prince
 Shtcherbatsky, who had gone on from Carlsbad to Baden and Kissingen to
@@ -11561,7 +11561,7 @@ arranging her rug to her liking. And by no effort of the imagination
 could Kitty bring back the former Madame Stahl.
 
 
-Chapter 35
+
 
 The prince communicated his good humor to his own family and his
 friends, and even to the German landlord in whose rooms the
@@ -11809,9 +11809,9 @@ serene. Her Moscow troubles had become a memory to her.
 
 
 
-PART THREE
 
-Chapter 1
+
+
 
 
 Sergey Ivanovitch Koznishev wanted a rest from mental work, and instead
@@ -11943,7 +11943,7 @@ Ivanovitch would say to him.
 would answer, and he would run off to the fields.
 
 
-Chapter 2
+
 
 Early in June it happened that Agafea Mihalovna, the old nurse and
 housekeeper, in carrying to the cellar a jar of mushrooms she had just
@@ -12057,7 +12057,7 @@ we quiver and we quiver.’”
 “I don’t know the riddle,” answered Levin wearily.
 
 
-Chapter 3
+
 
 “Do you know, I’ve been thinking about you,” said Sergey Ivanovitch.
 “It’s beyond everything what’s being done in the district, according to
@@ -12324,7 +12324,7 @@ Sergey Ivanovitch wound up the last line, untied the horse, and they
 drove off.
 
 
-Chapter 4
+
 
 The personal matter that absorbed Levin during his conversation with
 his brother was this. Once in a previous year he had gone to look at
@@ -12546,7 +12546,7 @@ again to the mowing before Sergey Ivanovitch had had time to dress and
 come down to the dining-room.
 
 
-Chapter 5
+
 
 After lunch Levin was not in the same place in the string of mowers as
 before, but stood between the old man who had accosted him jocosely,
@@ -12746,7 +12746,7 @@ what he had to do. He felt as though some external force were moving
 him.
 
 
-Chapter 6
+
 
 Mashkin Upland was mown, the last row finished, the peasants had put on
 their coats and were gaily trudging home. Levin got on his horse and,
@@ -12903,7 +12903,7 @@ on, I’ll be back.”
 And he ran downstairs, clattering with his heels like a spring-rattle.
 
 
-Chapter 7
+
 
 Stephan Arkadyevitch had gone to Petersburg to perform the most natural
 and essential official duty—so familiar to everyone in the government
@@ -13043,7 +13043,7 @@ them in different ways, but a set of children such as is not often to
 be met with, and she was happy in them, and proud of them.
 
 
-Chapter 8
+
 
 Towards the end of May, when everything had been more or less
 satisfactorily arranged, she received her husband’s answer to her
@@ -13234,7 +13234,7 @@ from the remark, “My, she keeps putting on and putting on, and she’ll
 never have done!” she said, and they all went off into roars.
 
 
-Chapter 9
+
 
 On the drive home, as Darya Alexandrovna, with all her children round
 her, their heads still wet from their bath, and a kerchief tied over
@@ -13357,7 +13357,7 @@ feeding on meal and on grass were doubtful and obscure. And, what was
 most important, she wanted to talk about Kitty.
 
 
-Chapter 10
+
 
 “Kitty writes to me that there’s nothing she longs for so much as quiet
 and solitude,” Dolly said after the silence that had followed.
@@ -13558,7 +13558,7 @@ they’ll be delightful. No, my children won’t be like that.”
 He said good-bye and drove away, and she did not try to keep him.
 
 
-Chapter 11
+
 
 In the middle of July the elder of the village on Levin’s sister’s
 estate, about fifteen miles from Pokrovskoe, came to Levin to report on
@@ -13676,7 +13676,7 @@ laughed aloud. In the expressions of both faces was to be seen
 vigorous, young, freshly awakened love.
 
 
-Chapter 12
+
 
 The load was tied on. Ivan jumped down and took the quiet, sleek horse
 by the bridle. The young wife flung the rake up on the load, and with a
@@ -13825,7 +13825,7 @@ same remoteness, it met his questioning gaze.
 toil may be, I cannot go back to it. I love _her_.”
 
 
-Chapter 13
+
 
 None but those who were most intimate with Alexey Alexandrovitch knew
 that, while on the surface the coldest and most reasonable of men, he
@@ -14057,7 +14057,7 @@ continuity of my life. She is bound to be unhappy, but I am not to
 blame, and so I cannot be unhappy.”
 
 
-Chapter 14
+
 
 As he neared Petersburg, Alexey Alexandrovitch not only adhered
 entirely to his decision, but was even composing in his head the letter
@@ -14226,7 +14226,7 @@ eleven o’clock, and recollecting as he lay in bed the incident with his
 wife, he saw it now in by no means such a gloomy light.
 
 
-Chapter 15
+
 
 Though Anna had obstinately and with exasperation contradicted Vronsky
 when he told her their position was impossible, at the bottom of her
@@ -14431,7 +14431,7 @@ upstairs, told the governess and the servants that she was going that
 day to Moscow, and at once set to work to pack up her things.
 
 
-Chapter 16
+
 
 All the rooms of the summer villa were full of porters, gardeners, and
 footmen going to and fro carrying out things. Cupboards and chests were
@@ -14567,7 +14567,7 @@ to the princess’s.”
 “Which dress am I to get ready?”
 
 
-Chapter 17
+
 
 The croquet party to which the Princess Tverskaya had invited Anna was
 to consist of two ladies and their adorers. These two ladies were the
@@ -14776,7 +14776,7 @@ I think I’m worse.”
 are.”
 
 
-Chapter 18
+
 
 They heard the sound of steps and a man’s voice, then a woman’s voice
 and laughter, and immediately thereafter there walked in the expected
@@ -14948,7 +14948,7 @@ remembering that gesture—terrible even in memory—when she had clutched
 her hair in both hands—she said good-bye and went away.
 
 
-Chapter 19
+
 
 In spite of Vronsky’s apparently frivolous life in society, he was a
 man who hated irregularity. In early youth in the Corps of Pages, he
@@ -15061,7 +15061,7 @@ read them again, burned them, and remembering their conversation on the
 previous day, he sank into meditation.
 
 
-Chapter 20
+
 
 Vronsky’s life was particularly happy in that he had a code of
 principles, which defined with unfailing certitude what he ought and
@@ -15176,7 +15176,7 @@ clear, just as after former days of reckoning. He shaved, took a cold
 bath, dressed and went out.
 
 
-Chapter 21
+
 
 “We’ve come to fetch you. Your _lessive_ lasted a good time today,”
 said Petritsky. “Well, is it over?”
@@ -15459,7 +15459,7 @@ Vronsky opened the letter, and flushed crimson.
 “We’ll talk about it later on; I’ll look you up in Petersburg.”
 
 
-Chapter 22
+
 
 It was six o’clock already, and so, in order to be there quickly, and
 at the same time not to drive with his own horses, known to everyone,
@@ -15678,7 +15678,7 @@ the little gate of the Vrede garden, drove up. Anna said good-bye to
 Vronsky, and drove home.
 
 
-Chapter 23
+
 
 On Monday there was the usual sitting of the Commission of the 2nd of
 June. Alexey Alexandrovitch walked into the hall where the sitting was
@@ -15827,7 +15827,7 @@ home.” He got up and moved towards the door.
 Anna got up too. Bowing in silence, he let her pass before him.
 
 
-Chapter 24
+
 
 The night spent by Levin on the haycock did not pass without result for
 him. The way in which he had been managing his land revolted him and
@@ -15957,7 +15957,7 @@ especially on a shooting expedition, which always in trouble served as
 the best consolation.
 
 
-Chapter 25
+
 
 In the Surovsky district there was no railway nor service of post
 horses, and Levin drove there with his own horses in his big,
@@ -16094,7 +16094,7 @@ Sviazhsky’s he kept recalling this peasant farm as though there were
 something in this impression that demanded his special attention.
 
 
-Chapter 26
+
 
 Sviazhsky was the marshal of his district. He was five years older than
 Levin, and had long been married. His sister-in-law, a young girl Levin
@@ -16276,7 +16276,7 @@ resolute gestures of his large, red, sunburnt hands, with an old
 betrothal ring on the little finger.
 
 
-Chapter 27
+
 
 “If I’d only the heart to throw up what’s been set going ... such a lot
 of trouble wasted ... I’d turn my back on the whole business, sell up,
@@ -16552,7 +16552,7 @@ his inconvenient habit of peeping into what was beyond the outer
 chambers of his mind, went to see his guests out.
 
 
-Chapter 28
+
 
 Levin was insufferably bored that evening with the ladies; he was
 stirred as he had never been before by the idea that the
@@ -16752,7 +16752,7 @@ sowing might be undertaken on a new basis. He had made up his mind to
 revolutionize his whole system.
 
 
-Chapter 29
+
 
 The carrying out of Levin’s plan presented many difficulties; but he
 struggled on, doing his utmost, and attained a result which, though not
@@ -16921,7 +16921,7 @@ wanted to prove this theoretically in his book and practically on his
 land.
 
 
-Chapter 30
+
 
 At the end of September the timber had been carted for building the
 cattleyard on the land that had been allotted to the association of
@@ -17073,7 +17073,7 @@ His work was not going well now, and he was glad of a visitor, whoever
 it might be.
 
 
-Chapter 31
+
 
 Running halfway down the staircase, Levin caught a sound he knew, a
 familiar cough in the hall. But he heard it indistinctly through the
@@ -17236,7 +17236,7 @@ can I say to him? What do I know about it? I’d even forgotten that it
 was at all.”
 
 
-Chapter 32
+
 
 Levin had long before made the observation that when one is
 uncomfortable with people from their being excessively amenable and
@@ -17380,9 +17380,9 @@ strength.
 
 
 
-PART FOUR
 
-Chapter 1
+
+
 
 
 The Karenins, husband and wife, continued living in the same house, met
@@ -17479,7 +17479,7 @@ return from a bear hunt, at which they had had a display of Russian
 prowess kept up all night.
 
 
-Chapter 2
+
 
 When he got home, Vronsky found there a note from Anna. She wrote, “I
 am ill and unhappy. I cannot come out, but I cannot go on longer
@@ -17564,7 +17564,7 @@ of him in her imagination (incomparably superior, impossible in
 reality) fit with him as he really was.
 
 
-Chapter 3
+
 
 “You met him?” she asked, when they had sat down at the table in the
 lamplight. “You’re punished, you see, for being late.”
@@ -17820,7 +17820,7 @@ of the change. She was listening to the stirring of the new life within
 her.
 
 
-Chapter 4
+
 
 Alexey Alexandrovitch, after meeting Vronsky on his own steps, drove,
 as he had intended, to the Italian opera. He sat through two acts
@@ -17977,7 +17977,7 @@ Alexey Alexandrovitch flew into a rage, and, snatching his hand from
 her, he went out of the room without a word.
 
 
-Chapter 5
+
 
 The waiting-room of the celebrated Petersburg lawyer was full when
 Alexey Alexandrovitch entered it. Three ladies—an old lady, a young
@@ -18206,7 +18206,7 @@ next winter he must have the furniture covered with velvet, like
 Sigonin’s.
 
 
-Chapter 6
+
 
 Alexey Alexandrovitch had gained a brilliant victory at the sitting of
 the Commission of the 17th of August, but in the sequel this victory
@@ -18368,7 +18368,7 @@ He turned round.
 genially to an acquaintance who drove by.
 
 
-Chapter 7
+
 
 The next day was Sunday. Stepan Arkadyevitch went to the Grand Theater
 to a rehearsal of the ballet, and gave Masha Tchibisova, a pretty
@@ -18549,7 +18549,7 @@ Stepan Arkadyevitch lunched with him and stayed on, so that it was four
 o’clock before he got to Alexey Alexandrovitch.
 
 
-Chapter 8
+
 
 Alexey Alexandrovitch, on coming back from church service, had spent
 the whole morning indoors. He had two pieces of business before him
@@ -18741,7 +18741,7 @@ chuckled, and went out.
 turning at the door.
 
 
-Chapter 9
+
 
 It was past five, and several guests had already arrived, before the
 host himself got home. He went in together with Sergey Ivanovitch
@@ -19007,7 +19007,7 @@ from the table, without stopping speaking, and even Alexey
 Alexandrovitch thawed.
 
 
-Chapter 10
+
 
 Pestsov liked thrashing an argument out to the end, and was not
 satisfied with Sergey Ivanovitch’s words, especially as he felt the
@@ -19198,7 +19198,7 @@ Turovtsin, who in his mirth dropped his asparagus with the thick end in
 the sauce.
 
 
-Chapter 11
+
 
 Everyone took part in the conversation except Kitty and Levin. At
 first, when they were talking of the influence that one people has on
@@ -19273,7 +19273,7 @@ had not realized all this man’s goodness before.
 said gaily, genuinely expressing what he felt at the moment.
 
 
-Chapter 12
+
 
 Connected with the conversation that had sprung up on the rights of
 women there were certain questions as to the inequality of rights in
@@ -19478,7 +19478,7 @@ own grief!” And regaining his self-possession, Alexey Alexandrovitch
 quietly took leave and went away.
 
 
-Chapter 13
+
 
 When they rose from table, Levin would have liked to follow Kitty into
 the drawing-room; but he was afraid she might dislike this, as too
@@ -19649,7 +19649,7 @@ she loved him, and that she would tell her father and mother that he
 would come tomorrow morning.
 
 
-Chapter 14
+
 
 When Kitty had gone and Levin was left alone, he felt such uneasiness
 without her, and such an impatient longing to get as quickly, as
@@ -19832,7 +19832,7 @@ that he was beginning to get frozen. He closed the pane, washed,
 dressed, and went out into the street.
 
 
-Chapter 15
+
 
 The streets were still empty. Levin went to the house of the
 Shtcherbatskys. The visitors’ doors were closed and everything was
@@ -19981,7 +19981,7 @@ so little known to him, when he saw how slowly and tenderly Kitty
 kissed his muscular hand.
 
 
-Chapter 16
+
 
 The princess sat in her armchair, silent and smiling; the prince sat
 down beside her. Kitty stood by her father’s chair, still holding his
@@ -20142,7 +20142,7 @@ bowed down lower than ever before her, and prized more highly than ever
 his undeserved happiness.
 
 
-Chapter 17
+
 
 Unconsciously going over in his memory the conversations that had taken
 place during and after dinner, Alexey Alexandrovitch returned to his
@@ -20450,7 +20450,7 @@ he felt that it was something higher and even unattainable for him with
 his view of life.
 
 
-Chapter 18
+
 
 After the conversation with Alexey Alexandrovitch, Vronsky went out
 onto the steps of the Karenins’ house and stood still, with difficulty
@@ -20602,7 +20602,7 @@ whom she had sent for in all directions, and who all appeared at the
 same moment, she got the wounded man to bed, and remained to nurse him.
 
 
-Chapter 19
+
 
 The mistake made by Alexey Alexandrovitch in that, when preparing for
 seeing his wife, he had overlooked the possibility that her repentance
@@ -20858,7 +20858,7 @@ in his position. And he saw this by the suppressed, malicious, and
 ironical smile with which Betsy glanced at him after this phrase.
 
 
-Chapter 20
+
 
 Alexey Alexandrovitch took leave of Betsy in the drawing-room, and went
 to his wife. She was lying down, but hearing his steps she sat up
@@ -20944,7 +20944,7 @@ him now so natural and right, but would be forced to do what was wrong,
 though it seemed the proper thing to them.
 
 
-Chapter 21
+
 
 Before Betsy had time to walk out of the drawing-room, she was met in
 the doorway by Stepan Arkadyevitch, who had just come from Yeliseev’s,
@@ -21095,7 +21095,7 @@ going to him.”
 Anna looked at him with dreamy, shining eyes, and said nothing.
 
 
-Chapter 22
+
 
 Stepan Arkadyevitch, with the same somewhat solemn expression with
 which he used to take his presidential chair at his board, walked into
@@ -21314,7 +21314,7 @@ ways. “But I’ll work it out better than that,” he said to himself with
 a smile.
 
 
-Chapter 23
+
 
 Vronsky’s wound had been a dangerous one, though it did not touch the
 heart, and for several days he had lain between life and death. The
@@ -21463,9 +21463,9 @@ obtained a divorce, but having absolutely declined all idea of one.
 
 
 
-PART FIVE
 
-Chapter 1
+
+
 
 
 Princess Shtcherbatskaya considered that it was out of the question for
@@ -21729,7 +21729,7 @@ and done what was required of him, whines and wags its tail, and jumps
 up to the table and the windows in its delight.
 
 
-Chapter 2
+
 
 On the day of the wedding, according to the Russian custom (the
 princess and Darya Alexandrovna insisted on strictly keeping all the
@@ -21968,7 +21968,7 @@ Stepan Arkadyevitch.
 him to dress.
 
 
-Chapter 3
+
 
 A crowd of people, principally women, was thronging round the church
 lighted up for the wedding. Those who had not succeeded in getting into
@@ -22086,7 +22086,7 @@ smile, hurrying with more deliberation after him. “It will come round,
 it will come round ... I tell you.”
 
 
-Chapter 4
+
 
 “They’ve come!” “Here he is!” “Which one?” “Rather young, eh?” “Why, my
 dear soul, she looks more dead than alive!” were the comments in the
@@ -22321,7 +22321,7 @@ rose higher and higher, tears that would not be checked came into his
 eyes.
 
 
-Chapter 5
+
 
 In the church there was all Moscow, all the friends and relations; and
 during the ceremony of plighting troth, in the brilliantly lighted
@@ -22450,7 +22450,7 @@ Such were the comments in the crowd of gazing women who had succeeded
 in slipping in at the church doors.
 
 
-Chapter 6
+
 
 When the ceremony of plighting troth was over, the beadle spread before
 the lectern in the middle of the church a piece of pink silken stuff,
@@ -22526,7 +22526,7 @@ felt that they were one.
 After supper, the same night, the young people left for the country.
 
 
-Chapter 7
+
 
 Vronsky and Anna had been traveling for three months together in
 Europe. They had visited Venice, Rome, and Naples, and had just arrived
@@ -22747,7 +22747,7 @@ said Vronsky, reddening.
 of course. But good judges have said the same.”
 
 
-Chapter 8
+
 
 Anna, in that first period of her emancipation and rapid return to
 health, felt herself unpardonably happy and full of the joy of life.
@@ -22866,7 +22866,7 @@ Italian costume, and the portrait seemed to him, and to everyone who
 saw it, extremely successful.
 
 
-Chapter 9
+
 
 The old neglected palazzo, with its lofty carved ceilings and frescoes
 on the walls, with its floors of mosaic, with its heavy yellow stuff
@@ -22994,7 +22994,7 @@ moment he was in his lodging only a couple of steps off, they sent her
 to him with their cards, asking permission to see his picture.
 
 
-Chapter 10
+
 
 The artist Mihailov was, as always, at work when the cards of Count
 Vronsky and Golenishtchev were brought to him. In the morning he had
@@ -23096,7 +23096,7 @@ made an unpleasant impression.
 the passage he took a key out of his pocket and opened the door.
 
 
-Chapter 11
+
 
 On entering the studio, Mihailov once more scanned his visitors and
 noted down in his imagination Vronsky’s expression too, and especially
@@ -23300,7 +23300,7 @@ Mihailov was greatly perturbed, but he could say nothing in defense of
 his own idea.
 
 
-Chapter 12
+
 
 Anna and Vronsky had long been exchanging glances, regretting their
 friend’s flow of cleverness. At last Vronsky, without waiting for the
@@ -23382,7 +23382,7 @@ even comprehend how good it is. Yes, I mustn’t let it slip; I must buy
 it,” said Vronsky.
 
 
-Chapter 13
+
 
 Mihailov sold Vronsky his picture, and agreed to paint a portrait of
 Anna. On the day fixed he came and began the work.
@@ -23490,7 +23490,7 @@ while Anna meant to see her son. The summer they intended to spend on
 Vronsky’s great family estate.
 
 
-Chapter 14
+
 
 Levin had been married three months. He was happy, but not at all in
 the way he had expected to be. At every step he found his former dreams
@@ -23651,7 +23651,7 @@ return from Moscow, where they had been staying for a month, that their
 life began to go more smoothly.
 
 
-Chapter 15
+
 
 They had just come back from Moscow, and were glad to be alone. He was
 sitting at the writing-table in his study, writing. She, wearing the
@@ -23810,7 +23810,7 @@ reproach herself for the moments of carelessness and happiness in her
 love that she enjoyed now while gaily building her nest for the future.
 
 
-Chapter 16
+
 
 When Levin went upstairs, his wife was sitting near the new silver
 samovar behind the new tea service, and, having settled old Agafea
@@ -23952,7 +23952,7 @@ The mere idea of his wife, his Kitty, being in the same room with a
 common wench, set him shuddering with horror and loathing.
 
 
-Chapter 17
+
 
 The hotel of the provincial town where Nikolay Levin was lying ill was
 one of those provincial hotels which are constructed on the newest
@@ -24148,7 +24148,7 @@ about another room,” she said to her husband, “so that we might be
 nearer.”
 
 
-Chapter 18
+
 
 Levin could not look calmly at his brother; he could not himself be
 natural and calm in his presence. When he went in to the sick man, his
@@ -24279,7 +24279,7 @@ it. Levin, shaking with sobs and unable to articulate a word, went out
 of the room.
 
 
-Chapter 19
+
 
 “Thou hast hid these things from the wise and prudent, and hast
 revealed them unto babes.” So Levin thought about his wife as he talked
@@ -24417,7 +24417,7 @@ people of whom they say they’re not for this world.”
 glancing at her tiny watch.
 
 
-Chapter 20
+
 
 The next day the sick man received the sacrament and extreme unction.
 During the ceremony Nikolay Levin prayed fervently. His great eyes,
@@ -24725,7 +24725,7 @@ The doctor confirmed his suppositions in regard to Kitty. Her
 indisposition was a symptom that she was with child.
 
 
-Chapter 21
+
 
 From the moment when Alexey Alexandrovitch understood from his
 interviews with Betsy and with Stepan Arkadyevitch that all that was
@@ -24868,7 +24868,7 @@ Alexey Alexandrovitch never thought. All women, simply as women, were
 terrible and distasteful to him.
 
 
-Chapter 22
+
 
 Alexey Alexandrovitch had forgotten the Countess Lidia Ivanovna, but
 she had not forgotten him. At the bitterest moment of his lonely
@@ -25036,7 +25036,7 @@ from which, looked down upon by all, he could look down on others, that
 he clung, as to his one salvation, to his delusion of salvation.
 
 
-Chapter 23
+
 
 The Countess Lidia Ivanovna had, as a very young and sentimental girl,
 been married to a wealthy man of high rank, an extremely good-natured,
@@ -25151,7 +25151,7 @@ gave opportunity for a refinement and air of mystery not afforded by
 their personal interviews.
 
 
-Chapter 24
+
 
 The levee was drawing to a close. People met as they were going away,
 and gossiped of the latest news, of the newly bestowed honors and the
@@ -25348,7 +25348,7 @@ Countess Lidia Ivanovna looked at him ecstatically, and tears of
 rapture at the greatness of his soul came into her eyes.
 
 
-Chapter 25
+
 
 When Alexey Alexandrovitch came into the Countess Lidia Ivanovna’s snug
 little boudoir, decorated with old china and hung with portraits, the
@@ -25477,7 +25477,7 @@ more in Alexey Alexandrovitch’s soul the peace and the elevation by
 virtue of which he could forget what he did not want to remember.
 
 
-Chapter 26
+
 
 “Well, Kapitonitch?” said Seryozha, coming back rosy and good-humored
 from his walk the day before his birthday, and giving his overcoat to
@@ -25631,7 +25631,7 @@ most useless stuff? Why does he keep me off; why doesn’t he love me?”
 he asked himself mournfully, and could not think of an answer.
 
 
-Chapter 27
+
 
 After the lesson with the grammar teacher came his father’s lesson.
 While waiting for his father, Seryozha sat at the table playing with a
@@ -25809,7 +25809,7 @@ windmills, a knife, everything began to be mixed up, and he fell
 asleep.
 
 
-Chapter 28
+
 
 On arriving in Petersburg, Vronsky and Anna stayed at one of the best
 hotels; Vronsky apart in a lower story, Anna above with her child, its
@@ -25954,7 +25954,7 @@ notice the humiliations which poisoned his existence, and for her, with
 her delicate intuition, must have been still more unbearable.
 
 
-Chapter 29
+
 
 One of Anna’s objects in coming back to Russia had been to see her son.
 From the day she left Italy the thought of it had never ceased to
@@ -26168,7 +26168,7 @@ hand that was stroking his hair, he pressed the open palm to his mouth
 and kissed it.
 
 
-Chapter 30
+
 
 Meanwhile Vassily Lukitch had not at first understood who this lady
 was, and had learned from their conversation that it was no other
@@ -26307,7 +26307,7 @@ toys she had chosen the day before in a toy shop with such love and
 sorrow.
 
 
-Chapter 31
+
 
 As intensely as Anna had longed to see her son, and long as she had
 been thinking of it and preparing herself for it, she had not in the
@@ -26464,7 +26464,7 @@ here is to me too,” he said, and he drew away his hand.
 away from him.
 
 
-Chapter 32
+
 
 When Vronsky returned home, Anna was not yet home. Soon after he had
 left, some lady, so they told him, had come to see her, and she had
@@ -26585,7 +26585,7 @@ answered with irritation:
 Varvara is no worse than others. Oh, here she is!”
 
 
-Chapter 33
+
 
 Vronsky for the first time experienced a feeling of anger against Anna,
 almost a hatred for her willfully refusing to understand her own
@@ -26910,9 +26910,9 @@ country.
 
 
 
-PART SIX
 
-Chapter 1
+
+
 
 
 Darya Alexandrovna spent the summer with her children at Pokrovskoe, at
@@ -27032,7 +27032,7 @@ said Levin; “and where will you be?”
 “On the terrace.”
 
 
-Chapter 2
+
 
 On the terrace were assembled all the ladies of the party. They always
 liked sitting there after dinner, and that day they had work to do
@@ -27290,7 +27290,7 @@ the jam, and moisten it with a little rum, and without even ice, it
 will never go mildewy.”
 
 
-Chapter 3
+
 
 Kitty was particularly glad of a chance of being alone with her
 husband, for she had noticed the shade of mortification that had passed
@@ -27468,7 +27468,7 @@ But it was not worth while to get in, they were quite near the place,
 and all walked on together.
 
 
-Chapter 4
+
 
 Varenka, with her white kerchief on her black hair, surrounded by the
 children, gaily and good-humoredly looking after them, and at the same
@@ -27567,7 +27567,7 @@ mushroom, rose with a supple movement and looked round. Flinging away
 the cigar, Sergey Ivanovitch advanced with resolute steps towards her.
 
 
-Chapter 5
+
 
 “Varvara Andreevna, when I was very young, I set before myself the
 ideal of the woman I loved and should be happy to call my wife. I have
@@ -27688,7 +27688,7 @@ priest’s hand.”
 “Oh, they didn’t see.”
 
 
-Chapter 6
+
 
 During the time of the children’s tea the grown-up people sat in the
 balcony and talked as though nothing had happened, though they all,
@@ -27893,7 +27893,7 @@ work on the estate had seemed to him so important as at that moment.
 matters, they won’t wait, and there’s no living without them.”
 
 
-Chapter 7
+
 
 Levin came back to the house only when they sent to summon him to
 supper. On the stairs were standing Kitty and Agafea Mihalovna,
@@ -28143,7 +28143,7 @@ with civility,” said Levin, kissing her hands. “You shall see.
 Tomorrow.... Oh, yes, we are going tomorrow.”
 
 
-Chapter 8
+
 
 Next day, before the ladies were up, the wagonette and a trap for the
 shooting party were at the door, and Laska, aware since early morning
@@ -28314,7 +28314,7 @@ The coachman rode back on the trace-horse, and Levin himself drove the
 remaining pair.
 
 
-Chapter 9
+
 
 “Well, now what’s our plan of campaign? Tell us all about it,” said
 Stepan Arkadyevitch.
@@ -28480,7 +28480,7 @@ gave of driving in the English fashion, four-in-hand; and it was in the
 very best of spirits that after lunch they drove to the Gvozdyov marsh.
 
 
-Chapter 10
+
 
 Vassenka drove the horses so smartly that they reached the marsh too
 early, while it was still hot.
@@ -28696,7 +28696,7 @@ awkward too, shooting with one dog,” said Stepan Arkadyevitch, to
 soften his triumph.
 
 
-Chapter 11
+
 
 When Levin and Stepan Arkadyevitch reached the peasant’s hut where
 Levin always used to stay, Veslovsky was already there. He was sitting
@@ -28990,7 +28990,7 @@ Levin, half asleep, said:
 “Gentlemen, tomorrow before daylight!” and fell asleep.
 
 
-Chapter 12
+
 
 Waking up at earliest dawn, Levin tried to wake his companions.
 Vassenka, lying on his stomach, with one leg in a stocking thrust out,
@@ -29149,7 +29149,7 @@ And Levin was doubly pleased, in sight of the boy, who expressed his
 approval, at killing three snipe, one after another, straight off.
 
 
-Chapter 13
+
 
 The sportsman’s saying, that if the first beast or the first bird is
 not missed, the day will be lucky, turned out correct.
@@ -29235,7 +29235,7 @@ towards Vassenka Veslovsky at home, and to feel instead the most
 friendly disposition to him.
 
 
-Chapter 14
+
 
 Next day at ten o’clock Levin, who had already gone his rounds, knocked
 at the room where Vassenka had been put for the night.
@@ -29429,7 +29429,7 @@ delightful on that garden seat, the gardener saw with astonishment that
 they passed him on their way home with comforted and radiant faces.
 
 
-Chapter 15
+
 
 After escorting his wife upstairs, Levin went to Dolly’s part of the
 house. Darya Alexandrovna, for her part, was in great distress too that
@@ -29640,7 +29640,7 @@ German being sat down by him and driving away.... And my new shoes all
 for nothing!...”
 
 
-Chapter 16
+
 
 Darya Alexandrovna carried out her intention and went to see Anna. She
 was sorry to annoy her sister and to do anything Levin disliked. She
@@ -29825,7 +29825,7 @@ In such daydreams she reached the turning of the highroad that led to
 Vozdvizhenskoe.
 
 
-Chapter 17
+
 
 The coachman pulled up his four horses and looked round to the right,
 to a field of rye, where some peasants were sitting on a cart. The
@@ -30019,7 +30019,7 @@ Vassenka Veslovsky sitting in a side saddle.
 the sun. “Midday’s past, look-ee! Get your hooks, and come along!”
 
 
-Chapter 18
+
 
 Anna looked at Dolly’s thin, care-worn face, with its wrinkles filled
 with dust from the road, and she was on the point of saying what she
@@ -30185,7 +30185,7 @@ big subject, and we’ll talk over everything properly later. Now I’ll go
 and dress and send a maid to you.”
 
 
-Chapter 19
+
 
 Left alone, Darya Alexandrovna, with a good housewife’s eye, scanned
 her room. All she had seen in entering the house and walking through
@@ -30369,7 +30369,7 @@ Nihilist perhaps, but you know, eats with his knife ... but a very good
 doctor. Then the architect.... _Une petite cour!_”
 
 
-Chapter 20
+
 
 “Here’s Dolly for you, princess, you were so anxious to see her,” said
 Anna, coming out with Darya Alexandrovna onto the stone terrace where
@@ -30585,7 +30585,7 @@ Anna’s place. She liked him so much just now with his eager interest
 that she saw how Anna could be in love with him.
 
 
-Chapter 21
+
 
 “No, I think the princess is tired, and horses don’t interest her,”
 Vronsky said to Anna, who wanted to go on to the stables, where
@@ -30765,7 +30765,7 @@ said in reply to his look of gratitude.
 They got up and walked to the house.
 
 
-Chapter 22
+
 
 When Anna found Dolly at home before her, she looked intently in her
 eyes, as though questioning her about the talk she had had with
@@ -31086,7 +31086,7 @@ It was positively disagreeable to her to think that Anna was coming to
 see her immediately. She longed to be alone with her own thoughts.
 
 
-Chapter 23
+
 
 Dolly was wanting to go to bed when Anna came in to see her, attired
 for the night. In the course of the day Anna had several times begun to
@@ -31286,7 +31286,7 @@ on which they could never agree, and about which it was better not to
 speak.
 
 
-Chapter 24
+
 
 “Then there is all the more reason for you to legalize your position,
 if possible,” said Dolly.
@@ -31451,7 +31451,7 @@ perfect sincerity, and forgetting the vague feeling of dissatisfaction
 and awkwardness she had experienced there.
 
 
-Chapter 25
+
 
 Vronsky and Anna spent the whole summer and part of the winter in the
 country, living in just the same condition, and still taking no steps
@@ -31557,7 +31557,7 @@ can give up anything for her, but not my masculine independence,” he
 thought.
 
 
-Chapter 26
+
 
 In September Levin moved to Moscow for Kitty’s confinement. He had
 spent a whole month in Moscow with nothing to do, when Sergey
@@ -31714,7 +31714,7 @@ Sviazhsky was elected unanimously without a ballot, and he gave a
 dinner that evening.
 
 
-Chapter 27
+
 
 The sixth day was fixed for the election of the marshal of the
 province.
@@ -31807,7 +31807,7 @@ province, Sviazhsky, and the other leaders were hotly disputing about
 something.
 
 
-Chapter 28
+
 
 Levin was standing rather far off. A nobleman breathing heavily and
 hoarsely at his side, and another whose thick boots were creaking,
@@ -31974,7 +31974,7 @@ had gone on this errand, to Sviazhsky. “He’s all right? he’ll do.”
 I’ve told the waiter not to give him anything on any account.”
 
 
-Chapter 29
+
 
 The narrow room, in which they were smoking and taking refreshments,
 was full of noblemen. The excitement grew more intense, and every face
@@ -32164,7 +32164,7 @@ with a smile.
 “You’ve relieved your feelings?”
 
 
-Chapter 30
+
 
 Sviazhsky took Levin’s arm, and went with him to his own friends.
 
@@ -32399,7 +32399,7 @@ they had followed the governor who had opened the meetings, and just as
 they had followed Snetkov when he was elected.
 
 
-Chapter 31
+
 
 The newly elected marshal and many of the successful party dined that
 day with Vronsky.
@@ -32539,7 +32539,7 @@ love to which he had to return struck Vronsky by their contrast. But he
 had to go, and by the first train that night he set off home.
 
 
-Chapter 32
+
 
 Before Vronsky’s departure for the elections, Anna had reflected that
 the scenes constantly repeated between them each time he left home,
@@ -32718,9 +32718,9 @@ established themselves together like married people.
 
 
 
-PART SEVEN
 
-Chapter 1
+
+
 
 
 The Levins had been three months in Moscow. The date had long passed on
@@ -32852,7 +32852,7 @@ as possible.
 painful to meet,” said Levin. “I’m very, very glad.”
 
 
-Chapter 2
+
 
 “Go, please, go then and call on the Bols,” Kitty said to her husband,
 when he came in to see her at eleven o’clock before going out. “I know
@@ -33061,7 +33061,7 @@ had no time to think about it. He drove off, thinking of Katavasov and
 the meeting with Metrov that was before him.
 
 
-Chapter 3
+
 
 Levin had on this visit to town seen a great deal of his old friend at
 the university, Professor Katavasov, whom he had not seen since his
@@ -33246,7 +33246,7 @@ sorry he could not take advantage of his invitation, took leave, and
 drove to Lvov’s.
 
 
-Chapter 4
+
 
 Lvov, the husband of Natalia, Kitty’s sister, had spent all his life in
 foreign capitals, where he had been educated, and had been in the
@@ -33398,7 +33398,7 @@ standing in her white sheepskin cape, waiting till they had finished
 speaking. “Come, let us go.”
 
 
-Chapter 5
+
 
 At the concert in the afternoon two very interesting things were
 performed. One was a fantasia, _King Lear;_ the other was a quartette
@@ -33486,7 +33486,7 @@ they’ll not be at home, and then you can come to the meeting to fetch
 me. You’ll find me still there.”
 
 
-Chapter 6
+
 
 “Perhaps they’re not at home?” said Levin, as he went into the hall of
 Countess Bola’s house.
@@ -33585,7 +33585,7 @@ After driving home with his sister-in-law, and finding Kitty in good
 spirits and quite well, Levin drove to the club.
 
 
-Chapter 7
+
 
 Levin reached the club just at the right time. Members and visitors
 were driving up as he arrived. Levin had not been at the club for a
@@ -33741,7 +33741,7 @@ amusement that Levin felt quite reconciled to him.
 smile. “Let us go.”
 
 
-Chapter 8
+
 
 Getting up from the table, Levin walked with Gagin through the lofty
 room to the billiard room, feeling his arms swing as he walked with a
@@ -33883,7 +33883,7 @@ the little old waiter who stood at the counter, and swinging his arms
 he walked through all the rooms to the way out.
 
 
-Chapter 9
+
 
 “Oblonsky’s carriage!” the porter shouted in an angry bass. The
 carriage drove up and both got in. It was only for the first few
@@ -34004,7 +34004,7 @@ other hand, there was something fresh and seductive in the living woman
 which was not in the portrait.
 
 
-Chapter 10
+
 
 She had risen to meet him, not concealing her pleasure at seeing him;
 and in the quiet ease with which she held out her little vigorous hand,
@@ -34229,7 +34229,7 @@ and may God spare her that.”
 “Certainly, yes, I will tell her....” Levin said, blushing.
 
 
-Chapter 11
+
 
 “What a marvelous, sweet and unhappy woman!” he was thinking, as he
 stepped out into the frosty air with Stepan Arkadyevitch.
@@ -34352,7 +34352,7 @@ morning. Only at three o’clock were they sufficiently reconciled to be
 able to go to sleep.
 
 
-Chapter 12
+
 
 After taking leave of her guests, Anna did not sit down, but began
 walking up and down the room. She had unconsciously the whole evening
@@ -34475,7 +34475,7 @@ had grown up between them some evil spirit of strife, which she could
 not exorcise from his, and still less from her own heart.
 
 
-Chapter 13
+
 
 There are no conditions to which a man cannot become used, especially
 if he sees that all around him are living in the same way. Levin could
@@ -34623,7 +34623,7 @@ us!” Levin said, seeing his own horse driving out of the gate. Jumping
 into the sledge beside Kouzma, he told him to drive to the doctor’s.
 
 
-Chapter 14
+
 
 The doctor was not yet up, and the footman said that “he had been up
 late, and had given orders not to be waked, but would get up soon.” The
@@ -34855,7 +34855,7 @@ you,” he threw the blame on God; but thinking of God, at once he fell
 to beseeching God to forgive him and have mercy.
 
 
-Chapter 15
+
 
 He did not know whether it was late or early. The candles had all
 burned out. Dolly had just been in the study and had suggested to the
@@ -34965,7 +34965,7 @@ could not get used to the idea. It seemed to him something extraneous,
 superfluous, to which he could not accustom himself.
 
 
-Chapter 16
+
 
 At ten o’clock the old prince, Sergey Ivanovitch, and Stepan
 Arkadyevitch were sitting at Levin’s. Having inquired after Kitty, they
@@ -35079,7 +35079,7 @@ him from noticing the strange thrill of senseless joy and even pride
 that he had felt when the baby sneezed.
 
 
-Chapter 17
+
 
 Stepan Arkadyevitch’s affairs were in a very bad way.
 
@@ -35262,7 +35262,7 @@ made haste to forget it all as soon as possible. And now, at the mere
 recollection, he blushed.
 
 
-Chapter 18
+
 
 “Now there is something I want to talk about, and you know what it is.
 About Anna,” Stepan Arkadyevitch said, pausing for a brief space, and
@@ -35393,7 +35393,7 @@ Alexey Alexandrovitch gave him his hand, pondered a little, and said:
 will give you a final answer,” he said, after considering a moment.
 
 
-Chapter 19
+
 
 Stepan Arkadyevitch was about to go away when Korney came in to
 announce:
@@ -35518,7 +35518,7 @@ business is it of his? Why should I remember? Leave me in peace!” he
 said, addressing not his tutor, but the whole world.
 
 
-Chapter 20
+
 
 Stepan Arkadyevitch, as usual, did not waste his time in Petersburg. In
 Petersburg, besides business, his sister’s divorce, and his coveted
@@ -35701,7 +35701,7 @@ without him, and so your sister’s fate is now in the hands of Landau,
 _alias_ Count Bezzubov.”
 
 
-Chapter 21
+
 
 After a capital dinner and a great deal of cognac drunk at
 Bartnyansky’s, Stepan Arkadyevitch, only a little later than the
@@ -35939,7 +35939,7 @@ closed his eyes. Alexey Alexandrovitch and Lidia Ivanovna exchanged
 meaningful glances, and the reading began.
 
 
-Chapter 22
+
 
 Stepan Arkadyevitch felt completely nonplussed by the strange talk
 which he was hearing for the first time. The complexity of Petersburg,
@@ -36038,7 +36038,7 @@ was based on what the Frenchman had said in his real or pretended
 trance.
 
 
-Chapter 23
+
 
 In order to carry through any undertaking in family life, there must
 necessarily be either complete division between the husband and wife,
@@ -36176,7 +36176,7 @@ things for the country.
 At ten o’clock Vronsky came in.
 
 
-Chapter 24
+
 
 “Well, was it nice?” she asked, coming out to meet him with a penitent
 and meek expression.
@@ -36382,7 +36382,7 @@ tenderness. She put her arms round him, and covered with kisses his
 head, his neck, his hands.
 
 
-Chapter 25
+
 
 Feeling that the reconciliation was complete, Anna set eagerly to work
 in the morning preparing for their departure. Though it was not settled
@@ -36630,7 +36630,7 @@ evening the maid told him that Anna Arkadyevna had a headache and
 begged him not to go in to her.
 
 
-Chapter 26
+
 
 Never before had a day been passed in quarrel. Today was the first
 time. And this was not a quarrel. It was the open acknowledgment of
@@ -36793,7 +36793,7 @@ settled himself in his usual attitude in the carriage, with his legs
 crossed, and drawing on his gloves he vanished round the corner.
 
 
-Chapter 27
+
 
 “He has gone! It is over!” Anna said to herself, standing at the
 window; and in answer to this statement the impression of the darkness
@@ -36919,7 +36919,7 @@ and get into the carriage.
 “To Znamenka, the Oblonskys’.”
 
 
-Chapter 28
+
 
 It was bright and sunny. A fine rain had been falling all the morning,
 and now it had not long cleared up. The iron roofs, the flags of the
@@ -37093,7 +37093,7 @@ piteous about her. Awfully piteous!”
 went with her into the hall, I fancied she was almost crying.”
 
 
-Chapter 29
+
 
 Anna got into the carriage again in an even worse frame of mind than
 when she set out from home. To her previous tortures was added now that
@@ -37197,7 +37197,7 @@ Pyotr jumped on the box, and putting his arms akimbo, told the coachman
 to drive to the booking-office.
 
 
-Chapter 30
+
 
 “Here it is again! Again I understand it all!” Anna said to herself, as
 soon as the carriage had started and swaying lightly, rumbled over the
@@ -37315,7 +37315,7 @@ be happy, and how miserably she loved and hated him, and how fearfully
 her heart was beating.
 
 
-Chapter 31
+
 
 A bell rang, some young men, ugly and impudent, and at the same time
 careful of the impression they were making, hurried by. Pyotr, too,
@@ -37490,9 +37490,9 @@ quenched forever.
 
 
 
-PART EIGHT
 
-Chapter 1
+
+
 
 
 Almost two months had passed. The hot summer was half over, but Sergey
@@ -37647,7 +37647,7 @@ residents in the capital and big towns, he was fully persuaded.
 Katavasov had long been meaning to carry out his promise to stay with
 Levin, and so he was going with him.
 
-Chapter 2
+
 
 Sergey Ivanovitch and Katavasov had only just reached the station of
 the Kursk line, which was particularly busy and full of people that
@@ -37802,7 +37802,7 @@ bowing too, and a stout man with a big beard, wearing a greasy forage
 cap.
 
 
-Chapter 3
+
 
 Saying good-bye to the princess, Sergey Ivanovitch was joined by
 Katavasov; together they got into a carriage full to overflowing, and
@@ -37906,7 +37906,7 @@ them into the refreshment room; but all this was on a much smaller and
 feebler scale than in Moscow.
 
 
-Chapter 4
+
 
 While the train was stopping at the provincial town, Sergey Ivanovitch
 did not go to the refreshment room, but walked up and down the
@@ -37990,7 +37990,7 @@ Sergey Ivanovitch said he would be very glad to, and crossed over to
 the other side of the station.
 
 
-Chapter 5
+
 
 In the slanting evening shadows cast by the baggage piled up on the
 platform, Vronsky in his long overcoat and slouch hat, with his hands
@@ -38086,7 +38086,7 @@ immense effect it might have, they parted, going to their carriages on
 hearing the second bell.
 
 
-Chapter 6
+
 
 Sergey Ivanovitch had not telegraphed to his brother to send to meet
 him, as he did not know when he should be able to leave Moscow. Levin
@@ -38208,7 +38208,7 @@ sunny day!” said Agafea Mihalovna.
 he’s going to sleep.”
 
 
-Chapter 7
+
 
 Agafea Mihalovna went out on tiptoe; the nurse let down the blind,
 chased a fly out from under the muslin canopy of the crib, and a
@@ -38291,7 +38291,7 @@ day, as though he were bound to be at their service.”
 “Yes, only be like your father, only like him,” she said, handing Mitya
 over to the nurse, and putting her lips to his cheek.
 
-Chapter 8
+
 
 Ever since, by his beloved brother’s deathbed, Levin had first glanced
 into the questions of life and death in the light of these new
@@ -38380,7 +38380,7 @@ a proof of weakness would have been to desecrate those moments. He was
 miserably divided against himself, and strained all his spiritual
 forces to the utmost to escape from this condition.
 
-Chapter 9
+
 
 These doubts fretted and harassed him, growing weaker or stronger from
 time to time, but never leaving him. He read and thought, and the more
@@ -38467,7 +38467,7 @@ But Levin did not shoot himself, and did not hang himself; he went on
 living.
 
 
-Chapter 10
+
 
 When Levin thought what he was and what he was living for, he could
 find no answer to the questions and was reduced to despair, but he left
@@ -38584,7 +38584,7 @@ to such a point that he was afraid of suicide, and yet firmly laying
 down his own individual definite path in life.
 
 
-Chapter 11
+
 
 The day on which Sergey Ivanovitch came to Pokrovskoe was one of
 Levin’s most painful days. It was the very busiest working time, when
@@ -38705,7 +38705,7 @@ though they had been locked up, and all striving towards one goal, they
 thronged whirling through his head, blinding him with their light.
 
 
-Chapter 12
+
 
 Levin strode along the highroad, absorbed not so much in his thoughts
 (he could not yet disentangle them) as in his spiritual condition,
@@ -38851,7 +38851,7 @@ hinder the satisfaction of our desires. That is the deduction of
 reason. But loving one’s neighbor reason could never discover, because
 it’s irrational.”
 
-Chapter 13
+
 
 And Levin remembered a scene he had lately witnessed between Dolly and
 her children. The children, left to themselves, had begun cooking
@@ -38968,7 +38968,7 @@ voices that seemed talking joyfully and earnestly within him.
 hands brushing away the tears that filled his eyes.
 
 
-Chapter 14
+
 
 Levin looked before him and saw a herd of cattle, then he caught sight
 of his trap with Raven in the shafts, and the coachman, who, driving up
@@ -39169,7 +39169,7 @@ was among them. Just as his bodily strength was still unaffected, in
 spite of the bees, so too was the spiritual strength that he had just
 become aware of.
 
-Chapter 15
+
 
 “Do you know, Kostya, with whom Sergey Ivanovitch traveled on his way
 here?” said Dolly, doling out cucumbers and honey to the children;
@@ -39344,7 +39344,7 @@ their will, haven’t the faintest idea what there is for them to express
 their will about. What right have we to say that this is the people’s
 will?”
 
-Chapter 16
+
 
 Sergey Ivanovitch, being practiced in argument, did not reply, but at
 once turned the conversation to another aspect of the subject.
@@ -39487,7 +39487,7 @@ the storm clouds were gathering, and that they had better be going home
 before it rained.
 
 
-Chapter 17
+
 
 The old prince and Sergey Ivanovitch got into the trap and drove off;
 the rest of the party hastened homewards on foot.
@@ -39590,7 +39590,7 @@ baby and carried it. Levin walked beside his wife, and, penitent for
 having been angry, he squeezed her hand when the nurse was not looking.
 
 
-Chapter 18
+
 
 During the whole of that day, in the extremely different conversations
 in which he took part, only as it were with the top layer of his mind,
@@ -39715,7 +39715,7 @@ nice with Sergey Ivanovitch, when you care to be.... Well, go back to
 them. It’s always so hot and steamy here after the bath.”
 
 
-Chapter 19
+
 
 Going out of the nursery and being again alone, Levin went back at once
 to the thought, in which there was something not clear.
