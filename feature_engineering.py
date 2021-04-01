@@ -27,6 +27,7 @@ for author in authors:
     dash_count = 0 # counting "--"
     comma_count = 0
     italics_count = 0 # _<word>_
+    contractions_count = 0 # counting "you'll" etc.
     dialogue_count = 0 # counting ""
     
     vocab = {}
@@ -47,6 +48,7 @@ for author in authors:
         p_sentence = re.compile(r'([?!]"?)|((?<!Dr|Mr|Ms|Jr|Sr|St)(?<!Mrs|Rev)\."?\s+)')
         sentence_list = re.split(p_sentence, text)
         sentences = []
+        in_dialogue = False
         for ele in sentence_list:
             if ele == None or len(ele) == 0:
                 continue
@@ -58,13 +60,21 @@ for author in authors:
                 dashes = re.findall(r'--+', ele)
                 commas = re.findall(r',', ele)
                 italics = re.findall(r'_\w+_', ele)
-                dialogues = re.findall(r'“.*|.*”', ele) # Look for either "
+                contractions = re.findall(r'\w+’\w+', ele)
+                if not in_dialogue:
+                    dialogues = re.findall(r'[‘“].*', ele) # Look for start of dialogue
+                    in_dialogue = len(dialogues) > 0
+                else:
+                    dialogues = re.findall(r'.*[”’]', ele) # Look for end of dialogue
+                    in_dialogue = len(dialogues) == 0
                 # contractions treated as one word
                 total_words += len(words)
                 dash_count += len(dashes)
                 comma_count += len(commas)
                 italics_count += len(italics)
-                dialogue_count += len(dialogues)
+                contractions_count += len(contractions)
+                # Count sentences that have dialogue
+                dialogue_count += 1 if in_dialogue else 0
                 for word in words:
                     # TODO: Handle known words that are in ALL CAPS
                     # TODO: Handle named entities (people, cities?), count them as the same since not style
@@ -87,13 +97,21 @@ for author in authors:
                 dashes = re.findall(r'-+', ele)
                 commas = re.findall(r',', ele)
                 italics = re.findall(r'_\w+_', ele)
-                dialogues = re.findall(r'“.*|.*”', ele) # Look for either "
+                contractions = re.findall(r'\w+’\w+', ele)
+                if not in_dialogue:
+                    dialogues = re.findall(r'[‘“].*', ele) # Look for start of dialogue
+                    in_dialogue = len(dialogues) > 0
+                else:
+                    dialogues = re.findall(r'.*[”’]', ele) # Look for end of dialogue
+                    in_dialogue = len(dialogues) == 0
                 # contractions treated as one word
                 total_words += len(words)
                 dash_count += len(dashes)
                 comma_count += len(commas)
                 italics_count += len(italics)
-                dialogue_count += len(dialogues)
+                contractions_count += len(contractions)
+                # Count sentences that have dialogue
+                dialogue_count += 1 if in_dialogue else 0
                 for word in words:
                     if word not in vocab:
                         vocab[word] = 1
@@ -128,6 +146,10 @@ for author in authors:
         stats["italics_per_sent"] = [italics_count/sentence_count]
     else:
         stats["italics_per_sent"] += [italics_count/sentence_count]
+#     if "contractions_per_sent" not in stats:
+#         stats["contractions_per_sent"] = [contractions_count/sentence_count]
+#     else:
+#         stats["contractions_per_sent"] += [contractions_count/sentence_count]
     if "dialogue_per_sent" not in stats:
         stats["dialogue_per_sent"] = [dialogue_count/sentence_count]
     else:
@@ -177,12 +199,14 @@ def extractStats(queries, scaler):
         dashes = re.findall(r'-+', query)
         commas = re.findall(r',', query)
         italics = re.findall(r'_\w+_', query)
-        dialogues = re.findall(r'“.*|.*”', query) # Look for either "
+        contractions = re.findall(r'\w+’\w+', ele)
+        dialogues = re.findall(r'[‘“].*|.*[”’]', query) # Look for either side of ""
         # contractions treated as one word
         words_in_sent = len(words)
         dash_count = len(dashes)
         comma_count = len(commas)
         italics_count = len(italics)
+        contractions_count = len(contractions)
         has_dialogue = 1 if len(dialogues) > 0 else 0
         
         for word in words:
@@ -220,6 +244,10 @@ def extractStats(queries, scaler):
             features["italics_per_sent"] = [italics_count]
         else:
             features["italics_per_sent"] += [italics_count]
+#         if "contractions_per_sent" not in features:
+#             features["contractions_per_sent"] = [contractions_count/sentence_count]
+#         else:
+#             features["contractions_per_sent"] += [contractions_count/sentence_count]
         if "dialogue_per_sent" not in features:
             features["dialogue_per_sent"] = [has_dialogue]
         else:
