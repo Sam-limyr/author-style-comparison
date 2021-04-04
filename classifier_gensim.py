@@ -38,7 +38,7 @@ print("Reading data from corpus...")
 train_corpus = [read_corpus(training_file, index) for index, training_file in enumerate(training_files)]
 
 print("Training model...")
-model = gensim.models.doc2vec.Doc2Vec(vector_size=VECTOR_SIZE, epochs=EPOCHS, min_count=MIN_WORD_FREQ)
+model = gensim.models.doc2vec.Doc2Vec(vector_size=VECTOR_SIZE, epochs=EPOCHS, min_count=MIN_WORD_FREQ, seed=0)
 model.build_vocab(train_corpus)
 model.train(train_corpus, total_examples=model.corpus_count, epochs=model.epochs)
 
