@@ -1,15 +1,11 @@
-import pandas as pd
-import re
 import os
-import sys
-import nltk
 
 from collections import Counter
 from nltk.corpus import stopwords   # Requires NLTK in the include path.
 from nltk.tokenize import TreebankWordTokenizer, sent_tokenize
 from sklearn.neighbors import NearestNeighbors
 
-# NUM_FUNCTION_WORDS = 160
+# NUMBER OF FUNCTION WORDS IN nltk.coprus.stopwords is 160 after collapsing cases
 
 CHARLES_DICKENS_NAME = "charles_dickens"
 FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
@@ -17,12 +13,19 @@ LEO_TOLSTOY_NAME = "leo_tolstoy"
 MARK_TWAIN_NAME = "mark_twain"
 
 author_names = [CHARLES_DICKENS_NAME, FYODOR_DOSTOEVSKY_NAME, LEO_TOLSTOY_NAME, MARK_TWAIN_NAME]
-function_words_pos_tagset = ['DT', 'CC', 'IN', 'PRP', 'PRP$', 'WP', 'WP$']
+# function_words_pos_tagset = ['DT', 'CC', 'IN', 'PRP', 'PRP$', 'WP', 'WP$']
 
 
 def read_texts(dir_name):
+	"""
+	iterates through text files in subdirectories in dir_name
+	subdirectory names are parsed as authors
+	returns dict of author to filename to text
+	"""
+
 	authors = os.listdir(dir_name)
 	author_to_alltexts = {}
+
 	for author in authors:
 		novel_filenames = os.listdir(dir_name + "/" + author)
 		author_to_alltexts[author] = {}
@@ -39,6 +42,11 @@ def read_texts(dir_name):
 
 
 def parse_tokens(author_to_alltexts):
+	"""
+	tokenizes text in dict of author to filename to text using nltk TreebankWordTokenizer
+	returns dict of author to title to tokens
+	"""
+
 	# tokenize into words
 	author_to_title_to_tokens = {}
 	tbTokenizer = TreebankWordTokenizer()
@@ -62,6 +70,11 @@ def parse_tokens(author_to_alltexts):
 
 
 def compute_stopword_freq(stopword_set, author_to_alltexts, author_to_title_to_tokens):
+	"""
+	counts no. of stopwords (given in stopword_set) found in tokens
+	returns dict of author to filename to counter for stopword freq
+	"""
+
 	# count num of stopwords
 	author_to_title_to_stopwordcounter = {}
 
@@ -84,6 +97,12 @@ def compute_stopword_freq(stopword_set, author_to_alltexts, author_to_title_to_t
 
 
 def compute_rank_vectors(sorted_stopword_list, author_to_title_to_stopwordcounter):
+	"""
+	ranks stopword frequency in order of sorted_stopword_list (alphabetical order) for each text
+	returns list of rank vectors, dict of author to title to vector,
+	dict of vector index to (author, title) tup
+	"""
+
 	# rank top TOP_X_MOST_COMMON stopwords for each author corp, rank starts from 0
 	author_to_title_to_vector = {}
 	vector_to_authortitle = {}
@@ -115,6 +134,11 @@ def compute_rank_vectors(sorted_stopword_list, author_to_title_to_stopwordcounte
 
 
 def generate_stopword_set():
+	"""
+	Tokenize each stopword to get rid of shorthand forms
+	returns set of stopwords
+	"""
+
 	stopword_list = []
 	tbTokenizer = TreebankWordTokenizer()
 
@@ -129,6 +153,10 @@ def generate_stopword_set():
 
 
 def test_model(nn_model, stopword_set, train_vector_to_authortitle):
+	"""
+	test model using texts in supplementary novesl
+	"""
+
 	print("Testing model... ")
 	# get training data
 	author_to_alltexts = read_texts('supplementaryNovels')
