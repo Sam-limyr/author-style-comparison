@@ -38,6 +38,9 @@
 
 
 from collections import Counter
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, LEO_TOLSTOY_TESTS, MARK_TWAIN_TESTS
 
 
@@ -86,29 +89,51 @@ def check_test_results(results_list):
     assert len(results_list) == len(correct_answers), "Input and expected lists do not have the same length!"
 
     print("Checking test results...")
+
+    print_results(results_list, correct_answers)
+    show_confusion_matrix(results_list, correct_answers)
+
+
+def show_confusion_matrix(predicted_results, ground_truth):
+    y_actu = pd.Series(ground_truth, name='Ground Truth')
+    y_pred = pd.Series(predicted_results, name='Predicted')
+    dataframe_confusion = pd.crosstab(y_actu, y_pred, rownames=['Ground Truth'], colnames=['Predicted'])
+
+    plt.imshow(dataframe_confusion)
+    plt.title("Confusion matrix")
+    plt.colorbar()
+    tick_marks = np.arange(len(dataframe_confusion.columns))
+    plt.xticks(tick_marks, dataframe_confusion.columns)
+    plt.yticks(tick_marks, dataframe_confusion.index)
+    plt.tight_layout()
+    plt.ylabel(dataframe_confusion.index.name)
+    plt.xlabel(dataframe_confusion.columns.name)
+    plt.show()
+
+
+def print_results(predicted_results, ground_truth):
     scores = Counter()
-    for i in range(len(results_list)):
+    for i in range(len(predicted_results)):
         print("\nTest Case {}".format(i+1))
-        expected_answer = correct_answers[i]
-        actual_answer = results_list[i]
+        expected_answer = ground_truth[i]
+        actual_answer = predicted_results[i]
         if actual_answer != expected_answer:
-            print("WRONG: Expected <{}>, Actual <{}>".format(expected_answer, actual_answer))
+            print("WRONG: Ground Truth <{}>, Predicted <{}>".format(expected_answer, actual_answer))
         else:
             print("CORRECT")
             scores[expected_answer] += 1
 
     print("""
-    
+
     Total score: {}/{}
     {} score: {}/{}
     {} score: {}/{}
     {} score: {}/{}
     {} score: {}/{}
-    
-    """.format(sum(scores.values()), len(correct_answers),
+
+    """.format(sum(scores.values()), len(ground_truth),
           CHARLES_DICKENS_NAME, scores[CHARLES_DICKENS_NAME], len(CHARLES_DICKENS_TESTS),
           FYODOR_DOSTOEVSKY_NAME, scores[FYODOR_DOSTOEVSKY_NAME], len(FYODOR_DOSTOEVSKY_TESTS),
           LEO_TOLSTOY_NAME, scores[LEO_TOLSTOY_NAME], len(LEO_TOLSTOY_TESTS),
           MARK_TWAIN_NAME, scores[MARK_TWAIN_NAME], len(MARK_TWAIN_TESTS)))
-
 
