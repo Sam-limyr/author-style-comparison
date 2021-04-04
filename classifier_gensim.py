@@ -3,26 +3,10 @@
 import gensim
 import smart_open
 import csv
-import os
+from test_runner import get_all_tests, check_test_results, ALL_AUTHOR_NAMES, AUTHOR_ID_TO_NAME_MAPPINGS
 
-# Names of authors
-CHARLES_DICKENS_NAME = "charles_dickens"
-FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
-LEO_TOLSTOY_NAME = "leo_tolstoy"
-MARK_TWAIN_NAME = "mark_twain"
 
-author_names = [CHARLES_DICKENS_NAME, FYODOR_DOSTOEVSKY_NAME, LEO_TOLSTOY_NAME, MARK_TWAIN_NAME]
-training_files = ['paragraphs/' + author + '.csv' for author in author_names]
-
-# Set file address for test data
-TEST_DIRECTORY = 'test'
-test_files = os.listdir(os.path.join(os.getcwd(), TEST_DIRECTORY))
-test_files = [os.path.join(TEST_DIRECTORY, test_file) for test_file in test_files]
-EXPECTED_DOC_IDS = ["0: Charles Dickens",
-                    "1: Fyodor Dostoevsky",
-                    "2: Leo Tolstoy",
-                    "3: Mark Twain",
-                    "Non-matching"]
+training_files = ['paragraphs/' + author + '.csv' for author in ALL_AUTHOR_NAMES]
 
 # Training hyperparameters
 EPOCHS = 50
@@ -46,9 +30,12 @@ def read_corpus(fname, index_tag=None):
             return gensim.models.doc2vec.TaggedDocument(tokens, [index_tag])
 
 
+def process_test_case(test_case_string):
+    return gensim.utils.simple_preprocess(test_case_string)
+
+
 print("Reading data from corpus...")
 train_corpus = [read_corpus(training_file, index) for index, training_file in enumerate(training_files)]
-test_corpus = [read_corpus(test_file) for test_file in test_files]
 
 print("Training model...")
 model = gensim.models.doc2vec.Doc2Vec(vector_size=VECTOR_SIZE, epochs=EPOCHS, min_count=MIN_WORD_FREQ)
@@ -64,13 +51,14 @@ for train_doc_id, _ in enumerate(train_corpus):
     assert train_doc_id == sims[0][0], "Sanity check failed for document with ID {}.".format(train_doc_id)
 
 print("Testing model...")
-for test_doc_id, _ in enumerate(test_corpus):
+test_corpus = get_all_tests()
+test_corpus = [process_test_case(test_case) for test_case in test_corpus]
+output_answers = []
+for test_doc_id in range(len(test_corpus)):
     inferred_test_vector = model.infer_vector(test_corpus[test_doc_id])
     sims = model.dv.most_similar([inferred_test_vector], topn=len(model.dv))
 
-    # Compare and print the scores of all documents against the training corpus
-    print('\nTesting Document ({}): «{} ...»'.format(test_doc_id, ' '.join(test_corpus[test_doc_id][:TEXT_HEAD_LEN])))
-    print('EXPECTED: {}'.format(EXPECTED_DOC_IDS[test_doc_id]))
-    for train_doc_id, score in sims:
-        print('DOC_ID {}, SCORE {}: «{} ...»'.format(train_doc_id, score,
-                                                     ' '.join(train_corpus[train_doc_id].words[:TEXT_HEAD_LEN])))
+    answer = sims[0][0]
+    output_answers.append(AUTHOR_ID_TO_NAME_MAPPINGS[answer])
+
+check_test_results(output_answers)
