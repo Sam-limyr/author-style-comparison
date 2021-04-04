@@ -37,6 +37,7 @@
 """
 
 
+from collections import Counter
 from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, LEO_TOLSTOY_TESTS, MARK_TWAIN_TESTS
 
 
@@ -85,7 +86,7 @@ def check_test_results(results_list):
     assert len(results_list) == len(correct_answers), "Input and expected lists do not have the same length!"
 
     print("Checking test results...")
-    score = 0
+    scores = Counter()
     for i in range(len(results_list)):
         print("\nTest Case {}".format(i+1))
         expected_answer = correct_answers[i]
@@ -94,8 +95,20 @@ def check_test_results(results_list):
             print("WRONG: Expected <{}>, Actual <{}>".format(expected_answer, actual_answer))
         else:
             print("CORRECT")
-            score += 1
+            scores[expected_answer] += 1
 
-    print("\n\nTotal score: {}/{}".format(score, len(correct_answers)))
+    print("""
+    
+    Total score: {}/{}
+    {} score: {}/{}
+    {} score: {}/{}
+    {} score: {}/{}
+    {} score: {}/{}
+    
+    """.format(sum(scores.values()), len(correct_answers),
+          CHARLES_DICKENS_NAME, scores[CHARLES_DICKENS_NAME], len(CHARLES_DICKENS_TESTS),
+          FYODOR_DOSTOEVSKY_NAME, scores[FYODOR_DOSTOEVSKY_NAME], len(FYODOR_DOSTOEVSKY_TESTS),
+          LEO_TOLSTOY_NAME, scores[LEO_TOLSTOY_NAME], len(LEO_TOLSTOY_TESTS),
+          MARK_TWAIN_NAME, scores[MARK_TWAIN_NAME], len(MARK_TWAIN_TESTS)))
 
 
