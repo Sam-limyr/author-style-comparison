@@ -144,6 +144,324 @@ CHARLES_DICKENS_SAME_BOOK_MULTIPLE_PARAGRAPH_TESTS = [
     preparings of the way."""
 ]
 
+CHARLES_DICKENS_DIFFERENT_BOOK_MULTIPLE_PARAGRAPH_TESTS = [
+    """It was the slightest action possible, not obtruded on his notice, and
+    apparently the result of a moment’s absence of mind, not worth remark.
+    But as the words were uttered, Lord George, who had been going on
+    impetuously, stopped short, reddened, and was silent. Apparently quite
+    unconscious of this change in his demeanour, the wily Secretary stepped
+    a little apart, under pretence of pulling up the window-blind, and
+    returning when the other had had time to recover, said:""",
+
+    """Heedless of the fresh air that blew upon his heated brow, of the
+    pleasant meadows from which he turned, of the piles of roofs and
+    chimneys upon which he looked, of the smoke and rising mist he vainly
+    sought to pierce, of the shrill cries of children at their evening
+    sports, the distant hum and turmoil of the town, the cheerful country
+    breath that rustled past to meet it, and to droop, and die; he watched,
+    and watched, till it was dark save for the specks of light that twinkled
+    in the streets below and far away--and, as the darkness deepened,
+    strained his gaze and grew more eager yet.
+    
+    ‘Nothing but gloom in that direction, still!’ he muttered restlessly.
+    ‘Dog! where is the redness in the sky, you promised me!’""",
+
+    """On that same night--events so crowd upon each other in convulsed and
+    distracted times, that more than the stirring incidents of a whole life
+    often become compressed into the compass of four-and-twenty hours--on
+    that same night, Mr Haredale, having strongly bound his prisoner,
+    with the assistance of the sexton, and forced him to mount his horse,
+    conducted him to Chigwell; bent upon procuring a conveyance to London
+    from that place, and carrying him at once before a justice. The
+    disturbed state of the town would be, he knew, a sufficient reason for
+    demanding the murderer’s committal to prison before daybreak, as no man
+    could answer for the security of any of the watch-houses or ordinary
+    places of detention; and to convey a prisoner through the streets when
+    the mob were again abroad, would not only be a task of great danger and
+    hazard, but would be to challenge an attempt at rescue. Directing the
+    sexton to lead the horse, he walked close by the murderer’s side, and in
+    this order they reached the village about the middle of the night.""",
+
+    """Joe could only repeat his former eloquence--but it was very much to the
+    purpose.
+    
+    ‘They know of this, at home,’ said Dolly. ‘For your sake, I would leave
+    even them; but they know it, and are glad of it, and are as proud of you
+    as I am, and as full of gratitude.--You’ll not come and see me as a poor
+    friend who knew me when I was a girl, will you, dear Joe?’
+    
+    Well, well! It don’t matter what Joe said in answer, but he said a great
+    deal; and Dolly said a great deal too: and he folded Dolly in his one
+    arm pretty tight, considering that it was but one; and Dolly made no
+    resistance: and if ever two people were happy in this world--which is
+    not an utterly miserable one, with all its faults--we may, with some
+    appearance of certainty, conclude that they were.""",
+
+    """‘And observe,’ said the Manager, taking him up quickly, ‘it will be of
+    still less use, Gay, if you persist in forcing Mr John Carker’s name on
+    people’s attention. That is not the way to befriend Mr John Carker. Ask
+    him if he thinks it is.’
+    
+    ‘It is no service to me,’ said the brother. ‘It only leads to such a
+    conversation as the present, which I need not say I could have well
+    spared. No one can be a better friend to me:’ he spoke here very
+    distinctly, as if he would impress it upon Walter: ‘than in forgetting
+    me, and leaving me to go my way, unquestioned and unnoticed.’""",
+
+    """‘No. I live here with my brother. We have not much to spare, or I would
+    give you more.’
+    
+    ‘Will you let me kiss you?’
+    
+    Seeing no scorn or repugnance in her face, the object of her charity
+    bent over her as she asked the question, and pressed her lips against
+    her cheek. Once more she caught her arm, and covered her eyes with it;
+    and then was gone.
+    
+    Gone into the deepening night, and howling wind, and pelting rain;
+    urging her way on towards the mist-enshrouded city where the blurred
+    lights gleamed; and with her black hair, and disordered head-gear,
+    fluttering round her reckless face.""",
+
+    """‘I don’t know,’ said his brother, whose roused feelings had soon yielded
+    to surprise, ‘who may have abused your ear with such representations;
+    or why you have chosen to try me, rather than another. But that you
+    have been trying me, and tampering with me, I am now sure. You have a
+    different manner and a different aspect from any that I ever saw in you.
+    I will only say to you, once more, you are deceived.’
+    
+    ‘I know I am,’ said the Manager. ‘I have told you so.’
+    
+    ‘Not by me,’ returned his brother. ‘By your informant, if you have one.
+    If not, by your own thoughts and suspicions.’""",
+
+    """Presently it comes. Mrs Pipchin’s wardrobe being handed in and stowed
+    away, Mrs Pipchin’s chair is next handed in, and placed in a convenient
+    corner among certain trusses of hay; it being the intention of the
+    amiable woman to occupy the chair during her journey. Mrs Pipchin
+    herself is next handed in, and grimly takes her seat. There is a snaky
+    gleam in her hard grey eye, as of anticipated rounds of buttered toast,
+    relays of hot chops, worryings and quellings of young children, sharp
+    snappings at poor Berry, and all the other delights of her Ogress’s
+    castle. Mrs Pipchin almost laughs as the fly-van drives off, and she
+    composes her black bombazeen skirts, and settles herself among the
+    cushions of her easy chair.
+    
+    The house is such a ruin that the rats have fled, and there is not one
+    left.""",
+
+    """The married Miss Hominy, who had come on board with her husband, gave to
+    this statement her most unqualified support, as did that gentleman also.
+    Martin gratefully declined their invitation to regale himself at their
+    house during the half hour of the vessel’s stay; and having escorted
+    Mrs Hominy and the red pocket-handkerchief (which was still on active
+    service) safely across the gangway, returned in a thoughtful mood to
+    watch the emigrants as they removed their goods ashore.
+    
+    Mark, as he stood beside him, glanced in his face from time to time;
+    anxious to discover what effect this dialogue had had upon him, and
+    not unwilling that his hopes should be dashed before they reached their
+    destination, so that the blow he feared might be broken in its fall. But
+    saving that he sometimes looked up quickly at the poor erections on the
+    hill, he gave him no clue to what was passing in his mind, until they
+    were again upon their way.""",
+
+    """‘Tut, tut,’ said Tom, ‘you needn’t waste words or threats. I wish you
+    to understand--plainly because I would rather keep clear of you and
+    everything that concerns you: not because I have the least apprehension
+    of your doing me any injury: which would be weak indeed--that I am no
+    party to the contents of that letter. That I know nothing of it. That I
+    was not even aware that it was to be delivered to you; and that I had it
+    from--’
+    
+    ‘By the Lord!’ cried Jonas, fiercely catching up the chair, ‘I’ll knock
+    your brains out, if you speak another word.’""",
+
+    """‘Up and dressed!’ cried John, sitting down beside him. ‘That’s brave.
+    How do you feel?’
+    
+    ‘Much better. But very weak.’
+    
+    ‘No wonder. You have had a hard bout of it. But country air, and change
+    of scene,’ said John, ‘will make another man of you! Why, Mrs Gamp,’
+    he added, laughing, as he kindly arranged the sick man’s garments, ‘you
+    have odd notions of a gentleman’s dress!’
+    
+    ‘Mr Lewsome an’t a easy gent to get into his clothes, sir,’ Mrs Gamp
+    replied with dignity; ‘as me and Betsey Prig can certify afore the Lord
+    Mayor and Uncommon Counsellors, if needful!’""",
+
+    """‘How she trembled when she began to tell me she knew it!’ thought Tom,
+    recalling all the little incidents and circumstances; ‘and how her
+    face flushed! But that was natural! Oh, quite natural! That needs no
+    accounting for.’
+    
+    Tom little thought how natural it was. Tom little knew that there was
+    that in Ruth’s own heart, but newly set there, which had helped her to
+    the reading of his mystery. Ah, Tom! He didn’t understand the whispers
+    of the Temple Fountain, though he passed it every day.
+    
+    Who so lively and cheerful as busy Ruth next morning! Her early tap at
+    Tom’s door, and her light foot outside, would have been music to him
+    though she had not spoken. But she said it was the brightest morning
+    ever seen; and so it was; and if it had been otherwise, she would have
+    made it so to Tom.""",
+
+    """‘Not a word,’ resumed Squeers, ‘and never will be. Now, this is a pretty
+    sort of thing, isn’t it, that you should have been left here, all these
+    years, and no money paid after the first six--nor no notice taken, nor
+    no clue to be got who you belong to? It’s a pretty sort of thing that I
+    should have to feed a great fellow like you, and never hope to get one
+    penny for it, isn’t it?’
+    
+    The boy put his hand to his head as if he were making an effort to
+    recollect something, and then, looking vacantly at his questioner,
+    gradually broke into a smile, and limped away.""",
+
+    """‘I am obliged,’ continued Madame Mantalini, ‘since our late misfortunes,
+    to pay Miss Knag a great deal of money for having her name in the
+    business, and I really cannot afford to encourage him in all his
+    wastefulness. As I have no doubt that he came straight here, Mr
+    Nickleby, to convert the papers I have spoken of, into money, and as you
+    have assisted us very often before, and are very much connected with us
+    in this kind of matters, I wish you to know the determination at which
+    his conduct has compelled me to arrive.’
+    
+    Mr. Mantalini groaned once more from behind his wife’s bonnet, and
+    fitting a sovereign into one of his eyes, winked with the other at
+    Ralph. Having achieved this performance with great dexterity, he whipped
+    the coin into his pocket, and groaned again with increased penitence.""",
+
+    """‘I don’t know though,’ said Noggs, stopping for breath, ‘any good that
+    I could have done by going too. He would have seen me if I had. Drive
+    THERE! What can come of this? If I had only known it yesterday I could
+    have told--drive there! There’s mischief in it. There must be.’
+    
+    His reflections were interrupted by a grey-haired man of a very
+    remarkable, though far from prepossessing appearance, who, coming
+    stealthily towards him, solicited relief.""",
+
+    """These arguments at length concluded, Mr. Squeers crossed his legs,
+    uncrossed them, scratched his head, rubbed his eye, examined the palms
+    of his hands, and bit his nails, and after exhibiting many other signs
+    of restlessness and indecision, asked ‘whether one hundred pound was the
+    highest that Mr. Nickleby could go.’ Being answered in the affirmative,
+    he became restless again, and, after some thought, and an unsuccessful
+    inquiry ‘whether he couldn’t go another fifty,’ said he supposed he must
+    try and do the most he could for a friend: which was always his maxim,
+    and therefore he undertook the job.
+    
+    ‘But how are you to get at the woman?’ he said; ‘that’s what it is as
+    puzzles me.’""",
+
+    """Kit might have returned some answer which would not have been agreeable
+    to his irascible questioner, if the boy from the wharf, who had been
+    skulking about the room in search of anything that might have been left
+    about by accident, had not happened to cry, ‘Here’s a bird!  What’s to
+    be done with this?’
+    
+    ‘Wring its neck,’ rejoined Quilp.
+    
+    ‘Oh no, don’t do that,’ said Kit, stepping forward.  ‘Give it to me.’
+    
+    ‘Oh yes, I dare say,’ cried the other boy.  ‘Come!  You let the cage
+    alone, and let me wring its neck will you?  He said I was to do it.
+    You let the cage alone will you.’""",
+
+    """What more he thought or said, matters not.  It was concluded that Nell
+    and her grandfather should accompany him to the village whither he was
+    bound, and that he should endeavour to find them some humble occupation
+    by which they could subsist.  ‘We shall be sure to succeed,’ said the
+    schoolmaster, heartily.  ‘The cause is too good a one to fail.’
+    
+    They arranged to proceed upon their journey next evening, as a
+    stage-waggon, which travelled for some distance on the same road as
+    they must take, would stop at the inn to change horses, and the driver
+    for a small gratuity would give Nell a place inside.  A bargain was
+    soon struck when the waggon came; and in due time it rolled away; with
+    the child comfortably bestowed among the softer packages, her
+    grandfather and the schoolmaster walking on beside the driver, and the
+    landlady and all the good folks of the inn screaming out their good
+    wishes and farewells.""",
+
+    """Yet the child could make him no answer, and sobbed as though her heart
+    were bursting.  ‘Why would you go, dear Nell?  I know you would not be
+    happy when you heard that we were crying for your loss.  They say that
+    Willy is in Heaven now, and that it’s always summer there, and yet I’m
+    sure he grieves when I lie down upon his garden bed, and he cannot turn
+    to kiss me.  But if you do go, Nell,’ said the boy, caressing her, and
+    pressing his face to hers, ‘be fond of him for my sake.  Tell him how I
+    love him still, and how much I loved you; and when I think that you two
+    are together, and are happy, I’ll try to bear it, and never give you
+    pain by doing wrong--indeed I never will!’""",
+
+    """With a smile upon her face, and looking at each of the three by turns,
+    Miss Brass took two or three more pinches of snuff, and having by this
+    time very little left, travelled round and round the box with her
+    forefinger and thumb, scraping up another.  Having disposed of this
+    likewise and put the box carefully in her pocket, she said,--
+    
+    ‘I am to accept or reject at once, am I?’
+    
+    ‘Yes,’ said Mr Witherden.
+    
+    The charming creature was opening her lips to speak in reply, when the
+    door was hastily opened too, and the head of Sampson Brass was thrust
+    into the room.""",
+
+    """Mr. Winkle dismounted without saying anything in reply to this
+    observation; but he thought within himself, that if the party remained
+    in the open air, till he had filled one of the bags, they stood a
+    considerable chance of catching colds in their heads.
+    
+    ‘Hi, Juno, lass-hi, old girl; down, Daph, down,’ said Wardle, caressing
+    the dogs. ‘Sir Geoffrey still in Scotland, of course, Martin?’
+    
+    The tall gamekeeper replied in the affirmative, and looked with some
+    surprise from Mr. Winkle, who was holding his gun as if he wished his
+    coat pocket to save him the trouble of pulling the trigger, to Mr.
+    Tupman, who was holding his as if he was afraid of it--as there is no
+    earthly reason to doubt he really was.""",
+
+    """At this the man in blue smiled, as if it were a compliment he was well
+    used to; but looked approvingly on Sam at the same time, and said he
+    hoped he should be better acquainted with him, for without any flattery
+    at all he seemed to have the makings of a very nice fellow about him,
+    and to be just the man after his own heart.
+    
+    ‘You’re wery good, sir,’ said Sam. ‘What a lucky feller you are!’
+    
+    ‘How do you mean?’ inquired the gentleman in blue.
+    
+    ‘That ‘ere young lady,’ replied Sam. ‘She knows wot’s wot, she does. Ah!
+    I see.’ Mr. Weller closed one eye, and shook his head from side to side,
+    in a manner which was highly gratifying to the personal vanity of the
+    gentleman in blue.""",
+    
+    """‘I beg you won’t mention it, Sir,’ said Mr. Winkle.
+    
+    ‘I shall feel proud of your acquaintance, Sir,’ said the little doctor.
+    
+    ‘It will afford me the greatest pleasure to know you, sir,’ replied Mr.
+    Winkle. Thereupon the doctor and Mr. Winkle shook hands, and then Mr.
+    Winkle and Lieutenant Tappleton (the doctor’s second), and then Mr.
+    Winkle and the man with the camp-stool, and, finally, Mr. Winkle and Mr.
+    Snodgrass--the last-named gentleman in an excess of admiration at the
+    noble conduct of his heroic friend.""",
+
+    """‘I have been concealed in the next room, sir, since you returned,’
+    explained Mr. Snodgrass.
+    
+    ‘Emily, my girl,’ said Wardle reproachfully, ‘I detest meanness and
+    deceit; this is unjustifiable and indelicate in the highest degree. I
+    don’t deserve this at your hands, Emily, indeed!’
+    
+    ‘Dear papa,’ said Emily, ‘Arabella knows--everybody here knows--Joe
+    knows--that I was no party to this concealment. Augustus, for Heaven’s
+    sake, explain it!’"""
+
+]
+
 
 FYODOR_DOSTOEVSKY_SAME_BOOK_SINGLE_SENTENCE_TESTS = [
     """I tell you again, mother, he is still very ill. Don’t you see it?
