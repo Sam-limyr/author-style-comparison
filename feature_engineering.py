@@ -52,12 +52,14 @@ for author in authors:
         for ele in sentence_list:
             if ele == None or len(ele) == 0:
                 continue
-            # avoid out of range error
-            elif (len(sentences) == 0):
+            elif len(sentences) != 0 and ele[0] in "?!.":
+                # count statistics
+                sentences[-1] += ele.strip()
+            else:
                 # count statistics
                 sentence_count += 1
                 words = re.findall(r'\w*’?\w*', ele)
-                dashes = re.findall(r'--+', ele)
+                dashes = re.findall(r'-+', ele)
                 commas = re.findall(r',', ele)
                 italics = re.findall(r'_\w+_', ele)
                 contractions = re.findall(r'\w+’\w+', ele)
@@ -79,40 +81,6 @@ for author in authors:
                     # TODO: Handle known words that are in ALL CAPS
                     # TODO: Handle named entities (people, cities?), count them as the same since not style
                     # TODO: Project Gutenberg seems to have italicised? words that are _<word>_, handle.
-                    if word not in vocab:
-                        vocab[word] = 1
-                    else:
-                        # counting word occurrence because might as well
-                        vocab[word] += 1
-                    if word in STOPWORDS:
-                        stopword_count += 1
-                sentences += [ele.strip()]
-            elif ele[0] in "?!.":
-                # count statistics
-                sentences[-1] += ele.strip()
-            else:
-                # count statistics
-                sentence_count += 1
-                words = re.findall(r'\w\'?\w+', ele)
-                dashes = re.findall(r'-+', ele)
-                commas = re.findall(r',', ele)
-                italics = re.findall(r'_\w+_', ele)
-                contractions = re.findall(r'\w+’\w+', ele)
-                if not in_dialogue:
-                    dialogues = re.findall(r'[‘“].*', ele) # Look for start of dialogue
-                    in_dialogue = len(dialogues) > 0
-                else:
-                    dialogues = re.findall(r'.*[”’]', ele) # Look for end of dialogue
-                    in_dialogue = len(dialogues) == 0
-                # contractions treated as one word
-                total_words += len(words)
-                dash_count += len(dashes)
-                comma_count += len(commas)
-                italics_count += len(italics)
-                contractions_count += len(contractions)
-                # Count sentences that have dialogue
-                dialogue_count += 1 if in_dialogue else 0
-                for word in words:
                     if word not in vocab:
                         vocab[word] = 1
                     else:
@@ -193,39 +161,72 @@ def extractStats(queries, scaler):
     features = {}
     vocab = {}
     for query in queries:
+        # split each sentence
+        query = query.replace("\n", " ")
+        p_sentence = re.compile(r'([?!]"?)|((?<!Dr|Mr|Ms|Jr|Sr|St)(?<!Mrs|Rev)\."?\s+)')
+        sentence_list = re.split(p_sentence, query)
+        
+        sentence_count = 0
+        total_words = 0
         stopword_count = 0
-        
-        words = re.findall(r'\w\'?\w+', query)
-        dashes = re.findall(r'-+', query)
-        commas = re.findall(r',', query)
-        italics = re.findall(r'_\w+_', query)
-        contractions = re.findall(r'\w+’\w+', ele)
-        dialogues = re.findall(r'[‘“].*|.*[”’]', query) # Look for either side of ""
-        # contractions treated as one word
-        words_in_sent = len(words)
-        dash_count = len(dashes)
-        comma_count = len(commas)
-        italics_count = len(italics)
-        contractions_count = len(contractions)
-        has_dialogue = 1 if len(dialogues) > 0 else 0
-        
-        for word in words:
-            if word not in vocab:
-                vocab[word] = 1
+        in_dialogue = False
+        sentences = []
+        # punctuation_count
+        dash_count = 0 # counting "--"
+        comma_count = 0
+        italics_count = 0 # _<word>_
+        contractions_count = 0 # counting "you'll" etc.
+        dialogue_count = 0 # counting ""
+    
+        for ele in sentence_list:
+            if ele == None or len(ele) == 0:
+                continue
+            elif len(sentences) != 0 and ele[0] in "?!.":
+                # count statistics
+                sentences[-1] += ele.strip()
             else:
-                # counting word occurrence because might as well
-                vocab[word] += 1
-            if word in STOPWORDS:
-                stopword_count += 1
+                # count statistics
+                sentence_count += 1
+                words = re.findall(r'\w*’?\w*', ele)
+                dashes = re.findall(r'-+', ele)
+                commas = re.findall(r',', ele)
+                italics = re.findall(r'_\w+_', ele)
+                contractions = re.findall(r'\w+’\w+', ele)
+                if not in_dialogue:
+                    dialogues = re.findall(r'[‘“].*', ele) # Look for start of dialogue
+                    in_dialogue = len(dialogues) > 0
+                else:
+                    dialogues = re.findall(r'.*[”’]', ele) # Look for end of dialogue
+                    in_dialogue = len(dialogues) == 0
+                # contractions treated as one word
+                total_words += len(words)
+                dash_count += len(dashes)
+                comma_count += len(commas)
+                italics_count += len(italics)
+                contractions_count += len(contractions)
+                # Count sentences that have dialogue
+                dialogue_count += 1 if in_dialogue else 0
+                for word in words:
+                    # TODO: Handle known words that are in ALL CAPS
+                    # TODO: Handle named entities (people, cities?), count them as the same since not style
+                    # TODO: Project Gutenberg seems to have italicised? words that are _<word>_, handle.
+                    if word not in vocab:
+                        vocab[word] = 1
+                    else:
+                        # counting word occurrence because might as well
+                        vocab[word] += 1
+                    if word in STOPWORDS:
+                        stopword_count += 1
+                sentences += [ele.strip()]
         
         if "stopword_count_per_sent" not in features:
-            features["stopword_count_per_sent"] = [stopword_count]
+            features["stopword_count_per_sent"] = [stopword_count/sentence_count]
         else:
-            features["stopword_count_per_sent"] += [stopword_count]
+            features["stopword_count_per_sent"] += [stopword_count/sentence_count]
         if "avg_word_per_sentence" not in features:
-            features["avg_word_per_sentence"] = [words_in_sent]
+            features["avg_word_per_sentence"] = [total_words/sentence_count]
         else:
-            features["avg_word_per_sentence"] += [words_in_sent]
+            features["avg_word_per_sentence"] += [total_words/sentence_count]
             
 #         if "vocab_word_count" not in features:
 #             features["vocab_word_count"] = [len(vocab.keys())]
@@ -233,25 +234,25 @@ def extractStats(queries, scaler):
 #             features["vocab_word_count"] += [len(vocab.keys())]
             
         if "dashes_per_sent" not in features:
-            features["dashes_per_sent"] = [dash_count]
+            features["dashes_per_sent"] = [dash_count/sentence_count]
         else:
-            features["dashes_per_sent"] += [dash_count]
+            features["dashes_per_sent"] += [dash_count/sentence_count]
         if "comma_count_per_sent" not in features:
-            features["comma_count_per_sent"] = [comma_count]
+            features["comma_count_per_sent"] = [comma_count/sentence_count]
         else:
-            features["comma_count_per_sent"] += [comma_count]
+            features["comma_count_per_sent"] += [comma_count/sentence_count]
         if "italics_per_sent" not in features:
-            features["italics_per_sent"] = [italics_count]
+            features["italics_per_sent"] = [italics_count/sentence_count]
         else:
-            features["italics_per_sent"] += [italics_count]
+            features["italics_per_sent"] += [italics_count/sentence_count]
 #         if "contractions_per_sent" not in features:
 #             features["contractions_per_sent"] = [contractions_count/sentence_count]
 #         else:
 #             features["contractions_per_sent"] += [contractions_count/sentence_count]
         if "dialogue_per_sent" not in features:
-            features["dialogue_per_sent"] = [has_dialogue]
+            features["dialogue_per_sent"] = [dialogue_count/sentence_count]
         else:
-            features["dialogue_per_sent"] += [has_dialogue]
+            features["dialogue_per_sent"] += [dialogue_count/sentence_count]
     
     features = pd.DataFrame(data=features)
     scaled = scaler.transform(features)
@@ -280,55 +281,6 @@ y_train = [
 ]
 train_model(model, x_train, y_train)
 
-# Queries
-queries = [
-    "As he was passing by the house where Jeff Thatcher lived, he saw a new girl in the garden--a lovely little blue-eyed creature with yellowhair plaited into two long-tails, white summer frock and embroidered pan-talettes.",
-    "Presently a fair slip of a girl, about ten years old, with a cataract of golden hair streaming down over her shoulders, came along.",
-    "Why, I wrote you twice to ask you what you could mean by Sid being here.”",
-    "He was crushed by poverty, but the anxieties of his position had of late ceased to weigh upon him.",
-    "He had given up attending to matters of practical importance; he had lost all desire to do so.",
-    "Nothing that any landlady could do had a real terror for him.",
-    "Is the movement of the peoples at the time of the Crusades explained by the life and activity of the Godfreys and the Louis-es and their ladies?",
-    "“She rushes about from place to place with him,” said the prince, smiling.",
-    "For an instant she had a clear vision of what she was doing, and was horrified at how she had fallen away from her resolution.",
-    "Thoughtfully, for I could not be here once more, and so near Agnes, without the revival of those regrets with which I had so long been occupied",
-    "And then, “When she first came, I meant to save her from misery like mine.”",
-    "Mr. Giles had risen from his seat, and taken two steps with his eyes shut, to accompany his description with appropriate action, when he started violently, in common with the rest of the company, and hurried back to his chair."
-]
-labels = [
-    "mark_twain",
-    "mark_twain",
-    "mark_twain",
-    "fyodor_dostoevsky",
-    "fyodor_dostoevsky",
-    "fyodor_dostoevsky",
-    "leo_tolstoy",
-    "leo_tolstoy",
-    "leo_tolstoy",
-    "charles_dickens",
-    "charles_dickens",
-    "charles_dickens"
-]
-
-queries = pd.Series(queries)
-x_test = extractStats(queries, scaler)
-print("queries' stats:")
-print(x_test)
-y_test = pd.Series(labels)
-
-# test your model
-y_pred = predict(model, x_test)
-
-print("Predictions: \n")
-print(y_pred)
-
-# Use f1-macro as the metric
-score = f1_score(y_test, y_pred, average='macro')
-print('LR score on validation = {}'.format(score))
-from sklearn.metrics import confusion_matrix, classification_report
-print(confusion_matrix(y_test, y_pred))
-print(classification_report(y_test, y_pred))
-
 from test_runner import *
 from matplotlib import pyplot
 
@@ -341,6 +293,28 @@ print(x_test)
 
 output_answers = predict(model, x_test)
 check_test_results(output_answers)
+
+from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, LEO_TOLSTOY_TESTS, MARK_TWAIN_TESTS
+
+# Names of authors
+CHARLES_DICKENS_NAME = "charles_dickens"
+FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
+LEO_TOLSTOY_NAME = "leo_tolstoy"
+MARK_TWAIN_NAME = "mark_twain"
+ALL_AUTHOR_NAMES = [CHARLES_DICKENS_NAME, FYODOR_DOSTOEVSKY_NAME, LEO_TOLSTOY_NAME, MARK_TWAIN_NAME]
+
+# Get F1 Score
+correct_answers = [CHARLES_DICKENS_NAME for _ in CHARLES_DICKENS_TESTS] + \
+                  [FYODOR_DOSTOEVSKY_NAME for _ in FYODOR_DOSTOEVSKY_TESTS] + \
+                  [LEO_TOLSTOY_NAME for _ in LEO_TOLSTOY_TESTS] + \
+                  [MARK_TWAIN_NAME for _ in MARK_TWAIN_TESTS]
+
+# Use f1-macro as the metric
+score = f1_score(correct_answers, output_answers, average='macro')
+print('LR score on validation = {}'.format(score))
+from sklearn.metrics import confusion_matrix, classification_report
+print(confusion_matrix(correct_answers, output_answers))
+print(classification_report(correct_answers, output_answers))
 
 # get importance
 importance = model.coef_
