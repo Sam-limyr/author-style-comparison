@@ -328,3 +328,38 @@ print('LR score on validation = {}'.format(score))
 from sklearn.metrics import confusion_matrix, classification_report
 print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
+
+from test_runner import *
+from matplotlib import pyplot
+
+test_cases = get_all_tests()
+
+tests = pd.Series(test_cases)
+x_test = extractStats(tests, scaler)
+print("test queries' stats:")
+print(x_test)
+
+output_answers = predict(model, x_test)
+check_test_results(output_answers)
+
+# get importance
+importance = model.coef_
+# summarize feature importance
+print("Feature importance for Charles Dickens:")
+# plot feature importance
+pyplot.bar([x for x in range(len(importance[0]))], importance[0])
+pyplot.show()
+
+# print("Feature importance for 0:")
+# #     for i,v in enumerate(importance[1]):
+# #         print('Feature: %0d, Score: %.5f' % (i,v))
+# # plot feature importance
+# pyplot.bar([x for x in range(len(importance[1]))], importance[1])
+# pyplot.show()
+
+# print("Feature importance for 1")
+# #     for i,v in enumerate(importance[2]):
+# #         print('Feature: %0d, Score: %.5f' % (i,v))
+# # plot feature importance
+# pyplot.bar([x for x in range(len(importance[2]))], importance[2])
+# pyplot.show()
