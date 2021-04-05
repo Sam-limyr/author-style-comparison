@@ -1,11 +1,16 @@
 from sentence_transformers import SentenceTransformer, util
 import numpy as np
-from copy import deepcopy
 from tqdm import tqdm
+import pickle
+import os
 
 
-# Initialize globals
+# Corpus encoding parameters
+GENERATE_NEW_ENCODINGS = True  # True if you want to overwrite existing encodings; False if you want to use them
+PICKLED_ENCODINGS_ADDRESS = "corpus_token_encodings"
+NUMBER_OF_BYTES = -1  # Leave as -1 to read all lines; otherwise read this number of bytes per file
 
+# Names of authors
 CHARLES_DICKENS_NAME = "charles_dickens"
 FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
 LEO_TOLSTOY_NAME = "leo_tolstoy"
@@ -18,18 +23,11 @@ corpus_embeddings = {}
 average_cosine_scores = {}
 
 
-NUMBER_OF_BYTES = -1  # Leave as -1 to read all lines; otherwise read this number of bytes per file
-
-# Read data from csv files
-
-for author in tqdm(author_names, desc="Reading data from csv files..."):
-    with open("tokens/" + author + '.csv', encoding='utf-8') as file:
-        corpus[author] = file.readlines(NUMBER_OF_BYTES)
-
-
 # Initialize model
 
+print("Initializing model...")
 model = SentenceTransformer('paraphrase-distilroberta-base-v1')
+print("Model initialized.")
 
 queries = [
     "He had become so completely absorbed in himself, and isolated from his fellows that he dreaded meeting.",
@@ -39,9 +37,31 @@ queries = [
 ]
 
 
-# Encode all sentences
-for author, sentences in tqdm(corpus.items(), desc="Encoding sentence embeddings..."):
-    corpus_embeddings[author] = model.encode(sentences, show_progress_bar=True)
+if GENERATE_NEW_ENCODINGS:
+
+    # Read data from csv files
+    for author in tqdm(author_names, desc="Reading data from csv files..."):
+        with open("tokens/" + author + '.csv', encoding='utf-8') as file:
+            corpus[author] = file.readlines(NUMBER_OF_BYTES)
+
+    # Encode all sentences
+    for author, sentences in tqdm(corpus.items(), desc="Encoding sentence embeddings..."):
+        corpus_embeddings[author] = model.encode(sentences, show_progress_bar=True)
+
+    # Save embeddings to file via pickle module
+    with open(PICKLED_ENCODINGS_ADDRESS, 'wb') as encodings_file:
+        pickle.dump(corpus_embeddings, encodings_file)
+
+else:
+
+    if not os.path.isfile(os.path.join(os.getcwd(), PICKLED_ENCODINGS_ADDRESS)):
+        raise Exception("Pickled corpus encodings do not exist at specified address.")
+
+    print("Retrieving saved corpus embeddings...")
+    with open(PICKLED_ENCODINGS_ADDRESS, 'rb') as encodings_file:
+        corpus_embeddings = pickle.load(encodings_file)
+
+
 query_embeddings = model.encode(queries, convert_to_tensor=True)
 
 
@@ -52,7 +72,8 @@ for author, sentences in tqdm(corpus_embeddings.items(), desc="Calculating avera
     average_cosine_scores[author] = np.average(util.pytorch_cos_sim(sentences, query_embeddings))
 
 for author in sorted(average_cosine_scores.keys(), key=average_cosine_scores.get, reverse=True):
-    print("Author: {} \t\t | \t\t Average Similarity Score: {}".format(author, average_cosine_scores[author]))
+    print("Author: {} \t\t | \t\t Average Similarity Score: {}"
+          .format(author, round(float(average_cosine_scores[author]), 5)))
 
 
 
