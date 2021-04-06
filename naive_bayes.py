@@ -13,7 +13,7 @@ STOPWORDS = stopwords.words('english') # type: list(str)
 
 authors = {"charles_dickens": ["davidc.txt", "greatex.txt", "olivert.txt", "twocities.txt"],
            "fyodor_dostoevsky": ["crimep.txt", "idiot.txt", "possessed.txt"], 
-           "leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
+           #"leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
            "mark_twain": ["toms.txt", "huckfinn.txt", "connecticutyankee.txt", "princepauper.txt"]}
 
 num_novels = sum([len(authors[author]) for author in authors])
@@ -41,10 +41,10 @@ from sklearn.feature_extraction.text import TfidfTransformer
 
 # extract word counts for each book
 def get_tf(texts, vectorizer, transformer, isTestSet):
-    features = pd.DataFrame(data=stats)
+    features = pd.DataFrame(data=texts)
     
     counts = vectorizer.fit_transform(texts)
-    transformer.fit(counts)
+    counts = transformer.fit_transform(counts)
     
     return counts
 
@@ -59,7 +59,7 @@ def predict(model, x_test):
 
 model = MultinomialNB(fit_prior=False)
 # don't include stopwords 
-vectorizer = CountVectorizer(token_pattern=r'\b\w*’?\w*\b', stop_words=STOPWORDS)
+vectorizer = CountVectorizer(token_pattern=r'\b_?[a-z]\w*’?\w*_?\b', stop_words=STOPWORDS)
 tfidf_transformer=TfidfTransformer(smooth_idf=True,use_idf=True) 
             
 # x_train = array with shape [books, words]
@@ -91,26 +91,4 @@ tests = pd.Series(test_cases)
 x_test = get_tfidf(tests, vectorizer, tfidf_transformer)
 
 output_answers = predict(model, x_test)
-check_test_results(output_answers)
-
-# get importance
-importance = model.coef_
-# summarize feature importance
-print("Feature importance for Charles Dickens:")
-# plot feature importance
-pyplot.bar([x for x in range(len(importance[0]))], importance[0])
-pyplot.show()
-
-# print("Feature importance for 0:")
-# #     for i,v in enumerate(importance[1]):
-# #         print('Feature: %0d, Score: %.5f' % (i,v))
-# # plot feature importance
-# pyplot.bar([x for x in range(len(importance[1]))], importance[1])
-# pyplot.show()
-
-# print("Feature importance for 1")
-# #     for i,v in enumerate(importance[2]):
-# #         print('Feature: %0d, Score: %.5f' % (i,v))
-# # plot feature importance
-# pyplot.bar([x for x in range(len(importance[2]))], importance[2])
-# pyplot.show()
+check_test_results(output_answers, show_matrix=False)
