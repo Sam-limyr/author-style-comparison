@@ -12,31 +12,18 @@ STOPWORDS = stopwords.words('english') # type: list(str)
 
 authors = {"charles_dickens": ["davidc.txt", "greatex.txt", "olivert.txt", "twocities.txt"],
            "fyodor_dostoevsky": ["crimep.txt", "idiot.txt", "possessed.txt"], 
-           "leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
+           #"leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
            "mark_twain": ["toms.txt", "huckfinn.txt", "connecticutyankee.txt", "princepauper.txt"]}
 
 stats = {}
 
 for author in authors:
     
-    # Statistics to track per author
-    sentence_count = 0
-    stopword_count = 0
-    total_words = 0
-    # punctuation_count
-    dash_count = 0 # counting "--"
-    comma_count = 0
-    italics_count = 0 # _<word>_
-    contractions_count = 0 # counting "you'll" etc.
-    dialogue_count = 0 # counting ""
-    
     vocab = {}
     
     for bookName in authors[author]:
         bookFilepath = "novels/" + author + "/" + bookName
         print(bookFilepath)
-        # filepath = os.path.join(sys.path[1], bookFilepath)
-        # print(filepath)
         
         # read text in book
         with open(bookFilepath, encoding='utf-8', errors='ignore') as f:
@@ -47,8 +34,23 @@ for author in authors:
         text = text.replace("\n", " ")
         p_sentence = re.compile(r'([?!]"?)|((?<!Dr|Mr|Ms|Jr|Sr|St)(?<!Mrs|Rev)\."?\s+)')
         sentence_list = re.split(p_sentence, text)
+        
+        # to reconstruct sentences as string
         sentences = []
+        
+        # Statistics to track per book
+        sentence_count = 0
+        stopword_count = 0
+        total_words = 0
+        capitalized_words = 0
+        # punctuation_count
+        dash_count = 0 # counting "--"
+        comma_count = 0
+        italics_count = 0 # _<word>_
+        contractions_count = 0 # counting "you'll" etc.
+        dialogue_count = 0 # counting ""
         in_dialogue = False
+        
         for ele in sentence_list:
             if ele == None or len(ele) == 0:
                 continue
@@ -59,6 +61,7 @@ for author in authors:
                 # count statistics
                 sentence_count += 1
                 words = re.findall(r'\w*’?\w*', ele)
+                capitalized = re.findall(r'[A-Z]\w+’?\w*', ele)
                 dashes = re.findall(r'-+', ele)
                 commas = re.findall(r',', ele)
                 italics = re.findall(r'_\w+_', ele)
@@ -71,6 +74,7 @@ for author in authors:
                     in_dialogue = len(dialogues) == 0
                 # contractions treated as one word
                 total_words += len(words)
+                capitalized_words += len(capitalized)
                 dash_count += len(dashes)
                 comma_count += len(commas)
                 italics_count += len(italics)
@@ -90,46 +94,51 @@ for author in authors:
                         stopword_count += 1
                 sentences += [ele.strip()]
 
-    avg_word_per_sent = total_words / sentence_count
-    unique_word_count = len(vocab.keys())
-    # store stats in outer dictionary, in order of "authors" dictionary
-    if "stopword_count_per_sent" not in stats:
-        stats["stopword_count_per_sent"] = [stopword_count/sentence_count]
-    else:
-        stats["stopword_count_per_sent"] += [stopword_count/sentence_count]
-    if "avg_word_per_sentence" not in stats:
-        stats["avg_word_per_sentence"] = [avg_word_per_sent]
-    else:
-        stats["avg_word_per_sentence"] += [avg_word_per_sent]
-    
-    if "dashes_per_sent" not in stats:
-        stats["dashes_per_sent"] = [dash_count/sentence_count]
-    else:
-        stats["dashes_per_sent"] += [dash_count/sentence_count]
-    if "comma_count_per_sent" not in stats:
-        stats["comma_count_per_sent"] = [comma_count/sentence_count]
-    else:
-        stats["comma_count_per_sent"] += [comma_count/sentence_count]
-    if "italics_per_sent" not in stats:
-        stats["italics_per_sent"] = [italics_count/sentence_count]
-    else:
-        stats["italics_per_sent"] += [italics_count/sentence_count]
-#     if "contractions_per_sent" not in stats:
-#         stats["contractions_per_sent"] = [contractions_count/sentence_count]
-#     else:
-#         stats["contractions_per_sent"] += [contractions_count/sentence_count]
-    if "dialogue_per_sent" not in stats:
-        stats["dialogue_per_sent"] = [dialogue_count/sentence_count]
-    else:
-        stats["dialogue_per_sent"] += [dialogue_count/sentence_count]
+        avg_word_per_sent = total_words / sentence_count
+        capitalized_per_sent = capitalized_words / sentence_count
+        unique_word_count = len(vocab.keys())
+        # store stats in outer dictionary, in order of "authors" dictionary
+        if "stopword_count_per_sent" not in stats:
+            stats["stopword_count_per_sent"] = [stopword_count/sentence_count]
+        else:
+            stats["stopword_count_per_sent"] += [stopword_count/sentence_count]
+        if "avg_word_per_sentence" not in stats:
+            stats["avg_word_per_sentence"] = [avg_word_per_sent]
+        else:
+            stats["avg_word_per_sentence"] += [avg_word_per_sent]
+        if "capitalized_per_sentence" not in stats:
+            stats["capitalized_per_sentence"] = [capitalized_per_sent]
+        else:
+            stats["capitalized_per_sentence"] += [capitalized_per_sent]
+
+        if "dashes_per_sent" not in stats:
+            stats["dashes_per_sent"] = [dash_count/sentence_count]
+        else:
+            stats["dashes_per_sent"] += [dash_count/sentence_count]
+        if "comma_count_per_sent" not in stats:
+            stats["comma_count_per_sent"] = [comma_count/sentence_count]
+        else:
+            stats["comma_count_per_sent"] += [comma_count/sentence_count]
+        if "italics_per_sent" not in stats:
+            stats["italics_per_sent"] = [italics_count/sentence_count]
+        else:
+            stats["italics_per_sent"] += [italics_count/sentence_count]
+        if "contractions_per_sent" not in stats:
+            stats["contractions_per_sent"] = [contractions_count/sentence_count]
+        else:
+            stats["contractions_per_sent"] += [contractions_count/sentence_count]
+        if "dialogue_per_sent" not in stats:
+            stats["dialogue_per_sent"] = [dialogue_count/sentence_count]
+        else:
+            stats["dialogue_per_sent"] += [dialogue_count/sentence_count]
+
+        # vocab needs to be able to count rare words and identify them
+    #     if "vocab_word_count" not in stats:
+    #         stats["vocab_word_count"] = [unique_word_count]
+    #     else:
+    #         stats["vocab_word_count"] += [unique_word_count]
         
-    # vocab needs to be able to count rare words and identify them
-#     if "vocab_word_count" not in stats:
-#         stats["vocab_word_count"] = [unique_word_count]
-#     else:
-#         stats["vocab_word_count"] += [unique_word_count]
-        
-print(stats)
+print(stats['stopword_count_per_sent'])
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
@@ -168,6 +177,7 @@ def extractStats(queries, scaler):
         
         sentence_count = 0
         total_words = 0
+        capitalized_words = 0
         stopword_count = 0
         in_dialogue = False
         sentences = []
@@ -188,6 +198,7 @@ def extractStats(queries, scaler):
                 # count statistics
                 sentence_count += 1
                 words = re.findall(r'\w*’?\w*', ele)
+                capitalized = re.findall(r'[A-Z]\w*’?\w*', ele)
                 dashes = re.findall(r'-+', ele)
                 commas = re.findall(r',', ele)
                 italics = re.findall(r'_\w+_', ele)
@@ -200,6 +211,7 @@ def extractStats(queries, scaler):
                     in_dialogue = len(dialogues) == 0
                 # contractions treated as one word
                 total_words += len(words)
+                capitalized_words += len(capitalized)
                 dash_count += len(dashes)
                 comma_count += len(commas)
                 italics_count += len(italics)
@@ -227,6 +239,10 @@ def extractStats(queries, scaler):
             features["avg_word_per_sentence"] = [total_words/sentence_count]
         else:
             features["avg_word_per_sentence"] += [total_words/sentence_count]
+        if "capitalized_per_sentence" not in features:
+            features["capitalized_per_sentence"] = [capitalized_words/sentence_count]
+        else:
+            features["capitalized_per_sentence"] += [capitalized_words/sentence_count]
             
 #         if "vocab_word_count" not in features:
 #             features["vocab_word_count"] = [len(vocab.keys())]
@@ -245,10 +261,10 @@ def extractStats(queries, scaler):
             features["italics_per_sent"] = [italics_count/sentence_count]
         else:
             features["italics_per_sent"] += [italics_count/sentence_count]
-#         if "contractions_per_sent" not in features:
-#             features["contractions_per_sent"] = [contractions_count/sentence_count]
-#         else:
-#             features["contractions_per_sent"] += [contractions_count/sentence_count]
+        if "contractions_per_sent" not in features:
+            features["contractions_per_sent"] = [contractions_count/sentence_count]
+        else:
+            features["contractions_per_sent"] += [contractions_count/sentence_count]
         if "dialogue_per_sent" not in features:
             features["dialogue_per_sent"] = [dialogue_count/sentence_count]
         else:
@@ -273,12 +289,12 @@ x_train = extractFeatures(stats, scaler, False)
 print("Class stats distribution")
 print(x_train)
 
-y_train = [
-    "charles_dickens",
-    "fyodor_dostoevsky",
-    "leo_tolstoy",
-    "mark_twain"
-]
+# y_train = books
+y_train = []
+for author in authors:
+    y_train += [author] * len(authors[author])
+print(y_train)
+
 train_model(model, x_train, y_train)
 
 from test_runner import *
