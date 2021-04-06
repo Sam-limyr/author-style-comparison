@@ -15,92 +15,38 @@ authors = {"charles_dickens": ["davidc.txt", "greatex.txt", "olivert.txt", "twoc
            "fyodor_dostoevsky": ["crimep.txt", "idiot.txt", "possessed.txt"], 
            "leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
            "mark_twain": ["toms.txt", "huckfinn.txt", "connecticutyankee.txt", "princepauper.txt"]}
-authorsIndexed = ["charles_dickens", "fyodor_dostoevsky", "leo_tolstoy", "mark_twain"]
 
 num_novels = sum([len(authors[author]) for author in authors])
 
-stats = {}
-vocab = {}
+texts = []
 
-for i in range(len(authorsIndexed)):
-    author = authorsIndexed[i]
-    
-    # initialize
-    # vocab[author] = {}
-    stats[author] = {}
-    
-    # calculate logprior
-    stats[author]["logprior"] = np.log(len(authors[author]) / num_novels)
-    
-    # to help calc loglikelihood
-    total_words_for_author = 0
-    stats[author]["loglikelihood"] = {}
-    
+for author in authors:
     for bookName in authors[author]:
         bookFilepath = "novels/" + author + "/" + bookName
         print(bookFilepath)
-        # filepath = os.path.join(sys.path[1], bookFilepath)
-        # print(filepath)
         
         # read text in book
         with open(bookFilepath, encoding='utf-8', errors='ignore') as f:
             text = f.read()[1:]
         
-        words = re.findall(r'\w*’?\w*', text)
-        
-        for word in words:
-            # don't count stopwords
-            if word in STOPWORDS:
-                continue
-            total_words_for_author += 1
-            if word == '':
-                continue
-            # TODO: Handle known words that are in ALL CAPS
-            if word.isupper():
-                word = word.lower()
-            # TODO: Project Gutenberg seems to have italicised? words that are _<word>_, handle.
-#             if re.match(r'_\w+_', word):
-#                 word = word.replace('_', '')
-            # TODO: Handle named entities (people, cities?), count them as the same since not style
-            
-            # just set everything to lowercase
-            word = word.lower()
-            if word not in vocab:
-                vocab[word] = [0] * len(authorsIndexed)
-                vocab[word][i] = 1
-            else:
-                # counting word occurrence
-                vocab[word][i] += 1
-    
-    # calculate loglikelihood
-#     for word, count in vocab[author].items():
-#         stats[author]["loglikelihood"][word] = np.log(count / (total_words_for_author - count))
+        # simple preprocessing, make everything lowercase
+        text = text.lower()
+        texts += [text]
                 
-print("Unique words in combined vocabulary: {}".format(len(vocab.keys())))
-
-def viewVocabCounts(vocab, num_of_entries):
-    counter = 0
-    for word, count in vocab.items():
-        if (counter < 10):
-            counter += 1
-            print(word, count)
-
-viewVocabCounts(vocab, 10)
+print("Number of novels: {}".format(len(texts)))
 
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.preprocessing import StandardScaler
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
 
-# extract stats for each author
-def extractFeatures(stats, scaler, isTestSet):
+# extract word counts for each book
+def get_tf(texts, vectorizer, transformer, isTestSet):
     features = pd.DataFrame(data=stats)
     
-#     if isTestSet:
-#         scaled = scaler.transform(features)
-#     else:
-#         scaler.fit(features)
-#         scaled = scaler.fit_transform(features)
+    counts = vectorizer.fit_transform(texts)
+    transformer.fit(counts)
     
-    return pd.DataFrame(features)
+    return counts
 
 def train_model(model, x_train, y_train):
     ''' TODO: train your model based on the training data '''
@@ -112,46 +58,37 @@ def predict(model, x_test):
     return model.predict(x_test)
 
 model = MultinomialNB(fit_prior=False)
-scaler = StandardScaler()
+# don't include stopwords 
+vectorizer = CountVectorizer(token_pattern=r'\b\w*’?\w*\b', stop_words=STOPWORDS)
+tfidf_transformer=TfidfTransformer(smooth_idf=True,use_idf=True) 
             
-x_train = extractFeatures(vocab, scaler, False)
+# x_train = array with shape [books, words]
+x_train = get_tf(texts, vectorizer, tfidf_transformer, False)
 
-# x_train = array of [books, words]
 # y_train = books
-y_train = authorsIndexed
+y_train = []
+for author in authors:
+    y_train += [author] * len(authors[author])
+print(y_train)
 train_model(model, x_train, y_train)
 
 from test_runner import *
 from matplotlib import pyplot
 
 # only count words that are in known vocab, ignore OOV words
-def extractWords(queries, vocab):
-    query_vocab = {}
-    for i in range(len(queries)):
-        query = queries[i]
-        words = re.findall(r'\w*’?\w*', query)
+def get_tfidf(queries, vectorizer, transformer):
+    # count matrix 
+    count_vector=vectorizer.transform(queries) 
+
+    # tf-idf scores 
+    tf_idf_vector=transformer.transform(count_vector)
         
-        for word in words:
-            if word in vocab:
-                if word not in query_vocab:
-                    query_vocab[word] = [0] * len(queries)
-                    query_vocab[word][i] = 1
-                else:
-                    query_vocab[word][i] += 1 
-                    
-    for word, count in vocab.items():
-        if word not in query_vocab:
-            query_vocab[word] = [0] * len(queries)
-    
-    features = pd.DataFrame(data=query_vocab)
-    return features
+    return tf_idf_vector
 
 test_cases = get_all_tests()
 
 tests = pd.Series(test_cases)
-x_test = extractWords(tests, vocab)
-print("test queries' stats:")
-print(x_test)
+x_test = get_tfidf(tests, vectorizer, tfidf_transformer)
 
 output_answers = predict(model, x_test)
 check_test_results(output_answers)
