@@ -41,6 +41,7 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import seaborn as sns
 from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, LEO_TOLSTOY_TESTS, MARK_TWAIN_TESTS
 
 
@@ -79,11 +80,12 @@ AUTHOR_ID_TO_NAME_MAPPINGS = {
 # Methods for testing
 
 def get_all_tests():
+    print("Getting tests...")
     all_tests = CHARLES_DICKENS_TESTS + FYODOR_DOSTOEVSKY_TESTS + LEO_TOLSTOY_TESTS + MARK_TWAIN_TESTS
     return all_tests
 
 
-def check_test_results(results_list, show_details=True, show_matrix=True):
+def check_test_results(results_list, show_details=False, show_matrix=True):
     correct_answers = [CHARLES_DICKENS_NAME for _ in CHARLES_DICKENS_TESTS] + \
                       [FYODOR_DOSTOEVSKY_NAME for _ in FYODOR_DOSTOEVSKY_TESTS] + \
                       [LEO_TOLSTOY_NAME for _ in LEO_TOLSTOY_TESTS] + \
@@ -101,19 +103,19 @@ def check_test_results(results_list, show_details=True, show_matrix=True):
 
 
 def show_confusion_matrix(predicted_results, ground_truth):
-    y_actu = pd.Series(ground_truth, name='Ground Truth')
-    y_pred = pd.Series(predicted_results, name='Predicted')
-    dataframe_confusion = pd.crosstab(y_actu, y_pred, rownames=['Ground Truth'], colnames=['Predicted'])
+    x_axis = pd.Series(predicted_results)
+    y_axis = pd.Series(ground_truth)
+    confusion_matrix_data = pd.crosstab(y_axis, x_axis)
 
-    plt.imshow(dataframe_confusion)
-    plt.title("Confusion matrix")
-    plt.colorbar()
-    tick_marks = np.arange(len(dataframe_confusion.columns))
-    plt.xticks(tick_marks, dataframe_confusion.columns)
-    plt.yticks(tick_marks, dataframe_confusion.index)
-    plt.tight_layout()
-    plt.ylabel(dataframe_confusion.index.name)
-    plt.xlabel(dataframe_confusion.columns.name)
+    plot = plt.subplot()
+    sns.heatmap(confusion_matrix_data, annot=True, fmt='g', ax=plot)
+
+    plot.set_xlabel("Predicted")
+    plot.set_ylabel("Ground Truth")
+    plot.set_title("Confusion matrix")
+    plot.xaxis.set_ticklabels(confusion_matrix_data.columns)
+    plot.yaxis.set_ticklabels(confusion_matrix_data.index)
+
     plt.show()
 
 
