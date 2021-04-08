@@ -42,6 +42,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from sklearn.metrics import f1_score
 from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, LEO_TOLSTOY_TESTS, MARK_TWAIN_TESTS
 
 
@@ -98,8 +99,12 @@ def check_test_results(results_list, show_details=False, show_matrix=True):
     if show_details:
         print_results(results_list, correct_answers)
 
+    score = f1_score(correct_answers, results_list, average='micro')
+    print("\nF1 score: {}".format(round(float(score), 4)))
+
     if show_matrix:
         show_confusion_matrix(results_list, correct_answers)
+
 
 
 def show_confusion_matrix(predicted_results, ground_truth):
