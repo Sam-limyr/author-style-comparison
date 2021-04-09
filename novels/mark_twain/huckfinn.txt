@@ -1,4 +1,4 @@
-﻿CHAPTER I.
+﻿
 
 
 You don't know about me without you have read a book by the name of The
@@ -117,7 +117,7 @@ there was Tom Sawyer waiting for me.
 
 
 
-CHAPTER II.
+
 
 
 We went tiptoeing along a path amongst the trees back towards the end of
@@ -357,7 +357,7 @@ dog-tired.
 
 
 
-CHAPTER III.
+
 
 
 Well, I got a good going-over in the morning from old Miss Watson on
@@ -510,7 +510,7 @@ the marks of a Sunday-school.
 
 
 
-CHAPTER IV.
+
 
 
 Well, three or four months run along, and it was well into the winter
@@ -648,7 +648,7 @@ own self!
 
 
 
-CHAPTER V.
+
 
 
 I had shut the door to. Then I turned around and there he was. I used
@@ -823,7 +823,7 @@ the old man with a shotgun, maybe, but he didn't know no other way.
 
 
 
-CHAPTER VI.
+
 
 
 Well, pretty soon the old man was up and around again, and then he went
@@ -1062,7 +1062,7 @@ drag along.
 
 
 
-CHAPTER VII.
+
 
 
 “Git up! What you 'bout?”
@@ -1300,7 +1300,7 @@ laid down for a nap before breakfast.
 
 
 
-CHAPTER VIII.
+
 
 
 The sun was up so high when I waked that I judged it was after eight
@@ -1753,7 +1753,7 @@ eight hund'd dollars. I wisht I had de money, I wouldn' want no mo'.”
 
 
 
-CHAPTER IX.
+
 
 
 I wanted to go and look at a place right about the middle of the island
@@ -1902,7 +1902,7 @@ hadn't no accidents and didn't see nobody. We got home all safe.
 
 
 
-CHAPTER X.
+
 
 
 After breakfast I wanted to talk about the dead man and guess out how he
@@ -2028,7 +2028,7 @@ was a girl.
 
 
 
-CHAPTER XI.
+
 
 
 “Come in,” says the woman, and I did. She says:  “Take a cheer.”
@@ -2342,7 +2342,7 @@ word.
 
 
 
-CHAPTER XII.
+
 
 
 It must a been close on to one o'clock when we got below the island at
@@ -2626,7 +2626,7 @@ loose en gone I--en here we is!”
 
 
 
-CHAPTER XIII.
+
 
 
 Well, I catched my breath and most fainted. Shut up on a wreck with
@@ -2858,7 +2858,7 @@ in and slept like dead people.
 
 
 
-CHAPTER XIV.
+
 
 
 By and by, when we got up, we turned over the truck the gang had stole
@@ -3061,7 +3061,7 @@ So I quit.
 
 
 
-CHAPTER XV.
+
 
 
 We judged that three nights more would fetch us to Cairo, at the bottom
@@ -3310,7 +3310,7 @@ wouldn't done that one if I'd a knowed it would make him feel that way.
 
 
 
-CHAPTER XVI.
+
 
 
 We slept most all day, and started out at night, a little ways behind a
@@ -3673,7 +3673,7 @@ and barking at me, and I knowed better than to move another peg.
 
 
 
-CHAPTER XVII.
+
 
 
 In about a minute somebody spoke out of a window without putting his
@@ -4029,7 +4029,7 @@ And warn't the cooking good, and just bushels of it too!
 
 
 
-CHAPTER XVIII.
+
 
 
 Col. Grangerford was a gentleman, you see. He was a gentleman all
@@ -4500,7 +4500,7 @@ raft don't. You feel mighty free and easy and comfortable on a raft.
 
 
 
-CHAPTER XIX.
+
 
 
 Two or three days and nights went by; I reckon I might say they swum by,
@@ -4830,7 +4830,7 @@ have their own way.
 
 
 
-CHAPTER XX.
+
 
 
 They asked us considerable many questions; wanted to know what we
@@ -5166,7 +5166,7 @@ had so much trouble, he'd forgot it.
 
 
 
-CHAPTER XXI.
+
 
 
 It was after sun-up now, but we went right on and didn't tie up. The
@@ -5554,7 +5554,7 @@ snatching down every clothes-line they come to to do the hanging with.
 
 
 
-CHAPTER XXII.
+
 
 
 They swarmed up towards Sherburn's house, a-whooping and raging like
@@ -5752,7 +5752,7 @@ Then at the bottom was the biggest line of all—which said:
 
 
 
-CHAPTER XXIII.
+
 
 
 Well, all day him and the king was hard at it, rigging up a stage and
@@ -5978,7 +5978,7 @@ deef en dumb--en I'd ben a-treat'n her so!”
 
 
 
-CHAPTER XXIV.
+
 
 
 Next day, towards night, we laid up under a little willow towhead out in
@@ -6227,7 +6227,7 @@ race.
 
 
 
-CHAPTER XXV.
+
 
 
 The news was all over town in two minutes, and you could see the people
@@ -6515,7 +6515,7 @@ was a prime good hit.
 
 
 
-CHAPTER XXVI.
+
 
 
 Well, when they was all gone the king he asks Mary Jane how they was off
@@ -6881,7 +6881,7 @@ begun yet; and then I slipped down the ladder.
 
 
 
-CHAPTER XXVII.
+
 
 
 I crept to their doors and listened; they was snoring. So I tiptoed
@@ -7152,7 +7152,7 @@ done the niggers no harm by it.
 
 
 
-CHAPTER XXVIII.
+
 
 
 By and by it was getting-up time. So I come down the ladder and started
@@ -7554,7 +7554,7 @@ Peter Wilks--and you pays your money and you takes your choice!”
 
 
 
-CHAPTER XXIX.
+
 
 
 They was fetching a very nice-looking old gentleman along, and a
@@ -7959,7 +7959,7 @@ all I could do to keep from crying.
 
 
 
-CHAPTER XXX.
+
 
 
 When they got aboard the king went for me, and shook me by the collar,
@@ -8118,7 +8118,7 @@ to snoring we had a long gabble, and I told Jim everything.
 
 
 
-CHAPTER XXXI.
+
 
 
 We dasn't stop again at any town for days and days; kept right along
@@ -8469,7 +8469,7 @@ wanted to of them, and wanted to get entirely shut of them.
 
 
 
-CHAPTER XXXII.
+
 
 
 When I got there it was all still and Sunday-like, and hot and sunshiny;
@@ -8723,7 +8723,7 @@ I druther he wouldn't take no trouble about me.
 
 
 
-CHAPTER XXXIII.
+
 
 
 So I started for town in the wagon, and when I was half-way I see a
@@ -9031,7 +9031,7 @@ ain't no good, nohow. Tom Sawyer he says the same.
 
 
 
-CHAPTER XXXIV.
+
 
 
 We stopped talking, and got to thinking. By and by Tom says:
@@ -9304,7 +9304,7 @@ around then.
 
 
 
-CHAPTER XXXV.
+
 
 
 It would be most an hour yet till breakfast, so we left and struck down
@@ -9608,7 +9608,7 @@ smouch the knives--three of them.” So I done it.
 
 
 
-CHAPTER XXXVI.
+
 
 
 As soon as we reckoned everybody was asleep that night we went down the
@@ -9818,7 +9818,7 @@ dollars, I wouldn't.”
 
 
 
-CHAPTER XXXVII.
+
 
 
 That was all fixed. So then we went away and went to the rubbage-pile
@@ -10087,7 +10087,7 @@ window-hole.
 
 
 
-CHAPTER XXXVIII.
+
 
 
 Making them pens was a distressid tough job, and so was the saw; and Jim
@@ -10372,7 +10372,7 @@ behave so no more, and then me and Tom shoved for bed.
 
 
 
-CHAPTER XXXIX.
+
 
 
 In the morning we went up to the village and bought a wire rat-trap and
@@ -10572,7 +10572,7 @@ any reward but to know I have done the right thing. _Unknown Friend._
 
 
 
-CHAPTER XL.
+
 
 
 We was feeling pretty good after breakfast, and took my canoe and went
@@ -10819,7 +10819,7 @@ see the doctor coming till he was gone again.
 
 
 
-CHAPTER XLI.
+
 
 
 The doctor was an old man; a very nice, kind-looking old man when I got
@@ -11087,7 +11087,7 @@ and her old gray head was resting on her hand, and she was asleep.
 
 
 
-CHAPTER XLII.
+
 
 
 The old man was uptown again before breakfast, but couldn't get no
@@ -11424,7 +11424,7 @@ was just as safe to not to. So I never said nothing.
 
 
 
-CHAPTER THE LAST
+
 
 
 The first time I catched Tom private I asked him what was his idea, time
