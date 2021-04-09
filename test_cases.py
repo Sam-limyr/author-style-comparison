@@ -54,6 +54,8 @@ ROOT = "supplementaryNovels"
 CHARLES_DICKENS_FOLDER = os.path.join(ROOT, "charles_dickens")
 FYODOR_DOSTOEVSKY_FOLDER = os.path.join(ROOT, "fyodor_dostoevsky")
 MARK_TWAIN_FOLDER = os.path.join(ROOT, "mark_twain")
+JANE_AUSTEN_FOLDER = os.path.join(ROOT, "jane_austen")
+JOHN_STEINBECK_FOLDER = os.path.join(ROOT, "john_steinbeck")
 
 
 # Combined tests
@@ -62,7 +64,9 @@ CHARLES_DICKENS_TESTS = get_tests_from_folder(CHARLES_DICKENS_FOLDER, 150, 1000)
 
 FYODOR_DOSTOEVSKY_TESTS = get_tests_from_folder(FYODOR_DOSTOEVSKY_FOLDER, 150, 1000)
 
-LEO_TOLSTOY_TESTS = []
-
 MARK_TWAIN_TESTS = get_tests_from_folder(MARK_TWAIN_FOLDER, 150, 1000)
+
+JANE_AUSTEN_TESTS = get_tests_from_folder(JANE_AUSTEN_FOLDER, 150, 1000)
+
+JOHN_STEINBECK_TESTS = get_tests_from_folder(JOHN_STEINBECK_FOLDER, 75, 1000)
 

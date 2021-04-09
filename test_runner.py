@@ -43,7 +43,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from sklearn.metrics import f1_score
-from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, LEO_TOLSTOY_TESTS, MARK_TWAIN_TESTS
+from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, MARK_TWAIN_TESTS, JANE_AUSTEN_TESTS, JOHN_STEINBECK_TESTS
 
 
 # Names of authors
@@ -51,30 +51,39 @@ CHARLES_DICKENS_NAME = "charles_dickens"
 FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
 LEO_TOLSTOY_NAME = "leo_tolstoy"
 MARK_TWAIN_NAME = "mark_twain"
+JANE_AUSTEN_NAME = "jane_austen"
+JOHN_STEINBECK_NAME = "john_steinbeck"
 ALL_AUTHOR_NAMES = [CHARLES_DICKENS_NAME,
                     FYODOR_DOSTOEVSKY_NAME,
-                    # LEO_TOLSTOY_NAME,
                     MARK_TWAIN_NAME]
+                    # JANE_AUSTEN_NAME,
+                    # JOHN_STEINBECK_NAME]
 
 # Author indices
 CHARLES_DICKENS_INDEX = 0
 FYODOR_DOSTOEVSKY_INDEX = 1
 LEO_TOLSTOY_INDEX = 2
 MARK_TWAIN_INDEX = 3
+JANE_AUSTEN_INDEX = 4
+JOHN_STEINBECK_INDEX = 5
 
 # Mappings of author names to IDs
 AUTHOR_NAME_TO_ID_MAPPINGS = {
     CHARLES_DICKENS_NAME: CHARLES_DICKENS_INDEX,
     FYODOR_DOSTOEVSKY_NAME: FYODOR_DOSTOEVSKY_INDEX,
     LEO_TOLSTOY_NAME: LEO_TOLSTOY_INDEX,
-    MARK_TWAIN_NAME: MARK_TWAIN_INDEX
+    MARK_TWAIN_NAME: MARK_TWAIN_INDEX,
+    JANE_AUSTEN_NAME: JANE_AUSTEN_INDEX,
+    JOHN_STEINBECK_NAME: JOHN_STEINBECK_INDEX
 }
 
 AUTHOR_ID_TO_NAME_MAPPINGS = {
     CHARLES_DICKENS_INDEX: CHARLES_DICKENS_NAME,
     FYODOR_DOSTOEVSKY_INDEX: FYODOR_DOSTOEVSKY_NAME,
     LEO_TOLSTOY_INDEX: LEO_TOLSTOY_NAME,
-    MARK_TWAIN_INDEX: MARK_TWAIN_NAME
+    MARK_TWAIN_INDEX: MARK_TWAIN_NAME,
+    JANE_AUSTEN_INDEX: JANE_AUSTEN_NAME,
+    JOHN_STEINBECK_INDEX: JOHN_STEINBECK_NAME
 }
 
 
@@ -82,15 +91,16 @@ AUTHOR_ID_TO_NAME_MAPPINGS = {
 
 def get_all_tests():
     print("Getting tests...")
-    all_tests = CHARLES_DICKENS_TESTS + FYODOR_DOSTOEVSKY_TESTS + LEO_TOLSTOY_TESTS + MARK_TWAIN_TESTS
+    all_tests = CHARLES_DICKENS_TESTS + FYODOR_DOSTOEVSKY_TESTS + MARK_TWAIN_TESTS + JANE_AUSTEN_TESTS + JOHN_STEINBECK_TESTS
     return all_tests
 
 
-def check_test_results(results_list, show_details=False, show_matrix=True):
-    correct_answers = [CHARLES_DICKENS_NAME for _ in CHARLES_DICKENS_TESTS] + \
-                      [FYODOR_DOSTOEVSKY_NAME for _ in FYODOR_DOSTOEVSKY_TESTS] + \
-                      [LEO_TOLSTOY_NAME for _ in LEO_TOLSTOY_TESTS] + \
-                      [MARK_TWAIN_NAME for _ in MARK_TWAIN_TESTS]
+def check_test_results(results_list, show_details=True, show_matrix=True):
+    correct_answers = [CHARLES_DICKENS_NAME for _ in range(len(CHARLES_DICKENS_TESTS))] + \
+                      [FYODOR_DOSTOEVSKY_NAME for _ in range(len(FYODOR_DOSTOEVSKY_TESTS))] + \
+                      [MARK_TWAIN_NAME for _ in range(len(MARK_TWAIN_TESTS))] + \
+                      [JANE_AUSTEN_NAME for _ in range(len(JANE_AUSTEN_TESTS))] + \
+                      [JOHN_STEINBECK_NAME for _ in range(len(JOHN_STEINBECK_TESTS))]
 
     assert len(results_list) == len(correct_answers), "Input and expected lists do not have the same length!"
 
@@ -142,10 +152,12 @@ def print_results(predicted_results, ground_truth):
     {} score: {}/{}
     {} score: {}/{}
     {} score: {}/{}
+    {} score: {}/{}
 
     """.format(sum(scores.values()), len(ground_truth),
-          CHARLES_DICKENS_NAME, scores[CHARLES_DICKENS_NAME], len(CHARLES_DICKENS_TESTS),
-          FYODOR_DOSTOEVSKY_NAME, scores[FYODOR_DOSTOEVSKY_NAME], len(FYODOR_DOSTOEVSKY_TESTS),
-          LEO_TOLSTOY_NAME, scores[LEO_TOLSTOY_NAME], len(LEO_TOLSTOY_TESTS),
-          MARK_TWAIN_NAME, scores[MARK_TWAIN_NAME], len(MARK_TWAIN_TESTS)))
+               CHARLES_DICKENS_NAME, scores[CHARLES_DICKENS_NAME], len(CHARLES_DICKENS_TESTS),
+               FYODOR_DOSTOEVSKY_NAME, scores[FYODOR_DOSTOEVSKY_NAME], len(FYODOR_DOSTOEVSKY_TESTS),
+               MARK_TWAIN_NAME, scores[MARK_TWAIN_NAME], len(MARK_TWAIN_TESTS),
+               JANE_AUSTEN_NAME, scores[JANE_AUSTEN_NAME], len(JANE_AUSTEN_TESTS),
+               JOHN_STEINBECK_NAME, scores[JOHN_STEINBECK_NAME], len(JOHN_STEINBECK_TESTS)))
 
