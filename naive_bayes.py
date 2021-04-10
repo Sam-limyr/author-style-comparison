@@ -15,6 +15,7 @@ authors = {"charles_dickens": ["davidc.txt", "greatex.txt", "olivert.txt", "twoc
            "fyodor_dostoevsky": ["crimep.txt", "idiot.txt", "possessed.txt"], 
            #"leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
            "mark_twain": ["toms.txt", "huckfinn.txt", "connecticutyankee.txt", "princepauper.txt"]}
+authorsIndexed = ["charles_dickens", "fyodor_dostoevsky", "mark_twain"]
 
 num_novels = sum([len(authors[author]) for author in authors])
 
@@ -55,7 +56,7 @@ def train_model(model, x_train, y_train):
 
 def predict(model, x_test):
     ''' TODO: make your prediction here '''
-    return model.predict(x_test)
+    return model.predict_proba(x_test)
 
 model = MultinomialNB(fit_prior=False)
 # don't include stopwords 
@@ -90,5 +91,12 @@ test_cases = get_all_tests()
 tests = pd.Series(test_cases)
 x_test = get_tfidf(tests, vectorizer, tfidf_transformer)
 
-output_answers = predict(model, x_test)
-check_test_results(output_answers, show_matrix=False)
+# array with num_rows = num_tests, num_cols = probabilities of each class (take the max)
+output_probs = predict(model, x_test)
+output_answers = []
+output_confidence = []
+for row in output_probs:
+    output_confidence += [max(row)]
+    index = [np.where(row == max(row))[0]][0][0]
+    output_answers += [authorsIndexed[index]]
+check_test_results(output_answers, confidence_values=output_confidence, show_matrix=False)
