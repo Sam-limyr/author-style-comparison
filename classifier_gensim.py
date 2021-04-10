@@ -63,6 +63,11 @@ for test_doc_id in range(len(test_corpus)):
     sims = model.dv.most_similar([inferred_test_vector], topn=len(model.dv))
 
     answer = sims[0][0]
-    output_answers.append(AUTHOR_ID_TO_NAME_MAPPINGS[answer])
+
+    # The confidence score is defined as the difference between the similarity scores of the first and second choices.
+    #       This is defined semi-arbitrarily, but it allows comparison between models.
+    confidence_score = sims[0][1] - sims[1][1]
+
+    output_answers.append((AUTHOR_ID_TO_NAME_MAPPINGS[answer], confidence_score))
 
 check_test_results(output_answers)
