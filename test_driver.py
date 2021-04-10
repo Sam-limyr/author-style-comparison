@@ -1,4 +1,5 @@
 from classifier_gensim import predict_doc2vec_results
+from feature_engineering import predict_feature_engineering
 from collections import Counter
 from test_runner import check_test_results
 
@@ -6,10 +7,13 @@ from test_runner import check_test_results
 def main():
 
     # TODO: Define your results by calling your main method and add it to 'combined_results'
-
+    print("Getting doc2vec predictions...")
     doc2vec_results = predict_doc2vec_results()
+    print("Getting feature engineering predictions...")
+    feature_engineering_results = predict_feature_engineering()
 
-    combined_results = list(zip(doc2vec_results))
+    combined_results = list(zip(doc2vec_results, feature_engineering_results))
+    print("Combining results...")
     ensemble_results = [determine_ensemble_answer(result) for result in combined_results]
 
     check_test_results(ensemble_results)
