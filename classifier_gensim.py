@@ -35,7 +35,8 @@ def process_test_case(test_case_string):
     return gensim.utils.simple_preprocess(test_case_string)
 
 
-def predict_results():
+def predict_doc2vec_results():
+    print("Running doc2vec model...")
     print("Reading data from corpus...")
     train_corpus = [read_corpus(training_file, AUTHOR_NAME_TO_ID_MAPPINGS[author_name])
                     for training_file, author_name in training_files]
