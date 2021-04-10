@@ -12,8 +12,10 @@ STOPWORDS = stopwords.words('english') # type: list(str)
 
 authors = {"charles_dickens": ["davidc.txt", "greatex.txt", "olivert.txt", "twocities.txt"],
            "fyodor_dostoevsky": ["crimep.txt", "idiot.txt", "possessed.txt"], 
+           #"jane_austen": ["emma.txt", "ladySusan.txt", "northangerAbbey.txt", "prideAndPrejudice.txt"],
            #"leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
            "mark_twain": ["toms.txt", "huckfinn.txt", "connecticutyankee.txt", "princepauper.txt"]}
+authorsIndexed = ["charles_dickens", "fyodor_dostoevsky", "mark_twain"]
 
 stats = {}
 
@@ -151,7 +153,7 @@ def train_model(model, x_train, y_train):
 
 def predict(model, x_test):
     ''' TODO: make your prediction here '''
-    return model.predict(x_test)
+    return model.predict_proba(x_test)
 
 # extract stats for each author
 def extractFeatures(stats, scaler, isTestSet):
@@ -300,37 +302,70 @@ train_model(model, x_train, y_train)
 from test_runner import *
 from matplotlib import pyplot
 
-test_cases = get_all_tests()
+output_authors = []
 
-tests = pd.Series(test_cases)
-x_test = extractStats(tests, scaler)
-print("test queries' stats:")
-print(x_test)
+def main():
 
-output_answers = predict(model, x_test)
+    test_cases = get_all_tests()
+
+    tests = pd.Series(test_cases)
+    x_test = extractStats(tests, scaler)
+    print("test queries' stats:")
+    print(x_test)
+
+    output_probs = predict(model, x_test)
+    output_answers = []
+    output_confidence = []
+    # try to compare confidence respective to other authors
+    diff_to_next_highest = []
+    for row in output_probs:
+        highest = max(row)
+        index = [np.where(row == highest)[0]][0][0]
+        author = authorsIndexed[index]
+
+        if index == 0:
+            diff_to_next_highest += [highest - row[1]] if highest - row[1] <= highest - row[2] else [highest - row[2]]
+        elif index == 1:
+            diff_to_next_highest += [highest - row[0]] if highest - row[0] <= highest - row[2] else [highest - row[2]]
+        elif index == 2:
+            diff_to_next_highest += [highest - row[0]] if highest - row[0] <= highest - row[1] else [highest - row[1]] 
+
+        output_confidence += [highest]
+        output_answers.append( (author, highest) )
+        output_authors.append(author)
+    print(min(output_confidence))
+    print(max(output_confidence))
+    print(min(diff_to_next_highest))
+    print(max(diff_to_next_highest))
+    return output_answers
+
+output_answers = main()
 check_test_results(output_answers)
 
-from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, LEO_TOLSTOY_TESTS, MARK_TWAIN_TESTS
+from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, JANE_AUSTEN_TESTS, JOHN_STEINBECK_TESTS, MARK_TWAIN_TESTS
 
 # Names of authors
 CHARLES_DICKENS_NAME = "charles_dickens"
 FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
-LEO_TOLSTOY_NAME = "leo_tolstoy"
+JANE_AUSTEN_NAME = "jane_austen"
+JOHN_STEINBECK_NAME = "john_steinbeck"
 MARK_TWAIN_NAME = "mark_twain"
-ALL_AUTHOR_NAMES = [CHARLES_DICKENS_NAME, FYODOR_DOSTOEVSKY_NAME, LEO_TOLSTOY_NAME, MARK_TWAIN_NAME]
+ALL_AUTHOR_NAMES = [CHARLES_DICKENS_NAME, FYODOR_DOSTOEVSKY_NAME, JANE_AUSTEN_NAME, JOHN_STEINBECK_NAME, MARK_TWAIN_NAME]
 
 # Get F1 Score
 correct_answers = [CHARLES_DICKENS_NAME for _ in CHARLES_DICKENS_TESTS] + \
                   [FYODOR_DOSTOEVSKY_NAME for _ in FYODOR_DOSTOEVSKY_TESTS] + \
-                  [LEO_TOLSTOY_NAME for _ in LEO_TOLSTOY_TESTS] + \
+                  [JANE_AUSTEN_NAME for _ in JANE_AUSTEN_TESTS] + \
+                  [JOHN_STEINBECK_NAME for _ in JOHN_STEINBECK_TESTS] + \
                   [MARK_TWAIN_NAME for _ in MARK_TWAIN_TESTS]
 
 # Use f1-macro as the metric
-score = f1_score(correct_answers, output_answers, average='macro')
+print(len(correct_answers))
+print(len(output_authors))
+score = f1_score(correct_answers, output_authors, average='macro')
 print('LR score on validation = {}'.format(score))
 from sklearn.metrics import confusion_matrix, classification_report
-print(confusion_matrix(correct_answers, output_answers))
-print(classification_report(correct_answers, output_answers))
+print(classification_report(correct_answers, output_authors))
 
 # get importance
 importance = model.coef_
