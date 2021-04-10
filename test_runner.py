@@ -83,18 +83,20 @@ def get_all_tests():
     return all_tests
 
 
-def check_test_results(results_list, show_details=True, show_matrix=True):
+def check_test_results(results_list, confidence_values=[], show_details=True, show_matrix=True):
     correct_answers = [CHARLES_DICKENS_NAME for _ in CHARLES_DICKENS_TESTS] + \
                       [FYODOR_DOSTOEVSKY_NAME for _ in FYODOR_DOSTOEVSKY_TESTS] + \
                       [LEO_TOLSTOY_NAME for _ in LEO_TOLSTOY_TESTS] + \
                       [MARK_TWAIN_NAME for _ in MARK_TWAIN_TESTS]
 
     assert len(results_list) == len(correct_answers), "Input and expected lists do not have the same length!"
+    if len(confidence_values) > 0:
+        assert len(confidence_values) == len(correct_answers), "Input confidence values and expected lists do not have the same length!"
 
     print("Checking test results...")
 
     if show_details:
-        print_results(results_list, correct_answers)
+        print_results(results_list, correct_answers, confidence_values)
 
     if show_matrix:
         show_confusion_matrix(results_list, correct_answers)
@@ -117,14 +119,18 @@ def show_confusion_matrix(predicted_results, ground_truth):
     plt.show()
 
 
-def print_results(predicted_results, ground_truth):
+def print_results(predicted_results, ground_truth, confidence_values):
     scores = Counter()
     for i in range(len(predicted_results)):
         expected_answer = ground_truth[i]
         actual_answer = predicted_results[i]
         if actual_answer != expected_answer:
-            print("\nTest Case {}\nWRONG: Ground Truth <{}>, Predicted <{}>"
-                  .format(i+1, expected_answer, actual_answer))
+            if len(confidence_values) > 0:
+                print("\nTest Case {}\nWRONG: Ground Truth <{}>, Predicted <{}> with confidence value of <{}>"
+                    .format(i+1, expected_answer, actual_answer, confidence_values[i]))
+            else:
+                print("\nTest Case {}\nWRONG: Ground Truth <{}>, Predicted <{}>"
+                    .format(i+1, expected_answer, actual_answer))
         else:
             scores[expected_answer] += 1
 
