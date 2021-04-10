@@ -302,6 +302,8 @@ train_model(model, x_train, y_train)
 from test_runner import *
 from matplotlib import pyplot
 
+output_authors = []
+
 def main():
 
     test_cases = get_all_tests()
@@ -330,6 +332,7 @@ def main():
 
         output_confidence += [highest]
         output_answers.append( (author, highest) )
+        output_authors.append(author)
     print(min(output_confidence))
     print(max(output_confidence))
     print(min(diff_to_next_highest))
