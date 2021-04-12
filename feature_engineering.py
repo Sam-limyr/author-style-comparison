@@ -2,6 +2,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import f1_score
 
+import numpy as np
 import pandas as pd
 import re
 import os
@@ -9,6 +10,8 @@ import sys
 
 import nltk
 nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 from nltk.corpus import stopwords   # Requires NLTK in the include path.
 
 ## List of stopwords
@@ -47,6 +50,29 @@ def extract_features():
     
     stats = {}
     
+    # initialize statistics arrays
+    stats["personalpronoun_tags_per_sent"] = []
+    stats["determiner_tags_per_sent"] = []
+    stats["adjective_tags_per_sent"] = []
+    stats["adverb_tags_per_sent"] = []
+    stats["verb_past_tags_per_sent"] = []
+    stats["noun_tags_per_sent"] = []
+    stats["interjection_tags_per_sent"] = []
+    stats["modal_tags_per_sent"] = []
+    stats["foreign_word_tags_per_sent"] = []
+    stats["stopword_count_per_sent"] = []
+    stats["avg_word_per_sentence"] = []
+    stats["avg_word_length"] = []
+    stats["capitalized_per_sentence"] = []
+    stats["dashes_per_sent"] = []
+    stats["comma_count_per_sent"] = []
+    #stats["exclamation_marks_per_sent"] = []
+    #stats["question_marks_per_sent"] = []
+    stats["italics_per_sent"] = []
+    #stats["contractions_per_sent"] = []
+    stats["dialogue_per_sent"] = []
+    # stats["vocab_word_count"] = []
+    
     for author in authors:
         # currently unused
         vocab = {}
@@ -68,13 +94,25 @@ def extract_features():
             sentences = []
 
             # Statistics to track per book
+            pp_tags = 0
+            dt_tags = 0
+            adj_tags = 0
+            adv_tags = 0
+            vbd_tags = 0
+            noun_tags = 0
+            interjection_tags = 0
+            modal_tags = 0
+            foreign_word_tags = 0
             sentence_count = 0
             stopword_count = 0
             total_words = 0
+            character_count = 0
             capitalized_words = 0
             # punctuation_count
             dash_count = 0 # counting "--"
             comma_count = 0
+            exclamation_marks = 0 
+            question_marks = 0
             italics_count = 0 # _<word>_
             contractions_count = 0 # counting "you'll" etc.
             dialogue_count = 0 # counting ""
@@ -85,12 +123,42 @@ def extract_features():
                     continue
                 elif len(sentences) != 0 and ele[0] in "?!.":
                     # count statistics
+                    if ele[0] == '!':
+                        exclamation_marks += 1
+                    elif ele[0] == '?':
+                        question_marks += 1
                     sentences[-1] += ele.strip()
                 else:
+                    # POS tagging
+                    tokens = nltk.word_tokenize(ele)
+                    words_and_tags = nltk.pos_tag(tokens)
+                    for word, tag in words_and_tags:
+                        # count tags
+                        if tag == 'PRP':
+                            pp_tags += 1
+                        elif tag == 'DT':
+                            dt_tags += 1
+                        elif tag == 'JJ':
+                            adj_tags += 1
+                        elif tag == 'RB':
+                            adv_tags += 1
+                        elif tag == 'VBD':
+                            vbd_tags += 1
+                        elif tag[0:2] == 'NN':
+                            noun_tags += 1
+                        elif tag == 'UH':
+                            interjection_tags += 1
+                        elif tag == 'MD':
+                            modal_tags += 1
+                        elif tag == 'FW':
+                            foreign_word_tags += 1
+                        
                     # count statistics
                     sentence_count += 1
-                    words = re.findall(r'\w*’?\w*', ele)
-                    capitalized = re.findall(r'[A-Z]\w+’?\w*', ele)
+                    words = re.findall(r'\w+’?\w*', ele)
+                    # count capitalized words except start of novel and sentences 
+                    # (assume sentence starts with a space after previous sentence's fullstop)
+                    capitalized = re.findall(r'(?<!\.\s)(?<!\A)([A-Z]\w+’?\w*)', ele) 
                     dashes = re.findall(r'-+', ele)
                     commas = re.findall(r',', ele)
                     italics = re.findall(r'_\w+_', ele)
@@ -103,6 +171,8 @@ def extract_features():
                         in_dialogue = len(dialogues) == 0
                     # contractions treated as one word
                     total_words += len(words)
+                    no_spaces = ''.join(words)
+                    character_count += len(no_spaces)
                     capitalized_words += len(capitalized)
                     dash_count += len(dashes)
                     comma_count += len(commas)
@@ -123,49 +193,32 @@ def extract_features():
                             stopword_count += 1
                     sentences += [ele.strip()]
 
-            avg_word_per_sent = total_words / sentence_count
-            capitalized_per_sent = capitalized_words / sentence_count
             unique_word_count = len(vocab.keys())
+            
             # store stats in outer dictionary, in order of "authors" dictionary
-            if "stopword_count_per_sent" not in stats:
-                stats["stopword_count_per_sent"] = [stopword_count/sentence_count]
-            else:
-                stats["stopword_count_per_sent"] += [stopword_count/sentence_count]
-            if "avg_word_per_sentence" not in stats:
-                stats["avg_word_per_sentence"] = [avg_word_per_sent]
-            else:
-                stats["avg_word_per_sentence"] += [avg_word_per_sent]
-            if "capitalized_per_sentence" not in stats:
-                stats["capitalized_per_sentence"] = [capitalized_per_sent]
-            else:
-                stats["capitalized_per_sentence"] += [capitalized_per_sent]
-
-            if "dashes_per_sent" not in stats:
-                stats["dashes_per_sent"] = [dash_count/sentence_count]
-            else:
-                stats["dashes_per_sent"] += [dash_count/sentence_count]
-            if "comma_count_per_sent" not in stats:
-                stats["comma_count_per_sent"] = [comma_count/sentence_count]
-            else:
-                stats["comma_count_per_sent"] += [comma_count/sentence_count]
-            if "italics_per_sent" not in stats:
-                stats["italics_per_sent"] = [italics_count/sentence_count]
-            else:
-                stats["italics_per_sent"] += [italics_count/sentence_count]
-            if "contractions_per_sent" not in stats:
-                stats["contractions_per_sent"] = [contractions_count/sentence_count]
-            else:
-                stats["contractions_per_sent"] += [contractions_count/sentence_count]
-            if "dialogue_per_sent" not in stats:
-                stats["dialogue_per_sent"] = [dialogue_count/sentence_count]
-            else:
-                stats["dialogue_per_sent"] += [dialogue_count/sentence_count]
-
+            stats["personalpronoun_tags_per_sent"].append(np.log(1+pp_tags/sentence_count))
+            stats["determiner_tags_per_sent"].append(np.log(1+dt_tags/sentence_count))
+            stats["adjective_tags_per_sent"].append(np.log(1+adj_tags/sentence_count))
+            stats["adverb_tags_per_sent"].append(np.log(1+adv_tags/sentence_count))
+            stats["verb_past_tags_per_sent"].append(np.log(1+vbd_tags/sentence_count))
+            stats["noun_tags_per_sent"].append(np.log(1+noun_tags/sentence_count))
+            stats["interjection_tags_per_sent"].append(np.log(1+interjection_tags/sentence_count))
+            stats["modal_tags_per_sent"].append(np.log(1+modal_tags/sentence_count))
+            stats["foreign_word_tags_per_sent"].append(np.log(1+foreign_word_tags/sentence_count))
+            stats["stopword_count_per_sent"].append(np.log(1+stopword_count/sentence_count))
+            stats["avg_word_per_sentence"].append(np.log(1+total_words/sentence_count))
+            stats["avg_word_length"].append(np.log(1+character_count/total_words))
+            stats["capitalized_per_sentence"].append(np.log(1+capitalized_words/sentence_count))
+            stats["dashes_per_sent"].append(np.log(1+dash_count/sentence_count))
+            stats["comma_count_per_sent"].append(np.log(1+comma_count/sentence_count))
+            #stats["exclamation_marks_per_sent"].append(np.log(1+exclamation_marks/sentence_count))
+            #stats["question_marks_per_sent"].append(np.log(1+question_marks/sentence_count))
+            stats["italics_per_sent"].append(np.log(1+italics_count/sentence_count))
+            #stats["contractions_per_sent"].append(np.log(1+contractions_count/sentence_count))
+            stats["dialogue_per_sent"].append(np.log(1+dialogue_count/sentence_count))
+            
             # vocab needs to be able to count rare words and identify them
-        #     if "vocab_word_count" not in stats:
-        #         stats["vocab_word_count"] = [unique_word_count]
-        #     else:
-        #         stats["vocab_word_count"] += [unique_word_count]
+            # stats["vocab_word_count"].append(unique_word_count)
     return stats
 
 def train_model(model, x_train, y_train):
@@ -191,7 +244,32 @@ def scale_features(stats, scaler, isTestSet):
 
 # Count stats for the queries
 def extract_test_features(queries, scaler):
-    features = {}
+    
+    stats = {}
+    
+    # initialize statistics arrays
+    stats["personalpronoun_tags_per_sent"] = []
+    stats["determiner_tags_per_sent"] = []
+    stats["adjective_tags_per_sent"] = []
+    stats["adverb_tags_per_sent"] = []
+    stats["verb_past_tags_per_sent"] = []
+    stats["noun_tags_per_sent"] = []
+    stats["interjection_tags_per_sent"] = []
+    stats["modal_tags_per_sent"] = []
+    stats["foreign_word_tags_per_sent"] = []
+    stats["stopword_count_per_sent"] = []
+    stats["avg_word_per_sentence"] = []
+    stats["avg_word_length"] = []
+    stats["capitalized_per_sentence"] = []
+    stats["dashes_per_sent"] = []
+    stats["comma_count_per_sent"] = []
+    #stats["exclamation_marks_per_sent"] = []
+    #stats["question_marks_per_sent"] = []
+    stats["italics_per_sent"] = []
+    #stats["contractions_per_sent"] = []
+    stats["dialogue_per_sent"] = []
+    # stats["vocab_word_count"] = []
+    
     vocab = {}
     for query in queries:
         # split each sentence
@@ -199,8 +277,18 @@ def extract_test_features(queries, scaler):
         p_sentence = re.compile(r'([?!]"?)|((?<!Dr|Mr|Ms|Jr|Sr|St)(?<!Mrs|Rev)\."?\s+)')
         sentence_list = re.split(p_sentence, query)
         
+        pp_tags = 0
+        dt_tags = 0
+        adj_tags = 0
+        adv_tags = 0
+        vbd_tags = 0
+        noun_tags = 0
+        interjection_tags = 0
+        modal_tags = 0
+        foreign_word_tags = 0
         sentence_count = 0
         total_words = 0
+        character_count = 0
         capitalized_words = 0
         stopword_count = 0
         in_dialogue = False
@@ -208,6 +296,8 @@ def extract_test_features(queries, scaler):
         # punctuation_count
         dash_count = 0 # counting "--"
         comma_count = 0
+        exclamation_marks = 0
+        question_marks = 0
         italics_count = 0 # _<word>_
         contractions_count = 0 # counting "you'll" etc.
         dialogue_count = 0 # counting ""
@@ -217,12 +307,42 @@ def extract_test_features(queries, scaler):
                 continue
             elif len(sentences) != 0 and ele[0] in "?!.":
                 # count statistics
+                if ele[0] == '!':
+                    exclamation_marks += 1
+                elif ele[0] == '?':
+                    question_marks += 1
                 sentences[-1] += ele.strip()
             else:
+                # POS tagging
+                tokens = nltk.word_tokenize(ele)
+                words_and_tags = nltk.pos_tag(tokens)
+                for word, tag in words_and_tags:
+                    # count tags
+                    if tag == 'PRP':
+                        pp_tags += 1
+                    elif tag == 'DT':
+                        dt_tags += 1
+                    elif tag == 'JJ':
+                        adj_tags += 1
+                    elif tag == 'RB':
+                        adv_tags += 1
+                    elif tag == 'VBD':
+                        vbd_tags += 1
+                    elif tag[0:2] == 'NN':
+                        noun_tags += 1
+                    elif tag == 'UH':
+                        interjection_tags += 1
+                    elif tag == 'MD':
+                        modal_tags += 1
+                    elif tag == 'FW':
+                        foreign_word_tags += 1
+                        
                 # count statistics
                 sentence_count += 1
-                words = re.findall(r'\w*’?\w*', ele)
-                capitalized = re.findall(r'[A-Z]\w*’?\w*', ele)
+                words = re.findall(r'\w+’?\w*', ele)
+                # count capitalized words except start of novel and sentences 
+                # (assume sentence starts with a space after previous sentence's fullstop)
+                capitalized = re.findall(r'(?<!\.\s)(?<!\A)([A-Z]\w+’?\w*)', ele) 
                 dashes = re.findall(r'-+', ele)
                 commas = re.findall(r',', ele)
                 italics = re.findall(r'_\w+_', ele)
@@ -235,6 +355,8 @@ def extract_test_features(queries, scaler):
                     in_dialogue = len(dialogues) == 0
                 # contractions treated as one word
                 total_words += len(words)
+                no_spaces = ''.join(words)
+                character_count += len(no_spaces)
                 capitalized_words += len(capitalized)
                 dash_count += len(dashes)
                 comma_count += len(commas)
@@ -255,46 +377,31 @@ def extract_test_features(queries, scaler):
                         stopword_count += 1
                 sentences += [ele.strip()]
         
-        if "stopword_count_per_sent" not in features:
-            features["stopword_count_per_sent"] = [stopword_count/sentence_count]
-        else:
-            features["stopword_count_per_sent"] += [stopword_count/sentence_count]
-        if "avg_word_per_sentence" not in features:
-            features["avg_word_per_sentence"] = [total_words/sentence_count]
-        else:
-            features["avg_word_per_sentence"] += [total_words/sentence_count]
-        if "capitalized_per_sentence" not in features:
-            features["capitalized_per_sentence"] = [capitalized_words/sentence_count]
-        else:
-            features["capitalized_per_sentence"] += [capitalized_words/sentence_count]
-            
-#         if "vocab_word_count" not in features:
-#             features["vocab_word_count"] = [len(vocab.keys())]
-#         else:
-#             features["vocab_word_count"] += [len(vocab.keys())]
-            
-        if "dashes_per_sent" not in features:
-            features["dashes_per_sent"] = [dash_count/sentence_count]
-        else:
-            features["dashes_per_sent"] += [dash_count/sentence_count]
-        if "comma_count_per_sent" not in features:
-            features["comma_count_per_sent"] = [comma_count/sentence_count]
-        else:
-            features["comma_count_per_sent"] += [comma_count/sentence_count]
-        if "italics_per_sent" not in features:
-            features["italics_per_sent"] = [italics_count/sentence_count]
-        else:
-            features["italics_per_sent"] += [italics_count/sentence_count]
-        if "contractions_per_sent" not in features:
-            features["contractions_per_sent"] = [contractions_count/sentence_count]
-        else:
-            features["contractions_per_sent"] += [contractions_count/sentence_count]
-        if "dialogue_per_sent" not in features:
-            features["dialogue_per_sent"] = [dialogue_count/sentence_count]
-        else:
-            features["dialogue_per_sent"] += [dialogue_count/sentence_count]
-    
-    features = pd.DataFrame(data=features)
+        stats["personalpronoun_tags_per_sent"].append(np.log(1+pp_tags/sentence_count))
+        stats["determiner_tags_per_sent"].append(np.log(1+dt_tags/sentence_count))
+        stats["adjective_tags_per_sent"].append(np.log(1+adj_tags/sentence_count))
+        stats["adverb_tags_per_sent"].append(np.log(1+adv_tags/sentence_count))
+        stats["verb_past_tags_per_sent"].append(np.log(1+vbd_tags/sentence_count))
+        stats["noun_tags_per_sent"].append(np.log(1+noun_tags/sentence_count))
+        stats["interjection_tags_per_sent"].append(np.log(1+interjection_tags/sentence_count))
+        stats["modal_tags_per_sent"].append(np.log(1+modal_tags/sentence_count))
+        stats["foreign_word_tags_per_sent"].append(np.log(1+foreign_word_tags/sentence_count))
+        stats["stopword_count_per_sent"].append(np.log(1+stopword_count/sentence_count))
+        stats["avg_word_per_sentence"].append(np.log(1+total_words/sentence_count))
+        stats["avg_word_length"].append(np.log(1+character_count/total_words))
+        stats["capitalized_per_sentence"].append(np.log(1+capitalized_words/sentence_count))
+        stats["dashes_per_sent"].append(np.log(1+dash_count/sentence_count))
+        stats["comma_count_per_sent"].append(np.log(1+comma_count/sentence_count))
+        #stats["exclamation_marks_per_sent"].append(np.log(1+exclamation_marks/sentence_count))
+        #stats["question_marks_per_sent"].append(np.log(1+question_marks/sentence_count))
+        stats["italics_per_sent"].append(np.log(1+italics_count/sentence_count))
+        #stats["contractions_per_sent"].append(np.log(1+contractions_count/sentence_count))
+        stats["dialogue_per_sent"].append(np.log(1+dialogue_count/sentence_count))
+
+        # vocab needs to be able to count rare words and identify them
+        # stats["vocab_word_count"].append(len(vocab.keys()))
+        
+    features = pd.DataFrame(data=stats)
     scaled = scaler.transform(features)
     return scaled
 
@@ -371,9 +478,9 @@ def generate_F1_score(model, output_authors):
     # get importance
     importance = model.coef_
     # summarize feature importance
-    print("Feature importance for Charles Dickens:")
+    print("Feature importance for Mark Twain:")
     # plot feature importance
-    pyplot.bar([x for x in range(len(importance[0]))], importance[0])
+    pyplot.bar([x for x in range(len(importance[2]))], importance[2])
     pyplot.show()
 
     # print("Feature importance for 0:")
