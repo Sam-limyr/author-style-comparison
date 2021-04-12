@@ -1,19 +1,21 @@
 from classifier_gensim import predict_doc2vec_results
 from feature_engineering import predict_feature_engineering
+from functionwords import predict_k_nearest_neighbours_results
 from collections import Counter
 from test_runner import check_test_results
 
 
 def main():
 
-    # TODO: Define your results by calling your main method and add it to 'combined_results'
-    print("Getting doc2vec predictions...")
+    print("\n\nGetting doc2vec predictions...\n")
     doc2vec_results = predict_doc2vec_results()
-    print("Getting feature engineering predictions...")
+    print("\n\nGetting feature engineering predictions...\n")
     feature_engineering_results = predict_feature_engineering()
+    print("\n\nGetting k-Nearest-Neighbours predictions...\n")
+    k_nearest_neighbours_results = predict_k_nearest_neighbours_results()
 
-    combined_results = list(zip(doc2vec_results, feature_engineering_results))
-    print("Combining results...")
+    combined_results = list(zip(doc2vec_results, feature_engineering_results, k_nearest_neighbours_results))
+    print("\n\nCombining results into ensemble...\n")
     ensemble_results = [determine_ensemble_answer(result) for result in combined_results]
 
     check_test_results(ensemble_results)
