@@ -35,39 +35,41 @@ def process_test_case(test_case_string):
     return gensim.utils.simple_preprocess(test_case_string)
 
 
-print("Reading data from corpus...")
-train_corpus = [read_corpus(training_file, AUTHOR_NAME_TO_ID_MAPPINGS[author_name])
-                for training_file, author_name in training_files]
+def predict_doc2vec_results():
+    print("Running doc2vec model...")
+    print("Reading data from corpus...")
+    train_corpus = [read_corpus(training_file, AUTHOR_NAME_TO_ID_MAPPINGS[author_name])
+                    for training_file, author_name in training_files]
 
-print("Training model...")
-model = gensim.models.doc2vec.Doc2Vec(vector_size=VECTOR_SIZE, epochs=EPOCHS, min_count=MIN_WORD_FREQ, seed=0)
-model.build_vocab(train_corpus)
-model.train(train_corpus, total_examples=model.corpus_count, epochs=model.epochs)
+    print("Training model...")
+    model = gensim.models.doc2vec.Doc2Vec(vector_size=VECTOR_SIZE, epochs=EPOCHS, min_count=MIN_WORD_FREQ, seed=0)
+    model.build_vocab(train_corpus)
+    model.train(train_corpus, total_examples=model.corpus_count, epochs=model.epochs)
 
-print("Running sanity checks on training data...")
-for train_doc_id, tagged_document in enumerate(train_corpus):
-    inferred_train_vector = model.infer_vector(train_corpus[train_doc_id].words)
-    sims = model.dv.most_similar([inferred_train_vector], topn=len(model.dv))
+    print("Running sanity checks on training data...")
+    for train_doc_id, tagged_document in enumerate(train_corpus):
+        inferred_train_vector = model.infer_vector(train_corpus[train_doc_id].words)
+        sims = model.dv.most_similar([inferred_train_vector], topn=len(model.dv))
 
-    # Ensure that the closest match for a training vector is with itself
-    author_id = tagged_document.tags[0]
-    assert author_id == sims[0][0], "Sanity check failed for document with ID {}.\nExpected {}, Received {}"\
-        .format(train_doc_id, author_id, sims[0][0])
+        # Ensure that the closest match for a training vector is with itself
+        author_id = tagged_document.tags[0]
+        assert author_id == sims[0][0], "Sanity check failed for document with ID {}.\nExpected {}, Received {}"\
+            .format(train_doc_id, author_id, sims[0][0])
 
-print("Testing model...")
-test_corpus = get_all_tests()
-test_corpus = [process_test_case(test_case) for test_case in test_corpus]
-output_answers = []
-for test_doc_id in range(len(test_corpus)):
-    inferred_test_vector = model.infer_vector(test_corpus[test_doc_id])
-    sims = model.dv.most_similar([inferred_test_vector], topn=len(model.dv))
+    print("Testing model...")
+    test_corpus = get_all_tests()
+    test_corpus = [process_test_case(test_case) for test_case in test_corpus]
+    output_answers = []
+    for test_doc_id in range(len(test_corpus)):
+        inferred_test_vector = model.infer_vector(test_corpus[test_doc_id])
+        sims = model.dv.most_similar([inferred_test_vector], topn=len(model.dv))
 
-    answer = sims[0][0]
+        answer = sims[0][0]
 
-    # The confidence score is defined as the difference between the similarity scores of the first and second choices.
-    #       This is defined semi-arbitrarily, but it allows comparison between models.
-    confidence_score = sims[0][1] - sims[1][1]
+        # The confidence score is defined as the difference between the similarity scores of the first and second choices.
+        #       This is defined semi-arbitrarily, but it allows comparison between models.
+        confidence_score = sims[0][1] - sims[1][1]
 
-    output_answers.append((AUTHOR_ID_TO_NAME_MAPPINGS[answer], confidence_score))
+        output_answers.append((AUTHOR_ID_TO_NAME_MAPPINGS[answer], confidence_score))
 
-check_test_results(output_answers)
+    return output_answers

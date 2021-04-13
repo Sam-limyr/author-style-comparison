@@ -296,7 +296,7 @@ def run_test_runner(nn_model, stopword_set, train_vector_to_authortitle):
 		test_vector = test_vecs[index]
 		dist_arr, point_index_arr = nn_model.kneighbors([test_vector])
 
-		print("Testing "+str(vector_to_authortitle[index][1]) + " by "+str(vector_to_authortitle[index][0]))
+		# print("Testing "+str(vector_to_authortitle[index][1]) + " by "+str(vector_to_authortitle[index][0]))
 		nearest_auth, confidence_score = compute_nearest_neighbour(point_index_arr, dist_arr,
 																   train_vector_to_authortitle)
 		# print("Nearest points: ")
@@ -330,7 +330,7 @@ def combine_training_data():
 	return author_to_alltexts
 
 
-def main():
+def predict_k_nearest_neighbours_results():
 	# get training data
 	author_to_alltexts = read_texts('novels')
 	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
@@ -352,4 +352,4 @@ def main():
 
 
 if __name__ == '__main__':
-	main()
+	predict_k_nearest_neighbours_results()

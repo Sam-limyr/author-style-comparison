@@ -115,13 +115,7 @@ def check_test_results(results_list_and_confidence_scores, show_details=True, sh
 
     assert len(results_list) == len(correct_answers), "Input and expected lists do not have the same length!"
 
-
-
-    # TODO: Combine models as ensemble. Tiebreak via confidence score. May want to implement driver class.
-
-
-
-    print("Checking test results...")
+    print("\nChecking test results...")
 
     if show_details:
         print_results(results_list, correct_answers)
