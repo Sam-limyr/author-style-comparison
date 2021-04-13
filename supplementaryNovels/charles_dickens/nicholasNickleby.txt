@@ -1,6 +1,4 @@
-﻿CHAPTER 1
-
-Introduces all the Rest
+﻿
 
 
 There once lived, in a sequestered part of the county of Devonshire, one
@@ -215,10 +213,7 @@ asleep.
 
 
 
-CHAPTER 2
 
-Of Mr. Ralph Nickleby, and his Establishments, and his Undertakings, and
-of a great Joint Stock Company of vast national Importance
 
 
 Mr. Ralph Nickleby was not, strictly speaking, what you would call
@@ -690,12 +685,7 @@ every such attendance.
 
 
 
-CHAPTER 3
 
-Mr. Ralph Nickleby receives Sad Tidings of his Brother, but bears up
-nobly against the Intelligence communicated to him. The Reader is
-informed how he liked Nicholas, who is herein introduced, and how kindly
-he proposed to make his Fortune at once
 
 
 Having rendered his zealous assistance towards dispatching the lunch,
@@ -1230,10 +1220,7 @@ imprudence.
 
 
 
-CHAPTER 4
 
-Nicholas and his Uncle (to secure the Fortune without loss of time) wait
-upon Mr. Wackford Squeers, the Yorkshire Schoolmaster
 
 
 Snow Hill! What kind of place can the quiet townspeople who see the
@@ -1863,10 +1850,7 @@ sounded louder that ever.
 
 
 
-CHAPTER 5
 
-Nicholas starts for Yorkshire. Of his Leave-taking and his
-Fellow-Travellers, and what befell them on the Road
 
 
 If tears dropped into a trunk were charms to preserve its owner from
@@ -2345,11 +2329,7 @@ uncertainty by flinging him into the road.
 
 
 
-CHAPTER 6
 
-In which the Occurrence of the Accident mentioned in the last Chapter,
-affords an Opportunity to a couple of Gentlemen to tell Stories against
-each other
 
 
 ‘Wo ho!’ cried the guard, on his legs in a minute, and running to the
@@ -3391,9 +3371,7 @@ were all put down together at the George and New Inn, Greta Bridge.
 
 
 
-CHAPTER 7
 
-Mr. and Mrs. Squeers at Home
 
 
 Mr. Squeers, being safely landed, left Nicholas and the boys standing
@@ -3805,9 +3783,7 @@ eyes were dimmed with a moisture that might have been taken for tears.
 
 
 
-CHAPTER 8
 
-Of the Internal Economy of Dotheboys Hall
 
 
 A ride of two hundred and odd miles in severe weather, is one of the
@@ -4392,11 +4368,7 @@ retirement there--followed--to his dirty and crowded dormitory.
 
 
 
-CHAPTER 9
 
-Of Miss Squeers, Mrs. Squeers, Master Squeers, and Mr. Squeers; and of
-various Matters and Persons connected no less with the Squeerses than
-Nicholas Nickleby
 
 
 When Mr. Squeers left the schoolroom for the night, he betook himself, as
@@ -5150,9 +5122,7 @@ and crept into his poor bed.
 
 
 
-CHAPTER 10
 
-How Mr. Ralph Nickleby provided for his Niece and Sister-in-Law
 
 
 On the second morning after the departure of Nicholas for Yorkshire,
@@ -5813,10 +5783,7 @@ money-getting. Kate walked sadly back to their lodgings in the Strand.
 
 
 
-CHAPTER 11
 
-Newman Noggs inducts Mrs. and Miss Nickleby into their New Dwelling in
-the City
 
 
 Miss Nickleby’s reflections, as she wended her way homewards, were of
@@ -6059,11 +6026,7 @@ to own her fears, and Newman Noggs was on his road homewards.
 
 
 
-CHAPTER 12
 
-Whereby the Reader will be enabled to trace the further course of
-Miss Fanny Squeer’s Love, and to ascertain whether it ran smooth or
-otherwise.
 
 
 It was a fortunate circumstance for Miss Fanny Squeers, that when her
@@ -6597,10 +6560,7 @@ his old corner.
 
 
 
-CHAPTER 13
 
-Nicholas varies the Monotony of Dothebys Hall by a most vigorous and
-remarkable proceeding, which leads to Consequences of some Importance
 
 
 The cold, feeble dawn of a January morning was stealing in at the
@@ -7256,10 +7216,7 @@ so they passed out of the old barn, together.
 
 
 
-CHAPTER 14
 
-Having the Misfortune to treat of none but Common People, is necessarily
-of a Mean and Vulgar Character
 
 
 In that quarter of London in which Golden Square is situated, there is
@@ -7806,11 +7763,7 @@ listened attentively.
 
 
 
-CHAPTER 15
 
-Acquaints the Reader with the Cause and Origin of the Interruption
-described in the last Chapter, and with some other Matters necessary to
-be known
 
 
 Newman Noggs scrambled in violent haste upstairs with the steaming
@@ -8402,10 +8355,7 @@ acquaintance.
 
 
 
-CHAPTER 16
 
-Nicholas seeks to employ himself in a New Capacity, and being
-unsuccessful, accepts an engagement as Tutor in a Private Family
 
 
 The first care of Nicholas, next morning, was, to look after some room
@@ -9319,9 +9269,7 @@ fresh discussion on the language.
 
 
 
-CHAPTER 17
 
-Follows the Fortunes of Miss Nickleby
 
 
 It was with a heavy heart, and many sad forebodings which no effort
@@ -9765,11 +9713,7 @@ she would be undeceived.
 
 
 
-CHAPTER 18
 
-Miss Knag, after doting on Kate Nickleby for three whole Days, makes
-up her Mind to hate her for evermore. The Causes which led Miss Knag to
-form this Resolution
 
 
 There are many lives of much pain, hardship, and suffering, which,
@@ -10394,11 +10338,7 @@ them fall.
 
 
 
-CHAPTER 19
 
-Descriptive of a Dinner at Mr. Ralph Nickleby’s, and of the Manner in
-which the Company entertained themselves, before Dinner, at Dinner, and
-after Dinner.
 
 
 The bile and rancour of the worthy Miss Knag undergoing no diminution
@@ -11142,10 +11082,7 @@ man who had seen a spirit from some world beyond the grave.
 
 
 
-CHAPTER 20
 
-Wherein Nicholas at length encounters his Uncle, to whom he expresses
-his Sentiments with much Candour. His Resolution.
 
 
 Little Miss La Creevy trotted briskly through divers streets at the
@@ -11669,10 +11606,7 @@ will be poor together.’
 
 
 
-CHAPTER 21
 
-Madam Mantalini finds herself in a Situation of some Difficulty, and
-Miss Nickleby finds herself in no Situation at all
 
 
 The agitation she had undergone, rendered Kate Nickleby unable to resume
@@ -12270,10 +12204,7 @@ present we will leave her.
 
 
 
-CHAPTER 22
 
-Nicholas, accompanied by Smike, sallies forth to seek his Fortune. He
-encounters Mr. Vincent Crummles; and who he was, is herein made manifest
 
 
 The whole capital which Nicholas found himself entitled to, either in
@@ -12994,10 +12925,7 @@ and gave Mr. Vincent Crummles his hand upon it.
 
 
 
-CHAPTER 23
 
-Treats of the Company of Mr. Vincent Crummles, and of his Affairs,
-Domestic and Theatrical
 
 
 As Mr. Crummles had a strange four-legged animal in the inn stables,
@@ -13606,10 +13534,7 @@ these three days, and will postpone reflection till tomorrow--if I can.’
 
 
 
-CHAPTER 24
 
-Of the Great Bespeak for Miss Snevellicci, and the first Appearance of
-Nicholas upon any Stage
 
 
 Nicholas was up betimes in the morning; but he had scarcely begun to
@@ -14340,11 +14265,7 @@ led her on, and divided the applause.
 
 
 
-CHAPTER 25
 
-Concerning a young Lady from London, who joins the Company, and an
-elderly Admirer who follows in her Train; with an affecting Ceremony
-consequent on their Arrival
 
 
 The new piece being a decided hit, was announced for every evening of
@@ -14993,9 +14914,7 @@ prince and prodigy of Apothecaries.
 
 
 
-CHAPTER 26
 
-Is fraught with some Danger to Miss Nickleby’s Peace of Mind
 
 
 The place was a handsome suite of private apartments in Regent Street;
@@ -15498,10 +15417,7 @@ chance.’
 
 
 
-CHAPTER 27
 
-Mrs. Nickleby becomes acquainted with Messrs Pyke and Pluck, whose
-Affection and Interest are beyond all Bounds
 
 
 Mrs. Nickleby had not felt so proud and important for many a day, as
@@ -16172,11 +16088,7 @@ distance.
 
 
 
-CHAPTER 28
 
-Miss Nickleby, rendered desperate by the Persecution of Sir Mulberry
-Hawk, and the Complicated Difficulties and Distresses which surround
-her, appeals, as a last resource, to her Uncle for Protection
 
 
 The ensuing morning brought reflection with it, as morning usually
@@ -16935,10 +16847,7 @@ life, his body’s most active employer, Mr. Ralph Nickleby.
 
 
 
-CHAPTER 29
 
-Of the Proceedings of Nicholas, and certain Internal Divisions in the
-Company of Mr. Vincent Crummles
 
 
 The unexpected success and favour with which his experiment at
@@ -17367,11 +17276,7 @@ vainly too--for him!
 
 
 
-CHAPTER 30
 
-Festivities are held in honour of Nicholas, who suddenly withdraws
-himself from the Society of Mr. Vincent Crummles and his Theatrical
-Companions
 
 
 Mr. Vincent Crummles was no sooner acquainted with the public
@@ -18085,10 +17990,7 @@ Mrs. Crummles as they rolled away.
 
 
 
-CHAPTER 31
 
-Of Ralph Nickleby and Newman Noggs, and some wise Precautions, the
-success or failure of which will appear in the Sequel
 
 
 In blissful unconsciousness that his nephew was hastening at the utmost
@@ -18428,10 +18330,7 @@ terminated.
 
 
 
-CHAPTER 32
 
-Relating chiefly to some remarkable Conversation, and some remarkable
-Proceedings to which it gives rise
 
 
 ‘London at last!’ cried Nicholas, throwing back his greatcoat and
@@ -18911,10 +18810,7 @@ time of a stream of blood that was trickling down his face and breast.
 
 
 
-CHAPTER 33
 
-In which Mr. Ralph Nickleby is relieved, by a very expeditious Process,
-from all Commerce with his Relations
 
 
 Smike and Newman Noggs, who in his impatience had returned home long
@@ -19232,10 +19128,7 @@ apparently quite abstracted from every other object.
 
 
 
-CHAPTER 34
 
-Wherein Mr. Ralph Nickleby is visited by Persons with whom the Reader has
-been already made acquainted
 
 
 ‘What a demnition long time you have kept me ringing at this confounded
@@ -20016,10 +19909,7 @@ Nickleby went to bed.
 
 
 
-CHAPTER 35
 
-Smike becomes known to Mrs. Nickleby and Kate. Nicholas also meets with
-new Acquaintances. Brighter Days seem to dawn upon the Family
 
 
 Having established his mother and sister in the apartments of the
@@ -20763,11 +20653,7 @@ Nickleby was alone and miserable.
 
 
 
-CHAPTER 36
 
-Private and confidential; relating to Family Matters. Showing how Mr
-Kenwigs underwent violent Agitation, and how Mrs. Kenwigs was as well as
-could be expected
 
 
 It might have been seven o’clock in the evening, and it was growing dark
@@ -21160,12 +21046,7 @@ were left to their repose.
 
 
 
-CHAPTER 37
 
-Nicholas finds further Favour in the Eyes of the brothers Cheeryble and
-Mr. Timothy Linkinwater. The brothers give a Banquet on a great Annual
-Occasion. Nicholas, on returning Home from it, receives a mysterious and
-important Disclosure from the Lips of Mrs. Nickleby
 
 
 The square in which the counting-house of the brothers Cheeryble
@@ -21896,11 +21777,7 @@ bottles at the top of the wall!’
 
 
 
-CHAPTER 38
 
-Comprises certain Particulars arising out of a Visit of Condolence,
-which may prove important hereafter. Smike unexpectedly encounters a
-very old Friend, who invites him to his House, and will take no Denial
 
 
 Quite unconscious of the demonstrations of their amorous neighbour, or
@@ -22574,10 +22451,7 @@ at the Yorkshire school.
 
 
 
-CHAPTER 39
 
-In which another old Friend encounters Smike, very opportunely and to
-some Purpose
 
 
 The night, fraught with so much bitterness to one poor soul, had given
@@ -23002,11 +22876,7 @@ been scarcely less amused than John Browdie himself.
 
 
 
-CHAPTER 40
 
-In which Nicholas falls in Love. He employs a Mediator, whose
-Proceedings are crowned with unexpected Success, excepting in one
-solitary Particular
 
 
 Once more out of the clutches of his old persecutor, it needed no fresh
@@ -23793,10 +23663,7 @@ lady, now as far beyond his reach as ever.
 
 
 
-CHAPTER 41
 
-Containing some Romantic Passages between Mrs. Nickleby and the Gentleman
-in the Small-clothes next Door
 
 
 Ever since her last momentous conversation with her son, Mrs. Nickleby
@@ -24369,10 +24236,7 @@ method in HIS madness; depend upon that, my dear.’
 
 
 
-CHAPTER 42
 
-Illustrative of the convivial Sentiment, that the best of Friends must
-sometimes part
 
 
 The pavement of Snow Hill had been baking and frying all day in the
@@ -24922,10 +24786,7 @@ evening in airnest.’
 
 
 
-CHAPTER 43
 
-Officiates as a kind of Gentleman Usher, in bringing various People
-together
 
 
 The storm had long given place to a calm the most profound, and the
@@ -25517,11 +25378,7 @@ bitter grief?
 
 
 
-CHAPTER 44
 
-Mr. Ralph Nickleby cuts an old Acquaintance. It would also appear from
-the Contents hereof, that a Joke, even between Husband and Wife, may be
-sometimes carried too far
 
 
 There are some men who, living with the one object of enriching
@@ -26207,9 +26064,7 @@ side--the strange man talking earnestly, and Newman listening.
 
 
 
-CHAPTER 45
 
-Containing Matter of a surprising Kind
 
 
 ‘As we gang awa’ fra’ Lunnun tomorrow neeght, and as I dinnot know that
@@ -26787,10 +26642,7 @@ friends, and the family were left to meditate upon recent occurrences.
 
 
 
-CHAPTER 46
 
-Throws some Light upon Nicholas’s Love; but whether for Good or Evil the
-Reader must determine
 
 
 After an anxious consideration of the painful and embarrassing position
@@ -27395,11 +27247,7 @@ first interview with Madeline Bray.
 
 
 
-CHAPTER 47
 
-Mr. Ralph Nickleby has some confidential Intercourse with another old
-Friend. They concert between them a Project, which promises well for
-both
 
 
 ‘There go the three-quarters past!’ muttered Newman Noggs, listening
@@ -28104,10 +27952,7 @@ with confidence for this day week.’
 
 
 
-CHAPTER 48
 
-Being for the Benefit of Mr. Vincent Crummles, and positively his last
-Appearance on this Stage
 
 
 It was with a very sad and heavy heart, oppressed by many painful ideas,
@@ -28600,10 +28445,7 @@ took farewell of the Vincent Crummleses.
 
 
 
-CHAPTER 49
 
-Chronicles the further Proceedings of the Nickleby Family, and the
-Sequel of the Adventure of the Gentleman in the Small-clothes
 
 
 While Nicholas, absorbed in the one engrossing subject of interest which
@@ -29273,9 +29115,7 @@ quiet roof.
 
 
 
-CHAPTER 50
 
-Involves a serious Catastrophe
 
 
 The little race-course at Hampton was in the full tide and height of
@@ -29881,11 +29721,7 @@ upwards to the sky.
 
 
 
-CHAPTER 51
 
-The Project of Mr. Ralph Nickleby and his Friend approaching a successful
-Issue, becomes unexpectedly known to another Party, not admitted into
-their Confidence
 
 
 In an old house, dismal dark and dusty, which seemed to have withered,
@@ -30440,11 +30276,7 @@ thief! stop thief!’
 
 
 
-CHAPTER 52
 
-Nicholas despairs of rescuing Madeline Bray, but plucks up his Spirits
-again, and determines to attempt it. Domestic Intelligence of the
-Kenwigses and Lillyvicks
 
 
 Finding that Newman was determined to arrest his progress at any hazard,
@@ -31019,10 +30851,7 @@ Evins itself looks down!”’
 
 
 
-CHAPTER 53
 
-Containing the further Progress of the Plot contrived by Mr. Ralph
-Nickleby and Mr. Arthur Gride
 
 
 With that settled resolution, and steadiness of purpose to which extreme
@@ -31735,9 +31564,7 @@ warmer familiarity, and stole away to bed.
 
 
 
-CHAPTER 54
 
-The Crisis of the Project and its Result
 
 
 There are not many men who lie abed too late, or oversleep themselves,
@@ -32278,9 +32105,7 @@ drive away.
 
 
 
-CHAPTER 55
 
-Of Family Matters, Cares, Hopes, Disappointments, and Sorrows
 
 
 Although Mrs. Nickleby had been made acquainted by her son and daughter
@@ -32797,11 +32622,7 @@ It sounded like the prayer of a broken heart.
 
 
 
-CHAPTER 56
 
-Ralph Nickleby, baffled by his Nephew in his late Design, hatches a
-Scheme of Retaliation which Accident suggests to him, and takes into his
-Counsels a tried Auxiliary
 
 
 The course which these adventures shape out for themselves, and
@@ -33376,10 +33197,7 @@ such a chain which I will wind about him, as never man forged yet.’
 
 
 
-CHAPTER 57
 
-How Ralph Nickleby’s Auxiliary went about his Work, and how he prospered
-with it
 
 
 It was a dark, wet, gloomy night in autumn, when in an upper room of a
@@ -33855,9 +33673,7 @@ the floor, and stretched him on it flat and senseless.
 
 
 
-CHAPTER 58
 
-In which one Scene of this History is closed
 
 
 Dividing the distance into two days’ journey, in order that his charge
@@ -34125,9 +33941,7 @@ upon their faces; then, whispered that it was Eden--and so died.
 
 
 
-CHAPTER 59
 
-The Plots begin to fail, and Doubts and Dangers to disturb the Plotter
 
 
 Ralph sat alone, in the solitary room where he was accustomed to take
@@ -34776,9 +34590,7 @@ Thus they parted, for that time; but the worst had not come yet.
 
 
 
-CHAPTER 60
 
-The Dangers thicken, and the Worst is told
 
 
 Instead of going home, Ralph threw himself into the first street
@@ -35271,10 +35083,7 @@ concluded to act upon this resolution before going to bed.
 
 
 
-CHAPTER 61
 
-Wherein Nicholas and his Sister forfeit the good Opinion of all worldly
-and prudent People
 
 
 On the next morning after Brooker’s disclosure had been made, Nicholas
@@ -35730,9 +35539,7 @@ full of uneasiness, uncertainty, and disquiet.
 
 
 
-CHAPTER 62
 
-Ralph makes one last Appointment--and keeps it
 
 
 Creeping from the house, and slinking off like a thief; groping with his
@@ -35980,10 +35787,7 @@ had so often been directed in childish terror, fourteen years before.
 
 
 
-CHAPTER 63
 
-The Brothers Cheeryble make various Declarations for themselves and
-others. Tim Linkinwater makes a Declaration for himself
 
 
 Some weeks had passed, and the first shock of these events had subsided.
@@ -36466,10 +36270,7 @@ misdemeanour she had so flagrantly committed.
 
 
 
-CHAPTER 64
 
-An old Acquaintance is recognised under melancholy Circumstances, and
-Dotheboys Hall breaks up for ever
 
 
 Nicholas was one of those whose joy is incomplete unless it is shared
@@ -36877,9 +36678,7 @@ neighbours, or to be only spoken of as among the things that had been.
 
 
 
-CHAPTER 65
 
-Conclusion
 
 
 When her term of mourning had expired, Madeline gave her hand and
