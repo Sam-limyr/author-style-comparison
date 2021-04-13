@@ -11,7 +11,7 @@ from test_cases import *
 
 # NUMBER OF FUNCTION WORDS IN nltk.coprus.stopwords is 160 after collapsing cases
 NUM_NEAREST_NEIGHBOUR = 17
-
+NUM_TEXT_SPLIT = 5
 
 def read_texts(dir_name):
 	"""
@@ -33,10 +33,12 @@ def read_texts(dir_name):
 			text = fp.read()[1:]
 			print(novel_filename)
 
+			segment_len = math.floor(len(text)/NUM_TEXT_SPLIT)
+
 			# author_to_alltexts[author][novel_filename] = text
-			author_to_alltexts[author][novel_filename+"1"] = text[:math.floor(len(text)/3)]
-			author_to_alltexts[author][novel_filename+"2"] = text[math.floor(len(text)/3):math.floor(len(text)/3)*2]
-			author_to_alltexts[author][novel_filename + "3"] = text[math.floor(len(text)/3)*2:len(text)]
+			for idx in range(0, NUM_TEXT_SPLIT):
+				author_to_alltexts[author][novel_filename + str(idx)] = text[segment_len * idx : segment_len*(idx+1)]
+
 
 	return author_to_alltexts
 
@@ -337,13 +339,13 @@ def run_test_runner(nn_model, stopword_set, train_vector_to_authortitle):
 		nearest_auth, confidence_score = compute_nearest_neighbour(point_index_arr, dist_arr,
 																   train_vector_to_authortitle)
 
-		print("Most similar author: "+nearest_auth)
-		print("Confidence score: " + str(confidence_score))
-
-		print("Nearest points: ")
-		for point_index in range(len(dist_arr[0])):
-			print("Point: " + str(train_vector_to_authortitle[point_index_arr[0][point_index]]))
-			print("Distance to point: " + str(dist_arr[0][point_index]))
+		# print("Most similar author: "+nearest_auth)
+		# print("Confidence score: " + str(confidence_score))
+		#
+		# print("Nearest points: ")
+		# for point_index in range(len(dist_arr[0])):
+		# 	print("Point: " + str(train_vector_to_authortitle[point_index_arr[0][point_index]]))
+		# 	print("Distance to point: " + str(dist_arr[0][point_index]))
 
 		auth_confidence_list.append((nearest_auth,confidence_score))
 		auth_list.append(nearest_auth)
