@@ -44,7 +44,8 @@ authors = {"charles_dickens": ["davidc.txt", "greatex.txt", "olivert.txt", "twoc
            "mark_twain": ["toms.txt", "huckfinn.txt", "connecticutyankee.txt", "princepauper.txt"]}
 
 authorsIndexed = ["charles_dickens", "fyodor_dostoevsky", "mark_twain"]
-
+num_novels = {}
+    
 def extract_features():
     print("Extracting stats from novels...")
     
@@ -73,12 +74,20 @@ def extract_features():
     stats["dialogue_per_sent"] = []
     # stats["vocab_word_count"] = []
     
+    dir_name = "split_novels"
+    
     for author in authors:
         # currently unused
         vocab = {}
-        for bookName in authors[author]:
-            bookFilepath = "novels/" + author + "/" + bookName
-            # print(bookFilepath)
+        novel_filenames = os.listdir(dir_name + "/" + author)
+        #print(novel_filenames)
+        num_novels[author] = len(novel_filenames)
+
+        for novel_filename in novel_filenames:
+                                     
+        #for bookName in authors[author]:
+            bookFilepath = dir_name + "/" + author + "/" + novel_filename
+            #print(bookFilepath)
 
             # read text in book
             with open(bookFilepath, encoding='utf-8', errors='ignore') as f:
@@ -94,6 +103,7 @@ def extract_features():
             sentences = []
 
             # Statistics to track per book
+            tags = {}
             pp_tags = 0
             dt_tags = 0
             adj_tags = 0
@@ -132,8 +142,17 @@ def extract_features():
                     # POS tagging
                     tokens = nltk.word_tokenize(ele)
                     words_and_tags = nltk.pos_tag(tokens)
+                    word_position = 0
                     for word, tag in words_and_tags:
+                        if word_position not in tags:
+                            tags[word_position] = {}
                         # count tags
+                        if tag not in tags[word_position]:
+                            tags[word_position][tag] = 1
+                        else:
+                            tags[word_position][tag] += 1
+                        
+                        # should be able to be access after processing book through tags[position]['PRP']
                         if tag == 'PRP':
                             pp_tags += 1
                         elif tag == 'DT':
@@ -152,6 +171,7 @@ def extract_features():
                             modal_tags += 1
                         elif tag == 'FW':
                             foreign_word_tags += 1
+                        word_position += 1
                         
                     # count statistics
                     sentence_count += 1
@@ -219,6 +239,8 @@ def extract_features():
             
             # vocab needs to be able to count rare words and identify them
             # stats["vocab_word_count"].append(unique_word_count)
+            
+            #print(tags)
     return stats
 
 def train_model(model, x_train, y_train):
@@ -425,8 +447,8 @@ def get_trained_model(model, scaler, stats):
     # y_train = books
     y_train = []
     for author in authors:
-        y_train += [author] * len(authors[author])
-    # print(y_train)
+        y_train += [author] * num_novels[author]
+    # print(num_novels)
 
     train_model(model, x_train, y_train)
 
