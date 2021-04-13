@@ -95,12 +95,12 @@ def get_all_tests():
     return all_tests
 
 
-def check_test_results(results_list_and_confidence_scores, show_details=True, show_matrix=True):
+def check_test_results(results_list, show_details=True, show_matrix=True):
     """
     Accepts a result list and checks it against the correct answers. Provides a confusion matrix, as well as basic
     scoring. The input results list should be a list of tuples (predicted_answer, confidence_score). The
     predicted_answer will be used for grading, and the confidence_score will be used for tiebreaking.
-    :param results_list_and_confidence_scores: A list of tuples (predicted_answer, confidence_score) of type (str, int)
+    :param results_list: A list of predicted answers, as strings.
     :param show_details: A boolean to determine whether basic score totals will be printed out.
     :param show_matrix: A boolean to determine whether the confidence matrix will be displayed.
     """
@@ -109,9 +109,6 @@ def check_test_results(results_list_and_confidence_scores, show_details=True, sh
                       [MARK_TWAIN_NAME for _ in range(len(MARK_TWAIN_TESTS))] + \
                       [JANE_AUSTEN_NAME for _ in range(len(JANE_AUSTEN_TESTS))] + \
                       [JOHN_STEINBECK_NAME for _ in range(len(JOHN_STEINBECK_TESTS))]
-
-    results_list = [result[0] for result in results_list_and_confidence_scores]
-    confidence_scores = [result[1] for result in results_list_and_confidence_scores]
 
     assert len(results_list) == len(correct_answers), "Input and expected lists do not have the same length!"
 
@@ -168,7 +165,7 @@ def print_results(predicted_results, ground_truth):
                JANE_AUSTEN_NAME, scores[JANE_AUSTEN_NAME], len(JANE_AUSTEN_TESTS),
                JOHN_STEINBECK_NAME, scores[JOHN_STEINBECK_NAME], len(JOHN_STEINBECK_TESTS)))
 
-    score = f1_score(ground_truth, predicted_results, average='micro')
+    score = f1_score(ground_truth[:450], predicted_results[:450], average='micro')
     print("F1 score: {}".format(round(float(score), 4)))
 
 

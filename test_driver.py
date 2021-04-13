@@ -17,8 +17,10 @@ def main():
 
     combined_results = list(zip(
         normalized_doc2vec_results
-        ,        normalized_feature_engineering_results
-        ,        normalized_k_nearest_neighbours_results
+        ,
+        normalized_feature_engineering_results
+        ,
+        normalized_k_nearest_neighbours_results
     ))
 
     print("\n\nCombining results into ensemble...\n")
