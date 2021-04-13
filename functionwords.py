@@ -1,19 +1,16 @@
 import os
 
 from collections import Counter
+from collections import defaultdict
 from nltk.corpus import stopwords   # Requires NLTK in the include path.
 from nltk.tokenize import TreebankWordTokenizer, sent_tokenize
 from sklearn.neighbors import NearestNeighbors
 
+from test_runner import *
+from test_cases import *
+
 # NUMBER OF FUNCTION WORDS IN nltk.coprus.stopwords is 160 after collapsing cases
-
-CHARLES_DICKENS_NAME = "charles_dickens"
-FYODOR_DOSTOEVSKY_NAME = "fyodor_dostoevsky"
-LEO_TOLSTOY_NAME = "leo_tolstoy"
-MARK_TWAIN_NAME = "mark_twain"
-
-author_names = [CHARLES_DICKENS_NAME, FYODOR_DOSTOEVSKY_NAME, LEO_TOLSTOY_NAME, MARK_TWAIN_NAME]
-# function_words_pos_tagset = ['DT', 'CC', 'IN', 'PRP', 'PRP$', 'WP', 'WP$']
+NUM_NEAREST_NEIGHBOUR = 3
 
 
 def read_texts(dir_name):
@@ -22,7 +19,7 @@ def read_texts(dir_name):
 	subdirectory names are parsed as authors
 	returns dict of author to filename to text
 	"""
-
+	print("Reading texts...")
 	authors = os.listdir(dir_name)
 	author_to_alltexts = {}
 
@@ -46,6 +43,7 @@ def parse_tokens(author_to_alltexts):
 	tokenizes text in dict of author to filename to text using nltk TreebankWordTokenizer
 	returns dict of author to title to tokens
 	"""
+	print("Tokenizing...")
 
 	# tokenize into words
 	author_to_title_to_tokens = {}
@@ -74,6 +72,7 @@ def compute_stopword_freq(stopword_set, author_to_alltexts, author_to_title_to_t
 	counts no. of stopwords (given in stopword_set) found in tokens
 	returns dict of author to filename to counter for stopword freq
 	"""
+	print("Computing stopword frequency...")
 
 	# count num of stopwords
 	author_to_title_to_stopwordcounter = {}
@@ -102,6 +101,7 @@ def compute_rank_vectors(sorted_stopword_list, author_to_title_to_stopwordcounte
 	returns list of rank vectors, dict of author to title to vector,
 	dict of vector index to (author, title) tup
 	"""
+	print("Computing rank vectors...")
 
 	# rank top TOP_X_MOST_COMMON stopwords for each author corp, rank starts from 0
 	author_to_title_to_vector = {}
@@ -152,12 +152,12 @@ def generate_stopword_set():
 	return stopword_set
 
 
-def test_model(nn_model, stopword_set, train_vector_to_authortitle):
+def run_test_supplementaryNovels_entiretext(nn_model, stopword_set, train_vector_to_authortitle):
 	"""
 	test model using texts in supplementary novesl
 	"""
 
-	print("Testing model... ")
+	print("Testing model on whole texts in supplementaryNovel dataset... ")
 	# get training data
 	author_to_alltexts = read_texts('supplementaryNovels')
 	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
@@ -172,17 +172,165 @@ def test_model(nn_model, stopword_set, train_vector_to_authortitle):
 		dist_arr, point_index_arr = nn_model.kneighbors([test_vector])
 
 		print("Testing "+vector_to_authortitle[index][1] + " by "+vector_to_authortitle[index][0])
-		print("Nearest points: ")
 
-		for point_index in range(len(dist_arr[0])):
-			print("Point: " + str(train_vector_to_authortitle[point_index_arr[0][point_index]]))
-			print("Distance to point: " + str(dist_arr[0][point_index]))
+		# print("Nearest points: ")
+		# for point_index in range(len(dist_arr[0])):
+		# 	print("Point: " + str(train_vector_to_authortitle[point_index_arr[0][point_index]]))
+		# 	print("Distance to point: " + str(dist_arr[0][point_index]))
 
+		nearest_auth, confidence_score = compute_nearest_neighbour(point_index_arr, dist_arr, train_vector_to_authortitle)
+		print("Nearest author by majority: "+nearest_auth)
+		print("Confidence score: " + str(confidence_score))
 		print(" ")
 
+		# print("Most similar author: "+str(train_vector_to_authortitle[point_index_arr[0][0]]))
+		#
+		# confidence_score = compute_confidence_score(dist_arr[0][0], dist_arr[0][1])
+		# print("Confidence score: " + str(confidence_score))
 
-if __name__ == '__main__':
-	print("Building model...")
+
+def compute_nearest_neighbour(point_index_arr, dist_arr, train_vector_to_authortitle):
+	author_counter = Counter()
+	auth_to_point_index = {}
+
+	# count among NUM_NEAREST_NEIGHBOUR neighbours, which is most common
+	for point_index in range(NUM_NEAREST_NEIGHBOUR):
+		author, title = train_vector_to_authortitle[point_index_arr[0][point_index]]
+		author_counter[author] += 1
+
+		if auth_to_point_index.get(author) != None:
+			auth_to_point_index[author].append(point_index)
+		else:
+			auth_to_point_index[author] = [point_index]
+
+	ranked_author_list = author_counter.most_common()
+	most_common_auth_count = int(ranked_author_list[0][1])
+
+	nearest_auth = ""
+	distance1 = 0
+	distance2 = float('inf')
+
+	# case 1: all 3 diff authors, take nearest point
+	if most_common_auth_count == 1:
+		nearest_auth_tup = train_vector_to_authortitle[point_index_arr[0][0]]
+		nearest_auth = nearest_auth_tup[0]
+		distance1 = dist_arr[0][0]
+		distance2 = dist_arr[0][1] # second nearest point
+
+	# case 2: all same author
+	elif most_common_auth_count == NUM_NEAREST_NEIGHBOUR:
+		nearest_auth = ranked_author_list[0][0]
+		distance1 = dist_arr[0][0]
+
+		diff_auth_index = find_nearest_point_with_diff_auth(point_index_arr, train_vector_to_authortitle, nearest_auth)
+		distance2 = dist_arr[0][diff_auth_index]
+
+	# case 3: authorA - 2, authorB - 1, majority wins
+	elif most_common_auth_count >= math.ceil(NUM_NEAREST_NEIGHBOUR/2):
+		nearest_auth = ranked_author_list[0][0]
+
+		nearest_point_index = min(auth_to_point_index[nearest_auth]) # authorA: nearest point of majority auth
+		distance1 = dist_arr[0][nearest_point_index]
+
+		authorB_index = find_nearest_point_with_diff_auth(point_index_arr, train_vector_to_authortitle, nearest_auth)
+		distance2 = dist_arr[0][authorB_index] # authorB:  nearest point of minority auth
+
+	confidence_score = compute_confidence_score(distance1, distance2)
+
+	return nearest_auth, confidence_score
+
+
+def find_nearest_point_with_diff_auth(point_index_arr, train_vector_to_authortitle, auth):
+	for point_index in range(len(point_index_arr[0])):
+		test_auth = train_vector_to_authortitle[point_index_arr[0][point_index]][0]
+
+		if test_auth != auth:
+			return point_index
+
+	return "help"
+
+
+def compute_confidence_score(distance1, distance2):
+	"""
+	case 1: all 3 diff authors, distance1=nearest_point, distance2=sec_nearest_point
+	case 2: all 3 same author, distance1=nearest_point, distance2=nearest_point_diff_auth
+	case 3: 2 authors, 1 author: distance1=best(author1, author1), distance2=author2
+
+	"""
+	return math.fabs(1 - (distance1 / distance2))
+
+
+def run_test_runner(nn_model, stopword_set, train_vector_to_authortitle):
+	print("Running test_runner... ")
+
+	author_to_alltexts = defaultdict(dict)
+
+	for index in range(len(CHARLES_DICKENS_TESTS)):
+		author_to_alltexts[0][index] = CHARLES_DICKENS_TESTS[index]
+
+	# for index in range(len(CHARLES_DICKENS_SAME_BOOK_MULTIPLE_PARAGRAPH_TESTS)):
+	# 	author_to_alltexts[0][index] = CHARLES_DICKENS_SAME_BOOK_MULTIPLE_PARAGRAPH_TESTS[index]
+
+	for index in range(len(FYODOR_DOSTOEVSKY_TESTS)):
+		author_to_alltexts[1][index] = FYODOR_DOSTOEVSKY_TESTS[index]
+
+	for index in range(len(MARK_TWAIN_TESTS)):
+		author_to_alltexts[3][index] = MARK_TWAIN_TESTS[index]
+
+	for index in range(len(JANE_AUSTEN_TESTS)):
+		author_to_alltexts[4][index] = JANE_AUSTEN_TESTS[index]
+
+	for index in range(len(JOHN_STEINBECK_TESTS)):
+		author_to_alltexts[5][index] = JOHN_STEINBECK_TESTS[index]
+
+	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
+	sorted_stopword_list = sorted(stopword_set)
+
+	author_to_title_to_stopwordcounter = compute_stopword_freq(stopword_set, author_to_alltexts, author_to_title_to_tokens)
+	test_vecs, author_to_title_to_vector, vector_to_authortitle = compute_rank_vectors(sorted_stopword_list, author_to_title_to_stopwordcounter)
+
+	auth_confidence_list = []
+	auth_list = []
+
+	for index in range(len(test_vecs)):
+		test_vector = test_vecs[index]
+		dist_arr, point_index_arr = nn_model.kneighbors([test_vector])
+
+		# print("Testing "+str(vector_to_authortitle[index][1]) + " by "+str(vector_to_authortitle[index][0]))
+		nearest_auth, confidence_score = compute_nearest_neighbour(point_index_arr, dist_arr,
+																   train_vector_to_authortitle)
+		# print("Nearest points: ")
+		# for point_index in range(len(dist_arr[0])):
+		# 	print("Point: " + str(train_vector_to_authortitle[point_index_arr[0][point_index]]))
+		# 	print("Distance to point: " + str(dist_arr[0][point_index]))
+
+		auth_confidence_list.append((nearest_auth,confidence_score))
+		auth_list.append(nearest_auth)
+
+	# print(auth_confidence_list)
+	# check_test_results(auth_list)
+
+	return auth_confidence_list
+
+
+def combine_training_data():
+	main_texts = read_texts('novels')
+	supp_texts = read_texts('supplementaryNovels')
+
+	# combining supp and main
+	author_to_alltexts = {}
+	for author in main_texts.keys():
+		combined = {}
+		combined.update(main_texts.get(author))
+
+		if supp_texts.get(author) != None:
+			combined.update(supp_texts.get(author))
+
+		author_to_alltexts[author] = combined
+	return author_to_alltexts
+
+
+def predict_k_nearest_neighbours_results():
 	# get training data
 	author_to_alltexts = read_texts('novels')
 	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
@@ -193,17 +341,15 @@ if __name__ == '__main__':
 	author_to_title_to_stopwordcounter = compute_stopword_freq(stopword_set, author_to_alltexts, author_to_title_to_tokens)
 	all_text_vecs, author_to_title_to_vector, vector_to_authortitle = compute_rank_vectors(sorted_stopword_list, author_to_title_to_stopwordcounter)
 
-	# print(author_to_title_to_stopwordcounter['charles_dickens'])
-	# print("Stopwordlist: ")
-	# print(sorted_stopword_list)
-	# print("Stopword counter: ")
-	# print(author_to_title_to_stopwordcounter['charles_dickens']['davidc.txt'])
-	# print("Rank vector: ")
-	# print(author_to_title_to_vector['charles_dickens']['davidc.txt'])
-
 	# build model
-	nn_model = NearestNeighbors(n_neighbors=2, metric='manhattan')
+	print("Building model...")
+	nn_model = NearestNeighbors(n_neighbors=5, metric='manhattan')
 	nn_model.fit(all_text_vecs)
 
-	# testing with supp novels
-	test_model(nn_model, stopword_set, vector_to_authortitle)
+	# testing
+	# test_model(nn_model, stopword_set, vector_to_authortitle)
+	return run_test_runner(nn_model, stopword_set, vector_to_authortitle)
+
+
+if __name__ == '__main__':
+	predict_k_nearest_neighbours_results()
