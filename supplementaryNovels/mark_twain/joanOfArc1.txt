@@ -43,11 +43,11 @@ only One.
 
 
 
-BOOK I IN DOMREMY
 
 
 
-Chapter 1 When Wolves Ran Free in Paris
+
+
 
 I, THE SIEUR LOUIS DE CONTE, was born in Neufchateau, on the 6th of
 January, 1410; that is to say, exactly two years before Joan of Arc was
@@ -139,7 +139,7 @@ the English and Burgundian name and polity in that way.
 
 
 
-Chapter 2 The Fairy Tree of Domremy
+
 
 OUR DOMREMY was like any other humble little hamlet of that remote time
 and region. It was a maze of crooked, narrow lanes and alleys shaded and
@@ -653,7 +653,7 @@ one; but upon reflection my heart went down, for this was not my gift.
 
 
 
-Chapter 3 All Aflame with Love of France
+
 
 SPEAKING of this matter reminds me of many incidents, many things that I
 could tell, but I think I will not try to do it now. It will be more
@@ -921,7 +921,7 @@ stranger's home now, for as long as he might please.
 
 
 
-Chapter 4 Joan Tames the Mad Man
+
 
 ALL CHILDREN have nicknames, and we had ours. We got one apiece early,
 and they stuck to us; but Joan was richer in this matter, for, as time
@@ -1280,7 +1280,7 @@ opinion of themselves than they had ever had before.
 
 
 
-Chapter 5 Domremy Pillaged and Burned
+
 
 THEY WERE peaceful and pleasant, those young and smoothly flowing days
 of ours; that is, that was the case as a rule, we being remote from the
@@ -1601,7 +1601,7 @@ herself.
 
 
 
-Chapter 6 Joan and Archangel Michael
+
 
 ALL THROUGH her childhood and up to the middle of her fourteenth year,
 Joan had been the most light-hearted creature and the merriest in the
@@ -1869,7 +1869,7 @@ and not dreaming, and see if this mark is still here; then I shall know.
 
 
 
-Chapter 7 She Delivers the Divine Command
+
 
 I HEARD my name called. It was Joan's voice. It startled me, for how
 could she know I was there? I said to myself, it is part of the dream;
@@ -2198,7 +2198,7 @@ the country; Domremy was already buzzing with it when we got back.
 
 
 
-Chapter 8 Why the Scorners Relented
+
 
 HUMAN NATURE is the same everywhere: it defies success, it has nothing
 but scorn for defeat. The village considered that Joan had disgraced it
@@ -2269,11 +2269,11 @@ tediously along; but at last there was a change.
 
 
 
-BOOK II IN COURT AND CAMP
 
 
 
-Chapter 1 Joan Says Good-By
+
+
 
 THE 5th of January, 1429, Joan came to me with her uncle Laxart, and
 said:
@@ -2361,7 +2361,7 @@ her birthday and mine. She was seventeen years old.
 
 
 
-Chapter 2 The Governor Speeds Joan
+
 
 After a few days, Laxart took Joan to Vaucouleurs, and found lodging
 and guardianship for her with Catherine Royer, a wheelwright's wife, an
@@ -2629,7 +2629,7 @@ spur.
 
 
 
-Chapter 3 The Paladin Groans and Boasts
+
 
 WE WERE twenty-five strong, and well equipped. We rode in double file,
 Joan and her brothers in the center of the column, with Jean de Metz
@@ -2888,7 +2888,7 @@ to-day, and if he likes to sit down, let him; I prefer to stand.”
 
 
 
-Chapter 4 Joan Leads Us Through the Enemy
+
 
 WE WERE called to quarters and subjected to a searching inspection by
 Joan. Then she made a short little talk in which she said that even the
@@ -3215,7 +3215,7 @@ flags.
 
 
 
-Chapter 5 We Pierce the Last Ambuscades
+
 
 WE RESTED and otherwise refreshed ourselves two or three hours at Gien,
 but by that time the news was abroad that the young girl commissioned
@@ -3665,7 +3665,7 @@ and go out from her presence indifferent.
 
 
 
-Chapter 6 Joan Convinces the King
+
 
 WELL, anything to make delay. The King's council advised him against
 arriving at a decision in our matter too precipitately. He arrive at a
@@ -3945,7 +3945,7 @@ abreast of us like a wave the whole way.
 
 
 
-Chapter 7 Our Paladin in His Glory
+
 
 WE WERE doomed to suffer tedious waits and delays, and we settled
 ourselves down to our fate and bore it with a dreary patience, counting
@@ -4181,7 +4181,7 @@ the while and smiling benignantly from his platform.
 
 
 
-Chapter 8 Joan Persuades Her Inquisitors
+
 
 WHEN JOAN told the King what that deep secret was that was torturing his
 heart, his doubts were cleared away; he believed she was sent of God,
@@ -4488,7 +4488,7 @@ of France, now solemnly and irrevocably delivered into her little hands.
 
 
 
-Chapter 9 She Is Made General-in-Chief
+
 
 IT WAS indeed a great day, and a stirring thing to see.
 
@@ -4592,7 +4592,7 @@ the common order, and seemed so impossible.
 
 
 
-Chapter 10 The Maid's Sword and Banner
+
 
 JOAN'S first official act was to dictate a letter to the English
 commanders at Orleans, summoning them to deliver up all strongholds in
@@ -4777,7 +4777,7 @@ knowing they will not fail me.”
 
 
 
-Chapter 11 The War March Is Begun
+
 
 NOEL and I went back together—silent at first, and impressed.
 
@@ -4917,7 +4917,7 @@ was up.
 
 
 
-Chapter 12 Joan Puts Heart in Her Army
+
 
 WE WERE at Blois three days. Oh, that camp, it is one of the treasures
 of my memory! Order? There was no more order among those brigands than
@@ -5153,7 +5153,7 @@ have the authority of Michelet for this.—TRANSLATOR
 
 
 
-Chapter 13 Checked by the Folly of the Wise
+
 
 WE MARCHED out in great strength and splendor, and took the road toward
 Orleans. The initial part of Joan's great dream was realizing itself at
@@ -5409,7 +5409,7 @@ Joan of Arc had stepped upon her stage at last, and was ready to begin.
 
 
 
-Chapter 14 What the English Answered
+
 
 SHE WAS ready, but must sit down and wait until there was an army to
 work with.
@@ -5497,7 +5497,7 @@ soon had the army moving.
 
 
 
-Chapter 15 My Exquisite Poem Goes to Smash
+
 
 WE OF the personal staff were in fairyland now, during the few days that
 we waited for the return of the army. We went into society. To our two
@@ -5776,7 +5776,7 @@ them. The effect of the poem was spoiled.
 
 
 
-Chapter 16 The Finding of the Dwarf
+
 
 THIS EPISODE disagreed with me and I was not able to leave my bed the
 next day. The others were in the same condition. But for this, one or
@@ -6139,7 +6139,7 @@ the next twenty-four hours it would be quiet, all but the snoring.
 
 
 
-Chapter 17 Sweet Fruit of Bitter Truth
+
 
 WHEN WE got home, breakfast for us minor fry was waiting in our
 mess-room and the family honored us by coming in to eat it with us. The
@@ -6242,7 +6242,7 @@ beguile them to tranquillity and peace.
 
 
 
-Chapter 18 Joan's First Battle-Field
+
 
 ABOUT NOON I was chatting with Madame Boucher; nothing was going on, all
 was quiet, when Catherine Boucher suddenly entered in great excitement,
@@ -6446,7 +6446,7 @@ unfruitful soil.
 
 
 
-Chapter 19 We Burst In Upon Ghosts
+
 
 BEING WORN out with the long fight, we all slept the rest of the
 afternoon away and two or three hours into the night. Then we got up
@@ -6541,7 +6541,7 @@ them the romance of the dungeon's long-vanished inmates as best you can.
 
 
 
-Chapter 20 Joan Makes Cowards Brave Victors
+
 
 THE NEXT day Joan wanted to go against the enemy again, but it was the
 feast of the Ascension, and the holy council of bandit generals were
@@ -6748,7 +6748,7 @@ the more relish on that account.
 
 
 
-Chapter 21 She Gently Reproves Her Dear Friend
+
 
 TO GET away from the usual crowd of visitors and have a rest, Joan
 went with Catherine straight to the apartment which the two occupied
@@ -6960,7 +6960,7 @@ hands, and I shall be hurt between my neck and my shoulder.”
 
 
 
-Chapter 22 The Fate of France Decided
+
 
 WE WERE up at dawn, and after mass we started. In the hall we met
 the master of the house, who was grieved, good man, to see Joan going
@@ -7243,7 +7243,7 @@ solemnities.—TRANSLATOR.
 
 
 
-Chapter 23 Joan Inspires the Tawdry King
+
 
 IN THE earliest dawn of morning, Talbot and his English forces evacuated
 their bastilles and marched away, not stopping to burn, destroy, or
@@ -7545,7 +7545,7 @@ But, JOAN OF ARC! The mere sound of it sets one's pulses leaping.
 
 
 
-Chapter 24 Tinsel Trappings of Nobility
+
 
 IT WAS vexatious to see what a to-do the whole town, and next the whole
 country, made over the news. Joan of Arc ennobled by the King! People
@@ -7684,7 +7684,7 @@ Just then the bugles blew the assembly, and that cut our talk short.
 
 
 
-Chapter 25 At Last—Forward!
+
 
 THE DAYS began to waste away—and nothing decided, nothing done. The army
 was full of zeal, but it was also hungry. It got no pay, the treasury
@@ -7878,7 +7878,7 @@ habitation so long ago, so long ago—for it has not aged a day!
 
 
 
-Chapter 26 The Last Doubts Scattered
+
 
 THIS TIME, as before, the King's last command to the generals was this:
 “See to it that you do nothing without the sanction of the Maid.” And
@@ -8016,7 +8016,7 @@ asleep.
 
 
 
-Chapter 27 How Joan Took Jargeau
+
 
 WE MADE a gallant show next day when we filed out through the frowning
 gates of Orleans, with banners flying and Joan and the Grand Staff in

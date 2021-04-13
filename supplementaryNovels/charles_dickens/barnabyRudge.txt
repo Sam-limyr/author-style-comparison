@@ -1,4 +1,4 @@
-﻿Chapter 1
+﻿
 
 
 In the year 1775, there stood upon the borders of Epping Forest, at a
@@ -623,7 +623,7 @@ in some year, sooner or later, that man will be discovered.’
 
 
 
-Chapter 2
+
 
 
 ‘A strange story!’ said the man who had been the cause of the
@@ -980,7 +980,7 @@ to his hand, and entreating him to enjoyment!
 
 
 
-Chapter 3
+
 
 
 Such were the locksmith’s thoughts when first seated in the snug corner,
@@ -1290,7 +1290,7 @@ night, or there was no faith in woman.
 
 
 
-Chapter 4
+
 
 
 In the venerable suburb--it was a suburb once--of Clerkenwell, towards
@@ -1702,7 +1702,7 @@ Whirr-r-r-r-r-r-r-r.
 
 
 
-Chapter 5
+
 
 
 As soon as the business of the day was over, the locksmith sallied
@@ -1901,7 +1901,7 @@ shuddered, as though the hand of death were on her.
 
 
 
-Chapter 6
+
 
 
 Beyond all measure astonished by the strange occurrences which had
@@ -2320,7 +2320,7 @@ sworn.’
 
 
 
-Chapter 7
+
 
 
 Mrs Varden was a lady of what is commonly called an uncertain temper--a
@@ -2560,7 +2560,7 @@ sound deep sleep, as by Barnaby himself in his phantom-haunted dreams.
 
 
 
-Chapter 8
+
 
 
 Clear of the locksmith’s house, Sim Tappertit laid aside his cautious
@@ -2979,7 +2979,7 @@ promenade.
 
 
 
-Chapter 9
+
 
 
 Chronicler’s are privileged to enter where they list, to come and go
@@ -3211,7 +3211,7 @@ himself, nor couldn’t if he was twenty Simmunses!’
 
 
 
-Chapter 10
+
 
 
 It was on one of those mornings, common in early spring, when the year,
@@ -3656,7 +3656,7 @@ his very best bow.
 
 
 
-Chapter 11
+
 
 
 There was great news that night for the regular Maypole customers, to
@@ -3866,7 +3866,7 @@ than he had come up, and joined his friends below.
 
 
 
-Chapter 12
+
 
 
 There was a brief pause in the state-room of the Maypole, as Mr Haredale
@@ -4201,7 +4201,7 @@ out of the room, and left him to his rest in the Maypole’s ancient bed.
 
 
 
-Chapter 13
+
 
 
 If Joseph Willet, the denounced and proscribed of ‘prentices, had
@@ -4641,7 +4641,7 @@ and get some obliging enemy to knock his brains out as soon as possible.
 
 
 
-Chapter 14
+
 
 
 Joe Willet rode leisurely along in his desponding mood, picturing the
@@ -4845,7 +4845,7 @@ son, looking at each other in mute astonishment.
 
 
 
-Chapter 15
+
 
 
 At noon next day, John Willet’s guest sat lingering over his breakfast
@@ -5232,7 +5232,7 @@ hands, in what appeared to be a kind of stupor.
 
 
 
-Chapter 16
+
 
 
 A series of pictures representing the streets of London in the night,
@@ -5465,7 +5465,7 @@ unlocked the door, carried her in, and secured it carefully behind them.
 
 
 
-Chapter 17
+
 
 
 It was a chilly night, and the fire in the widow’s parlour had burnt
@@ -5915,7 +5915,7 @@ through this sad world, or he is doomed, and my poor heart is broken!’
 
 
 
-Chapter 18
+
 
 
 Gliding along the silent streets, and holding his course where they were
@@ -6118,7 +6118,7 @@ listening, until it was broad day.
 
 
 
-Chapter 19
+
 
 
 Dolly Varden’s pretty little head was yet bewildered by various
@@ -6531,7 +6531,7 @@ were.
 
 
 
-Chapter 20
+
 
 
 The proud consciousness of her trust, and the great importance she
@@ -6776,7 +6776,7 @@ a man came plunging through them, close before her.
 
 
 
-Chapter 21
+
 
 
 It was for the moment an inexpressible relief to Dolly, to recognise in
@@ -7133,7 +7133,7 @@ beside it--on Dolly’s side, no doubt, and pretty close to the wheel too.
 
 
 
-Chapter 22
+
 
 
 It was a fine bright night, and for all her lowness of spirits Dolly
@@ -7396,7 +7396,7 @@ afterwards repaired.
 
 
 
-Chapter 23
+
 
 
 Twilight had given place to night some hours, and it was high noon
@@ -7831,7 +7831,7 @@ fashionable tune.
 
 
 
-Chapter 24
+
 
 
 How the accomplished gentleman spent the evening in the midst of a
@@ -8048,7 +8048,7 @@ pleasant sleep, that it was quite infantine.
 
 
 
-Chapter 25
+
 
 
 Leaving the favoured, and well-received, and flattered of the world;
@@ -8442,7 +8442,7 @@ all her enjoyment of life, and had entered on its hardest sorrows.
 
 
 
-Chapter 26
+
 
 
 ‘And you’re not surprised to hear this, Varden?’ said Mr Haredale.
@@ -8656,7 +8656,7 @@ yours, your good-nature will excuse that, Haredale, I am certain!’
 
 
 
-Chapter 27
+
 
 
 Mr Haredale stood in the widow’s parlour with the door-key in his hand,
@@ -9113,7 +9113,7 @@ What a very uncertain temper Mrs Varden’s was!
 
 
 
-Chapter 28
+
 
 
 Repairing to a noted coffee-house in Covent Garden when he left the
@@ -9336,7 +9336,7 @@ sleep, and woke no more till morning.
 
 
 
-Chapter 29
+
 
 
 The thoughts of worldly men are for ever regulated by a moral law of
@@ -9808,7 +9808,7 @@ manner, and was his unruffled self again.
 
 
 
-Chapter 30
+
 
 
 A homely proverb recognises the existence of a troublesome class of
@@ -9971,7 +9971,7 @@ evermore--it’s all over!’
 
 
 
-Chapter 31
+
 
 
 Pondering on his unhappy lot, Joe sat and listened for a long time,
@@ -10416,7 +10416,7 @@ phantom in the air.
 
 
 
-Chapter 32
+
 
 
 Misfortunes, saith the adage, never come singly. There is little doubt
@@ -10627,7 +10627,7 @@ usual, for five years, concerning which this Narrative is silent.
 
 
 
-Chapter 33
+
 
 
 One wintry evening, early in the year of our Lord one thousand seven
@@ -11030,7 +11030,7 @@ and rain, which had not yet abated one jot of its fury.
 
 
 
-Chapter 34
+
 
 
 Before old John had looked at the boiler quite twenty minutes, he got
@@ -11268,7 +11268,7 @@ and waited for their coming up.
 
 
 
-Chapter 35
+
 
 
 When John Willet saw that the horsemen wheeled smartly round, and drew
@@ -11735,7 +11735,7 @@ in a very gloomy and prophetic manner until he reached his chamber.
 
 
 
-Chapter 36
+
 
 
 Gashford, with a smiling face, but still with looks of profound
@@ -11957,7 +11957,7 @@ will the harvest come!’
 
 
 
-Chapter 37
+
 
 
 To surround anything, however monstrous or ridiculous, with an air of
@@ -12400,7 +12400,7 @@ features, rough attire, and reckless air, of Hugh.
 
 
 
-Chapter 38
+
 
 
 The secretary put his hand before his eyes to shade them from the glare
@@ -12614,7 +12614,7 @@ an extemporaneous No-Popery Dance.
 
 
 
-Chapter 39
+
 
 
 The applause which the performance of Hugh and his new friend elicited
@@ -13002,7 +13002,7 @@ he was drunk enough. It shall be done. I’ll make a note of it.’
 
 
 
-Chapter 40
+
 
 
 Little thinking of the plan for his happy settlement in life which had
@@ -13296,7 +13296,7 @@ So he took another pinch of snuff, and went to bed.
 
 
 
-Chapter 41
+
 
 
 From the workshop of the Golden Key, there issued forth a tinkling
@@ -13753,7 +13753,7 @@ friendly greetings like mild spring rain.
 
 
 
-Chapter 42
+
 
 
 The Royal East London Volunteers made a brilliant sight that day: formed
@@ -13949,7 +13949,7 @@ should turn it pale and end his lonely watching.
 
 
 
-Chapter 43
+
 
 
 Next morning brought no satisfaction to the locksmith’s thoughts,
@@ -14392,7 +14392,7 @@ the street quite clear.
 
 
 
-Chapter 44
+
 
 
 When the concourse separated, and, dividing into chance clusters, drew
@@ -14594,7 +14594,7 @@ in a bumper.
 
 
 
-Chapter 45
+
 
 
 While the worst passions of the worst men were thus working in the dark,
@@ -15007,7 +15007,7 @@ Barnaby’s return.
 
 
 
-Chapter 46
+
 
 
 When Barnaby returned with the bread, the sight of the pious old pilgrim
@@ -15265,7 +15265,7 @@ from her own mind or from his, for the wealth of the whole wide world.
 
 
 
-Chapter 47
+
 
 
 In the exhaustless catalogue of Heaven’s mercies to mankind, the power
@@ -15596,7 +15596,7 @@ uncommon lustre.
 
 
 
-Chapter 48
+
 
 
 Uncertain where to go next, and bewildered by the crowd of people who
@@ -15926,7 +15926,7 @@ more.
 
 
 
-Chapter 49
+
 
 
 The mob had been divided from its first assemblage into four divisions;
@@ -16329,7 +16329,7 @@ it prudent to make, without appearing singular or attracting an
 inconvenient share of public notice.
 
 
-Chapter 50
+
 
 
 They were among the first to reach the tavern, but they had not been
@@ -16583,7 +16583,7 @@ think this looks a little more like business!’
 
 
 
-Chapter 51
+
 
 
 Promising as these outrages were to Gashford’s view, and much like
@@ -16997,7 +16997,7 @@ astonishment at the daring conduct of master.
 
 
 
-Chapter 52
+
 
 
 A mob is usually a creature of very mysterious existence, particularly
@@ -17254,7 +17254,7 @@ secretary looked after him, both were lost in the crowd.
 
 
 
-Chapter 53
+
 
 
 The next day was ushered in by merry peals of bells, and by the firing
@@ -17614,7 +17614,7 @@ strained his gaze and grew more eager yet.
 
 
 
-Chapter 54
+
 
 
 Rumours of the prevailing disturbances had, by this time, begun to be
@@ -17923,7 +17923,7 @@ companions.
 
 
 
-Chapter 55
+
 
 
 John Willet, left alone in his dismantled bar, continued to sit staring
@@ -18244,7 +18244,7 @@ utter desolation.
 
 
 
-Chapter 56
+
 
 
 The Maypole cronies, little dreaming of the change so soon to come upon
@@ -18570,7 +18570,7 @@ grasp to-night!’
 
 
 
-Chapter 57
+
 
 
 Barnaby, armed as we have seen, continued to pace up and down before
@@ -18939,7 +18939,7 @@ life run cold.
 
 
 
-Chapter 58
+
 
 
 They were not long in reaching the barracks, for the officer who
@@ -19221,7 +19221,7 @@ to partake, his master’s fallen fortunes.
 
 
 
-Chapter 59
+
 
 
 It is necessary at this juncture to return to Hugh, who, having, as we
@@ -19671,7 +19671,7 @@ whose support he would certainly have rolled upon the ground.
 
 
 
-Chapter 60
+
 
 
 The three worthies turned their faces towards The Boot, with the
@@ -19853,7 +19853,7 @@ in the fire themselves.
 
 
 
-Chapter 61
+
 
 
 On that same night--events so crowd upon each other in convulsed and
@@ -20127,7 +20127,7 @@ was but another bead in the long rosary of his regrets.
 
 
 
-Chapter 62
+
 
 
 The prisoner, left to himself, sat down upon his bedstead: and resting
@@ -20509,7 +20509,7 @@ invoking all the powers of mischief.
 
 
 
-Chapter 63
+
 
 
 During the whole of this day, every regiment in or near the metropolis
@@ -20879,7 +20879,7 @@ halted in a dense mass before the prison-gate.
 
 
 
-Chapter 64
+
 
 
 Breaking the silence they had hitherto preserved, they raised a great
@@ -21202,7 +21202,7 @@ no need of it now, for, inside and out, the prison was in flames.
 
 
 
-Chapter 65
+
 
 
 During the whole course of the terrible scene which was now at its
@@ -21596,7 +21596,7 @@ ruins marked the spot where it had lately chafed and roared.
 
 
 
-Chapter 66
+
 
 
 Although he had had no rest upon the previous night, and had watched
@@ -21847,7 +21847,7 @@ before midnight.
 
 
 
-Chapter 67
+
 
 
 When darkness broke away and morning began to dawn, the town wore a
@@ -22256,7 +22256,7 @@ were speedily stopped by one whispered word from Joe.
 
 
 
-Chapter 68
+
 
 
 While Newgate was burning on the previous night, Barnaby and his
@@ -22461,7 +22461,7 @@ led him slowly forward.
 
 
 
-Chapter 69
+
 
 
 It was the dead of night, and very dark, when Barnaby, with his
@@ -22891,7 +22891,7 @@ saw that this hope was gone, and felt that he was riding to his death.
 
 
 
-Chapter 70
+
 
 
 Mr Dennis having despatched this piece of business without any personal
@@ -23165,7 +23165,7 @@ must have scratched her features, on the spot.
 
 
 
-Chapter 71
+
 
 
 All next day, Emma Haredale, Dolly, and Miggs, remained cooped up
@@ -23587,7 +23587,7 @@ heart! what a long way it was to the Black Lion!
 
 
 
-Chapter 72
+
 
 
 The Black Lion was so far off, and occupied such a length of time in the
@@ -23816,7 +23816,7 @@ her.
 
 
 
-Chapter 73
+
 
 
 By this Friday night--for it was on Friday in the riot week, that Emma
@@ -24217,7 +24217,7 @@ on by so many for their own purposes, was desolate and alone.
 
 
 
-Chapter 74
+
 
 
 Mr Dennis, having been made prisoner late in the evening, was removed to
@@ -24491,7 +24491,7 @@ he could: waiting his further pleasure.
 
 
 
-Chapter 75
+
 
 
 A month has elapsed,--and we stand in the bedchamber of Sir John
@@ -24934,7 +24934,7 @@ many yesterdays before.
 
 
 
-Chapter 76
+
 
 
 As the locksmith walked slowly away from Sir John Chester’s chambers,
@@ -25148,7 +25148,7 @@ on his pallet, listening for the clock to strike again.
 
 
 
-Chapter 77
+
 
 
 The time wore on. The noises in the streets became less frequent by
@@ -25595,7 +25595,7 @@ that waited for him on the spot.
 
 
 
-Chapter 78
+
 
 
 On this same day, and about this very hour, Mr Willet the elder sat
@@ -25822,7 +25822,7 @@ not?’ went out for a walk.
 
 
 
-Chapter 79
+
 
 
 Old John did not walk near the Golden Key, for between the Golden Key
@@ -26183,7 +26183,7 @@ night, departed on their separate ways.
 
 
 
-Chapter 80
+
 
 
 That afternoon, when he had slept off his fatigue; had shaved, and
@@ -26489,7 +26489,7 @@ we’ll be all the merrier for this interruption!’
 
 
 
-Chapter 81
+
 
 
 Another month had passed, and the end of August had nearly come, when Mr
@@ -26844,7 +26844,7 @@ linen in his vest, fell back dead--the phantom of last night.
 
 
 
-Chapter the Last
+
 
 
 A parting glance at such of the actors in this little history as it has

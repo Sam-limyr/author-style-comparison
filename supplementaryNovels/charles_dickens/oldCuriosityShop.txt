@@ -1,4 +1,4 @@
-﻿CHAPTER 1
+﻿
 
 Although I am an old man, night is generally my time for walking. In the
 summer I often leave home early in the morning, and roam about fields
@@ -558,7 +558,7 @@ slumber, smiling through her light and sunny dreams.
 
 
 
-CHAPTER 2
+
 
 After combating, for nearly a week, the feeling which impelled me to
 revisit the place I had quitted under the circumstances already
@@ -833,7 +833,7 @@ child herself appeared.
 
 
 
-CHAPTER 3
+
 
 The child was closely followed by an elderly man of remarkably hard
 features and forbidding aspect, and so low in stature as to be quite a
@@ -1151,7 +1151,7 @@ themselves.
 
 
 
-CHAPTER 4
+
 
 Mr and Mrs Quilp resided on Tower Hill; and in her bower on Tower Hill
 Mrs Quilp was left to pine the absence of her lord, when he quitted her
@@ -1494,7 +1494,7 @@ restlessness or fatigue; and then it expanded into a grin of delight.
 
 
 
-CHAPTER 5
+
 
 Whether Mr Quilp took any sleep by snatches of a few winks at a time,
 or whether he sat with his eyes wide open all night long, certain it is
@@ -1767,7 +1767,7 @@ on his hand, proceeded to make himself acquainted with its contents.
 
 
 
-CHAPTER 6
+
 
 Little Nell stood timidly by, with her eyes raised to the countenance
 of Mr Quilp as he read the letter, plainly showing by her looks that
@@ -2169,7 +2169,7 @@ most in vogue.
 
 
 
-CHAPTER 7
+
 
 ‘Fred,’ said Mr Swiveller, ‘remember the once popular melody of Begone
 dull care; fan the sinking flame of hilarity with the wing of
@@ -2458,7 +2458,7 @@ exert it.
 
 
 
-CHAPTER 8
+
 
 Business disposed of, Mr Swiveller was inwardly reminded of its being
 nigh dinner-time, and to the intent that his health might not be
@@ -2857,7 +2857,7 @@ brick-field.
 
 
 
-CHAPTER 9
+
 
 The child, in her confidence with Mrs Quilp, had but feebly described
 the sadness and sorrow of her thoughts, or the heaviness of the cloud
@@ -3267,7 +3267,7 @@ And with that he went his way, still chuckling as he went.
 
 
 
-CHAPTER 10
+
 
 Daniel Quilp neither entered nor left the old man’s house, unobserved.
 In the shadow of an archway nearly opposite, leading to one of the many
@@ -3513,7 +3513,7 @@ stupefaction.
 
 
 
-CHAPTER 11
+
 
 Quiet and solitude were destined to hold uninterrupted rule no longer,
 beneath the roof that sheltered the child.  Next morning, the old man
@@ -3847,7 +3847,7 @@ patch-work than with purple and fine linen!
 
 
 
-CHAPTER 12
+
 
 At length, the crisis of the old man’s disorder was past, and he began
 to mend.  By very slow and feeble degrees his consciousness came back;
@@ -4134,7 +4134,7 @@ adventurers, wandering they knew not whither.
 
 
 
-CHAPTER 13
+
 
 Daniel Quilp of Tower Hill, and Sampson Brass of Bevis Marks in the
 city of London, Gentleman, one of her Majesty’s attornies of the Courts
@@ -4536,7 +4536,7 @@ birdseed, and a bit of something nice for you, into the bargain.’
 
 
 
-CHAPTER 14
+
 
 As it was very easy for Kit to persuade himself that the old house was
 in his way, his way being anywhere, he tried to look upon his passing
@@ -4794,7 +4794,7 @@ half expected Nell and the old man would have arrived before him.
 
 
 
-CHAPTER 15
+
 
 Often, while they were yet pacing the silent streets of the town on the
 morning of their departure, the child trembled with a mingled sensation
@@ -5151,7 +5151,7 @@ spot, they directed their weary steps.
 
 
 
-CHAPTER 16
+
 
 The sun was setting when they reached the wicket-gate at which the path
 began, and, as the rain falls upon the just and unjust alike, it shed
@@ -5384,7 +5384,7 @@ going to bed with a lighter heart sunk into a deep slumber.
 
 
 
-CHAPTER 17
+
 
 Another bright day shining in through the small casement, and claiming
 fellowship with the kindred eyes of the child, awoke her.  At sight of
@@ -5705,7 +5705,7 @@ threatening rain.
 
 
 
-CHAPTER 18
+
 
 The Jolly Sandboys was a small road-side inn of pretty ancient date,
 with a sign, representing three Sandboys increasing their jollity with
@@ -6008,7 +6008,7 @@ applied himself with increased diligence to the Old Hundredth.
 
 
 
-CHAPTER 19
+
 
 Supper was not yet over, when there arrived at the Jolly Sandboys two
 more travellers bound for the same haven as the rest, who had been
@@ -6402,7 +6402,7 @@ hill at a quick pace, made for the open fields.
 
 
 
-CHAPTER 20
+
 
 Day after day as he bent his steps homeward, returning from some new
 effort to procure employment, Kit raised his eyes to the window of the
@@ -6622,7 +6622,7 @@ than once turning to nod kindly to Kit as he watched them from the road.
 
 
 
-CHAPTER 21
+
 
 Kit turned away and very soon forgot the pony, and the chaise, and the
 little old lady, and the little old gentleman, and the little young
@@ -6992,7 +6992,7 @@ and thinking of that same gold and silver which Mr Quilp had mentioned.
 
 
 
-CHAPTER 22
+
 
 The remainder of that day and the whole of the next were a busy time
 for the Nubbles family, to whom everything connected with Kit’s outfit
@@ -7196,7 +7196,7 @@ confusion at having been detected by the other.
 
 
 
-CHAPTER 23
+
 
 Mr Richard Swiveller wending homeward from the Wilderness (for such was
 the appropriate name of Quilp’s choice retreat), after a sinuous and
@@ -7576,7 +7576,7 @@ done, be a very tolerable, average husband.
 
 
 
-CHAPTER 24
+
 
 It was not until they were quite exhausted and could no longer maintain
 the pace at which they had fled from the race-ground, that the old man
@@ -7817,7 +7817,7 @@ sickness.  It is a very, very little hand!’
 
 
 
-CHAPTER 25
+
 
 After a sound night’s rest in a chamber in the thatched roof, in which
 it seemed the sexton had for some years been a lodger, but which he had
@@ -8142,7 +8142,7 @@ felt that; and yet he chafed it still, and could not lay it down.
 
 
 
-CHAPTER 26
+
 
 Almost broken-hearted, Nell withdrew with the schoolmaster from the
 bedside and returned to his cottage.  In the midst of her grief and
@@ -8437,7 +8437,7 @@ its own accord as they jolted heavily along.
 
 
 
-CHAPTER 27
+
 
 When they had travelled slowly forward for some short distance, Nell
 ventured to steal a look round the caravan and observe it more closely.
@@ -8815,7 +8815,7 @@ has no consciousness but one of overpowering and irresistible enjoyment.
 
 
 
-CHAPTER 28
+
 
 Sleep hung upon the eyelids of the child so long, that, when she awoke,
 Mrs Jarley was already decorated with her large bonnet, and actively
@@ -9069,7 +9069,7 @@ flourishing campaign.
 
 
 
-CHAPTER 29
+
 
 Unquestionably Mrs Jarley had an inventive genius.  In the midst of the
 various devices for attracting visitors to the exhibition, little Nell
@@ -9456,7 +9456,7 @@ forgotten.
 
 
 
-CHAPTER 30
+
 
 At length the play came to an end, and Mr Isaac List rose the only
 winner.  Mat and the landlord bore their losses with professional
@@ -9683,7 +9683,7 @@ bright--counting the money of which his hands had robbed her.
 
 
 
-CHAPTER 31
+
 
 With steps more faltering and unsteady than those with which she had
 approached the room, the child withdrew from the door, and groped her
@@ -10082,7 +10082,7 @@ obliged to walk together.
 
 
 
-CHAPTER 32
+
 
 Mrs Jarley’s wrath on first learning that she had been threatened with
 the indignity of Stocks and Penance, passed all description.  The
@@ -10289,7 +10289,7 @@ in time, be in time, be in time!’
 
 
 
-CHAPTER 33
+
 
 As the course of this tale requires that we should become acquainted,
 somewhere hereabouts, with a few particulars connected with the
@@ -10667,7 +10667,7 @@ a great victory.
 
 
 
-CHAPTER 34
+
 
 In course of time, that is to say, after a couple of hours or so, of
 diligent application, Miss Brass arrived at the conclusion of her task,
@@ -10915,7 +10915,7 @@ But it’s no business of mine--I have nothing whatever to do with it!’
 
 
 
-CHAPTER 35
+
 
 Mr Brass on returning home received the report of his clerk with much
 complacency and satisfaction, and was particular in inquiring after the
@@ -11363,7 +11363,7 @@ the public-house in the course of the evening.
 
 
 
-CHAPTER 36
+
 
 As the single gentleman after some weeks’ occupation of his lodgings,
 still declined to correspond, by word or gesture, either with Mr Brass
@@ -11577,7 +11577,7 @@ just as Richard had safely reached the office.
 
 
 
-CHAPTER 37
+
 
 The single gentleman among his other peculiarities--and he had a very
 plentiful stock, of which he every day furnished some new
@@ -11889,7 +11889,7 @@ Swiveller and Miss Sally Brass.
 
 
 
-CHAPTER 38
+
 
 Kit--for it happens at this juncture, not only that we have breathing
 time to follow his fortunes, but that the necessities of these
@@ -12275,7 +12275,7 @@ into his pockets and sauntered away: still pondering as he went.
 
 
 
-CHAPTER 39
+
 
 All that day, though he waited for Mr Abel until evening, Kit kept
 clear of his mother’s house, determined not to anticipate the pleasures
@@ -12517,7 +12517,7 @@ baby, they all trudged merrily home together.
 
 
 
-CHAPTER 40
+
 
 Full of that vague kind of penitence which holidays awaken next
 morning, Kit turned out at sunrise, and, with his faith in last night’s
@@ -12839,7 +12839,7 @@ and taking measures for its immediate fulfilment.
 
 
 
-CHAPTER 41
+
 
 Kit made his way through the crowded streets, dividing the stream of
 people, dashing across the busy road-ways, diving into lanes and
@@ -13136,7 +13136,7 @@ could possibly detain him.
 
 
 
-CHAPTER 42
+
 
 It behoves us to leave Kit for a while, thoughtful and expectant, and
 to follow the fortunes of little Nell; resuming the thread of the
@@ -13519,7 +13519,7 @@ man’s neck.
 
 
 
-CHAPTER 43
+
 
 Her momentary weakness past, the child again summoned the resolution
 which had until now sustained her, and, endeavouring to keep steadily
@@ -13766,7 +13766,7 @@ and placed there by a miracle.
 
 
 
-CHAPTER 44
+
 
 The throng of people hurried by, in two opposite streams, with no
 symptom of cessation or exhaustion; intent upon their own affairs; and
@@ -14113,7 +14113,7 @@ fire.
 
 
 
-CHAPTER 45
+
 
 In all their journeying, they had never longed so ardently, they had
 never so pined and wearied, for the freedom of pure air and open
@@ -14366,7 +14366,7 @@ wild shriek, and fell senseless at his feet.
 
 
 
-CHAPTER 46
+
 
 It was the poor schoolmaster.  No other than the poor schoolmaster.
 Scarcely less moved and surprised by the sight of the child than she
@@ -14739,7 +14739,7 @@ felt as if fascinated towards that spot.
 
 
 
-CHAPTER 47
+
 
 Kit’s mother and the single gentleman--upon whose track it is expedient
 to follow with hurried steps, lest this history should be chargeable
@@ -14998,7 +14998,7 @@ schoolmaster’s return!
 
 
 
-CHAPTER 48
+
 
 Popular rumour concerning the single gentleman and his errand,
 travelling from mouth to mouth, and waxing stronger in the marvellous
@@ -15370,7 +15370,7 @@ following.
 
 
 
-CHAPTER 49
+
 
 Kit’s mother might have spared herself the trouble of looking back so
 often, for nothing was further from Mr Quilp’s thoughts than any
@@ -15624,7 +15624,7 @@ at his insensible wife like a dismounted nightmare.
 
 
 
-CHAPTER 50
+
 
 Matrimonial differences are usually discussed by the parties concerned
 in the form of dialogue, in which the lady bears at least her full half
@@ -16016,7 +16016,7 @@ to sleep again.
 
 
 
-CHAPTER 51
+
 
 The bland and open-hearted proprietor of Bachelor’s Hall slept on
 amidst the congenial accompaniments of rain, mud, dirt, damp, fog, and
@@ -16294,7 +16294,7 @@ them as they sat and watched.
 
 
 
-CHAPTER 52
+
 
 After a long time, the schoolmaster appeared at the wicket-gate of the
 churchyard, and hurried towards them, tingling in his hand, as he came
@@ -16681,7 +16681,7 @@ churchyard with a sigh.
 
 
 
-CHAPTER 53
+
 
 Nell was stirring early in the morning, and having discharged her
 household tasks, and put everything in order for the good schoolmaster
@@ -16927,7 +16927,7 @@ upon his face.
 
 
 
-CHAPTER 54
+
 
 The bachelor, among his various occupations, found in the old church a
 constant source of interest and amusement.  Taking that pride in it
@@ -17356,7 +17356,7 @@ she grew stronger every day, and would be a woman, soon.
 
 
 
-CHAPTER 55
+
 
 From that time, there sprung up in the old man’s mind, a solicitude
 about the child which never slept or left him.  There are chords in the
@@ -17578,7 +17578,7 @@ beautiful and happy time!’
 
 
 
-CHAPTER 56
+
 
 A day or two after the Quilp tea-party at the Wilderness, Mr Swiveller
 walked into Sampson Brass’s office at the usual hour, and being alone
@@ -17989,7 +17989,7 @@ smile, simultaneously.
 
 
 
-CHAPTER 57
+
 
 Mr Chuckster’s indignant apprehensions were not without foundation.
 Certainly the friendship between the single gentleman and Mr Garland
@@ -18227,7 +18227,7 @@ waited for her lead.
 
 
 
-CHAPTER 58
+
 
 Mr Swiveller and his partner played several rubbers with varying
 success, until the loss of three sixpences, the gradual sinking of the
@@ -18626,7 +18626,7 @@ half-closed lid.
 
 
 
-CHAPTER 59
+
 
 When Kit, having discharged his errand, came down-stairs from the
 single gentleman’s apartment after the lapse of a quarter of an hour or
@@ -18893,7 +18893,7 @@ please!’
 
 
 
-CHAPTER 60
+
 
 Kit stood as one entranced, with his eyes opened wide and fixed upon
 the ground, regardless alike of the tremulous hold which Mr Brass
@@ -19292,7 +19292,7 @@ transported, in less than a fortnight.
 
 
 
-CHAPTER 61
+
 
 Let moralists and philosophers say what they may, it is very
 questionable whether a guilty man would have felt half as much misery
@@ -19528,7 +19528,7 @@ Swiveller.  Well, its very kind of him, and I thank him heartily.’
 
 
 
-CHAPTER 62
+
 
 A faint light, twinkling from the window of the counting-house on
 Quilp’s wharf, and looking inflamed and red through the night-fog, as
@@ -19925,7 +19925,7 @@ The dwarf shut himself up again, and sprang once more into his hammock.
 
 
 
-CHAPTER 63
+
 
 The professional gentleman who had given Kit the consolatory piece of
 information relative to the settlement of his trifle of business at the
@@ -20163,7 +20163,7 @@ and in twenty-four hours was stricken with a raging fever.
 
 
 
-CHAPTER 64
+
 
 Tossing to and fro upon his hot, uneasy bed; tormented by a fierce
 thirst which nothing could appease; unable to find, in any change of
@@ -20608,7 +20608,7 @@ I should have died without you!’
 
 
 
-CHAPTER 65
+
 
 It was well for the small servant that she was of a sharp, quick
 nature, or the consequence of sending her out alone, from the very
@@ -20826,7 +20826,7 @@ night, Marchioness!’
 
 
 
-CHAPTER 66
+
 
 On awaking in the morning, Richard Swiveller became conscious, by slow
 degrees, of whispering voices in his room.  Looking out between the
@@ -21427,7 +21427,7 @@ this bed again!’
 
 
 
-CHAPTER 67
+
 
 Unconscious of the proceedings faithfully narrated in the last chapter,
 and little dreaming of the mine which had been sprung beneath him (for,
@@ -21792,7 +21792,7 @@ wind.
 
 
 
-CHAPTER 68
+
 
 Lighted rooms, bright fires, cheerful faces, the music of glad voices,
 words of love and welcome, warm hearts, and tears of happiness--what a
@@ -22047,7 +22047,7 @@ journey may have a prosperous ending!’
 
 
 
-CHAPTER 69
+
 
 Kit was no sluggard next morning, but, springing from his bed some time
 before day, began to prepare for his welcome expedition.  The hurry of
@@ -22430,7 +22430,7 @@ indeed!  Hark! how the wind is howling!’
 
 
 
-CHAPTER 70
+
 
 Day broke, and found them still upon their way.  Since leaving home,
 they had halted here and there for necessary refreshment, and had
@@ -22679,7 +22679,7 @@ glimmering of a fire upon the old walls, and entered.
 
 
 
-CHAPTER 71
+
 
 The dull, red glow of a wood fire--for no lamp or candle burnt within
 the room--showed him a figure, seated on the hearth with its back
@@ -23008,7 +23008,7 @@ back to life, which of us would utter it!’
 
 
 
-CHAPTER 72
+
 
 When morning came, and they could speak more calmly on the subject of
 their grief, they heard how her life had closed.
@@ -23319,7 +23319,7 @@ hand, the child and the old man slept together.
 
 
 
-CHAPTER 73
+
 
 The magic reel, which, rolling on before, has led the chronicler thus
 far, now slackens in its pace, and stops.  It lies before the goal; the

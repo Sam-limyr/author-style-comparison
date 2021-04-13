@@ -1,6 +1,4 @@
-﻿CHAPTER ONE
-
-INTRODUCTORY, CONCERNING THE PEDIGREE OF THE CHUZZLEWIT FAMILY
+﻿
 
 
 As no lady or gentleman, with any claims to polite breeding, can
@@ -235,10 +233,7 @@ are remarkable for taking uncommon good care of themselves.
 
 
 
-CHAPTER TWO
 
-WHEREIN CERTAIN PERSONS ARE PRESENTED TO THE READER, WITH WHOM HE MAY,
-IF HE PLEASE, BECOME BETTER ACQUAINTED
 
 
 It was pretty late in the autumn of the year, when the declining sun
@@ -1021,10 +1016,7 @@ cruelly unjust to Pecksniff!’
 
 
 
-CHAPTER THREE
 
-IN WHICH CERTAIN OTHER PERSONS ARE INTRODUCED; ON THE SAME TERMS AS IN
-THE LAST CHAPTER
 
 
 Mention has been already made more than once, of a certain Dragon who
@@ -1805,11 +1797,7 @@ and in the history of Martin Chuzzlewit, on his own showing?
 
 
 
-CHAPTER FOUR
 
-FROM WHICH IT WILL APPEAR THAT IF UNION BE STRENGTH, AND FAMILY
-AFFECTION BE PLEASANT TO CONTEMPLATE, THE CHUZZLEWITS WERE THE STRONGEST
-AND MOST AGREEABLE FAMILY IN THE WORLD
 
 
 That worthy man Mr Pecksniff having taken leave of his cousin in the
@@ -2686,11 +2674,7 @@ failure and disappointment.
 
 
 
-CHAPTER FIVE
 
-CONTAINING A FULL ACCOUNT OF THE INSTALLATION OF MR PECKSNIFF’S NEW
-PUPIL INTO THE BOSOM OF MR PECKSNIFF’S FAMILY. WITH ALL THE FESTIVITIES
-HELD ON THAT OCCASION, AND THE GREAT ENJOYMENT OF MR PINCH
 
 
 The best of architects and land surveyors kept a horse, in whom the
@@ -3661,11 +3645,7 @@ head.
 
 
 
-CHAPTER SIX
 
-COMPRISES, AMONG OTHER IMPORTANT MATTERS, PECKSNIFFIAN AND
-ARCHITECTURAL, AND EXACT RELATION OF THE PROGRESS MADE BY MR PINCH IN
-THE CONFIDENCE AND FRIENDSHIP OF THE NEW PUPIL
 
 
 It was morning; and the beautiful Aurora, of whom so much hath been
@@ -4344,10 +4324,7 @@ Do call for some coals. What a fellow you are, Pinch!’
 
 
 
-CHAPTER SEVEN
 
-IN WHICH MR CHEVY SLYME ASSERTS THE INDEPENDENCE OF HIS SPIRIT, AND THE
-BLUE DRAGON LOSES A LIMB
 
 
 Martin began to work at the grammar-school next morning, with so much
@@ -5077,10 +5054,7 @@ wish to be, but very near. Good-b’ye! good-b’ye!’
 
 
 
-CHAPTER EIGHT
 
-ACCOMPANIES MR PECKSNIFF AND HIS CHARMING DAUGHTERS TO THE CITY OF
-LONDON; AND RELATES WHAT FELL OUT UPON THEIR WAY THITHER
 
 
 When Mr Pecksniff and the two young ladies got into the heavy coach at
@@ -5577,9 +5551,7 @@ worthy man’s phraseology, ‘all in good time.’
 
 
 
-CHAPTER NINE
 
-TOWN AND TODGER’S
 
 
 Surely there never was, in any other borough, city, or hamlet in the
@@ -6728,10 +6700,7 @@ letters to his friends from Todgers’s for nothing.’
 
 
 
-CHAPTER TEN
 
-CONTAINING STRANGE MATTER, ON WHICH MANY EVENTS IN THIS HISTORY MAY, FOR
-THEIR GOOD OR EVIL INFLUENCE, CHIEFLY DEPEND
 
 
 But Mr Pecksniff came to town on business. Had he forgotten that? Was he
@@ -7448,10 +7417,7 @@ the golden calf for eighteen shillings a week! oh pitiful, pitiful!
 
 
 
-CHAPTER ELEVEN
 
-WHEREIN A CERTAIN GENTLEMAN BECOMES PARTICULAR IN HIS ATTENTIONS TO A
-CERTAIN LADY; AND MORE COMING EVENTS THAN ONE, CAST THEIR SHADOWS BEFORE
 
 
 The family were within two or three days of their departure from Mrs
@@ -8389,11 +8355,7 @@ hearth, and was a sacrilege upon the altars of his household gods.
 
 
 
-CHAPTER TWELVE
 
-WILL BE SEEN IN THE LONG RUN, IF NOT IN THE SHORT ONE, TO CONCERN MR
-PINCH AND OTHERS, NEARLY. MR PECKSNIFF ASSERTS THE DIGNITY OF OUTRAGED
-VIRTUE. YOUNG MARTIN CHUZZLEWIT FORMS A DESPERATE RESOLUTION
 
 
 Mr Pinch and Martin, little dreaming of the stormy weather that
@@ -9349,11 +9311,7 @@ cheeks; and they parted hurriedly upon their separate ways.
 
 
 
-CHAPTER THIRTEEN
 
-SHOWING WHAT BECAME OF MARTIN AND HIS DESPARATE RESOLVE, AFTER HE LEFT
-MR PECKSNIFF’S HOUSE; WHAT PERSONS HE ENCOUNTERED; WHAT ANXIETIES HE
-SUFFERED; AND WHAT NEWS HE HEARD
 
 
 Carrying Tom Pinch’s book quite unconsciously under his arm, and not
@@ -10324,11 +10282,7 @@ too strong, sir!’
 
 
 
-CHAPTER FOURTEEN
 
-IN WHICH MARTIN BIDS ADIEU TO THE LADY OF HIS LOVE; AND HONOURS AN
-OBSCURE INDIVIDUAL WHOSE FORTUNE HE INTENDS TO MAKE BY COMMENDING HER TO
-HIS PROTECTION
 
 
 The letter being duly signed, sealed, and delivered, was handed to Mark
@@ -10824,9 +10778,7 @@ lips, to release himself of this word:
 
 
 
-CHAPTER FIFTEEN
 
-THE BURDEN WHEREOF, IS HAIL COLUMBIA!
 
 
 A dark and dreary night; people nestling in their beds or circling
@@ -11229,12 +11181,7 @@ water!’
 
 
 
-CHAPTER SIXTEEN
 
-MARTIN DISEMBARKS FROM THAT NOBLE AND FAST-SAILING LINE-OF-PACKET SHIP,
-‘THE SCREW’, AT THE PORT OF NEW YORK, IN THE UNITED STATES OF AMERICA.
-HE MAKES SOME ACQUAINTANCES, AND DINES AT A BOARDING-HOUSE. THE
-PARTICULARS OF THOSE TRANSACTIONS
 
 
 Some trifling excitement prevailed upon the very brink and margin of the
@@ -12248,12 +12195,7 @@ lost to view, appealed in these words--
 
 
 
-CHAPTER SEVENTEEN
 
-MARTIN ENLARGES HIS CIRCLE OF AQUAINTANCE; INCREASES HIS STOCK
-OF WISDOM; AND HAS AN EXCELLENT OPPORTUNITY OF COMPARING HIS OWN
-EXPERIENCES WITH THOSE OF LUMMY NED OF THE LIGHT SALISBURY, AS RELATED
-BY HIS FRIEND MR WILLIAM SIMMONS
 
 
 It was characteristic of Martin, that all this while he had either
@@ -13142,10 +13084,7 @@ ocean to the English shore.
 
 
 
-CHAPTER EIGHTEEN
 
-DOES BUSINESS WITH THE HOUSE OF ANTHONY CHUZZLEWIT AND SON, FROM WHICH
-ONE OF THE PARTNERS RETIRES UNEXPECTEDLY
 
 
 Change begets change. Nothing propagates so fast. If a man habituated to
@@ -13685,10 +13624,7 @@ shall not close on one!
 
 
 
-CHAPTER NINETEEN
 
-THE READER IS BROUGHT INTO COMMUNICATION WITH SOME PROFESSIONAL PERSONS,
-AND SHEDS A TEAR OVER THE FILIAL PIETY OF GOOD MR JONAS
 
 
 Mr Pecksniff was in a hackney cabriolet, for Jonas Chuzzlewit had said
@@ -14377,9 +14313,7 @@ throwing up another heap of earth. And that was all.
 
 
 
-CHAPTER TWENTY
 
-IS A CHAPTER OF LOVE
 
 
 ‘Pecksniff,’ said Jonas, taking off his hat, to see that the black
@@ -15054,12 +14988,7 @@ But at that moment a loud knocking was heard at the hall door.
 
 
 
-CHAPTER TWENTY-ONE
 
-MORE AMERICAN EXPERIENCES, MARTIN TAKES A PARTNER, AND MAKES A PURCHASE.
-SOME ACCOUNT OF EDEN, AS IT APPEARED ON PAPER. ALSO OF THE BRITISH LION.
-ALSO OF THE KIND OF SYMPATHY PROFESSED AND ENTERTAINED BY THE WATERTOAST
-ASSOCIATION OF UNITED SYMPATHISERS
 
 
 The knocking at Mr Pecksniff’s door, though loud enough, bore no
@@ -16061,10 +15990,7 @@ and you are but sorry fustian!’
 
 
 
-CHAPTER TWENTY-TWO
 
-FROM WHICH IT WILL BE SEEN THAT MARTIN BECAME A LION OF HIS OWN ACCOUNT.
-TOGETHER WITH THE REASON WHY
 
 
 As soon as it was generally known in the National Hotel, that the young
@@ -16558,10 +16484,7 @@ upon the dark water.
 
 
 
-CHAPTER TWENTY-THREE
 
-MARTIN AND HIS PARTNER TAKE POSSESSION OF THEIR ESTATE. THE JOYFUL
-OCCASION INVOLVES SOME FURTHER ACCOUNT OF EDEN
 
 
 There happened to be on board the steamboat several gentlemen
@@ -17000,10 +16923,7 @@ to come out strong; or Never!’
 
 
 
-CHAPTER TWENTY-FOUR
 
-REPORTS PROGRESS IN CERTAIN HOMELY MATTERS OF LOVE, HATRED, JEALOUSY,
-AND REVENGE
 
 
 ‘Hallo, Pecksniff!’ cried Mr Jonas from the parlour. ‘Isn’t somebody
@@ -17787,10 +17707,7 @@ sun shines. Take your own way as long as it’s in your power, my lady!’
 
 
 
-CHAPTER TWENTY-FIVE
 
-IS IN PART PROFESSIONAL, AND FURNISHES THE READER WITH SOME VALUABLE
-HINTS IN RELATION TO THE MANAGEMENT OF A SICK CHAMBER
 
 
 Mr Mould was surrounded by his household gods. He was enjoying the
@@ -18530,9 +18447,7 @@ laying her hand upon her arm--‘try the cowcumbers, God bless you!’
 
 
 
-CHAPTER TWENTY-SIX
 
-AN UNEXPECTED MEETING, AND A PROMISING PROSPECT
 
 
 The laws of sympathy between beards and birds, and the secret source
@@ -18933,11 +18848,7 @@ It was her welcome--HOME.
 
 
 
-CHAPTER TWENTY-SEVEN
 
-SHOWING THAT OLD FRIENDS MAY NOT ONLY APPEAR WITH NEW FACES, BUT IN
-FALSE COLOURS. THAT PEOPLE ARE PRONE TO BITE, AND THAT BITERS MAY
-SOMETIMES BE BITTEN.
 
 
 Mr Bailey, Junior--for the sporting character, whilom of general utility
@@ -19942,9 +19853,7 @@ up, for they flowed in gayly.
 
 
 
-CHAPTER TWENTY-EIGHT
 
-MR MONTAGUE AT HOME. AND MR JONAS CHUZZLEWIT AT HOME
 
 
 There were many powerful reasons for Jonas Chuzzlewit being strongly
@@ -20450,10 +20359,7 @@ endure, in bearing heavy evidence against us, on the Day of Judgment!
 
 
 
-CHAPTER TWENTY-NINE
 
-IN WHICH SOME PEOPLE ARE PRECOCIOUS, OTHERS PROFESSIONAL, AND OTHERS
-MYSTERIOUS; ALL IN THEIR SEVERAL WAYS
 
 
 It may have been the restless remembrance of what he had seen and heard
@@ -20922,10 +20828,7 @@ a little behind his time.
 
 
 
-CHAPTER THIRTY
 
-PROVES THAT CHANGES MAY BE RUNG IN THE BEST-REGULATED FAMILIES, AND THAT
-MR PECKNIFF WAS A SPECIAL HAND AT A TRIPLE-BOB-MAJOR
 
 
 As the surgeon’s first care after amputating a limb, is to take up the
@@ -21674,10 +21577,7 @@ thanksgiving at church next Sunday.
 
 
 
-CHAPTER THIRTY-ONE
 
-MR PINCH IS DISCHARGED OF A DUTY WHICH HE NEVER OWED TO ANYBODY, AND MR
-PECKSNIFF DISCHARGES A DUTY WHICH HE OWES TO SOCIETY
 
 
 The closing words of the last chapter lead naturally to the commencement
@@ -22516,10 +22416,7 @@ afterwards, and went to sleep, and dreamed about him as he Never Was.
 
 
 
-CHAPTER THIRTY-TWO
 
-TREATS OF TODGER’S AGAIN; AND OF ANOTHER BLIGHTED PLANT BESIDES THE
-PLANTS UPON THE LEADS
 
 
 Early on the day next after that on which she bade adieu to the halls
@@ -22819,10 +22716,7 @@ afternoon. Oh, what a trying day this has been! Good Gracious!’
 
 
 
-CHAPTER THIRTY-THREE
 
-FURTHER PROCEEDINGS IN EDEN, AND A PROCEEDING OUT OF IT. MARTIN MAKES A
-DISCOVERY OF SOME IMPORTANCE
 
 
 From Mr Moddle to Eden is an easy and natural transition. Mr Moddle,
@@ -23624,10 +23518,7 @@ wake and find them Shadows that had vanished!
 
 
 
-CHAPTER THIRTY-FOUR
 
-IN WHICH THE TRAVELLERS MOVE HOMEWARD, AND ENCOUNTER SOME DISTINGUISHED
-CHARACTERS UPON THE WAY
 
 
 Among the passengers on board the steamboat, there was a faint gentleman
@@ -24416,10 +24307,7 @@ Mark. Let us hope so.’
 
 
 
-CHAPTER THIRTY-FIVE
 
-ARRIVING IN ENGLAND, MARTIN WITNESSES A CEREMONY, FROM WHICH HE DERIVES
-THE CHEERING INFORMATION THAT HE HAS NOT BEEN FORGOTTEN IN HIS ABSENCE
 
 
 It was mid-day, and high water in the English port for which the Screw
@@ -24749,9 +24637,7 @@ foremost, old fellow!’
 
 
 
-CHAPTER THIRTY-SIX
 
-TOM PINCH DEPARTS TO SEEK HIS FORTUNE. WHAT HE FINDS AT STARTING
 
 
 Oh! What a different town Salisbury was in Tom Pinch’s eyes to be sure,
@@ -25736,10 +25622,7 @@ made meat pies of, or some such horrible thing.’
 
 
 
-CHAPTER THIRTY-SEVEN
 
-TOM PINCH, GOING ASTRAY, FINDS THAT HE IS NOT THE ONLY PERSON IN THAT
-PREDICAMENT. HE RETALIATES UPON A FALLEN FOE
 
 
 Tom’s evil genius did not lead him into the dens of any of those
@@ -26222,9 +26105,7 @@ happy in his life.
 
 
 
-CHAPTER THIRTY-EIGHT
 
-SECRET SERVICE
 
 
 In walking from the city with his sentimental friend, Tom Pinch had
@@ -26687,10 +26568,7 @@ Angel.
 
 
 
-CHAPTER THIRTY-NINE
 
-CONTAINING SOME FURTHER PARTICULARS OF THE DOMESTIC ECONOMY OF THE
-PINCHES; WITH STRANGE NEWS FROM THE CITY, NARROWLY CONCERNING TOM
 
 
 Pleasant little Ruth! Cheerful, tidy, bustling, quiet little Ruth! No
@@ -27545,10 +27423,7 @@ contemptible, Tom Pinch!
 
 
 
-CHAPTER FORTY
 
-THE PINCHES MAKE A NEW ACQUAINTANCE, AND HAVE FRESH OCCASION FOR
-SURPRISE AND WONDER
 
 
 There was a ghostly air about these uninhabited chambers in the Temple,
@@ -28216,10 +28091,7 @@ there.
 
 
 
-CHAPTER FORTY-ONE
 
-MR JONAS AND HIS FRIEND, ARRIVING AT A PLEASANT UNDERSTANDING, SET FORTH
-UPON AN ENTERPRISE
 
 
 The office of the Anglo-Bengalee Disinterested Loan and Life Assurance
@@ -28669,9 +28541,7 @@ will be a stormy night!’ exclaimed the doctor, as they started.
 
 
 
-CHAPTER FORTY-TWO
 
-CONTINUATION OF THE ENTERPRISE OF MR JONAS AND HIS FRIEND
 
 
 The doctor’s prognostication in reference to the weather was speedily
@@ -29137,11 +29007,7 @@ travel home alone!’
 
 
 
-CHAPTER FORTY-THREE
 
-HAS AN INFLUENCE ON THE FORTUNES OF SEVERAL PEOPLE. MR PECKSNIFF IS
-EXHIBITED IN THE PLENITUDE OF POWER; AND WIELDS THE SAME WITH FORTITUDE
-AND MAGNANIMITY
 
 
 On the night of the storm, Mrs Lupin, hostess of the Blue Dragon, sat by
@@ -30134,9 +30000,7 @@ now, and teach me how to earn my bread.’
 
 
 
-CHAPTER FORTY-FOUR
 
-FURTHER CONTINUATION OF THE ENTERPRISE OF MR JONAS AND HIS FRIEND
 
 
 It was a special quality, among the many admirable qualities possessed
@@ -30561,10 +30425,7 @@ difficulty. I shall travel home alone.’
 
 
 
-CHAPTER FORTY-FIVE
 
-IN WHICH TOM PINCH AND HIS SISTER TAKE A LITTLE PLEASURE; BUT QUITE IN A
-DOMESTIC WAY, AND WITH NO CEREMONY ABOUT IT
 
 
 Tom Pinch and his sister having to part, for the dispatch of the
@@ -30997,10 +30858,7 @@ portrait--whose?--from memory.
 
 
 
-CHAPTER FORTY-SIX
 
-IN WHICH MISS PECKSNIFF MAKES LOVE, MR JONAS MAKES WRATH, MRS GAMP MAKES
-TEA, AND MR CHUFFEY MAKES BUSINESS
 
 
 On the next day’s official duties coming to a close, Tom hurried home
@@ -32050,9 +31908,7 @@ All was clear and quiet, as he fled away.
 
 
 
-CHAPTER FORTY-SEVEN
 
-CONCLUSION OF THE ENTERPRISE OF MR JONAS AND HIS FRIEND
 
 
 Did no men passing through the dim streets shrink without knowing why,
@@ -32480,11 +32336,7 @@ Hush!
 
 
 
-CHAPTER FORTY-EIGHT
 
-BEARS TIDINGS OF MARTIN AND OF MARK, AS WELL AS OF A THIRD PERSON NOT
-QUITE UNKNOWN TO THE READER. EXHIBITS FILIAL PIETY IN AN UGLY ASPECT;
-AND CASTS A DOUBTFUL RAY OF LIGHT UPON A VERY DARK PLACE
 
 
 Tom Pinch and Ruth were sitting at their early breakfast, with the
@@ -33244,10 +33096,7 @@ for his dinner.
 
 
 
-CHAPTER FORTY-NINE
 
-IN WHICH MRS HARRIS ASSISTED BY A TEAPOT, IS THE CAUSE OF A DIVISION
-BETWEEN FRIENDS
 
 
 Mrs Gamp’s apartment in Kingsgate Street, High Holborn, wore,
@@ -33899,10 +33748,7 @@ in good time.’
 
 
 
-CHAPTER FIFTY
 
-SURPRISES TOM PINCH VERY MUCH, AND SHOWS HOW CERTAIN CONFIDENCES PASSED
-BETWEEN HIM AND HIS SISTER
 
 
 It was the next evening; and Tom and his sister were sitting together
@@ -34393,10 +34239,7 @@ Tom did so; hardly knowing yet whether he was awake or in a dream.
 
 
 
-CHAPTER FIFTY-ONE
 
-SHEDS NEW AND BRIGHTER LIGHT UPON THE VERY DARK PLACE; AND CONTAINS THE
-SEQUEL OF THE ENTERPRISE OF MR JONAS AND HIS FRIEND
 
 
 The night had now come, when the old clerk was to be delivered over
@@ -35437,9 +35280,7 @@ could have done no more, and could do nothing now. Dead, dead, dead.
 
 
 
-CHAPTER FIFTY-TWO
 
-IN WHICH THE TABLES ARE TURNED, COMPLETELY UPSIDE DOWN
 
 
 Old Martin’s cherished projects, so long hidden in his own breast, so
@@ -36318,11 +36159,7 @@ really, for a gentleman of his habits, in rather a knowing manner.
 
 
 
-CHAPTER FIFTY-THREE
 
-WHAT JOHN WESTLOCK SAID TO TOM PINCH’S SISTER; WHAT TOM PINCH’S SISTER
-SAID TO JOHN WESTLOCK; WHAT TOM PINCH SAID TO BOTH OF THEM; AND HOW THEY
-ALL PASSED THE REMAINDER OF THE DAY
 
 
 Brilliantly the Temple Fountain sparkled in the sun, and laughingly
@@ -36751,9 +36588,7 @@ gentleman, in any case, for one is lost to thee for ever!
 
 
 
-CHAPTER FIFTY-FOUR
 
-GIVES THE AUTHOR GREAT CONCERN. FOR IT IS THE LAST IN THE BOOK
 
 
 Todger’s was in high feather, and mighty preparations for a late
