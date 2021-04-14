@@ -70,19 +70,19 @@ def extract_features():
     stats["dialogue_per_sent"] = []
     # stats["vocab_word_count"] = []
     
-    dir_name = "../data/train/split_novels"
+    dir_name = os.path.join(os.getcwd(), "data", "train", "split_novels")
     
     for author in authors:
         # currently unused
         vocab = {}
-        novel_filenames = os.listdir(dir_name + "/" + author)
+        novel_filenames = os.listdir(os.path.join(dir_name, author))
         #print(novel_filenames)
         num_novels[author] = len(novel_filenames)
 
         for novel_filename in novel_filenames:
                                      
         #for bookName in authors[author]:
-            bookFilepath = dir_name + "/" + author + "/" + novel_filename
+            bookFilepath = os.path.join(dir_name, author, novel_filename)
             #print(bookFilepath)
 
             # read text in book
