@@ -352,8 +352,8 @@ def run_test_runner(nn_model, stopword_set, train_vector_to_authortitle):
 
 
 def combine_training_data():
-	main_texts = read_texts('../data/train/novels')
-	supp_texts = read_texts('../data/test/supplementaryNovels')
+	main_texts = read_texts(os.path.join(os.getcwd(), "data", "train", "novels"))
+	supp_texts = read_texts(os.path.join(os.getcwd(), "data", "test", "supplementaryNovels"))
 
 	# combining supp and main
 	author_to_alltexts = {}
@@ -370,7 +370,7 @@ def combine_training_data():
 
 def predict_k_nearest_neighbours_results():
 	# get training data
-	author_to_alltexts = read_texts('../data/train/novels')
+	author_to_alltexts = read_texts(os.path.join(os.getcwd(), "data", "test", "supplementaryNovels"))
 	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
 
 	stopword_set = generate_stopword_set()
