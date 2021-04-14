@@ -1,8 +1,8 @@
-from classifier_gensim import predict_doc2vec_results
-from feature_engineering import predict_feature_engineering
-from functionwords import predict_k_nearest_neighbours_results
+from models.doc2vec import predict_doc2vec_results
+from models.feature_engineering import predict_feature_engineering
+from models.knn import predict_k_nearest_neighbours_results
 from collections import Counter
-from test_runner import check_test_results
+from utils.test_runner import check_test_results
 from sklearn.preprocessing import scale
 
 

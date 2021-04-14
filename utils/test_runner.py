@@ -39,11 +39,10 @@
 
 from collections import Counter
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import seaborn as sns
 from sklearn.metrics import f1_score
-from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, MARK_TWAIN_TESTS, JANE_AUSTEN_TESTS, JOHN_STEINBECK_TESTS
+from utils.test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, MARK_TWAIN_TESTS, JANE_AUSTEN_TESTS, JOHN_STEINBECK_TESTS
 
 
 # Names of authors

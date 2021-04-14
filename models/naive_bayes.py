@@ -1,9 +1,3 @@
-import numpy as np
-import pandas as pd
-import re
-import os
-import sys
-
 import nltk
 nltk.download('stopwords')
 from nltk.corpus import stopwords   # Requires NLTK in the include path.
@@ -72,8 +66,8 @@ for author in authors:
 print(y_train)
 train_model(model, x_train, y_train)
 
-from test_runner import *
-from matplotlib import pyplot
+from utils.test_runner import *
+
 
 # only count words that are in known vocab, ignore OOV words
 def get_tfidf(queries, vectorizer, transformer):
