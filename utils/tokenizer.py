@@ -6,7 +6,7 @@ import re
 from nltk.stem.porter import PorterStemmer
 from nltk.tokenize import sent_tokenize
 
-authors = os.listdir("novels")
+authors = os.listdir("../data/train/novels")
 author_to_sent = {}
 author_to_para = {}
 

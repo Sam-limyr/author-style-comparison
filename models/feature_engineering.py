@@ -1,12 +1,9 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import f1_score
 
-import numpy as np
-import pandas as pd
 import re
 import os
-import sys
+import numpy as np
 
 import nltk
 nltk.download('stopwords')
@@ -17,10 +14,10 @@ from nltk.corpus import stopwords   # Requires NLTK in the include path.
 ## List of stopwords
 STOPWORDS = stopwords.words('english') # type: list(str)
 
-from test_runner import *
+from utils.test_runner import *
 from matplotlib import pyplot
 
-from test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, JANE_AUSTEN_TESTS, JOHN_STEINBECK_TESTS, MARK_TWAIN_TESTS
+from utils.test_cases import CHARLES_DICKENS_TESTS, FYODOR_DOSTOEVSKY_TESTS, JANE_AUSTEN_TESTS, JOHN_STEINBECK_TESTS, MARK_TWAIN_TESTS
 
 # Names of authors
 CHARLES_DICKENS_NAME = "charles_dickens"
@@ -73,19 +70,19 @@ def extract_features():
     stats["dialogue_per_sent"] = []
     # stats["vocab_word_count"] = []
     
-    dir_name = "split_novels"
+    dir_name = os.path.join(os.getcwd(), "data", "train", "split_novels")
     
     for author in authors:
         # currently unused
         vocab = {}
-        novel_filenames = os.listdir(dir_name + "/" + author)
+        novel_filenames = os.listdir(os.path.join(dir_name, author))
         #print(novel_filenames)
         num_novels[author] = len(novel_filenames)
 
         for novel_filename in novel_filenames:
                                      
         #for bookName in authors[author]:
-            bookFilepath = dir_name + "/" + author + "/" + novel_filename
+            bookFilepath = os.path.join(dir_name, author, novel_filename)
             #print(bookFilepath)
 
             # read text in book
@@ -486,7 +483,7 @@ def generate_F1_score(model, output_authors):
     # Use f1-macro as the metric
     score = f1_score(correct_answers, output_authors, average='macro')
     print('LR score on validation = {}'.format(score))
-    from sklearn.metrics import confusion_matrix, classification_report
+    from sklearn.metrics import classification_report
     print(classification_report(correct_answers, output_authors))
 
     # get importance

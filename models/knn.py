@@ -1,13 +1,10 @@
-import os
-
-from collections import Counter
 from collections import defaultdict
 from nltk.corpus import stopwords   # Requires NLTK in the include path.
 from nltk.tokenize import TreebankWordTokenizer, sent_tokenize
 from sklearn.neighbors import NearestNeighbors
 
-from test_runner import *
-from test_cases import *
+from utils.test_runner import *
+from utils.test_cases import *
 
 # NUMBER OF FUNCTION WORDS IN nltk.coprus.stopwords is 160 after collapsing cases
 NUM_NEAREST_NEIGHBOUR = 17
@@ -24,11 +21,11 @@ def read_texts(dir_name):
 	author_to_alltexts = {}
 
 	for author in authors:
-		novel_filenames = os.listdir(dir_name + "/" + author)
+		novel_filenames = os.listdir(os.path.join(dir_name, author))
 		author_to_alltexts[author] = {}
 
 		for novel_filename in novel_filenames:
-			filepath = dir_name + "/" + author + "/" + novel_filename
+			filepath = os.path.join(dir_name, author, novel_filename)
 			fp = open(filepath, "r", encoding='utf8')
 			text = fp.read()[1:]
 			print(novel_filename)
@@ -164,7 +161,7 @@ def run_test_supplementaryNovels_entiretext(nn_model, stopword_set, train_vector
 
 	print("Testing model on whole texts in supplementaryNovel dataset... ")
 	# get training data
-	author_to_alltexts = read_texts('supplementaryNovels')
+	author_to_alltexts = read_texts(os.path.join(os.getcwd(), "data", "test", "supplementaryNovels"))
 	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
 
 	sorted_stopword_list = sorted(stopword_set)
@@ -355,8 +352,8 @@ def run_test_runner(nn_model, stopword_set, train_vector_to_authortitle):
 
 
 def combine_training_data():
-	main_texts = read_texts('novels')
-	supp_texts = read_texts('supplementaryNovels')
+	main_texts = read_texts(os.path.join(os.getcwd(), "data", "train", "novels"))
+	supp_texts = read_texts(os.path.join(os.getcwd(), "data", "test", "supplementaryNovels"))
 
 	# combining supp and main
 	author_to_alltexts = {}
@@ -373,7 +370,7 @@ def combine_training_data():
 
 def predict_k_nearest_neighbours_results():
 	# get training data
-	author_to_alltexts = read_texts('novels')
+	author_to_alltexts = read_texts(os.path.join(os.getcwd(), "data", "test", "supplementaryNovels"))
 	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
 
 	stopword_set = generate_stopword_set()

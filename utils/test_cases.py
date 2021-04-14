@@ -50,7 +50,7 @@ def get_tests_from_book(filename, number_of_tests, minimum_test_length):
 
 
 # File addresses for test novels
-ROOT = "supplementaryNovels"
+ROOT = os.path.join(os.getcwd(), "data", "test", "supplementaryNovels")
 CHARLES_DICKENS_FOLDER = os.path.join(ROOT, "charles_dickens")
 FYODOR_DOSTOEVSKY_FOLDER = os.path.join(ROOT, "fyodor_dostoevsky")
 MARK_TWAIN_FOLDER = os.path.join(ROOT, "mark_twain")
