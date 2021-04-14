@@ -48,7 +48,6 @@ num_novels = {}
     
 def extract_features():
     print("Extracting stats from novels...")
-    
     stats = {}
     
     # initialize statistics arrays
@@ -133,6 +132,8 @@ def extract_features():
                     continue
                 elif len(sentences) != 0 and ele[0] in "?!.":
                     # count statistics
+                    dialogues = re.findall(r'(?<=\W)[”’]', ele) # Look for end of dialogue
+                    dialogue_count += len(dialogues)
                     if ele[0] == '!':
                         exclamation_marks += 1
                     elif ele[0] == '?':
@@ -183,12 +184,7 @@ def extract_features():
                     commas = re.findall(r',', ele)
                     italics = re.findall(r'_\w+_', ele)
                     contractions = re.findall(r'\w+’\w+', ele)
-                    if not in_dialogue:
-                        dialogues = re.findall(r'[‘“].*', ele) # Look for start of dialogue
-                        in_dialogue = len(dialogues) > 0
-                    else:
-                        dialogues = re.findall(r'.*[”’]', ele) # Look for end of dialogue
-                        in_dialogue = len(dialogues) == 0
+                    dialogues = re.findall(r'(?<=\W)[”’]', ele) # Look for end of dialogue
                     # contractions treated as one word
                     total_words += len(words)
                     no_spaces = ''.join(words)
@@ -199,7 +195,7 @@ def extract_features():
                     italics_count += len(italics)
                     contractions_count += len(contractions)
                     # Count sentences that have dialogue
-                    dialogue_count += 1 if in_dialogue else 0
+                    dialogue_count += len(dialogues)
                     for word in words:
                         # TODO: Handle known words that are in ALL CAPS
                         # TODO: Handle named entities (people, cities?), count them as the same since not style
@@ -235,7 +231,7 @@ def extract_features():
             #stats["question_marks_per_sent"].append(np.log(1+question_marks/sentence_count))
             stats["italics_per_sent"].append(np.log(1+italics_count/sentence_count))
             #stats["contractions_per_sent"].append(np.log(1+contractions_count/sentence_count))
-            stats["dialogue_per_sent"].append(np.log(1+dialogue_count/sentence_count))
+            stats["dialogue_per_sent"].append(np.log(1+(dialogue_count/sentence_count)))
             
             # vocab needs to be able to count rare words and identify them
             # stats["vocab_word_count"].append(unique_word_count)
@@ -266,7 +262,6 @@ def scale_features(stats, scaler, isTestSet):
 
 # Count stats for the queries
 def extract_test_features(queries, scaler):
-    
     stats = {}
     
     # initialize statistics arrays
@@ -329,6 +324,8 @@ def extract_test_features(queries, scaler):
                 continue
             elif len(sentences) != 0 and ele[0] in "?!.":
                 # count statistics
+                dialogues = re.findall(r'(?<=\W)[”’]', ele) # Look for end of dialogue
+                dialogue_count += len(dialogues)
                 if ele[0] == '!':
                     exclamation_marks += 1
                 elif ele[0] == '?':
@@ -369,12 +366,7 @@ def extract_test_features(queries, scaler):
                 commas = re.findall(r',', ele)
                 italics = re.findall(r'_\w+_', ele)
                 contractions = re.findall(r'\w+’\w+', ele)
-                if not in_dialogue:
-                    dialogues = re.findall(r'[‘“].*', ele) # Look for start of dialogue
-                    in_dialogue = len(dialogues) > 0
-                else:
-                    dialogues = re.findall(r'.*[”’]', ele) # Look for end of dialogue
-                    in_dialogue = len(dialogues) == 0
+                dialogues = re.findall(r'(?<=\W)[”’]', ele) # Look for end of dialogue
                 # contractions treated as one word
                 total_words += len(words)
                 no_spaces = ''.join(words)
@@ -385,7 +377,7 @@ def extract_test_features(queries, scaler):
                 italics_count += len(italics)
                 contractions_count += len(contractions)
                 # Count sentences that have dialogue
-                dialogue_count += 1 if in_dialogue else 0
+                dialogue_count += len(dialogues)
                 for word in words:
                     # TODO: Handle known words that are in ALL CAPS
                     # TODO: Handle named entities (people, cities?), count them as the same since not style
@@ -418,7 +410,7 @@ def extract_test_features(queries, scaler):
         #stats["question_marks_per_sent"].append(np.log(1+question_marks/sentence_count))
         stats["italics_per_sent"].append(np.log(1+italics_count/sentence_count))
         #stats["contractions_per_sent"].append(np.log(1+contractions_count/sentence_count))
-        stats["dialogue_per_sent"].append(np.log(1+dialogue_count/sentence_count))
+        stats["dialogue_per_sent"].append(np.log(1+(dialogue_count/sentence_count)))
 
         # vocab needs to be able to count rare words and identify them
         # stats["vocab_word_count"].append(len(vocab.keys()))
@@ -441,14 +433,14 @@ def get_trained_model(model, scaler, stats):
     # x_train = array of sentences, from all authors
     # y_train = array of authors of corresponding sentence in x_train
     x_train = scale_features(stats, scaler, False)
-#     print("Class features distribution:")
-#     print(x_train)
+    # print("Class features distribution:")
+    # print(x_train)
 
     # y_train = books
     y_train = []
     for author in authors:
         y_train += [author] * num_novels[author]
-    # print(num_novels)
+    #print(num_novels)
 
     train_model(model, x_train, y_train)
 
