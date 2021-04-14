@@ -10,7 +10,7 @@ from test_runner import *
 from test_cases import *
 
 # NUMBER OF FUNCTION WORDS IN nltk.coprus.stopwords is 160 after collapsing cases
-NUM_NEAREST_NEIGHBOUR = 3
+NUM_NEAREST_NEIGHBOUR = 17
 
 
 def read_texts(dir_name):
@@ -33,7 +33,10 @@ def read_texts(dir_name):
 			text = fp.read()[1:]
 			print(novel_filename)
 
-			author_to_alltexts[author][novel_filename] = text
+			# author_to_alltexts[author][novel_filename] = text
+			author_to_alltexts[author][novel_filename+"1"] = text[:math.floor(len(text)/3)]
+			author_to_alltexts[author][novel_filename+"2"] = text[math.floor(len(text)/3):math.floor(len(text)/3)*2]
+			author_to_alltexts[author][novel_filename + "3"] = text[math.floor(len(text)/3)*2:len(text)]
 
 	return author_to_alltexts
 
@@ -61,6 +64,8 @@ def parse_tokens(author_to_alltexts):
 				tokensList.extend(tokens)
 
 			title_to_tokens[title] = tokensList
+			# title_to_tokens[title+"1"] = tokensList[:math.floor(len(tokensList)/2)]
+			# title_to_tokens[title+"2"] = tokensList[math.floor(len(tokensList)/2):len(tokensList)]
 
 		author_to_title_to_tokens[author] = title_to_tokens
 
@@ -223,21 +228,53 @@ def compute_nearest_neighbour(point_index_arr, dist_arr, train_vector_to_authort
 		distance1 = dist_arr[0][0]
 
 		diff_auth_index = find_nearest_point_with_diff_auth(point_index_arr, train_vector_to_authortitle, nearest_auth)
+		print(diff_auth_index)
 		distance2 = dist_arr[0][diff_auth_index]
 
 	# case 3: authorA - 2, authorB - 1, majority wins
-	elif most_common_auth_count >= math.ceil(NUM_NEAREST_NEIGHBOUR/2):
-		nearest_auth = ranked_author_list[0][0]
+	else:
+		#  elif: most_common_auth_count >= math.ceil(NUM_NEAREST_NEIGHBOUR/2)
+		# distance1, distance2, nearest_auth = find_majority_point(auth_to_point_index, dist_arr, point_index_arr,
+		# 												ranked_author_list, train_vector_to_authortitle)
 
-		nearest_point_index = min(auth_to_point_index[nearest_auth]) # authorA: nearest point of majority auth
-		distance1 = dist_arr[0][nearest_point_index]
-
-		authorB_index = find_nearest_point_with_diff_auth(point_index_arr, train_vector_to_authortitle, nearest_auth)
-		distance2 = dist_arr[0][authorB_index] # authorB:  nearest point of minority auth
+		distance1, distance2, nearest_auth = find_dist_weighted_nearest_author(dist_arr, point_index_arr,
+																			   train_vector_to_authortitle)
 
 	confidence_score = compute_confidence_score(distance1, distance2)
 
 	return nearest_auth, confidence_score
+
+
+def find_majority_point(auth_to_point_index, dist_arr, point_index_arr, ranked_author_list, train_vector_to_authortitle):
+	nearest_auth = ranked_author_list[0][0]
+
+	# computing distances
+	nearest_point_index = min(auth_to_point_index[nearest_auth])  # authorA: nearest point of majority auth
+	distance1 = dist_arr[0][nearest_point_index]
+
+	authorB_index = find_nearest_point_with_diff_auth(point_index_arr, train_vector_to_authortitle, nearest_auth)
+	distance2 = dist_arr[0][authorB_index]  # authorB:  nearest point of minority auth
+
+	return distance1, distance2, nearest_auth
+
+
+def find_dist_weighted_nearest_author(dist_arr, point_index_arr, train_vector_to_authortitle):
+	auth_to_distance_sum = Counter()
+
+	for point_index in range(NUM_NEAREST_NEIGHBOUR):
+		dist = dist_arr[0][point_index]
+		auth, title = train_vector_to_authortitle[point_index_arr[0][point_index]]
+
+		auth_to_distance_sum[auth] += dist
+
+	ranked_auth_list_by_dist_sum = auth_to_distance_sum.most_common()
+	nearest_auth = ranked_auth_list_by_dist_sum[0][0]
+
+	# computing distances
+	distance1 = ranked_auth_list_by_dist_sum[0][1]
+	distance2 = ranked_auth_list_by_dist_sum[1][1]
+
+	return distance1, distance2, nearest_auth
 
 
 def find_nearest_point_with_diff_auth(point_index_arr, train_vector_to_authortitle, auth):
@@ -299,6 +336,10 @@ def run_test_runner(nn_model, stopword_set, train_vector_to_authortitle):
 		# print("Testing "+str(vector_to_authortitle[index][1]) + " by "+str(vector_to_authortitle[index][0]))
 		nearest_auth, confidence_score = compute_nearest_neighbour(point_index_arr, dist_arr,
 																   train_vector_to_authortitle)
+
+		# print("Most similar author: "+nearest_auth)
+		# print("Confidence score: " + str(confidence_score))
+		#
 		# print("Nearest points: ")
 		# for point_index in range(len(dist_arr[0])):
 		# 	print("Point: " + str(train_vector_to_authortitle[point_index_arr[0][point_index]]))
@@ -343,7 +384,7 @@ def predict_k_nearest_neighbours_results():
 
 	# build model
 	print("Building model...")
-	nn_model = NearestNeighbors(n_neighbors=5, metric='manhattan')
+	nn_model = NearestNeighbors(n_neighbors=19, metric='manhattan')
 	nn_model.fit(all_text_vecs)
 
 	# testing

@@ -1,4 +1,4 @@
-﻿CHAPTER I. THE PICKWICKIANS
+﻿
 
 The first ray of light which illumines the gloom, and converts into a
 dazzling brilliancy that obscurity in which the earlier history of the
@@ -192,8 +192,7 @@ justify their narration in a connected form.
 
 
 
-CHAPTER II. THE FIRST DAY’S JOURNEY, AND THE FIRST EVENING’S ADVENTURES;
-WITH THEIR CONSEQUENCES
+
 
 That punctual servant of all work, the sun, had just risen, and begun to
 strike a light on the morning of the thirteenth of May, one thousand
@@ -1468,8 +1467,7 @@ returned to their inn.
 
 
 
-CHAPTER III. A NEW ACQUAINTANCE--THE STROLLER’S TALE--A DISAGREEABLE
-INTERRUPTION, AND AN UNPLEASANT ENCOUNTER
+
 
 Mr. Pickwick had felt some apprehensions in consequence of the unusual
 absence of his two friends, which their mysterious behaviour during the
@@ -1964,8 +1962,7 @@ concluded with the conviviality with which it had begun.
 
 
 
-CHAPTER IV. A FIELD DAY AND BIVOUAC--MORE NEW FRIENDS--AN INVITATION TO
-THE COUNTRY
+
 
 Many authors entertain, not only a foolish, but a really dishonest
 objection to acknowledge the sources whence they derive much valuable
@@ -2506,8 +2503,7 @@ again.
 
 
 
-CHAPTER V. A SHORT ONE--SHOWING, AMONG OTHER MATTERS, HOW Mr. PICKWICK
-UNDERTOOK TO DRIVE, AND MR. WINKLE TO RIDE, AND HOW THEY BOTH DID IT
+
 
 Bright and pleasant was the sky, balmy the air, and beautiful the
 appearance of every object around, as Mr. Pickwick leaned over the
@@ -2971,8 +2967,7 @@ forward to announce them, ‘welcome, gentlemen, to Manor Farm.’
 
 
 
-CHAPTER VI. AN OLD-FASHIONED CARD-PARTY--THE CLERGYMAN’S VERSES--THE
-STORY OF THE CONVICT’S RETURN
+
 
 Several guests who were assembled in the old parlour rose to greet Mr.
 Pickwick and his friends upon their entrance; and during the performance
@@ -3604,11 +3599,7 @@ convict.’
 
 
 
-CHAPTER VII. HOW MR. WINKLE, INSTEAD OF SHOOTING AT THE PIGEON AND
-KILLING THE CROW, SHOT AT THE CROW AND WOUNDED THE PIGEON; HOW THE
-DINGLEY DELL CRICKET CLUB PLAYED ALL-MUGGLETON, AND HOW ALL-MUGGLETON
-DINED AT THE DINGLEY DELL EXPENSE; WITH OTHER INTERESTING AND
-INSTRUCTIVE MATTERS
+
 
 The fatiguing adventures of the day or the somniferous influence of the
 clergyman’s tale operated so strongly on the drowsy tendencies of Mr.
@@ -4241,8 +4232,7 @@ go home till morning, Till daylight doth appear.’
 
 
 
-CHAPTER VIII. STRONGLY ILLUSTRATIVE OF THE POSITION, THAT THE COURSE OF
-TRUE LOVE IS NOT A RAILWAY
+
 
 The quiet seclusion of Dingley Dell, the presence of so many of the
 gentler sex, and the solicitude and anxiety they evinced in his behalf,
@@ -4889,7 +4879,7 @@ chapter.
 
 
 
-CHAPTER IX. A DISCOVERY AND A CHASE
+
 
 The supper was ready laid, the chairs were drawn round the table,
 bottles, jugs, and glasses were arranged upon the sideboard, and
@@ -5337,8 +5327,7 @@ after a slight cessation had again begun to pour heavily down.
 
 
 
-CHAPTER X. CLEARING UP ALL DOUBTS (IF ANY EXISTED) OF THE
-DISINTERESTEDNESS OF MR. A. JINGLE’S CHARACTER
+
 
 There are in London several old inns, once the headquarters of
 celebrated coaches in the days when coaches performed their journeys in
@@ -6019,9 +6008,7 @@ reached Dingley Dell, and stood within the entrance to Manor Farm.
 
 
 
-CHAPTER XI. INVOLVING ANOTHER JOURNEY, AND AN ANTIQUARIAN DISCOVERY;
-RECORDING MR. PICKWICK’S DETERMINATION TO BE PRESENT AT AN ELECTION; AND
-CONTAINING A MANUSCRIPT OF THE OLD CLERGYMAN’S
+
 
 A night of quiet and repose in the profound silence of Dingley Dell, and
 an hour’s breathing of its fresh and fragrant air on the ensuing
@@ -6770,8 +6757,7 @@ the littleness of his enemies.
 
 
 
-CHAPTER XII. DESCRIPTIVE OF A VERY IMPORTANT PROCEEDING ON THE PART OF
-MR. PICKWICK; NO LESS AN EPOCH IN HIS LIFE, THAN IN THIS HISTORY
+
 
 Mr. Pickwick’s apartments in Goswell Street, although on a limited
 scale, were not only of a very neat and comfortable description, but
@@ -7072,9 +7058,7 @@ complaint uncommon; so long life to the Pickvicks, says I!’
 
 
 
-CHAPTER XIII. SOME ACCOUNT OF EATANSWILL; OF THE STATE OF PARTIES
-THEREIN; AND OF THE ELECTION OF A MEMBER TO SERVE IN PARLIAMENT FOR THAT
-ANCIENT, LOYAL, AND PATRIOTIC BOROUGH
+
 
 We will frankly acknowledge that, up to the period of our being first
 immersed in the voluminous papers of the Pickwick Club, we had never
@@ -7900,8 +7884,7 @@ was returned also.
 
 
 
-CHAPTER XIV. COMPRISING A BRIEF DESCRIPTION OF THE COMPANY AT THE
-PEACOCK ASSEMBLED; AND A TALE TOLD BY A BAGMAN
+
 
 It is pleasant to turn from contemplating the strife and turmoil of
 political existence, to the peaceful repose of private life. Although in
@@ -8687,11 +8670,7 @@ man.
 
 
 
-CHAPTER XV. IN WHICH IS GIVEN A FAITHFUL PORTRAITURE OF TWO
-DISTINGUISHED PERSONS; AND AN ACCURATE DESCRIPTION OF A PUBLIC BREAKFAST
-IN THEIR HOUSE AND GROUNDS: WHICH PUBLIC BREAKFAST LEADS TO THE
-RECOGNITION OF AN OLD ACQUAINTANCE, AND THE COMMENCEMENT OF ANOTHER
-CHAPTER
+
 
 Mr. Pickwick’s conscience had been somewhat reproaching him for his
 recent neglect of his friends at the Peacock; and he was just on the
@@ -9370,7 +9349,7 @@ distance between themselves and the good old town of Bury St. Edmunds.
 
 
 
-CHAPTER XVI. TOO FULL OF ADVENTURE TO BE BRIEFLY DESCRIBED
+
 
 There is no month in the whole year in which nature wears a more
 beautiful appearance than in the month of August. Spring has many
@@ -10303,8 +10282,7 @@ for once in a way, my name ain’t Weller. Good-night, Sir!’
 
 
 
-CHAPTER XVII. SHOWING THAT AN ATTACK OF RHEUMATISM, IN SOME CASES, ACTS
-AS A QUICKENER TO INVENTIVE GENIUS
+
 
 The constitution of Mr. Pickwick, though able to sustain a very
 considerable amount of exertion and fatigue, was not proof against such
@@ -10639,8 +10617,7 @@ bony apprentice with the thin legs.’
 
 
 
-CHAPTER XVIII. BRIEFLY ILLUSTRATIVE OF TWO POINTS; FIRST, THE POWER OF
-HYSTERICS, AND, SECONDLY, THE FORCE OF CIRCUMSTANCES
+
 
 For two days after the _dejeune _at Mrs. Hunter’s, the Pickwickians
 remained at Eatanswill, anxiously awaiting the arrival of some
@@ -11149,7 +11126,7 @@ Weller bent his steps towards the booking-office.
 
 
 
-CHAPTER XIX. A PLEASANT DAY WITH AN UNPLEASANT TERMINATION
+
 
 The birds, who, happily for their own peace of mind and personal
 comfort, were in blissful ignorance of the preparations which had been
@@ -11844,11 +11821,7 @@ with a magnum of extra strength for Mr. Samuel Weller.
 
 
 
-CHAPTER XX. SHOWING HOW DODSON AND FOGG WERE MEN OF BUSINESS, AND THEIR
-CLERKS MEN OF PLEASURE; AND HOW AN AFFECTING INTERVIEW TOOK PLACE
-BETWEEN MR. WELLER AND HIS LONG-LOST PARENT; SHOWING ALSO WHAT CHOICE
-SPIRITS ASSEMBLED AT THE MAGPIE AND STUMP, AND WHAT A CAPITAL CHAPTER
-THE NEXT ONE WILL BE
+
 
 In the ground-floor front of a dingy house, at the very farthest end of
 Freeman’s Court, Cornhill, sat the four clerks of Messrs. Dodson & Fogg,
@@ -12641,8 +12614,7 @@ one.
 
 
 
-CHAPTER XXI. IN WHICH THE OLD MAN LAUNCHES FORTH INTO HIS FAVOURITE
-THEME, AND RELATES A STORY ABOUT A QUEER CLIENT
+
 
 ‘Aha!’ said the old man, a brief description of whose manner and
 appearance concluded the last chapter, ‘aha! who was talking about the
@@ -13364,8 +13336,7 @@ the Magpie and Stump.
 
 
 
-CHAPTER XXII. MR. PICKWICK JOURNEYS TO IPSWICH AND MEETS WITH A ROMANTIC
-ADVENTURE WITH A MIDDLE-AGED LADY IN YELLOW CURL-PAPERS
+
 
 That ‘ere your governor’s luggage, Sammy?’ inquired Mr. Weller of his
 affectionate son, as he entered the yard of the Bull Inn, Whitechapel,
@@ -14121,8 +14092,7 @@ buried in the profoundest meditation.
 
 
 
-CHAPTER XXIII. IN WHICH MR. SAMUEL WELLER BEGINS TO DEVOTE HIS ENERGIES
-TO THE RETURN MATCH BETWEEN HIMSELF AND MR. TROTTER
+
 
 In a small room in the vicinity of the stableyard, betimes in the
 morning, which was ushered in by Mr. Pickwick’s adventure with the
@@ -14524,9 +14494,7 @@ Whether it was done in good time, or not, will be seen hereafter.
 
 
 
-CHAPTER XXIV. WHEREIN MR. PETER MAGNUS GROWS JEALOUS, AND THE MIDDLE-
-AGED LADY APPREHENSIVE, WHICH BRINGS THE PICKWICKIANS WITHIN THE GRASP
-OF THE LAW
+
 
 When Mr. Pickwick descended to the room in which he and Mr. Peter Magnus
 had spent the preceding evening, he found that gentleman with the major
@@ -15275,10 +15243,7 @@ Pickwick oratorising, and the crowd shouting.
 
 
 
-CHAPTER XXV. SHOWING, AMONG A VARIETY OF PLEASANT MATTERS, HOW MAJESTIC
-AND IMPARTIAL MR. NUPKINS WAS; AND HOW MR. WELLER RETURNED MR. JOB
-TROTTER’S SHUTTLECOCK AS HEAVILY AS IT CAME--WITH ANOTHER MATTER, WHICH
-WILL BE FOUND IN ITS PLACE
+
 
 Violent was Mr. Weller’s indignation as he was borne along; numerous
 were the allusions to the personal appearance and demeanour of Mr.
@@ -16212,8 +16177,7 @@ And this was the first passage of Mr. Weller’s first love.
 
 
 
-CHAPTER XXVI. WHICH CONTAINS A BRIEF ACCOUNT OF THE PROGRESS OF THE
-ACTION OF BARDELL AGAINST PICKWICK
+
 
 Having accomplished the main end and object of his journey, by the
 exposure of Jingle, Mr. Pickwick resolved on immediately returning to
@@ -16532,8 +16496,7 @@ from the sharp practice of Dodson & Fogg to boot.
 
 
 
-CHAPTER XXVII. SAMUEL WELLER MAKES A PILGRIMAGE TO DORKING, AND BEHOLDS
-HIS MOTHER-IN-LAW
+
 
 There still remaining an interval of two days before the time agreed
 upon for the departure of the Pickwickians to Dingley Dell, Mr. Weller
@@ -16997,10 +16960,7 @@ reflection we would impress upon the reader.
 
 
 
-CHAPTER XXVIII. A GOOD-HUMOURED CHRISTMAS CHAPTER, CONTAINING AN ACCOUNT
-OF A WEDDING, AND SOME OTHER SPORTS BESIDE: WHICH ALTHOUGH IN THEIR WAY,
-EVEN AS GOOD CUSTOMS AS MARRIAGE ITSELF, ARE NOT QUITE SO RELIGIOUSLY
-KEPT UP, IN THESE DEGENERATE TIMES
+
 
 As brisk as bees, if not altogether as light as fairies, did the four
 Pickwickians assemble on the morning of the twenty-second day of
@@ -17925,7 +17885,7 @@ if you please.
 
 
 
-CHAPTER XXIX. THE STORY OF THE GOBLINS WHO STOLE A SEXTON
+
 
 ‘In an old abbey town, down in this part of the country, a long, long
 while ago--so long, that the story must be a true one, because our
@@ -18351,10 +18311,7 @@ those which Gabriel Grub saw in the goblin’s cavern.’
 
 
 
-CHAPTER XXX. HOW THE PICKWICKIANS MADE AND CULTIVATED THE ACQUAINTANCE
-OF A COUPLE OF NICE YOUNG MEN BELONGING TO ONE OF THE LIBERAL
-PROFESSIONS; HOW THEY DISPORTED THEMSELVES ON THE ICE; AND HOW THEIR
-VISIT CAME TO A CONCLUSION
+
 
 Well, Sam,’ said Mr. Pickwick, as that favoured servitor entered his
 bed-chamber, with his warm water, on the morning of Christmas Day,
@@ -18909,8 +18866,7 @@ inferences from these facts, we beg them by all means to do so.
 
 
 
-CHAPTER XXXI. WHICH IS ALL ABOUT THE LAW, AND SUNDRY GREAT AUTHORITIES
-LEARNED THEREIN
+
 
 Scattered about, in various holes and corners of the Temple, are certain
 dark and dirty chambers, in and out of which, all the morning in
@@ -19634,9 +19590,7 @@ duration; and, bidding adieu to Lowten, they returned to the city.
 
 
 
-CHAPTER XXXII. DESCRIBES, FAR MORE FULLY THAN THE COURT NEWSMAN EVER
-DID, A BACHELOR’S PARTY, GIVEN BY MR. BOB SAWYER AT HIS LODGINGS IN THE
-BOROUGH
+
 
 There is a repose about Lant Street, in the Borough, which sheds a
 gentle melancholy upon the soul. There are always a good many houses to
@@ -20275,10 +20229,7 @@ evening.
 
 
 
-CHAPTER XXXIII. MR. WELLER THE ELDER DELIVERS SOME CRITICAL SENTIMENTS
-RESPECTING LITERARY COMPOSITION; AND, ASSISTED BY HIS SON SAMUEL, PAYS A
-SMALL INSTALMENT OF RETALIATION TO THE ACCOUNT OF THE REVEREND GENTLEMAN
-WITH THE RED NOSE
+
 
 The morning of the thirteenth of February, which the readers of this
 authentic narrative know, as well as we do, to have been the day
@@ -21040,8 +20991,7 @@ of the United Grand Junction Ebenezer Temperance Association.
 
 
 
-CHAPTER XXXIV. IS WHOLLY DEVOTED TO A FULL AND FAITHFUL REPORT OF THE
-MEMORABLE TRIAL OF BARDELL AGAINST PICKWICK
+
 
 I wonder what the foreman of the jury, whoever he’ll be, has got for
 breakfast,’ said Mr. Snodgrass, by way of keeping up a conversation on
@@ -22173,8 +22123,7 @@ Sammy, vy worn’t there a alleybi!’
 
 
 
-CHAPTER XXXV. IN WHICH MR. PICKWICK THINKS HE HAD BETTER GO TO BATH; AND
-GOES ACCORDINGLY
+
 
 But surely, my dear sir,’ said little Perker, as he stood in Mr.
 Pickwick’s apartment on the morning after the trial, ‘surely you don’t
@@ -22886,9 +22835,7 @@ hot, went to bed, and to sleep, almost simultaneously.
 
 
 
-CHAPTER XXXVI. THE CHIEF FEATURES OF WHICH WILL BE FOUND TO BE AN
-AUTHENTIC VERSION OF THE LEGEND OF PRINCE BLADUD, AND A MOST
-EXTRAORDINARY CALAMITY THAT BEFELL MR. WINKLE
+
 
 As Mr. Pickwick contemplated a stay of at least two months in Bath, he
 deemed it advisable to take private lodgings for himself and friends for
@@ -23374,10 +23321,7 @@ all this time? We will state where he was, in the next chapter.
 
 
 
-CHAPTER XXXVII. HONOURABLY ACCOUNTS FOR MR. WELLER’S ABSENCE, BY
-DESCRIBING A SOIREE TO WHICH HE WAS INVITED AND WENT; ALSO RELATES HOW
-HE WAS ENTRUSTED BY MR. PICKWICK WITH A PRIVATE MISSION OF DELICACY AND
-IMPORTANCE
+
 
 Mr. Weller,’ said Mrs. Craddock, upon the morning of this very eventful
 day, ‘here’s a letter for you.’
@@ -24019,8 +23963,7 @@ set forth on his pilgrimage with a light heart.
 
 
 
-CHAPTER XXXVIII. HOW MR. WINKLE, WHEN HE STEPPED OUT OF THE FRYING-PAN,
-WALKED GENTLY AND COMFORTABLY INTO THE FIRE
+
 
 The ill-starred gentleman who had been the unfortunate cause of the
 unusual noise and disturbance which alarmed the inhabitants of the Royal
@@ -24632,8 +24575,7 @@ with the other inmates of the house, buried in profound repose.
 
 
 
-CHAPTER XXXIX. MR. SAMUEL WELLER, BEING INTRUSTED WITH A MISSION OF
-LOVE, PROCEEDS TO EXECUTE IT; WITH WHAT SUCCESS WILL HEREINAFTER APPEAR
+
 
 During the whole of next day, Sam kept Mr. Winkle steadily in sight,
 fully determined not to take his eyes off him for one instant, until he
@@ -25340,8 +25282,7 @@ to be considered a light of science ever afterwards.
 
 
 
-CHAPTER XL. INTRODUCES MR. PICKWICK TO A NEW AND NOT UNINTERESTING SCENE
-IN THE GREAT DRAMA OF LIFE
+
 
 The remainder of the period which Mr. Pickwick had assigned as the
 duration of the stay at Bath passed over without the occurrence of
@@ -25910,8 +25851,7 @@ for the first time in his life, within the walls of a debtors’ prison.
 
 
 
-CHAPTER XLI. WHAT BEFELL MR. PICKWICK WHEN HE GOT INTO THE FLEET; WHAT
-PRISONERS HE SAW THERE, AND HOW HE PASSED THE NIGHT
+
 
 Mr. Tom Roker, the gentleman who had accompanied Mr. Pickwick into the
 prison, turned sharp round to the right when he got to the bottom of the
@@ -26476,10 +26416,7 @@ he had ‘done’ a bill and a gentleman at the same time.
 
 
 
-CHAPTER XLII. ILLUSTRATIVE, LIKE THE PRECEDING ONE, OF THE OLD PROVERB,
-THAT ADVERSITY BRINGS A MAN ACQUAINTED WITH STRANGE BEDFELLOWS--
-LIKEWISE CONTAINING MR. PICKWICK’S EXTRAORDINARY AND STARTLING
-ANNOUNCEMENT TO MR. SAMUEL WELLER
+
 
 When Mr. Pickwick opened his eyes next morning, the first object upon
 which they rested was Samuel Weller, seated upon a small black
@@ -27164,7 +27101,7 @@ Weller was gone.
 
 
 
-CHAPTER XLIII. SHOWING HOW MR. SAMUEL WELLER GOT INTO DIFFICULTIES
+
 
 In a lofty room, ill-lighted and worse ventilated, situated in Portugal
 Street, Lincoln’s Inn Fields, there sit nearly the whole year round,
@@ -27820,9 +27757,7 @@ master’s face.
 
 
 
-CHAPTER LXIV. TREATS OF DIVERS LITTLE MATTERS WHICH OCCURRED IN THE
-FLEET, AND OF MR. WINKLE’S MYSTERIOUS BEHAVIOUR; AND SHOWS HOW THE POOR
-CHANCERY PRISONER OBTAINED HIS RELEASE AT LAST
+
 
 Mr. Pickwick felt a great deal too much touched by the warmth of Sam’s
 attachment, to be able to exhibit any manifestation of anger or
@@ -28462,10 +28397,7 @@ he died.
 
 
 
-CHAPTER XLIV. DESCRIPTIVE OF AN AFFECTING INTERVIEW BETWEEN MR. SAMUEL
-WELLER AND A FAMILY PARTY. MR. PICKWICK MAKES A TOUR OF THE DIMINUTIVE
-WORLD HE INHABITS, AND RESOLVES TO MIX WITH IT, IN FUTURE, AS LITTLE AS
-POSSIBLE
+
 
 A few mornings after his incarceration, Mr. Samuel Weller, having
 arranged his master’s room with all possible care, and seen him
@@ -29264,8 +29196,7 @@ to alter one jot of his inflexible resolution.
 
 
 
-CHAPTER XLVI. RECORDS A TOUCHING ACT OF DELICATE FEELING, NOT UNMIXED
-WITH PLEASANTRY, ACHIEVED AND PERFORMED BY Messrs. DODSON AND FOGG
+
 
 It was within a week of the close of the month of July, that a hackney
 cabriolet, number unrecorded, was seen to proceed at a rapid pace up
@@ -29738,10 +29669,7 @@ fainted in real downright earnest.
 
 
 
-CHAPTER XLVII. IS CHIEFLY DEVOTED TO MATTERS OF BUSINESS, AND THE
-TEMPORAL ADVANTAGE OF DODSON AND FOGG--MR. WINKLE REAPPEARS UNDER
-EXTRAORDINARY CIRCUMSTANCES--MR. PICKWICK’S BENEVOLENCE PROVES STRONGER
-THAN HIS OBSTINACY
+
 
 Job Trotter, abating nothing of his speed, ran up Holborn, sometimes in
 the middle of the road, sometimes on the pavement, sometimes in the
@@ -30268,9 +30196,7 @@ if they had been!’
 
 
 
-CHAPTER XLVIII. RELATES HOW MR. PICKWICK, WITH THE ASSISTANCE OF SAMUEL
-WELLER, ESSAYED TO SOFTEN THE HEART OF MR. BENJAMIN ALLEN, AND TO
-MOLLIFY THE WRATH OF MR. ROBERT SAWYER
+
 
 Mr. Ben Allen and Mr. Bob Sawyer sat together in the little surgery
 behind the shop, discussing minced veal and future prospects, when the
@@ -30872,7 +30798,7 @@ landlord’s, and proceeded, in the words of the next chapter.
 
 
 
-CHAPTER XLIX. CONTAINING THE STORY OF THE BAGMAN’S UNCLE
+
 
 My uncle, gentlemen,’ said the bagman, ‘was one of the merriest,
 pleasantest, cleverest fellows, that ever lived. I wish you had known
@@ -31594,8 +31520,7 @@ attention.
 
 
 
-CHAPTER L. HOW MR. PICKWICK SPED UPON HIS MISSION, AND HOW HE WAS
-REINFORCED IN THE OUTSET BY A MOST UNEXPECTED AUXILIARY
+
 
 The horses were put to, punctually at a quarter before nine next
 morning, and Mr. Pickwick and Sam Weller having each taken his seat, the
@@ -32277,10 +32202,7 @@ never have waited upon him, on such an errand.
 
 
 
-CHAPTER LI. IN WHICH MR. PICKWICK ENCOUNTERS AN OLD ACQUAINTANCE--TO
-WHICH FORTUNATE CIRCUMSTANCE THE READER IS MAINLY INDEBTED FOR MATTER OF
-THRILLING INTEREST HEREIN SET DOWN, CONCERNING TWO GREAT PUBLIC MEN OF
-MIGHT AND POWER
+
 
 The morning which broke upon Mr. Pickwick’s sight at eight o’clock, was
 not at all calculated to elevate his spirits, or to lessen the
@@ -32992,8 +32914,7 @@ London.
 
 
 
-CHAPTER LII. INVOLVING A SERIOUS CHANGE IN THE WELLER FAMILY, AND THE
-UNTIMELY DOWNFALL OF MR. STIGGINS
+
 
 Considering it a matter of delicacy to abstain from introducing either
 Bob Sawyer or Ben Allen to the young couple, until they were fully
@@ -33567,9 +33488,7 @@ me in, and fill me a small glass of brandy. I’m out o’ breath, my boy.’
 
 
 
-CHAPTER LIII. COMPRISING THE FINAL EXIT OF MR. JINGLE AND JOB TROTTER,
-WITH A GREAT MORNING OF BUSINESS IN GRAY’S INN SQUARE--CONCLUDING WITH A
-DOUBLE KNOCK AT MR. PERKER’S DOOR
+
 
 When Arabella, after some gentle preparation and many assurances that
 there was not the least occasion for being low-spirited, was at length
@@ -34188,10 +34107,7 @@ in the next chapter.
 
 
 
-CHAPTER LIV. CONTAINING SOME PARTICULARS RELATIVE TO THE DOUBLE KNOCK,
-AND OTHER MATTERS: AMONG WHICH CERTAIN INTERESTING DISCLOSURES RELATIVE
-TO MR. SNODGRASS AND A YOUNG LADY ARE BY NO MEANS IRRELEVANT TO THIS
-HISTORY
+
 
 The object that presented itself to the eyes of the astonished clerk,
 was a boy--a wonderfully fat boy--habited as a serving lad, standing
@@ -34959,8 +34875,7 @@ very silent, Mr. Winkle very talkative, and all of them very happy.
 
 
 
-CHAPTER LV. MR. SOLOMON PELL, ASSISTED BY A SELECT COMMITTEE OF
-COACHMEN, ARRANGES THE AFFAIRS OF THE ELDER MR. WELLER
+
 
 Samivel,’ said Mr. Weller, accosting his son on the morning after the
 funeral, ‘I’ve found it, Sammy. I thought it wos there.’
@@ -35534,9 +35449,7 @@ George and Wulter!’
 
 
 
-CHAPTER LVI. AN IMPORTANT CONFERENCE TAKES PLACE BETWEEN MR. PICKWICK
-AND SAMUEL WELLER, AT WHICH HIS PARENT ASSISTS--AN OLD GENTLEMAN IN A
-SNUFF-COLOURED SUIT ARRIVES UNEXPECTEDLY
+
 
 Mr. Pickwick was sitting alone, musing over many things, and thinking
 among other considerations how he could best provide for the young
@@ -36155,8 +36068,7 @@ After which, he walked home, whistling.
 
 
 
-CHAPTER LVII. IN WHICH THE PICKWICK CLUB IS FINALLY DISSOLVED, AND
-EVERYTHING CONCLUDED TO THE SATISFACTION OF EVERYBODY
+
 
 For a whole week after the happy arrival of Mr. Winkle from Birmingham,
 Mr. Pickwick and Sam Weller were from home all day long, only returning

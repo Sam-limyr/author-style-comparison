@@ -1,4 +1,4 @@
-﻿CHAPTER 1. Dombey and Son
+﻿
 
 
 Dombey sat in the corner of the darkened room in the great arm-chair
@@ -548,8 +548,7 @@ world.
 
 
 
-CHAPTER 2. In which Timely Provision is made for an Emergency that will
-sometimes arise in the best-regulated Families.
+
 
 
 ‘I shall never cease to congratulate myself,’ said Mrs Chick,’ on having
@@ -1124,8 +1123,7 @@ best accustomed.
 
 
 
-CHAPTER 3. In which Mr Dombey, as a Man and a Father, is seen at the
-Head of the Home-Department
+
 
 
 The funeral of the deceased lady having been ‘performed’ to the entire
@@ -1688,8 +1686,7 @@ notwithstanding!’
 
 
 
-CHAPTER 4. In which some more First Appearances are made on the Stage of
-these Adventures
+
 
 
 Though the offices of Dombey and Son were within the liberties of the
@@ -2251,7 +2248,7 @@ here’s to Dombey--and Son--and Daughter!’
 
 
 
-CHAPTER 5. Paul’s Progress and Christening
+
 
 
 Little Paul, suffering no contamination from the blood of the Toodles,
@@ -3094,7 +3091,7 @@ closer to her breast, the withered leaves came showering down.
 
 
 
-CHAPTER 6. Paul’s Second Deprivation
+
 
 
 Polly was beset by so many misgivings in the morning, that but for
@@ -4063,8 +4060,7 @@ beside the question. Let us waste no words about it.
 
 
 
-CHAPTER 7. A Bird’s-eye Glimpse of Miss Tox’s Dwelling-place: also of
-the State of Miss Tox’s Affections
+
 
 
 Miss Tox inhabited a dark little house that had been squeezed, at some
@@ -4316,7 +4312,7 @@ contained a Dombey or a Son.
 
 
 
-CHAPTER 8. Paul’s Further Progress, Growth and Character
+
 
 
 Beneath the watching and attentive eyes of Time--so far another
@@ -5299,7 +5295,7 @@ away.
 
 
 
-CHAPTER 9. In which the Wooden Midshipman gets into Trouble
+
 
 
 That spice of romance and love of the marvellous, of which there was a
@@ -5897,7 +5893,7 @@ him, on the road, that he would stick by him to the last.
 
 
 
-CHAPTER 10. Containing the Sequel of the Midshipman’s Disaster
+
 
 
 Major Bagstock, after long and frequent observation of Paul, across
@@ -6501,7 +6497,7 @@ in the City, Sir, you’d do!’
 
 
 
-CHAPTER 11. Paul’s Introduction to a New Scene
+
 
 
 Mrs Pipchin’s constitution was made of such hard metal, in spite of its
@@ -7161,7 +7157,7 @@ upholsterer were never coming.
 
 
 
-CHAPTER 12. Paul’s Education
+
 
 
 After the lapse of some minutes, which appeared an immense time to
@@ -8017,7 +8013,7 @@ he would have emulated them, and soared away!
 
 
 
-CHAPTER 13. Shipping Intelligence and Office Business
+
 
 
 Mr Dombey’s offices were in a court where there was an old-established
@@ -8609,8 +8605,7 @@ the course of her recovery from her next confinement?
 
 
 
-CHAPTER 14. Paul grows more and more Old-fashioned, and goes Home for
-the Holidays
+
 
 
 When the Midsummer vacation approached, no indecent manifestations
@@ -9648,8 +9643,7 @@ Don’t tell them that I asked.’
 
 
 
-CHAPTER 15. Amazing Artfulness of Captain Cuttle, and a new Pursuit for
-Walter Gay
+
 
 
 Walter could not, for several days, decide what to do in the Barbados
@@ -10299,7 +10293,7 @@ foreboding.
 
 
 
-CHAPTER 16. What the Waves were always saying
+
 
 
 Paul had never risen from his little bed. He lay there, listening to
@@ -10553,7 +10547,7 @@ Daughter after all!’
 
 
 
-CHAPTER 17. Captain Cuttle does a little Business for the Young People
+
 
 
 Captain Cuttle, in the exercise of that surprising talent for deep-laid
@@ -11075,7 +11069,7 @@ his own room.
 
 
 
-CHAPTER 18. Father and Daughter
+
 
 
 There is a hush through Mr Dombey’s house. Servants gliding up and
@@ -11923,7 +11917,7 @@ and dreamed, with gruff barks, of his enemy.
 
 
 
-CHAPTER 19. Walter goes away
+
 
 
 The wooden Midshipman at the Instrument-maker’s door, like the
@@ -12505,7 +12499,7 @@ undisturbed.
 
 
 
-CHAPTER 20. Mr Dombey goes upon a Journey
+
 
 
 ‘Mr Dombey, Sir,’ said Major Bagstock, ‘Joey’ B. is not in general a man
@@ -13133,7 +13127,7 @@ Major arm-in-arm.
 
 
 
-CHAPTER 21. New Faces
+
 
 
 The MAJOR, more blue-faced and staring--more over-ripe, as it were, than
@@ -13653,7 +13647,7 @@ discharge themselves in hail!
 
 
 
-CHAPTER 22. A Trifle of Management by Mr Carker the Manager
+
 
 
 Mr Carker the Manager sat at his desk, smooth and soft as usual,
@@ -14562,7 +14556,7 @@ Di,--cats, boy, cats!
 
 
 
-CHAPTER 23. Florence solitary, and the Midshipman mysterious
+
 
 
 Florence lived alone in the great dreary house, and day succeeded day,
@@ -15551,7 +15545,7 @@ for Brig Place, resolving to weigh anchor betimes in the morning.
 
 
 
-CHAPTER 24. The Study of a Loving Heart
+
 
 
 Sir Barnet and Lady Skettles, very good people, resided in a pretty
@@ -16070,7 +16064,7 @@ disappeared, as if he rode off to the churchyard straight, to do it.
 
 
 
-CHAPTER 25. Strange News of Uncle Sol
+
 
 
 Captain Cuttle, though no sluggard, did not turn out so early on the
@@ -16488,7 +16482,7 @@ been.
 
 
 
-CHAPTER 26. Shadows of the Past and Future
+
 
 
 ‘Your most obedient, Sir,’ said the Major. ‘Damme, Sir, a friend of my
@@ -17253,7 +17247,7 @@ enough: but trod upon no upturned face--as yet.
 
 
 
-CHAPTER 27. Deeper Shadows
+
 
 
 Mr Carker the Manager rose with the lark, and went out, walking in the
@@ -18026,7 +18020,7 @@ ready for tomorrow’s revivification.
 
 
 
-CHAPTER 28. Alterations
+
 
 
 ‘So the day has come at length, Susan,’ said Florence to the excellent
@@ -18508,7 +18502,7 @@ hope, and blessed it. Dreaming Florence!
 
 
 
-CHAPTER 29. The Opening of the Eyes of Mrs Chick
+
 
 
 Miss Tox, all unconscious of any such rare appearances in connexion with
@@ -19030,7 +19024,7 @@ tears, and felt that it was winter in Princess’s Place.
 
 
 
-CHAPTER 30. The interval before the Marriage
+
 
 
 Although the enchanted house was no more, and the working world had
@@ -19729,7 +19723,7 @@ found her on her bridal morning.
 
 
 
-CHAPTER 31. The Wedding
+
 
 
 Dawn with its passionless blank face, steals shivering to the church
@@ -20427,7 +20421,7 @@ stretched to the utmost, as he picks his dainty way.
 
 
 
-CHAPTER 32. The Wooden Midshipman goes to Pieces
+
 
 
 Honest Captain Cuttle, as the weeks flew over him in his fortified
@@ -21207,7 +21201,7 @@ committed Walter’s body to the deep.
 
 
 
-CHAPTER 33. Contrasts
+
 
 
 Turn we our eyes upon two homes; not lying side by side, but wide apart,
@@ -21797,7 +21791,7 @@ fluttering round her reckless face.
 
 
 
-CHAPTER 34. Another Mother and Daughter
+
 
 
 In an ugly and dark room, an old woman, ugly and dark too, sat listening
@@ -22389,7 +22383,7 @@ testimony!
 
 
 
-CHAPTER 35. The Happy Pair
+
 
 
 The dark blot on the street is gone. Mr Dombey’s mansion, if it be a gap
@@ -22916,7 +22910,7 @@ So passed the night on which the happy pair came home.
 
 
 
-CHAPTER 36. Housewarming
+
 
 
 Many succeeding days passed in like manner; except that there were
@@ -23418,7 +23412,7 @@ on it now, as he looked up.
 
 
 
-CHAPTER 37. More Warnings than One
+
 
 
 Florence, Edith, and Mrs Skewton were together next day, and the
@@ -23911,7 +23905,7 @@ stem beauty.
 
 
 
-CHAPTER 38. Miss Tox improves an Old Acquaintance
+
 
 
 The forlorn Miss Tox, abandoned by her friend Louisa Chick, and bereft
@@ -24325,7 +24319,7 @@ established the glory of the Grinders’ Institution.
 
 
 
-CHAPTER 39. Further Adventures of Captain Edward Cuttle, Mariner
+
 
 
 Time, sure of foot and strong of will, had so pressed onward, that the
@@ -25064,7 +25058,7 @@ and down the street.
 
 
 
-CHAPTER 40. Domestic Relations
+
 
 
 It was not in the nature of things that a man of Mr Dombey’s mood,
@@ -25780,7 +25774,7 @@ us. We had need to know each other when we meet again!’
 
 
 
-CHAPTER 41. New Voices in the Waves
+
 
 
 All is going on as it was wont. The waves are hoarse with repetition of
@@ -26255,7 +26249,7 @@ at her feet, to strew her path in life withal.
 
 
 
-CHAPTER 42. Confidential and Accidental
+
 
 
 Attired no more in Captain Cuttle’s sable slops and sou’-wester hat, but
@@ -26961,7 +26955,7 @@ figure marshalled them against her. And that figure was her husband.
 
 
 
-CHAPTER 43. The Watches of the Night
+
 
 
 Florence, long since awakened from her dream, mournfully observed the
@@ -27350,7 +27344,7 @@ have no hope but in you!’
 
 
 
-CHAPTER 44. A Separation
+
 
 
 With the day, though not so early as the sun, uprose Miss Susan Nipper.
@@ -27816,7 +27810,7 @@ no consequence, thank’ee!’
 
 
 
-CHAPTER 45. The Trusty Agent
+
 
 
 Edith went out alone that day, and returned home early. It was but a few
@@ -28215,7 +28209,7 @@ upon the ground.
 
 
 
-CHAPTER 46. Recognizant and Reflective
+
 
 
 Among sundry minor alterations in Mr Carker’s life and habits that
@@ -28808,7 +28802,7 @@ footprint did she mark upon it, but he set his own there, straight.
 
 
 
-CHAPTER 47. The Thunderbolt
+
 
 
 The barrier between Mr Dombey and his wife was not weakened by time.
@@ -29696,7 +29690,7 @@ bent down to hide her agony of tears, was in the streets.
 
 
 
-CHAPTER 48. The Flight of Florence
+
 
 
 In the wildness of her sorrow, shame, and terror, the forlorn girl
@@ -30234,7 +30228,7 @@ slept more peacefully, and the Captain’s watch was undisturbed.
 
 
 
-CHAPTER 49. The Midshipman makes a Discovery
+
 
 
 It was long before Florence awoke. The day was in its prime, the day
@@ -31029,7 +31023,7 @@ of victuals.
 
 
 
-CHAPTER 50. Mr Toots’s Complaint
+
 
 
 There was an empty room above-stairs at the wooden Midshipman’s, which,
@@ -31838,7 +31832,7 @@ than when you made that there little property over, jintly!’
 
 
 
-CHAPTER 51. Mr Dombey and the World
+
 
 
 What is the proud man doing, while the days go by? Does he ever think of
@@ -32197,7 +32191,7 @@ in chorus. Mr Dombey and the world are alone together.
 
 
 
-CHAPTER 52. Secret Intelligence
+
 
 
 Good Mrs Brown and her daughter Alice kept silent company together, in
@@ -32932,7 +32926,7 @@ force a passage out, and fly away to warn him of it.
 
 
 
-CHAPTER 53. More Intelligence
+
 
 
 There were two of the traitor’s own blood--his renounced brother and
@@ -33660,7 +33654,7 @@ where she had been was empty.
 
 
 
-CHAPTER 54. The Fugitives
+
 
 
 Tea-time, an hour short of midnight; the place, a French apartment,
@@ -34169,7 +34163,7 @@ a corner, went out where the stars were shining.
 
 
 
-CHAPTER 55. Rob the Grinder loses his Place
+
 
 
 The Porter at the iron gate which shut the court-yard from the street,
@@ -34712,7 +34706,7 @@ train of ashes.
 
 
 
-CHAPTER 56. Several People delighted, and the Game Chicken disgusted
+
 
 
 The Midshipman was all alive. Mr Toots and Susan had arrived at last.
@@ -35749,7 +35743,7 @@ her maiden life, and who had sent him her dear love.
 
 
 
-CHAPTER 57. Another Wedding
+
 
 
 Mr Sownds the beadle, and Mrs Miff the pew-opener, are early at their
@@ -36110,7 +36104,7 @@ invisible country far away!
 
 
 
-CHAPTER 58. After a Lapse
+
 
 
 The sea had ebbed and flowed, through a whole year. Through a whole
@@ -36794,7 +36788,7 @@ wind.
 
 
 
-CHAPTER 59. Retribution
+
 
 
 Changes have come again upon the great house in the long dull street,
@@ -37628,7 +37622,7 @@ this desirable Family Mansion was to be disposed of.
 
 
 
-CHAPTER 60. Chiefly Matrimonial
+
 
 
 The grand half-yearly festival holden by Doctor and Mrs Blimber, on
@@ -38185,7 +38179,7 @@ the medical man, and not exert yourself too much!’
 
 
 
-CHAPTER 61. Relenting
+
 
 
 Florence had need of help. Her father’s need of it was sore, and made
@@ -38755,7 +38749,7 @@ the shadow of a dream.’
 
 
 
-CHAPTER 62. Final
+
 
 
 A bottle that has been long excluded from the light of day, and is
@@ -39033,55 +39027,3 @@ Never from the mighty sea may voices rise too late, to come between us
 and the unseen region on the other shore! Better, far better, that
 they whispered of that region in our childish ears, and the swift river
 hurried us away!
-
-
-
-
-PREFACE OF 1848
-
-I cannot forego my usual opportunity of saying farewell to my readers
-in this greeting-place, though I have only to acknowledge the unbounded
-warmth and earnestness of their sympathy in every stage of the journey
-we have just concluded.
-
-If any of them have felt a sorrow in one of the principal incidents on
-which this fiction turns, I hope it may be a sorrow of that sort which
-endears the sharers in it, one to another. This is not unselfish in me.
-I may claim to have felt it, at least as much as anybody else; and I
-would fain be remembered kindly for my part in the experience.
-
-
-DEVONSHIRE TERRACE, Twenty-Fourth March, 1848.
-
-
-PREFACE OF 1867
-
-I make so bold as to believe that the faculty (or the habit) of
-correctly observing the characters of men, is a rare one. I have not
-even found, within my experience, that the faculty (or the habit) of
-correctly observing so much as the faces of men, is a general one by any
-means. The two commonest mistakes in judgement that I suppose to
-arise from the former default, are, the confounding of shyness with
-arrogance--a very common mistake indeed--and the not understanding that
-an obstinate nature exists in a perpetual struggle with itself.
-
-Mr Dombey undergoes no violent change, either in this book, or in real
-life. A sense of his injustice is within him, all along. The more he
-represses it, the more unjust he necessarily is. Internal shame and
-external circumstances may bring the contest to a close in a week, or a
-day; but, it has been a contest for years, and is only fought out after
-a long balance of victory.
-
-I began this book by the Lake of Geneva, and went on with it for some
-months in France, before pursuing it in England. The association between
-the writing and the place of writing is so curiously strong in my mind,
-that at this day, although I know, in my fancy, every stair in the
-little midshipman’s house, and could swear to every pew in the church
-in which Florence was married, or to every young gentleman’s bedstead in
-Doctor Blimber’s establishment, I yet confusedly imagine Captain
-Cuttle as secluding himself from Mrs MacStinger among the mountains of
-Switzerland. Similarly, when I am reminded by any chance of what it was
-that the waves were always saying, my remembrance wanders for a whole
-winter night about the streets of Paris--as I restlessly did with a
-heavy heart, on the night when I had written the chapter in which my
-little friend and I parted company.
