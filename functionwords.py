@@ -337,19 +337,19 @@ def run_test_runner(nn_model, stopword_set, train_vector_to_authortitle):
 		nearest_auth, confidence_score = compute_nearest_neighbour(point_index_arr, dist_arr,
 																   train_vector_to_authortitle)
 
-		print("Most similar author: "+nearest_auth)
-		print("Confidence score: " + str(confidence_score))
-
-		print("Nearest points: ")
-		for point_index in range(len(dist_arr[0])):
-			print("Point: " + str(train_vector_to_authortitle[point_index_arr[0][point_index]]))
-			print("Distance to point: " + str(dist_arr[0][point_index]))
+		# print("Most similar author: "+nearest_auth)
+		# print("Confidence score: " + str(confidence_score))
+		#
+		# print("Nearest points: ")
+		# for point_index in range(len(dist_arr[0])):
+		# 	print("Point: " + str(train_vector_to_authortitle[point_index_arr[0][point_index]]))
+		# 	print("Distance to point: " + str(dist_arr[0][point_index]))
 
 		auth_confidence_list.append((nearest_auth,confidence_score))
 		auth_list.append(nearest_auth)
 
 	# print(auth_confidence_list)
-	check_test_results(auth_list)
+	# check_test_results(auth_list)
 
 	return auth_confidence_list
 
