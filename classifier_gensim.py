@@ -3,15 +3,18 @@
 import gensim
 import smart_open
 import csv
+import os
 from test_runner import get_all_tests, check_test_results, ALL_AUTHOR_NAMES, AUTHOR_ID_TO_NAME_MAPPINGS, \
     AUTHOR_NAME_TO_ID_MAPPINGS
 
 
-training_files = [('paragraphs/' + author + '.csv', author) for author in ALL_AUTHOR_NAMES]
+# training_files = [('paragraphs/' + author + '.csv', author) for author in ALL_AUTHOR_NAMES]
+training_files = [(os.path.join('split_novels', author, file), author)
+                  for author in ALL_AUTHOR_NAMES for file in os.listdir(os.path.join('split_novels', author))]
 
 # Training hyperparameters
-EPOCHS = 50
-VECTOR_SIZE = 200
+EPOCHS = 100
+VECTOR_SIZE = 300
 MIN_WORD_FREQ = 1  # minimum frequency of words for them to be considered; set to 1 for default
 
 # Diagnostic parameters

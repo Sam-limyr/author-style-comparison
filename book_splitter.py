@@ -3,10 +3,9 @@ import re
 # Add author and name of books to dictionary as shown below.
 # Note that books should not have the ".txt" suffix-ed.
 
-#authors = {"charles_dickens": ["greatex", "olivert", "twocities"] }
+authors = {"charles_dickens": ["davidc", "greatex", "olivert", "twocities"] }
 #authors = {"fyodor_dostoevsky": ["crimep", "idiot", "possessed"]} 
 #authors = {"mark_twain": ["toms", "huckfinn", "connecticutyankee", "princepauper"]}
-authors = {"mark_twain": ["puddnheadWilson"]}
 
 # Specify text chunk length
 text_length = 50000
@@ -51,7 +50,7 @@ for author in authors:
                 text_to_write = " ".join(text_to_write)
                 text = remaining_text
             writePath = "split_novels/" + author + "/" + bookName + str(counter) + ".txt"
-            f = open(writePath, "x")
+            f = open(writePath, "x", encoding='utf-8')
             f.write(text_to_write)
             f.close()
             print("Done writing file {} of book: {}".format(counter, bookName))
