@@ -21,11 +21,11 @@ def read_texts(dir_name):
 	author_to_alltexts = {}
 
 	for author in authors:
-		novel_filenames = os.listdir(dir_name + "/" + author)
+		novel_filenames = os.listdir(os.path.join(dir_name, author))
 		author_to_alltexts[author] = {}
 
 		for novel_filename in novel_filenames:
-			filepath = dir_name + "/" + author + "/" + novel_filename
+			filepath = os.path.join(dir_name, author, novel_filename)
 			fp = open(filepath, "r", encoding='utf8')
 			text = fp.read()[1:]
 			print(novel_filename)
@@ -161,7 +161,7 @@ def run_test_supplementaryNovels_entiretext(nn_model, stopword_set, train_vector
 
 	print("Testing model on whole texts in supplementaryNovel dataset... ")
 	# get training data
-	author_to_alltexts = read_texts('../data/test/supplementaryNovels')
+	author_to_alltexts = read_texts(os.path.join(os.getcwd(), "data", "test", "supplementaryNovels"))
 	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
 
 	sorted_stopword_list = sorted(stopword_set)
