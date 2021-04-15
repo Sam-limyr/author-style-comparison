@@ -1,14 +1,18 @@
 import nltk
 nltk.download('stopwords')
 from nltk.corpus import stopwords   # Requires NLTK in the include path.
+import os
+import pandas as pd
 
 ## List of stopwords
 STOPWORDS = stopwords.words('english') # type: list(str)
 
-authors = {"charles_dickens": ["davidc.txt", "greatex.txt", "olivert.txt", "twocities.txt"],
-           "fyodor_dostoevsky": ["crimep.txt", "idiot.txt", "possessed.txt"], 
-           #"leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
-           "mark_twain": ["toms.txt", "huckfinn.txt", "connecticutyankee.txt", "princepauper.txt"]}
+train_type = "novels"
+
+author_names = ["charles_dickens", "fyodor_dostoevsky", "mark_twain"]
+
+authors = {name: [file for file in os.listdir(os.path.join(os.getcwd(), "data", "train", train_type, name))]
+           for name in author_names}
 
 num_novels = sum([len(authors[author]) for author in authors])
 
@@ -16,7 +20,7 @@ texts = []
 
 for author in authors:
     for bookName in authors[author]:
-        bookFilepath = "novels/" + author + "/" + bookName
+        bookFilepath = os.path.join(os.getcwd(), "data", "train", train_type, author, bookName)
         print(bookFilepath)
         
         # read text in book
@@ -85,4 +89,4 @@ tests = pd.Series(test_cases)
 x_test = get_tfidf(tests, vectorizer, tfidf_transformer)
 
 output_answers = predict(model, x_test)
-check_test_results(output_answers, show_matrix=False)
+check_test_results(output_answers, show_matrix=True)
