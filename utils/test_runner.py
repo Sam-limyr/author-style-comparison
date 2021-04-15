@@ -90,7 +90,8 @@ AUTHOR_ID_TO_NAME_MAPPINGS = {
 
 def get_all_tests():
     print("Getting tests...")
-    all_tests = CHARLES_DICKENS_TESTS + FYODOR_DOSTOEVSKY_TESTS + MARK_TWAIN_TESTS + JANE_AUSTEN_TESTS + JOHN_STEINBECK_TESTS
+    all_tests = CHARLES_DICKENS_TESTS + FYODOR_DOSTOEVSKY_TESTS + MARK_TWAIN_TESTS
+    # all_tests = CHARLES_DICKENS_TESTS + FYODOR_DOSTOEVSKY_TESTS + MARK_TWAIN_TESTS + JANE_AUSTEN_TESTS + JOHN_STEINBECK_TESTS
     return all_tests
 
 
@@ -105,9 +106,10 @@ def check_test_results(results_list, show_details=True, show_matrix=True):
     """
     correct_answers = [CHARLES_DICKENS_NAME for _ in range(len(CHARLES_DICKENS_TESTS))] + \
                       [FYODOR_DOSTOEVSKY_NAME for _ in range(len(FYODOR_DOSTOEVSKY_TESTS))] + \
-                      [MARK_TWAIN_NAME for _ in range(len(MARK_TWAIN_TESTS))] + \
-                      [JANE_AUSTEN_NAME for _ in range(len(JANE_AUSTEN_TESTS))] + \
-                      [JOHN_STEINBECK_NAME for _ in range(len(JOHN_STEINBECK_TESTS))]
+                      [MARK_TWAIN_NAME for _ in range(len(MARK_TWAIN_TESTS))]
+                      # [MARK_TWAIN_NAME for _ in range(len(MARK_TWAIN_TESTS))] + \
+                      # [JANE_AUSTEN_NAME for _ in range(len(JANE_AUSTEN_TESTS))] + \
+                      # [JOHN_STEINBECK_NAME for _ in range(len(JOHN_STEINBECK_TESTS))]
 
     assert len(results_list) == len(correct_answers), "Input and expected lists do not have the same length!"
 
@@ -164,7 +166,10 @@ def print_results(predicted_results, ground_truth):
                JANE_AUSTEN_NAME, scores[JANE_AUSTEN_NAME], len(JANE_AUSTEN_TESTS),
                JOHN_STEINBECK_NAME, scores[JOHN_STEINBECK_NAME], len(JOHN_STEINBECK_TESTS)))
 
-    score = f1_score(ground_truth[:450], predicted_results[:450], average='micro')
+    number_of_same_author_tests = len(CHARLES_DICKENS_TESTS) + len(FYODOR_DOSTOEVSKY_TESTS) + len(MARK_TWAIN_TESTS)
+
+    score = f1_score(ground_truth[:number_of_same_author_tests], predicted_results[:number_of_same_author_tests],
+                     average='weighted')
     print("F1 score: {}".format(round(float(score), 4)))
 
 
