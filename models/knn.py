@@ -311,11 +311,11 @@ def run_test_runner(nn_model, stopword_set, train_vector_to_authortitle):
 	for index in range(len(MARK_TWAIN_TESTS)):
 		author_to_alltexts[3][index] = MARK_TWAIN_TESTS[index]
 
-	for index in range(len(JANE_AUSTEN_TESTS)):
-		author_to_alltexts[4][index] = JANE_AUSTEN_TESTS[index]
-
-	for index in range(len(JOHN_STEINBECK_TESTS)):
-		author_to_alltexts[5][index] = JOHN_STEINBECK_TESTS[index]
+	# for index in range(len(JANE_AUSTEN_TESTS)):
+	# 	author_to_alltexts[4][index] = JANE_AUSTEN_TESTS[index]
+	#
+	# for index in range(len(JOHN_STEINBECK_TESTS)):
+	# 	author_to_alltexts[5][index] = JOHN_STEINBECK_TESTS[index]
 
 	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
 	sorted_stopword_list = sorted(stopword_set)
@@ -370,7 +370,7 @@ def combine_training_data():
 
 def predict_k_nearest_neighbours_results():
 	# get training data
-	author_to_alltexts = read_texts(os.path.join(os.getcwd(), "data", "test", "supplementaryNovels"))
+	author_to_alltexts = read_texts(os.path.join(os.getcwd(), "data", "train", "novels"))
 	author_to_title_to_tokens = parse_tokens(author_to_alltexts)
 
 	stopword_set = generate_stopword_set()
@@ -381,7 +381,7 @@ def predict_k_nearest_neighbours_results():
 
 	# build model
 	print("Building model...")
-	nn_model = NearestNeighbors(n_neighbors=19, metric='manhattan')
+	nn_model = NearestNeighbors(n_neighbors=25, metric='manhattan')
 	nn_model.fit(all_text_vecs)
 
 	# testing

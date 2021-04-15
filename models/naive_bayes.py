@@ -7,7 +7,7 @@ import pandas as pd
 ## List of stopwords
 STOPWORDS = stopwords.words('english') # type: list(str)
 
-train_type = "novels"
+train_type = "split_novels"
 
 author_names = ["charles_dickens", "fyodor_dostoevsky", "mark_twain"]
 
