@@ -4,10 +4,13 @@ import re
 import os
 import sys
 
+# name of author and text file to count
+author = "mark_twain"
+textFile = "princepauper.txt"
+
 def main():
-    textFile = "notesFromUnderground.txt"
-    filename = os.path.join(sys.path[0], textFile)
-    with open(filename, 'r', errors='ignore') as file:
+    fileToRead = "data/train/novels/{}/{}".format(author, textFile)
+    with open(fileToRead, 'r', errors='ignore') as file:
         text = file.read()
         word_arr = re.split(r"\s+", text)
         print("Approx. number of words in {}: {}".format(textFile, len(word_arr)))

@@ -27,17 +27,8 @@ JOHN_STEINBECK_NAME = "john_steinbeck"
 MARK_TWAIN_NAME = "mark_twain"
 ALL_AUTHOR_NAMES = [CHARLES_DICKENS_NAME, FYODOR_DOSTOEVSKY_NAME, JANE_AUSTEN_NAME, JOHN_STEINBECK_NAME, MARK_TWAIN_NAME]
 
-# Get F1 Score
-correct_answers = [CHARLES_DICKENS_NAME for _ in CHARLES_DICKENS_TESTS] + \
-                  [FYODOR_DOSTOEVSKY_NAME for _ in FYODOR_DOSTOEVSKY_TESTS] + \
-                  [JANE_AUSTEN_NAME for _ in JANE_AUSTEN_TESTS] + \
-                  [JOHN_STEINBECK_NAME for _ in JOHN_STEINBECK_TESTS] + \
-                  [MARK_TWAIN_NAME for _ in MARK_TWAIN_TESTS]
-
 authors = {"charles_dickens": ["davidc.txt", "greatex.txt", "olivert.txt", "twocities.txt"],
            "fyodor_dostoevsky": ["crimep.txt", "idiot.txt", "possessed.txt"], 
-           #"jane_austen": ["emma.txt", "ladySusan.txt", "northangerAbbey.txt", "prideAndPrejudice.txt"],
-           #"leo_tolstoy": ["warap.txt", "annakarenina.txt"], 
            "mark_twain": ["toms.txt", "huckfinn.txt", "connecticutyankee.txt", "princepauper.txt"]}
 
 authorsIndexed = ["charles_dickens", "fyodor_dostoevsky", "mark_twain"]
@@ -63,11 +54,13 @@ def extract_features():
     stats["capitalized_per_sentence"] = []
     stats["dashes_per_sent"] = []
     stats["comma_count_per_sent"] = []
+    stats["italics_per_sent"] = []
+    stats["dialogue_per_sent"] = []
+
+    # unused features that were explored
     #stats["exclamation_marks_per_sent"] = []
     #stats["question_marks_per_sent"] = []
-    stats["italics_per_sent"] = []
     #stats["contractions_per_sent"] = []
-    stats["dialogue_per_sent"] = []
     # stats["vocab_word_count"] = []
     
     dir_name = os.path.join(os.getcwd(), "data", "train", "split_novels")
@@ -75,15 +68,13 @@ def extract_features():
     for author in authors:
         # currently unused
         vocab = {}
+
         novel_filenames = os.listdir(os.path.join(dir_name, author))
-        #print(novel_filenames)
         num_novels[author] = len(novel_filenames)
 
         for novel_filename in novel_filenames:
-                                     
-        #for bookName in authors[author]:
+
             bookFilepath = os.path.join(dir_name, author, novel_filename)
-            #print(bookFilepath)
 
             # read text in book
             with open(bookFilepath, encoding='utf-8', errors='ignore') as f:
@@ -122,7 +113,6 @@ def extract_features():
             italics_count = 0 # _<word>_
             contractions_count = 0 # counting "you'll" etc.
             dialogue_count = 0 # counting ""
-            in_dialogue = False
 
             for ele in sentence_list:
                 if ele == None or len(ele) == 0:
@@ -205,8 +195,6 @@ def extract_features():
                         if word in STOPWORDS:
                             stopword_count += 1
                     sentences += [ele.strip()]
-
-            unique_word_count = len(vocab.keys())
             
             # store stats in outer dictionary, in order of "authors" dictionary
             stats["personalpronoun_tags_per_sent"].append(np.log(1+pp_tags/sentence_count))
@@ -224,25 +212,25 @@ def extract_features():
             stats["capitalized_per_sentence"].append(np.log(1+capitalized_words/sentence_count))
             stats["dashes_per_sent"].append(np.log(1+dash_count/sentence_count))
             stats["comma_count_per_sent"].append(np.log(1+comma_count/sentence_count))
+            stats["italics_per_sent"].append(np.log(1+italics_count/sentence_count))
+            stats["dialogue_per_sent"].append(np.log(1+(dialogue_count/sentence_count)))
+
+            # unused features that were explored
             #stats["exclamation_marks_per_sent"].append(np.log(1+exclamation_marks/sentence_count))
             #stats["question_marks_per_sent"].append(np.log(1+question_marks/sentence_count))
-            stats["italics_per_sent"].append(np.log(1+italics_count/sentence_count))
             #stats["contractions_per_sent"].append(np.log(1+contractions_count/sentence_count))
-            stats["dialogue_per_sent"].append(np.log(1+(dialogue_count/sentence_count)))
             
             # vocab needs to be able to count rare words and identify them
+            # unique_word_count = len(vocab.keys())
             # stats["vocab_word_count"].append(unique_word_count)
             
-            #print(tags)
     return stats
 
 def train_model(model, x_train, y_train):
-    ''' TODO: train your model based on the training data '''
     model.fit(x_train, y_train)
     pass
 
 def predict(model, x_test):
-    ''' TODO: make your prediction here '''
     return model.predict_proba(x_test)
 
 # extract stats for each author
@@ -277,13 +265,16 @@ def extract_test_features(queries, scaler):
     stats["capitalized_per_sentence"] = []
     stats["dashes_per_sent"] = []
     stats["comma_count_per_sent"] = []
+    stats["italics_per_sent"] = []
+    stats["dialogue_per_sent"] = []
+
+    # unused features that were explored
     #stats["exclamation_marks_per_sent"] = []
     #stats["question_marks_per_sent"] = []
-    stats["italics_per_sent"] = []
     #stats["contractions_per_sent"] = []
-    stats["dialogue_per_sent"] = []
     # stats["vocab_word_count"] = []
     
+    # currently unused
     vocab = {}
     for query in queries:
         # split each sentence
@@ -403,11 +394,13 @@ def extract_test_features(queries, scaler):
         stats["capitalized_per_sentence"].append(np.log(1+capitalized_words/sentence_count))
         stats["dashes_per_sent"].append(np.log(1+dash_count/sentence_count))
         stats["comma_count_per_sent"].append(np.log(1+comma_count/sentence_count))
+        stats["italics_per_sent"].append(np.log(1+italics_count/sentence_count))
+        stats["dialogue_per_sent"].append(np.log(1+(dialogue_count/sentence_count)))
+
+        # unused features that were explored
         #stats["exclamation_marks_per_sent"].append(np.log(1+exclamation_marks/sentence_count))
         #stats["question_marks_per_sent"].append(np.log(1+question_marks/sentence_count))
-        stats["italics_per_sent"].append(np.log(1+italics_count/sentence_count))
         #stats["contractions_per_sent"].append(np.log(1+contractions_count/sentence_count))
-        stats["dialogue_per_sent"].append(np.log(1+(dialogue_count/sentence_count)))
 
         # vocab needs to be able to count rare words and identify them
         # stats["vocab_word_count"].append(len(vocab.keys()))
@@ -428,12 +421,9 @@ def get_model():
 
 def get_trained_model(model, scaler, stats):
     # x_train = array of sentences, from all authors
-    # y_train = array of authors of corresponding sentence in x_train
     x_train = scale_features(stats, scaler, False)
-    # print("Class features distribution:")
-    # print(x_train)
 
-    # y_train = books
+    # y_train = array of authors of corresponding sentence in x_train
     y_train = []
     for author in authors:
         y_train += [author] * num_novels[author]
@@ -441,6 +431,11 @@ def get_trained_model(model, scaler, stats):
 
     train_model(model, x_train, y_train)
 
+###
+# Extracts features from each training sample, scales them using StandardScaler and trains a Logistic Regression model with it.
+# Extracts the same features from each test sample and scales them correspondingly with the StandardScaler.
+# Model then takes the scaled features and generates predictions along with a confidence value.
+###
 def predict_feature_engineering(isDebugging=False):
     stats = extract_features()
     model = get_model()
@@ -479,7 +474,19 @@ def predict_feature_engineering(isDebugging=False):
     else:
         return output_answers
 
+###
+#  Generates F1 score of model's predictions on the test cases.
+# Also prints feature importance for analysis on performance of individual features.
+###
 def generate_F1_score(model, output_authors):
+    
+    # Get F1 Score
+    correct_answers = [CHARLES_DICKENS_NAME for _ in CHARLES_DICKENS_TESTS] + \
+                    [FYODOR_DOSTOEVSKY_NAME for _ in FYODOR_DOSTOEVSKY_TESTS] + \
+                    [JANE_AUSTEN_NAME for _ in JANE_AUSTEN_TESTS] + \
+                    [JOHN_STEINBECK_NAME for _ in JOHN_STEINBECK_TESTS] + \
+                    [MARK_TWAIN_NAME for _ in MARK_TWAIN_TESTS]
+
     # Use f1-macro as the metric
     score = f1_score(correct_answers, output_authors, average='macro')
     print('LR score on validation = {}'.format(score))
@@ -488,22 +495,19 @@ def generate_F1_score(model, output_authors):
 
     # get importance
     importance = model.coef_
-    # summarize feature importance
-    print("Feature importance for Mark Twain:")
-    # plot feature importance
-    pyplot.bar([x for x in range(len(importance[2]))], importance[2])
+    # plot feature importances
+
+    print("Feature importance for Charles Dickens:")
+    pyplot.bar([x for x in range(len(importance[0]))], importance[0])
     pyplot.show()
 
-    # print("Feature importance for 0:")
-    # #     for i,v in enumerate(importance[1]):
-    # #         print('Feature: %0d, Score: %.5f' % (i,v))
-    # # plot feature importance
+    # print("Feature importance for Fyodor Dostoevsky:")
     # pyplot.bar([x for x in range(len(importance[1]))], importance[1])
     # pyplot.show()
 
-    # print("Feature importance for 1")
-    # #     for i,v in enumerate(importance[2]):
-    # #         print('Feature: %0d, Score: %.5f' % (i,v))
-    # # plot feature importance
+    # print("Feature importance for Mark Twain:")
     # pyplot.bar([x for x in range(len(importance[2]))], importance[2])
     # pyplot.show()
+
+if __name__ == "__main__":
+    main()
