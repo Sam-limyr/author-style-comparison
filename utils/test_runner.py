@@ -91,8 +91,8 @@ AUTHOR_ID_TO_NAME_MAPPINGS = {
 def get_all_tests():
     print("Getting tests...")
     # all_tests = CHARLES_DICKENS_TESTS + FYODOR_DOSTOEVSKY_TESTS + MARK_TWAIN_TESTS
-    all_tests = JANE_AUSTEN_TESTS + JOHN_STEINBECK_TESTS
-    # all_tests = CHARLES_DICKENS_TESTS + FYODOR_DOSTOEVSKY_TESTS + MARK_TWAIN_TESTS + JANE_AUSTEN_TESTS + JOHN_STEINBECK_TESTS
+    # all_tests = JANE_AUSTEN_TESTS + JOHN_STEINBECK_TESTS
+    all_tests = CHARLES_DICKENS_TESTS + FYODOR_DOSTOEVSKY_TESTS + MARK_TWAIN_TESTS + JANE_AUSTEN_TESTS + JOHN_STEINBECK_TESTS
     return all_tests
 
 
@@ -108,9 +108,15 @@ def check_test_results(results_list, show_details=True, show_matrix=True):
     # correct_answers = [CHARLES_DICKENS_NAME for _ in range(len(JANE_AUSTEN_TESTS))] + \
     #                   [MARK_TWAIN_NAME for _ in range(len(JOHN_STEINBECK_TESTS))]
 
+    # correct_answers = [CHARLES_DICKENS_NAME for _ in range(len(CHARLES_DICKENS_TESTS))] + \
+    #                   [FYODOR_DOSTOEVSKY_NAME for _ in range(len(FYODOR_DOSTOEVSKY_TESTS))] + \
+    #                   [MARK_TWAIN_NAME for _ in range(len(MARK_TWAIN_TESTS))]
+
     correct_answers = [CHARLES_DICKENS_NAME for _ in range(len(CHARLES_DICKENS_TESTS))] + \
                       [FYODOR_DOSTOEVSKY_NAME for _ in range(len(FYODOR_DOSTOEVSKY_TESTS))] + \
-                      [MARK_TWAIN_NAME for _ in range(len(MARK_TWAIN_TESTS))]
+                      [MARK_TWAIN_NAME for _ in range(len(MARK_TWAIN_TESTS))] + \
+                      [CHARLES_DICKENS_NAME for _ in range(len(JANE_AUSTEN_TESTS))] + \
+                      [MARK_TWAIN_NAME for _ in range(len(JOHN_STEINBECK_TESTS))]
 
     assert len(results_list) == len(correct_answers), "Input and expected lists do not have the same length!"
 
