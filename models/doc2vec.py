@@ -40,6 +40,11 @@ def process_test_case(test_case_string):
 
 
 def predict_doc2vec_results():
+    """
+    Predicts results of test cases using the Doc2vec model. Training data is obtained from the 'training_files' variable
+    written above, and the test data is called from test_runner. The outputs are a list of tuples of the form
+    (prediction, confidence score). This is intended for use with the ensemble.py file.
+    """
     print("Running doc2vec model...")
     print("Reading data from corpus...")
     train_corpus = [read_corpus(training_file, AUTHOR_NAME_TO_ID_MAPPINGS[author_name])
