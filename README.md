@@ -1,7 +1,7 @@
-# cs4248-style-comparison
+# The Righter Writer
 A Natural Language Processing project that aims to isolate and compare the writing styles of authors.
 
-## Project Purpose
+## Project Motivation
 
 This project uses several models to perform stylometric analysis on Victorian-era authors.
 The end goal of the project is to understand whether style can be used to:
@@ -10,6 +10,9 @@ The end goal of the project is to understand whether style can be used to:
 
 A more detailed analysis can be found in the file `Project Report.pdf`, which contains a report
 on the data and findings of this project.
+
+A future extension of this project would involve expanding the training and testing datasets used,
+as well as connecting the models to a recommendation system.
 
 ## Project Contents
 
